@@ -1,14 +1,16 @@
 "use client"
 import { useRef, useState } from "react";
 import { motion } from "framer-motion";
+import { cn } from "@/lib/utils";
 
 
 interface EncryptButtonProps {
     textData: string;
     icon?: React.ReactNode;
+    className?: string;
 }
 
-const EncryptButton = ({ textData, icon }: EncryptButtonProps) => {
+const EncryptButton = ({ textData, icon, className }: EncryptButtonProps) => {
     const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
     const TARGET_TEXT = `${textData}`;
@@ -63,7 +65,7 @@ const EncryptButton = ({ textData, icon }: EncryptButtonProps) => {
             }}
             onMouseEnter={scramble}
             onMouseLeave={stopScramble}
-            className="group relative overflow-hidden rounded-lg bg-secondary-blue tracking-wide px-4 py-2 font-medium uppercase text-white transition-colors hover:bg-secondary-blue-hover"
+            className={`group relative overflow-hidden rounded-lg bg-secondary-blue tracking-wide px-4 py-2 font-medium uppercase text-white transition-colors hover:bg-secondary-blue-hover ${className}`}
         >
             <div className="relative z-10 flex items-center gap-2">
 
@@ -85,7 +87,7 @@ const EncryptButton = ({ textData, icon }: EncryptButtonProps) => {
                 }}
                 className="duration-300 absolute inset-0 z-0 scale-125 bg-gradient-to-t from-indigo-400/0 from-40% via-indigo-400/100 to-indigo-400/0 to-60% opacity-0 transition-opacity group-hover:opacity-100"
             />
-        </motion.button>
+        </motion.button >
     );
 };
 

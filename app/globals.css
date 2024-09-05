@@ -118,10 +118,10 @@ body {
   }
 
   .h2-medium {
-    @apply font-medium text-[32px] leading-[40px] lg:text-[36px] lg:leading-[44px] xl:text-[55px] xl:leading-[48px];
+    @apply font-medium text-[25px] leading-[40px] lg:text-[40px] lg:leading-[44px] xl:text-[40px] xl:leading-[48px];
   }
   .h2-normal {
-    @apply font-normal text-[25px] leading-[40px] lg:text-[40px] lg:leading-[44px] xl:text-[45px] xl:leading-[48px];
+    @apply font-normal text-[25px] leading-[40px] lg:text-[40px] lg:leading-[44px] xl:text-[40px] xl:leading-[48px];
   }
 
   /* 36 */
@@ -138,12 +138,19 @@ body {
     @apply font-medium text-[32px] leading-[40px];
   }
 
+  .p-medium-32 {
+    @apply font-medium text-[32px];
+  }
+
   /* 28 */
   .h5-bold {
     @apply font-bold text-[28px] leading-[36px];
   }
   .h5-link {
     @apply font-normal text-[28px] leading-[36px];
+  }
+  .p-medium-28 {
+    @apply font-medium text-[28px];
   }
 
   /* 24 */
@@ -160,6 +167,10 @@ body {
   }
 
   /* 20 */
+  .h3-semibold-20 {
+    @apply text-[20px] font-semibold leading-[30px] tracking-[2%];
+  }
+
   .p-bold-20 {
     @apply font-bold text-[20px] leading-[30px] tracking-[2%];
   }
@@ -294,3 +305,5 @@ body {
 .react-datepicker__time-list-item--selected {
   background-color: #624cf5 !important;
 }
+
+

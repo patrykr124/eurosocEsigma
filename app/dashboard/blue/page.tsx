@@ -4,6 +4,7 @@ import Certificate from "@/components/UI/blue/section/Certificate/Certificate";
 import Do from "@/components/UI/blue/section/Do/Do";
 import Info from "@/components/UI/blue/section/Info/Info";
 import Prologue from "@/components/UI/blue/section/prologue/Prologue";
+import { ScrollSection } from "@/components/UI/blue/section/Scroll/ScrollSection";
 import Services from "@/components/UI/blue/section/service/Services";
 
 
@@ -17,6 +18,7 @@ function Blue() {
     <Do />
     <Info />
     <Certificate />
+    <ScrollSection />
   </div>;
 }
 

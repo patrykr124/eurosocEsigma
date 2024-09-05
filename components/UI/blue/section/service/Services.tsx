@@ -4,11 +4,12 @@ import Card from './Card'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import EncryptButton from '@/components/UI/EncryptButton'
+import Image from 'next/image'
 
 
 function Services() {
     return (
-        <div className="">
+        <div className="pb-10">
             <div className="box flex flex-col items-center gap-20  rounded-xl  z-10">
 
                 <div className="-mt-36 bg-white rounded-3xl shadow-2xl w-full xl:w-[1400px] py-16">
@@ -23,11 +24,11 @@ function Services() {
                         </div>
 
                         <div className="cardbox flex justify-between  ">
-                            <Card img='/assets/img/1.png' title='Twoje systemy w bezpiecznych rękach' text="Wykrywanie anomalii i analiza maszynowa / ludzka 24/7/365"
+                            <Card img='/assets/img/cyberline.jpg' title='Wdrożenia systemów do ochrony danych osobowych' text="Wykrywanie anomalii i analiza maszynowa / ludzka 24/7/365"
                                 button="Learn more" />
-                            <Card img='/assets/img/2.png' title='VPN, L2 lub Ciemne włókno' text="Skanowanie nowych podatności i / lub testy penetracyjne"
+                            <Card img='/assets/img/cyberline.jpg' title='Monitorowanie infrastruktury firmy w czasie rzeczysitym' text="Skanowanie nowych podatności i / lub testy penetracyjne"
                                 button="Learn more" />
-                            <Card img='/assets/img/3.png' title='EUROSOC infrastruktura' text="Kontrolowane ataki phishingowe na pracowników"
+                            <Card img='/assets/img/cyberline.jpg' title='Szkolenia z systemów ochronnych' text="Kontrolowane ataki phishingowe na pracowników"
                                 button="Learn more" />
                         </div>
                     </div>
