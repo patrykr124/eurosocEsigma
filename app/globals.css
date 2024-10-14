@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -21,6 +22,9 @@
     --secondary-blue: 231, 100%, 46%;
     --secondary-blue-hover: 231, 100%, 46%, 0.808;
 
+    --tertiary: 0, 0%, 21%;
+    --tertiary-background: 0, 0%, 21%, 0.064;
+
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
@@ -36,38 +40,6 @@
 
     --radius: 0.5rem;
   }
-
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-    --secondary-blue: 231, 100%, 46%;
-    --secondary-blue-hover: 231, 100%, 46%, 0.808;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-  }
 }
 
 * {
@@ -77,8 +49,14 @@
   scroll-behavior: smooth;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-ubuntu-mono);
+  /* background: hsla(0, 0%, 21%, 0.064); */
+  overflow-x: hidden;
 }
 
 .filter-grey {
@@ -100,16 +78,33 @@ body {
     @apply flex justify-between items-center;
   }
   .common-padding {
-    @apply py-24 px-4;
+    @apply py-20;
   }
   .common-padding-huge {
-    @apply py-36 px-4;
+    @apply py-36;
   }
 
   /* TYPOGRAPHY */
+
+  /*MARGUEE TEXT */
+
+  .marquee {
+    @apply text-[140px]  whitespace-nowrap uppercase tracking-wide;
+  }
+
+  .sectionPadding {
+    @apply min-h-[calc(40vh+64px)];
+  }
+
   /* 64 */
   .h1-bold {
-    @apply font-bold text-[40px] leading-[48px] lg:text-[48px] lg:leading-[60px]  xl:text-[58px] xl:leading-[74px];
+    @apply font-bold text-[40px] leading-[48px] lg:text-[48px] lg:leading-[60px]  xl:text-[58px] xl:leading-[60px];
+  }
+
+  /*42 */
+
+  .h2-medium-42 {
+    @apply font-medium text-[25px] leading-[40px] lg:text-[40px] lg:leading-[44px] xl:text-[42px] xl:leading-[50px] mb-4;
   }
 
   /* 40 */
@@ -199,6 +194,13 @@ body {
   .p-regular-18 {
     @apply text-[18px] font-normal leading-[28px] tracking-[2%];
   }
+  .p-bold-18 {
+    @apply text-[18px] font-bold leading-[24px];
+  }
+
+  .p-tabs-18 {
+    @apply text-[18px] font-bold leading-[24px] cursor-pointer hover:text-secondary-blue-hover;
+  }
 
   /* 16 */
   .p-bold-16 {
@@ -211,6 +213,9 @@ body {
 
   .p-regular-16 {
     @apply text-[16px] font-normal leading-[24px];
+  }
+  .p-tabs-16 {
+    @apply text-[16px] font-bold leading-[24px] cursor-pointer hover:text-secondary-blue-hover;
   }
 
   /* 14 */
@@ -261,49 +266,145 @@ body {
   }
 }
 
-/* ========================================== CLERK STYLES */
-.cl-logoImage {
-  height: 38px;
+/* ========================================== CUSTOM STYLES */
+
+.map {
+  height: 600px !important;
+  width: 100% !important;
 }
 
-.cl-userButtonBox {
-  flex-direction: row-reverse;
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #515151;
+  margin: 1em 0;
+  padding: 0;
+}
+.stickycart {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
-.cl-userButtonOuterIdentifier {
-  font-size: 16px;
+.slick-prev:before,
+.slick-next:before {
+  color: #0023eb !important;
+  z-index: 99;
 }
 
-.cl-userButtonPopoverCard {
-  right: 4px !important;
+.cart .slick-slide {
+  transition: all 0.8s;
+  opacity: 0.2;
+  transform: scale(0.7);
+}
+.cart .slick-active {
+  opacity: 0.5;
 }
 
-.cl-formButtonPrimary:hover,
-.cl-formButtonPrimary:focus,
-.cl-formButtonPrimary:active {
-  background-color: #705cf7;
+/* center box */
+
+.cart .slick-center {
+  transform: scale(1);
+  opacity: 1;
+  animation: 2.5s shinneDiv alternate-reverse infinite;
+  /* transform: scaleX(2); */
 }
 
-/* ========================================== REACT-DATEPICKER STYLES */
-.datePicker {
-  width: 100%;
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  overflow-x: clip;
+  overflow-y: visible;
 }
 
-.react-datepicker__input-container input {
-  background-color: transparent;
-  width: 100%;
-  outline: none;
-  margin-left: 16px;
+@keyframes shinneDiv {
+  0% {
+    filter: drop-shadow(0px 0px 0px #141414);
+  }
+  50% {
+    filter: drop-shadow(0px 0px 10px #141414);
+  }
+  100% {
+    filter: drop-shadow(0px 0px 0px #141414);
+  }
 }
 
-.react-datepicker__day--selected {
-  background-color: #624cf5 !important;
-  color: #ffffff !important;
-  border-radius: 4px;
+.slick-dots li.slick-active button:before {
+  color: #0023eb !important;
+  opacity: 1 !important;
 }
 
-.react-datepicker__time-list-item--selected {
-  background-color: #624cf5 !important;
+.titleFrame {
+  @apply bg-secondary-blue w-fit rounded-xl px-8 text-white mb-2;
 }
 
+.slick-dots {
+  bottom: -35px !important;
+}
 
+/* Swiper */
+
+.slider-controler .slider-arrow::after {
+  content: "";
+}
+
+.slider-controler .slider-arrow {
+  background: white;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  left: 42%;
+  transform: translateX(-42%);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.slider-controler .slider-arrow .arrow {
+  font-size: 2rem;
+  color: #222224;
+}
+.slider-controler .swiper-button-next {
+  left: 58% !important;
+  transform: translateX(-58%) !important;
+}
+.slider-controler {
+  position: relative;
+  padding: 30px;
+}
+.swiper-slide {
+  filter: brightness(50%);
+  filter: grayscale(100%);
+}
+
+.swiper-slide-active {
+  filter: brightness(100%);
+  filter: grayscale(0%);
+}
+
+.swiper-slide-active {
+  animation: 2.5s shinneDiv alternate-reverse infinite;
+}
+
+.swiper-android .swiper-slide,
+.swiper-wrapper {
+  padding: 20px;
+}
+.parallax-bg {
+  background-image: url("/assets/img/servicesMonitoring.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.icons {
+  border-radius: 100%;
+  border: 1px solid white;
+  padding: 6px;
+  transition: all 0.4s;
+
+  &:hover {
+    background: white;
+    color: black;
+  }
+}
+
+.link {
+  @apply text-primary-50 hover:text-white/60  p-medium-16  transition-all duration-200;
+}

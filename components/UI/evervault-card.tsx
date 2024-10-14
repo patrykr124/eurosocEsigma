@@ -32,25 +32,25 @@ export const EvervaultCard = ({
     }
 
     return (
-        <div style={{ backgroundImage: `url(${backgroundImg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+        <div style={{ backgroundImage: `url(${backgroundImg})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
             className={cn(
-                "  bg-transparent aspect-square  flex items-center justify-center w-full h-full relative border border-black/[0.2] rounded-3xl bg-white",
+                "  bg-transparent aspect-square  flex items-center justify-center w-full h-full relative border border-black/[0.2] rounded-2xl ",
                 className
             )}
         >
             <div
                 onMouseMove={onMouseMove}
-                className="group/card rounded-3xl w-full relative overflow-hidden bg-transparent flex items-center justify-center h-full"
+                className="group/card rounded-3xl w-full relative  overflow-hidden bg-transparent flex items-center justify-center h-full"
             >
-                <CardPattern
+                {/* <CardPattern
                     mouseX={mouseX}
                     mouseY={mouseY}
                     randomString={randomString}
-                />
+                /> */}
                 <div className="relative z-10  flex items-center justify-center">
 
-                    <div className="absolute w-full h-full  dark:bg-black/[0.8] blur-sm rounded-full" />
-                    <h4 className="h4-medium text-center text-white z-20">{text}</h4>
+
+                    <h4 className="p-medium-24 p-8 text-center text-white z-20">{text}</h4>
 
                 </div>
             </div>
@@ -91,18 +91,4 @@ export const generateRandomString = (length: number) => {
     return result;
 };
 
-export const Icon = ({ className, ...rest }: any) => {
-    return (
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth="1.5"
-            stroke="currentColor"
-            className={className}
-            {...rest}
-        >
-            <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m6-6H6" />
-        </svg>
-    );
-};
+
