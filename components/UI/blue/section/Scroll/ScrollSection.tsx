@@ -6,63 +6,92 @@ import { StickyScroll } from "@/components/UI/sticky-scroll-reveal";
 
 const content = [
     {
-        title: "Collaborative Editing",
+        title: "Ochrona prawna Zarządu",
         description:
-            "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
+            "zapewnia bezpieczeństwo w podejmowaniu strategicznych decyzji oraz minimalizuje ryzyko osobistej odpowiedzialności członków Zarządu. Dzięki wdrożeniu najskuteczniejszego rozwiązania i okresowym sprawozdaniom, Zarząd może sprawnie monitorować zgodność z obowiązującymi przepisami prawa, co pozwala na proaktywne reagowanie na potencjalne zagrożenia. W ten sposób wzmacnia się zarówno stabilność działalności firmy, jak i jej reputację w oczach interesariuszy.",
         content: (
-            <div className="h-full w-full flex items-center justify-center text-white">
+            <div className="h-[550px] w-full flex items-center justify-center rounded-2xl overflow-hidden ">
                 <Image
-                    src="/assets/img/5.jpg"
-                    width={500}
-                    height={500}
+                    src="/assets/img/Ochrona_prawna.jpg"
+                    width={800}
+                    height={800}
                     className="h-full w-full object-cover"
                     alt="linear board demo"
+
                 />
             </div>
         ),
     },
     {
-        title: "Real time changes",
+        title: "Będziesz przygotowany",
         description:
-            "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
+            "Jeśli Twoja firma stanie się celem ataku hakerskiego, będziemy gotowi, aby zapewnić szybkie i skuteczne wsparcie. Nasz zespół ekspertów w dziedzinie cyberbezpieczeństwa pomoże zminimalizować szkody, zidentyfikować źródło ataku i wdrożyć niezbędne kroki naprawcze. Dzięki naszym zaawansowanym narzędziom i doświadczeniu, będziemy w stanie szybko przywrócić bezpieczeństwo Twojej firmy oraz chronić jej dane przed dalszymi zagrożeniami.",
         content: (
-            <div className="h-full w-full  flex items-center justify-center text-white">
+            <div className="h-[550px] w-full flex items-center justify-center rounded-2xl overflow-hidden ">
                 <Image
-                    src="/assets/img/3.png"
-                    width={300}
-                    height={300}
+                    src="/assets/img/przygotowanie.jpg"
+                    width={800}
+                    height={800}
                     className="h-full w-full object-cover"
                     alt="linear board demo"
+
                 />
             </div>
         ),
     },
     {
-        title: "Version control",
+        title: "Natychmiastowa reakcja",
         description:
-            "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+            "Natychmiastowa reakcja na pojawiające się zagrożenia pozwala zredukować potencjalne straty i szybko przywrócić normalne funkcjonowanie firmy. Działając błyskawicznie, minimalizujemy ryzyko utraty danych i przerwania działalności, co chroni Twoją firmę przed długoterminowymi skutkami incydentów.",
         content: (
-            <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
-                Version control
-            </div>
-        ),
-    },
-    {
-        title: "Running out of content",
-        description:
-            "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
-        content: (
-            <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
+            <div className="h-[550px] w-full flex items-center justify-center rounded-2xl overflow-hidden ">
                 <Image
-                    src="/assets/img/4.jpg"
-                    width={400}
-                    height={300}
+                    src="/assets/img/natychmiastowa.jpg"
+                    width={800}
+                    height={800}
                     className="h-full w-full object-cover"
                     alt="linear board demo"
+
                 />
             </div>
         ),
     },
+    {
+        title: "24/7/365 monitoring",
+        description:
+            "zapewnia nieprzerwaną ochronę, niezależnie od pory dnia czy dnia tygodnia. Oznacza to, że Twoja firma jest chroniona również w weekendy i święta, gdy zagrożenia mogą pojawić się niespodziewanie. Dzięki stałemu nadzorowi jesteśmy w stanie szybko reagować na wszelkie nieprawidłowości, zanim staną się poważnym problemem.",
+        content: (
+            <div className="h-[550px] w-full flex items-center justify-center rounded-2xl overflow-hidden ">
+                <Image
+                    src="/assets/img/monitoring.jpg"
+                    width={800}
+                    height={800}
+                    className="h-full w-full object-cover"
+                    alt="linear board demo"
+
+                />
+            </div>
+        ),
+    },
+    {
+        title: "Monitorowanie systemu w czasie rzeczywistym",
+        description:
+            "pozwala na natychmiastowe wykrywanie prób włamań, zanim zdążą one wyrządzić poważne szkody. Dzięki temu możemy szybko zidentyfikować podejrzaną aktywność i podjąć odpowiednie działania zabezpieczające, co minimalizuje ryzyko utraty danych i przestojów w działalności firmy. Wczesne wykrycie zagrożeń daje przewagę w walce z cyberatakami.",
+        content: (
+            <div className="h-[550px] w-full flex items-center justify-center rounded-2xl overflow-hidden ">
+                <Image
+                    src="/assets/img/rzeczywistym.jpg"
+                    width={800}
+                    height={800}
+                    className="h-full w-full object-cover"
+                    alt="linear board demo"
+
+                />
+            </div>
+        ),
+    },
+
+
 ];
 export function ScrollSection() {
     return (

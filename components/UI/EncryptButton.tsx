@@ -65,7 +65,7 @@ const EncryptButton = ({ textData, icon, className }: EncryptButtonProps) => {
             }}
             onMouseEnter={scramble}
             onMouseLeave={stopScramble}
-            className={`group relative overflow-hidden rounded-lg bg-secondary-blue tracking-wide px-4 py-2 font-medium uppercase text-white transition-colors hover:bg-secondary-blue-hover ${className}`}
+            className={`group relative overflow-hidden rounded-lg bg-secondary-blue tracking-wide px-4 h-fit py-2 font-medium uppercase text-white transition-colors hover:bg-secondary-blue-hover ${className}`}
         >
             <div className="relative z-10 flex items-center gap-2">
 

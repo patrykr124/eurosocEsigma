@@ -1,49 +1,31 @@
-import Link from 'next/link'
-import React from 'react'
+"use client";
+import { ChevronDown } from 'lucide-react';
+import Link from 'next/link';
+import { itemsMenu } from '.';
 
 
-const itemsMenu = [
-    {
-        id: 1,
-        name: 'Home',
-        url: '/'
-    },
-    {
-        id: 2,
-        name: 'Pages',
-        url: '/pages'
-    },
-    {
-        id: 3,
-        name: 'Solution',
-        url: '/solution'
-    },
-    {
-        id: 4,
-        name: 'Shop',
-        url: '/shop'
-    },
-    {
-        id: 5,
-        name: 'Blog',
-        url: '/blog'
-    },
-    {
-        id: 6,
-        name: 'Contact',
-        url: '/contact'
-    },
-]
 
-function NavbarItems() {
+
+interface NavbarItemsProps {
+    isOpen: (name: string) => void,
+    ishandleOpen: boolean,
+    setIsHandleOpen: (value: boolean) => void
+}
+function NavbarItems({ isOpen, ishandleOpen, setIsHandleOpen }: NavbarItemsProps) {
+
+
+
     return (
         <ul className='flex flex-row gap-8'>
-            {itemsMenu.map(item => (
-                <li key={item.id}>
-                    <Link className='text-primary-50 p-medium-14 hover:text-white/80 transition-all' href={item.url}>
-                        {item.name}
-                    </Link>
-                </li>))}
+            {itemsMenu.map(item => {
+                return (
+                    <li key={item.id}>
+                        <Link onClick={() => setIsHandleOpen(false)} onMouseEnter={() => isOpen(item.name)} className={`link flex items-center`} href={item.url}>
+                            {item.name} {item.arrow && <ChevronDown size={18} className={`${ishandleOpen ? 'rotate-180' : ''} `} />}
+                        </Link>
+                    </li>
+                )
+            })}
         </ul>
     )
 }

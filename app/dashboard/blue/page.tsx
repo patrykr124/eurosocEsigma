@@ -1,24 +1,29 @@
 import Header from "@/components/UI/blue/header/Header";
-import NavbarBlue from "@/components/UI/blue/nav/NavbarBlue";
 import Certificate from "@/components/UI/blue/section/Certificate/Certificate";
-import Do from "@/components/UI/blue/section/Do/Do";
-import Info from "@/components/UI/blue/section/Info/Info";
-import Prologue from "@/components/UI/blue/section/prologue/Prologue";
-import { ScrollSection } from "@/components/UI/blue/section/Scroll/ScrollSection";
+import FAQBlueHome from "@/components/UI/blue/section/FAQ/FAQBlueHome";
+import Tabs from "@/components/UI/blue/section/korzysci/Tabs";
+import Map from "@/components/UI/blue/section/map/Map";
+import Dlaczego from "@/components/UI/blue/section/Onas/Dlaczego";
+import Opinie from "@/components/UI/blue/section/opinie/Opinie";
+import MorgueeText from "@/components/UI/blue/section/prologue/MorgueeText";
 import Services from "@/components/UI/blue/section/service/Services";
-
 
 
 function Blue() {
   return <div>
-    <NavbarBlue />
+
     <Header />
-    <Prologue />
+    {/* <Prologue /> */}
+    <MorgueeText />
     <Services />
-    <Do />
-    <Info />
+    {/* <Onas /> */}
+    <Dlaczego />
+    <Tabs />
+    <Map />
+    <Opinie />
     <Certificate />
-    <ScrollSection />
+    <FAQBlueHome />
+
   </div>;
 }
 
