@@ -12,7 +12,7 @@ function Page() {
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover"
         }}>
-            <div className="common-padding-huge flex">
+            <div className="common-padding-huge h-screen flex" style={{backgroundImage:"url('/assets/img/backgroundBottom.png')",backgroundPosition:"top", backgroundSize:"cover",backgroundRepeat:"no-repeat"}}>
                 <div className="sectionPadding flex wrapper gap-32">
                     <div className="right flex flex-col flex-1 gap-4 justify-center">
                         <h1 className="h1-bold text-black">Kontakt</h1>
@@ -21,7 +21,7 @@ function Page() {
                         <FormKontakt/>
                     </div>
                     <div className="left flex flex-1 justify-center items-center">
-                        <div className="w-full h-[500px] bg-black rounded-xl p-10 gap-4 flex flex-col shadow-xl">
+                        <div className="w-full h-[500px] bg-black-1 rounded-xl p-10 gap-4 flex flex-col shadow-xl">
                             <h1 className="h3-bold text-white">Info</h1>
                             <div className="box flex flex-col justify-evenly h-full ">
                                 <div className="flex gap-4">

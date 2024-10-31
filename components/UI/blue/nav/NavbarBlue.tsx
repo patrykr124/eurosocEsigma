@@ -7,6 +7,7 @@ import NavbarItems from './NavbarItems'
 import Link from 'next/link'
 import EncryptButton from '../../EncryptButton'
 import NavOpen from './NavOpen'
+import Switch from "@/components/UI/Switch";
 function NavbarBlue() {
     const [ishandleOpen, setIsHandleOpen] = useState(false)
 
@@ -19,7 +20,7 @@ function NavbarBlue() {
     }
 
     return (
-        <header className='bg-black h-16 flex items-center fixed inset-0 z-[9999]'>
+        <header className='bg-black-1 h-16 flex items-center fixed inset-0 z-[9999]'>
             <nav className='wrapper'>
                 <div className="flex justify-between items-center">
                     <div className="logo">
@@ -31,9 +32,8 @@ function NavbarBlue() {
                         <NavbarItems isOpen={isOpen} ishandleOpen={ishandleOpen} setIsHandleOpen={setIsHandleOpen} />
 
                     </div>
-                    <div className="action">
-                        <EncryptButton textData="Zapisz się" />
-                    </div>
+                    <Switch/>
+
 
                 </div>
             </nav>

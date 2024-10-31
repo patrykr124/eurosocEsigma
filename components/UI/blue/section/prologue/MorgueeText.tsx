@@ -10,9 +10,9 @@ export default function MorgueeText() {
     const x = useTransform(scrollYProgress, [0, 1], [50, -1000])
 
     return (
-        <div className=' ' style={{ backgroundImage: "linear-gradient(180deg, rgba(0,0,0,1) 19%, rgba(0,35,235,1) 100%)" }}>
+        <div id="Onas" className=' ' style={{ backgroundImage: "linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,34,233,1) 100%)" }}>
             <div className='w-full overflow-x-hidden'>
-                <div className='prologue pb-48 pt-0 flex flex-row overflow-hidden gap-56 justify-center'>
+                <div  className='prologue pb-48 pt-0 flex flex-row overflow-hidden gap-56 justify-center'>
                     <motion.div style={{ x }} className="min-w-[280px]">
                         <Image className='flex' src='/assets/img/certificate/sigma.png' alt='certificate' width={280} height={280} />
                     </motion.div>

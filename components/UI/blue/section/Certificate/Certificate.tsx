@@ -4,7 +4,7 @@ import React from 'react'
 
 function Certificate() {
     return (
-        <div className='common-padding flex items-center justify-center bg-tertiary-background pb-12'>
+        <div className='common-padding flex items-center justify-center bg-gray-2 pb-12'>
 
             <div className="wrapper flex flex-col gap-12">
                 <div className="text flex flex-col  justify-center items-center">

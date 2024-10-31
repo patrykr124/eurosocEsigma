@@ -7,7 +7,7 @@ import Slider from 'react-slick';
 
 function Opinie() {
 
-  const BUTTON_CSS = 'button bg-secondary-blue px-4 py-2 mr-4 rounded-xl shadow-md hover:bg-primary-blue-background transition-all duration-300 ease-in-out';
+  const BUTTON_CSS = 'button bg-blue-1 px-4 py-2 mr-4 rounded-xl shadow-md hover:bg-primary-blue-background transition-all duration-300 ease-in-out';
 
   let sliderRef = useRef<Slider | null>(null);
   const next = () => {

@@ -6,7 +6,7 @@ import FooterNavbarItems from './FooterNavbarItems'
 
 export default function Footer() {
     return (
-        <div className='common-padding bg-black'>
+        <div className='common-padding bg-black-1'>
             <div className="wrapper">
                 <div className="flex">
                     <div className="left flex flex-col gap-4 flex-1">

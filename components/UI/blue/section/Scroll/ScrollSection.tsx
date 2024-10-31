@@ -57,7 +57,7 @@ const content = [
         ),
     },
     {
-        title: "24/7/365 monitoring",
+        title: "24/7/365 serviceSite",
         description:
             "zapewnia nieprzerwaną ochronę, niezależnie od pory dnia czy dnia tygodnia. Oznacza to, że Twoja firma jest chroniona również w weekendy i święta, gdy zagrożenia mogą pojawić się niespodziewanie. Dzięki stałemu nadzorowi jesteśmy w stanie szybko reagować na wszelkie nieprawidłowości, zanim staną się poważnym problemem.",
         content: (

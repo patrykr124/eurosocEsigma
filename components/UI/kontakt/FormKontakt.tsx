@@ -32,7 +32,7 @@ function FormKontakt() {
     }
 
     return (
-        <Form {...form}>
+        <Form {...form} >
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
                 <FormField
                     control={form.control}
@@ -70,7 +70,7 @@ function FormKontakt() {
                         </FormItem>
                     )}
                 />
-                <Button className="bg-secondary-blue hover:bg-secondary-blue-hover" type="submit">Wyślij</Button>
+                <Button className="bg-blue-1 text-white hover:bg-blue-1-hover" type="submit">Wyślij</Button>
             </form>
         </Form>
     );

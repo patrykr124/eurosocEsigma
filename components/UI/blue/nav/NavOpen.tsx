@@ -1,17 +1,17 @@
 'use client'
-import Image from 'next/image'
 import Link from 'next/link'
-import { itemsMenu } from '.'
-import { useState } from 'react'
+import {itemMenuUslugiUtrzymaniowe, itemsMenu, itemsMenuUslugiSzkoleniowe, itemsMenuUsługiAudytorskie} from '.'
+import {useState} from 'react'
 
-import { usePathname, useRouter } from 'next/navigation'
+import {usePathname} from 'next/navigation'
 
 
 interface NavOpenProps {
     ishandleOpen: boolean,
     setIsHandleOpen: (value: boolean) => void
 }
-export default function NavOpen({ ishandleOpen, setIsHandleOpen }: NavOpenProps) {
+
+export default function NavOpen({ishandleOpen, setIsHandleOpen}: NavOpenProps) {
 
     const [hoverImg, setHoverImg] = useState<string | null>(null)
 
@@ -23,24 +23,80 @@ export default function NavOpen({ ishandleOpen, setIsHandleOpen }: NavOpenProps)
 
     return (
 
-        <div className={`${ishandleOpen ? " opacity-100" : ' opacity-0 pointer-events-none'} transition-all h-screen duration-300 absolute inset-0 w-full bg-black/60 top-16`}>
+        <div
+            className={`${ishandleOpen ? " opacity-100" : ' opacity-0 pointer-events-none'} transition-all h-screen duration-300 absolute inset-0 w-full bg-black/60 top-16`}>
             <div className="bg-black" onMouseLeave={() => setIsHandleOpen(false)}>
-                <div className="wrapper h-[35vh] w-full flex items-center justify-between">
-                    <div className="flex flex-col gap-6 justify-center py-10 ">
-                        {servicesItem && servicesItem.featured && servicesItem.featured.map((item) => {
+                <div className="wrapper min-h-[40vh] gap-10 w-full flex items-start justify-between pb-6">
+                    <div className="1 flex flex-col gap-4 justify-center py-10 ">
+                        <h2 className="p-bold-24 text-white">Usługi wdrożeniowe </h2>
+                        <div className="flex flex-col gap-4">
+                            {servicesItem && servicesItem.featured && servicesItem.featured.map((item) => {
+                                const isActive = pathname === item.url
+                                return (
+                                    <Link onClick={() => setIsHandleOpen(false)}
+                                          onMouseEnter={() => setHoverImg(item.img)}
+                                          href={item.url}
+                                          className={`${isActive ? " text-grey-400 text-[12px]" : "linkSmall"} 
+                                relative flex mainLinkBlue`} key={item.id}>
+
+                                        {item.name}
+                                    </Link>
+                                )
+                            })}
+                        </div>
+                    </div>
+                    <div className="2 flex  flex-col gap-4 justify-center py-10 ">
+                        <h2 className="p-bold-24 text-white">Usługi audytorskie </h2>
+                        {itemsMenuUsługiAudytorskie.map((item) => {
                             const isActive = pathname === item.url
                             return (
-                                <Link onClick={() => setIsHandleOpen(false)} onMouseEnter={() => setHoverImg(item.img)} href={item.url} className={`${isActive ? " text-secondary-blue" : "link"} 
-                                `} key={item.id}>{item.name}</Link>
+                                <Link onClick={() => setIsHandleOpen(false)}
+                                      onMouseEnter={() => setHoverImg(item.img)}
+                                      href={item.url}
+                                      className={`${isActive ? " text-grey-400 text-[12px]" : "linkSmall"} 
+                                relative flex mainLinkBlue`} key={item.id}>
+
+                                    {item.name}
+                                </Link>
                             )
+
                         })}
                     </div>
-                    <div className="image w-[300px] h-[200px] rounded-xl overflow-hidden">
-                        {servicesItem && servicesItem.featured && servicesItem.featured.map((img) => (
-                            <Image key={img.id} width={500} height={500} src={hoverImg || '/assets/img/przygotowanie.jpg'} alt='usługi' objectFit='cover' />
-                        ))}
+                    <div className="2 flex  flex-col gap-4 justify-center py-10 ">
+                        <h2 className="p-bold-24 text-white">Usługi szkoleniowe </h2>
+                        {itemsMenuUslugiSzkoleniowe.map((item) => {
+                            const isActive = pathname === item.url
+                            return (
+                                <Link onClick={() => setIsHandleOpen(false)}
+                                      onMouseEnter={() => setHoverImg(item.img)}
+                                      href={item.url}
+                                      className={`${isActive ? " text-grey-400 text-[12px]" : "linkSmall"} 
+                                relative flex mainLinkBlue`} key={item.id}>
 
+                                    {item.name}
+                                </Link>
+                            )
+
+                        })}
                     </div>
+                    <div className="2 flex  flex-col gap-4 justify-center py-10 ">
+                        <h2 className="p-bold-24 text-white">Usługi utrzymaniowe </h2>
+                        {itemMenuUslugiUtrzymaniowe.map((item) => {
+                            const isActive = pathname === item.url
+                            return (
+                                <Link onClick={() => setIsHandleOpen(false)}
+                                      onMouseEnter={() => setHoverImg(item.img)}
+                                      href={item.url}
+                                      className={`${isActive ? " text-grey-400 text-[12px]" : "linkSmall"} 
+                                relative flex mainLinkBlue`} key={item.id}>
+
+                                    {item.name}
+                                </Link>
+                            )
+
+                        })}
+                    </div>
+
                 </div>
             </div>
         </div>

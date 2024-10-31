@@ -2,7 +2,7 @@ import React from 'react'
 
 function Red() {
   return (
-    <div>Red</div>
+    <div>Red123</div>
   )
 }
 

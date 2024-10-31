@@ -38,20 +38,26 @@ const motionForce = (x: number, y: number): ParticleForce => {
     return forces.disturbance(x, y, 20);
 };
 
-export default function Parciple() {
+interface Props {
+    url: string;
+}
+
+export default function Parciple({url} : Props) {
 
     return (
-        <ParticleImage
-            src={"/assets/img/logoIcon.png"}
-            width={600}
-            height={500}
-            scale={0.4}
-            entropy={10}
-            maxParticles={6000}
-            particleOptions={particleOptions}
-            mouseMoveForce={motionForce}
-            touchMoveForce={motionForce}
-            backgroundColor="#f2f2f2"
-        />
-    );
-}
+        <div className="particle-container">
+            <ParticleImage
+                src={url}
+                width={600}
+                height={500}
+                scale={0.4}
+                entropy={10}
+                maxParticles={6000}
+                particleOptions={particleOptions}
+                mouseMoveForce={motionForce}
+                touchMoveForce={motionForce}
+                backgroundColor="#E3E3E3"
+            />
+        </div>
+            );
+            }

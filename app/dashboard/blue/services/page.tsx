@@ -3,10 +3,10 @@ import Header from '@/components/UI/services/Header'
 import React from 'react'
 
 export default function Page() {
-  return (
-    <div>
-      <Header />
-      <AllServices />
-    </div>
-  )
+    return (
+        <div>
+            <Header title="Usługi" title2=''/>
+            <AllServices/>
+        </div>
+    )
 }
