@@ -1,13 +1,13 @@
 "use client"
 
 import Image from 'next/image'
-import React, { useState } from 'react'
+import React, {useState} from 'react'
 import Logo from '../../../../public/assets/img/logo-blue.svg'
 import NavbarItems from './NavbarItems'
 import Link from 'next/link'
-import EncryptButton from '../../EncryptButton'
 import NavOpen from './NavOpen'
 import Switch from "@/components/UI/Switch";
+
 function NavbarBlue() {
     const [ishandleOpen, setIsHandleOpen] = useState(false)
 
@@ -24,12 +24,12 @@ function NavbarBlue() {
             <nav className='wrapper'>
                 <div className="flex justify-between items-center">
                     <div className="logo">
-                        <Link href='/dashboard/blue'><Image src={Logo} alt='logo' width={160} height={160} /></Link>
+                        <Link href='/dashboard/blue'><Image src={Logo} alt='logo' width={160} height={160}/></Link>
 
                     </div>
                     <div className="items">
 
-                        <NavbarItems isOpen={isOpen} ishandleOpen={ishandleOpen} setIsHandleOpen={setIsHandleOpen} />
+                        <NavbarItems isOpen={isOpen} ishandleOpen={ishandleOpen} setIsHandleOpen={setIsHandleOpen}/>
 
                     </div>
                     <Switch/>
@@ -37,10 +37,10 @@ function NavbarBlue() {
 
                 </div>
             </nav>
-            <NavOpen ishandleOpen={ishandleOpen} setIsHandleOpen={setIsHandleOpen} />
+            <NavOpen ishandleOpen={ishandleOpen} setIsHandleOpen={setIsHandleOpen}/>
 
 
-        </header >
+        </header>
     )
 }
 

@@ -58,7 +58,7 @@ function Services() {
                             </div>
                         </div>
 
-                        {/* <SliderCart /> */}
+                        {/* <SliderCartRed /> */}
                         <SwiperSlider />
                     </div>
                 </div>

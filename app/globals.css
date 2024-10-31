@@ -341,6 +341,10 @@ hr {
 .titleFrame {
     @apply bg-blue-1 w-fit rounded-xl px-8 text-white mb-2;
 }
+
+.titleRedFrame {
+    @apply bg-red-1 w-fit rounded-xl px-8 text-white mb-2;
+}
 .titleFrame-red {
     @apply bg-red-600 w-fit rounded-xl px-8 text-white mb-2;
 }
@@ -397,6 +401,11 @@ hr {
 .swiper-android .swiper-slide,
 .swiper-wrapper {
     padding: 20px;
+}
+
+.red .swiper-pagination-bullet-active{
+    background-color: red !important;
+
 }
 
 .parallax-bg {
@@ -496,4 +505,7 @@ hr {
     height: 100% !important;
     object-fit: contain;
 }
+
+
+
 

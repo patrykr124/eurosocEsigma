@@ -51,7 +51,7 @@ module.exports = {
 			"blue-1": "#0022E9",
 			"blue-1-hover": "rgba(0,34,234,0.87)",
             "red-1": "#E90022",
-			"red-1-hover": "rgba(233,0,34,0.81)",
+			"red-1-hover": "rgba(233,0,34,0.76)",
   		},
   		fontFamily: {
   			ubuntumono: ["var(--font-ubuntu-mono)"]
