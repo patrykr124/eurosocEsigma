@@ -21,7 +21,7 @@ export default function FAQ({FAQLeft, FAQRight}: Props) {
             <div className=" w-1/2 flex flex-col gap-2">
                 {FAQLeft?.map((item) => (
                     <AccordionItem key={item.id} value={`item-${item.id}`}
-                                   className="bg-gray-3  w-full flex flex-col justify-center px-4 rounded-xl">
+                                   className="bg-gray-3 shadow-md border  w-full flex flex-col justify-center px-4 rounded-xl">
                         <AccordionTrigger className="p-medium-18 flex w-full ">{item.title}</AccordionTrigger>
                         <AccordionContent>
                             {item.content}
@@ -32,7 +32,7 @@ export default function FAQ({FAQLeft, FAQRight}: Props) {
             <div className=" w-1/2 flex flex-col gap-2">
                 {FAQRight?.map((item) => (
                     <AccordionItem key={item.id} value={`item-${item.id}`}
-                                   className="bg-gray-3  w-full flex flex-col px-4  justify-center rounded-xl">
+                                   className="bg-gray-3 shadow-md border  w-full flex flex-col px-4  justify-center rounded-xl">
                         <AccordionTrigger className="p-medium-18 flex w-full ">{item.title}</AccordionTrigger>
                         <AccordionContent>
                             {item.content}

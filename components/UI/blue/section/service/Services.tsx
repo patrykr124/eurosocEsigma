@@ -46,12 +46,12 @@ function Services() {
                 <div  onMouseMove={onMouseMove} className="-mt-36 bg-white relative rounded-3xl shadow-lg w-full xl:w-[1400px] py-8 pb-12 overflow-hidden group/box">
                     <BoxAnimationHover mouseX={mouseX} mouseY={mouseY} randomString={randomString} />
                     <div className="wrapper gap-16 flex flex-col ">
-                        <div className="text justify-between flex flex-row gap-12 ">
-                            <div className="flex-1 z-10">
+                        <div className="text justify-between flex md:flex-row flex-col gap-12 ">
+                            <div className="flex-1 z-10 flex flex-col items-center md:items-start ">
                                 <h2 className='titleFrame'>O NAS</h2>
-                                <h2 className='h2-medium-42'>Co zyskasz dzięki EUROSOC?</h2>
+                                <h2 className='h2-medium-42 text-center md:text-end'>Co zyskasz dzięki EUROSOC?</h2>
                             </div>
-                            <div className="links flex flex-col md:flex-row justify-end items-end mb-4 gap-8 flex-1 z-10">
+                            <div className="links flex flex-row justify-end items-end mb-4 gap-8 flex-1 z-10">
                                 <EncryptButton textData="Usługi abonamentowe" icon={<ArrowRight />} className="bg-blue-1 hover:bg-blue-1-hover" />
                                 <EncryptButton textData="Usługi jednorazowe" icon={<ArrowRight />} className="bg-blue-1 hover:bg-blue-1-hover" />
 

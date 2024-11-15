@@ -1,4 +1,5 @@
-import {Autoplay, EffectCoverflow, Navigation, Pagination} from 'swiper';
+'use client'
+import {Autoplay, EffectCoverflow, Navigation, Pagination} from '@/node_modules/swiper';
 import {Swiper, SwiperSlide} from 'swiper/react';
 
 import 'swiper/css';
@@ -19,22 +20,25 @@ export default function SwiperSlider() {
                 modules={[Pagination, Navigation, EffectCoverflow, Autoplay]}
                 autoplay={{delay: 2800, disableOnInteraction: false}}
                 spaceBetween={0}
-                centeredSlides={true}
-                slidesPerView={3}
+                slidesPerView={1.1}
                 breakpoints={{
-                    0: {  // Up to 640px (mobile devices)
+                    640: {
                         slidesPerView: 2,
+                        spaceBetween: 20,
+                        centeredSlides: false,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 0,
+                        centeredSlides: true,
                     },
 
-                    1024: {  // From 1024px and above (desktop devices)
-                        slidesPerView: 3,
-                    },
                 }}
                 pagination={{el: ".swiper-pigination", clickable: true}}
                 navigation={{
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev',
-                    clickable: true,
+
                 }}
                 coverflowEffect={{
                     rotate: 0,

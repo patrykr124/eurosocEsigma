@@ -57,6 +57,7 @@ body {
     font-family: var(--font-ubuntu-mono);
     /* background: hsla(0, 0%, 21%, 0.064); */
     overflow-x: hidden;
+
 }
 
 .filter-grey {
@@ -78,7 +79,7 @@ body {
     }
 
     .common-padding {
-        @apply py-20;
+        @apply md:py-20 py-12;
     }
 
     .common-padding-huge {
@@ -92,7 +93,7 @@ body {
     }
 
     .sectionPadding {
-        @apply min-h-[calc(40vh+64px)];
+        @apply lg:min-h-[38vh] lg:pt-[50px] min-h-[20vh]  ;
     }
 
     /* 64 */
@@ -102,7 +103,7 @@ body {
 
     /*42 */
     .h2-medium-42 {
-        @apply font-medium text-[25px] leading-[40px] lg:text-[40px] lg:leading-[44px] xl:text-[42px] xl:leading-[50px] mb-4;
+        @apply font-medium text-[35px] leading-[38px] lg:text-[40px] lg:leading-[35px] xl:text-[42px] xl:leading-[40px] mb-4;
     }
 
     /* 40 */
@@ -149,6 +150,10 @@ body {
         @apply font-medium text-[28px];
     }
 
+    .p-medium-28-semibold {
+        @apply font-semibold text-[28px];
+    }
+
     /* 24 */
     .p-bold-24 {
         @apply font-bold text-[24px] leading-[36px];
@@ -159,7 +164,7 @@ body {
     }
 
     .p-regular-24 {
-        @apply font-normal text-[24px] leading-[36px];
+        @apply font-normal text-[24px] leading-[28px];
     }
 
     /* 20 */
@@ -427,7 +432,10 @@ hr {
 }
 
 .link {
-    @apply text-primary-50 hover:text-white/60  p-medium-16  transition-all duration-200;
+    @apply text-gray-2 hover:text-white/60  p-medium-16  transition-all duration-200;
+}
+.linkMobile {
+    @apply text-gray-2 hover:text-white/60   transition-all duration-200;
 }
 
 .linkSmall {
@@ -446,11 +454,11 @@ hr {
         @apply bg-blue-1;
         position: absolute;
         left: -10px;
-        top: 0px;
+        top: 0;
         content: '';
         width: 1%;
         height: 100%;
-        padding: 10px 0px;
+        padding: 10px 0;
         transition: all .4s;
         z-index: -1;
         border-radius: 4px;
@@ -463,8 +471,6 @@ hr {
 
 }
 
-
-
 .mainLinkRed {
     z-index: 90;
 
@@ -476,11 +482,11 @@ hr {
         @apply bg-red-1;
         position: absolute;
         left: -10px;
-        top: 0px;
+        top: 0;
         content: '';
         width: 1%;
         height: 100%;
-        padding: 10px 0px;
+        padding: 10px 0;
         transition: all .4s;
         z-index: -1;
         border-radius: 4px;
@@ -507,5 +513,64 @@ hr {
 }
 
 
+/*Menu*/
 
+
+input[type = "checkbox"] {
+    -webkit-appearance: none;
+    display: none;
+    visibility: hidden;
+}
+
+.bar {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    width:40px;
+    height: 20px;
+}
+
+.bar span {
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background: #f1faee;
+    border-radius: 100px;
+    display: inline-block;
+    transition: 0.3s ease;
+    left: 0;
+}
+
+.bar span.top {
+    top: 0;
+}
+
+.bar span.middle {
+    top: 8px;
+}
+
+.bar span.bottom {
+    bottom: 0;
+}
+
+input[type]:checked ~ span.top {
+    transform: rotate(45deg);
+    transform-origin: top left;
+    width: 25px;
+    left: 6px;
+}
+
+input[type]:checked ~ span.bottom {
+    transform: rotate(-45deg);
+    transform-origin: top left;
+    width: 25px;
+    bottom: 0;
+    left: 4px;
+    box-shadow: 0 0 10px #495057;
+}
+
+input[type]:checked ~ span.middle {
+    transform: translateX(-20px);
+    opacity: 0;
+}
 

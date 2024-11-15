@@ -109,7 +109,7 @@ export const itemsMenu = [
 ];
 
 
-export const itemsMenuUsługiAudytorskie = [
+export const itemsMenuUslugiAudytorskie = [
     {
         id: 1,
         name: "Opracowanie dokumentacji SZBI ",

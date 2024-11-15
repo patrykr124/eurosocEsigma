@@ -53,6 +53,9 @@ module.exports = {
             "red-1": "#E90022",
 			"red-1-hover": "rgba(233,0,34,0.76)",
   		},
+		boxShadow: {
+			'light': '0px 0px 4px 2px rgba(0, 0, 0, 0.1)',
+		},
   		fontFamily: {
   			ubuntumono: ["var(--font-ubuntu-mono)"]
   		},

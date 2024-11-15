@@ -1,7 +1,6 @@
 'use client'
 import Link from 'next/link'
-import {itemMenuUslugiUtrzymaniowe, itemsMenu, itemsMenuUslugiSzkoleniowe, itemsMenuUsługiAudytorskie} from '.'
-import {useState} from 'react'
+import {itemMenuUslugiUtrzymaniowe, itemsMenu, itemsMenuUslugiAudytorskie, itemsMenuUslugiSzkoleniowe} from '.'
 
 import {usePathname} from 'next/navigation'
 
@@ -13,7 +12,6 @@ interface NavOpenProps {
 
 export default function NavOpen({ishandleOpen, setIsHandleOpen}: NavOpenProps) {
 
-    const [hoverImg, setHoverImg] = useState<string | null>(null)
 
     const servicesItem = itemsMenu.find(item => item.name === 'Usługi')
 
@@ -26,7 +24,7 @@ export default function NavOpen({ishandleOpen, setIsHandleOpen}: NavOpenProps) {
         <div
             className={`${ishandleOpen ? " opacity-100" : ' opacity-0 pointer-events-none'} transition-all h-screen duration-300 absolute inset-0 w-full bg-black/60 top-16`}>
             <div className="bg-black" onMouseLeave={() => setIsHandleOpen(false)}>
-                <div className="wrapper min-h-[40vh] gap-10 w-full flex items-start justify-between pb-6">
+                <div className="wrapper min-h-[40vh] gap-10 w-full flex lg:flex-row flex-col items-start justify-between pb-6">
                     <div className="1 flex flex-col gap-4 justify-center py-10 ">
                         <h2 className="p-bold-24 text-white">Usługi wdrożeniowe </h2>
                         <div className="flex flex-col gap-4">
@@ -34,11 +32,9 @@ export default function NavOpen({ishandleOpen, setIsHandleOpen}: NavOpenProps) {
                                 const isActive = pathname === item.url
                                 return (
                                     <Link onClick={() => setIsHandleOpen(false)}
-                                          onMouseEnter={() => setHoverImg(item.img)}
                                           href={item.url}
                                           className={`${isActive ? " text-grey-400 text-[12px]" : "linkSmall"} 
                                 relative flex mainLinkBlue`} key={item.id}>
-
                                         {item.name}
                                     </Link>
                                 )
@@ -47,15 +43,13 @@ export default function NavOpen({ishandleOpen, setIsHandleOpen}: NavOpenProps) {
                     </div>
                     <div className="2 flex  flex-col gap-4 justify-center py-10 ">
                         <h2 className="p-bold-24 text-white">Usługi audytorskie </h2>
-                        {itemsMenuUsługiAudytorskie.map((item) => {
+                        {itemsMenuUslugiAudytorskie.map((item) => {
                             const isActive = pathname === item.url
                             return (
                                 <Link onClick={() => setIsHandleOpen(false)}
-                                      onMouseEnter={() => setHoverImg(item.img)}
                                       href={item.url}
                                       className={`${isActive ? " text-grey-400 text-[12px]" : "linkSmall"} 
                                 relative flex mainLinkBlue`} key={item.id}>
-
                                     {item.name}
                                 </Link>
                             )
@@ -68,11 +62,9 @@ export default function NavOpen({ishandleOpen, setIsHandleOpen}: NavOpenProps) {
                             const isActive = pathname === item.url
                             return (
                                 <Link onClick={() => setIsHandleOpen(false)}
-                                      onMouseEnter={() => setHoverImg(item.img)}
                                       href={item.url}
                                       className={`${isActive ? " text-grey-400 text-[12px]" : "linkSmall"} 
                                 relative flex mainLinkBlue`} key={item.id}>
-
                                     {item.name}
                                 </Link>
                             )
@@ -85,7 +77,6 @@ export default function NavOpen({ishandleOpen, setIsHandleOpen}: NavOpenProps) {
                             const isActive = pathname === item.url
                             return (
                                 <Link onClick={() => setIsHandleOpen(false)}
-                                      onMouseEnter={() => setHoverImg(item.img)}
                                       href={item.url}
                                       className={`${isActive ? " text-grey-400 text-[12px]" : "linkSmall"} 
                                 relative flex mainLinkBlue`} key={item.id}>

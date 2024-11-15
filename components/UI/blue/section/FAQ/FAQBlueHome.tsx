@@ -1,5 +1,6 @@
 import FAQ from '@/components/UI/FAQ'
 import React from 'react'
+import {ContentFAQData} from "@/components/UI/blue/section/FAQ/Content";
 
 export default function FAQBlueHome() {
     return (
@@ -8,7 +9,7 @@ export default function FAQBlueHome() {
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "0% 30%"
-        }} className="common-padding">
+        }} className="common-padding bg-gray-3">
             <div className="wrapper space-y-10">
                 <div className="title flex flex-col">
                     <h2 className="titleFrame">FAQ</h2>
@@ -16,7 +17,7 @@ export default function FAQBlueHome() {
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, laboriosam aut illo ducimus natus
                         dicta in deleniti excepturi fugiat omnis.</p>
                 </div>
-                <FAQ />
+                <FAQ FAQRight={ContentFAQData.ContentRight} FAQLeft={ContentFAQData.ContentLeft} />
             </div>
         </div>
     )
