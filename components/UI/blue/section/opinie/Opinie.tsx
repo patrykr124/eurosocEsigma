@@ -3,11 +3,12 @@ import ReviewCart from '@/components/UI/ReviewCart';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { useRef } from 'react';
 import Slider from 'react-slick';
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function Opinie() {
 
-  const BUTTON_CSS = 'button bg-secondary-blue px-4 py-2 mr-4 rounded-xl shadow-md hover:bg-primary-blue-background transition-all duration-300 ease-in-out';
+  const BUTTON_CSS = 'button bg-blue-1 px-4 py-2 mr-4 rounded-xl shadow-md hover:bg-primary-blue-background transition-all duration-300 ease-in-out';
 
   let sliderRef = useRef<Slider | null>(null);
   const next = () => {
@@ -20,15 +21,40 @@ function Opinie() {
 
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
     slidesToScroll: 1,
+    slidesToShow: 3,
     arrows: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
 
   };
 
 
   return (
-    <div className="common-padding">
+    <div className="common-padding bg-gray-3">
       <div className='wrapper'>
         <div className="flex flex-col gap-6">
           <div className="flex flex-col justify-center items-center">

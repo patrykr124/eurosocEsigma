@@ -1,18 +1,19 @@
 "use client"
-import { useRef, useState } from "react";
-import { motion } from "framer-motion";
-import { cn } from "@/lib/utils";
+import {useRef, useState} from "react";
+import {motion} from "framer-motion";
+import {useRouter} from "next/navigation";
 
 
 interface EncryptButtonProps {
     textData: string;
     icon?: React.ReactNode;
     className?: string;
+    onClick?: string;
 }
 
-const EncryptButton = ({ textData, icon, className }: EncryptButtonProps) => {
+const EncryptButton = ({textData, icon, className, onClick}: EncryptButtonProps) => {
     const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
-
+    const route = useRouter();
     const TARGET_TEXT = `${textData}`;
     const CYCLES_PER_LETTER = 2;
     const SHUFFLE_TIME = 50;
@@ -20,7 +21,6 @@ const EncryptButton = ({ textData, icon, className }: EncryptButtonProps) => {
     const CHARS = "!@#$%^&*():{};|,.<>/?";
 
     const [text, setText] = useState(TARGET_TEXT);
-
 
 
     const scramble = () => {
@@ -55,6 +55,12 @@ const EncryptButton = ({ textData, icon, className }: EncryptButtonProps) => {
         setText(TARGET_TEXT);
     };
 
+    function handleClick() {
+        if (onClick) {
+            route.push(onClick);
+        }
+    }
+
     return (
         <motion.button
             whileHover={{
@@ -65,7 +71,8 @@ const EncryptButton = ({ textData, icon, className }: EncryptButtonProps) => {
             }}
             onMouseEnter={scramble}
             onMouseLeave={stopScramble}
-            className={`group relative overflow-hidden rounded-lg bg-secondary-blue tracking-wide px-4 h-fit py-2 font-medium uppercase text-white transition-colors hover:bg-secondary-blue-hover ${className}`}
+            className={`group relative overflow-hidden rounded-lg tracking-wide px-4 h-fit py-2 font-medium uppercase text-gray-3 transition-colors duration-500 ${className}`}
+            onClick={handleClick}
         >
             <div className="relative z-10 flex items-center gap-2">
 
@@ -87,7 +94,7 @@ const EncryptButton = ({ textData, icon, className }: EncryptButtonProps) => {
                 }}
                 className="duration-300 absolute inset-0 z-0 scale-125 bg-gradient-to-t from-indigo-400/0 from-40% via-indigo-400/100 to-indigo-400/0 to-60% opacity-0 transition-opacity group-hover:opacity-100"
             />
-        </motion.button >
+        </motion.button>
     );
 };
 

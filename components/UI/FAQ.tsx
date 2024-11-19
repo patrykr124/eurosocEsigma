@@ -1,46 +1,40 @@
-import {
-    Accordion,
-    AccordionContent,
-    AccordionItem,
-    AccordionTrigger,
-} from "@/components/UI/accordion"
+import {Accordion, AccordionContent, AccordionItem, AccordionTrigger,} from "@/components/UI/accordion"
 
-interface FAQItem {
+interface data {
     id: number;
     title: string;
     content: string;
-}
-
-interface FAQData {
-    ContentLeft: FAQItem[];
-    ContentRight: FAQItem[];
-}
-interface FAQProps {
-    data: FAQData;
 
 }
 
-export default function FAQ({ data }: FAQProps) {
+interface Props {
+    FAQLeft: data[] | undefined;
+    FAQRight: data[] | undefined;
+}
+
+export default function FAQ({FAQLeft, FAQRight}: Props) {
 
 
     return (
 
         <Accordion type="single" collapsible className="w-full flex gap-4">
             <div className=" w-1/2 flex flex-col gap-2">
-                {data.ContentLeft.map((item) => (
-                    <AccordionItem key={item.id} value={`item-${item.id}`} className="bg-tertiary-background px-4 rounded-xl">
-                        <AccordionTrigger className="p-medium-18">{item.title}</AccordionTrigger>
-                        <AccordionContent >
+                {FAQLeft?.map((item) => (
+                    <AccordionItem key={item.id} value={`item-${item.id}`}
+                                   className="bg-gray-3 shadow-md border  w-full flex flex-col justify-center px-4 rounded-xl">
+                        <AccordionTrigger className="p-medium-18 flex w-full ">{item.title}</AccordionTrigger>
+                        <AccordionContent>
                             {item.content}
                         </AccordionContent>
                     </AccordionItem>
                 ))}
             </div>
             <div className=" w-1/2 flex flex-col gap-2">
-                {data.ContentRight.map((item) => (
-                    <AccordionItem key={item.id} value={`item-${item.id}`} className="bg-tertiary-background px-4 rounded-xl">
-                        <AccordionTrigger className="p-medium-18">{item.title}</AccordionTrigger>
-                        <AccordionContent >
+                {FAQRight?.map((item) => (
+                    <AccordionItem key={item.id} value={`item-${item.id}`}
+                                   className="bg-gray-3 shadow-md border  w-full flex flex-col px-4  justify-center rounded-xl">
+                        <AccordionTrigger className="p-medium-18 flex w-full ">{item.title}</AccordionTrigger>
+                        <AccordionContent>
                             {item.content}
                         </AccordionContent>
                     </AccordionItem>

@@ -17,7 +17,7 @@ export const WhatWeDoData = [
     id: 3,
     title: "Stale monitorujemy Twoją sieć 24/7/365",
     desc: "Zazwyczaj niemożliwym jest dla Twoich pracowników aby monitorowali stale Twoją sieć. Zazwyczaj nie robią tego nawet w godzinach pracy. Dzięki EUROSOC, Twoja sieć będzie monitorowana od teraz nawet w niedziele i święta.",
-    img: "/assets/img/monitoring.png",
+    img: "/assets/img/serviceSite.png",
   },
   {
     id: 4,

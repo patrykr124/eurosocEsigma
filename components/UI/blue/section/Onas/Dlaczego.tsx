@@ -5,10 +5,10 @@ import EncryptButton from '@/components/UI/EncryptButton'
 
 export default function Dlaczego() {
     return (
-        <div className='common-padding bg-tertiary-background'>
+        <div className='common-padding bg-gray-2 '>
             <div className="wrapper">
-                <div className="flex">
-                    <div className="flex flex-col flex-1 justify-center">
+                <div className="flex md:flex-row flex-col">
+                    <div className="flex flex-col w-full md:w-1/2 justify-center">
                         <div className="">
                             <h2 className='titleFrame'>O NAS</h2>
                         </div>
@@ -32,11 +32,11 @@ export default function Dlaczego() {
                                     na rzecz niezrównanej cyberobrony </p>
                                 </div>
                             </div>
-                            <EncryptButton textData="Zabezpiecz się" className="w-fit"/>
+                            <EncryptButton textData="Zabezpiecz się"  className="bg-blue-1 hover:bg-blue-1-hover w-fit"/>
                         </div>
                     </div>
-                    <div className="flex flex-1 justify-center p-2">
-                        <Parciple/>
+                    <div className="flex w-full md:w-1/2   justify-center p-2">
+                        <Parciple url="/assets/img/logoIcon.png"/>
                     </div>
                 </div>
             </div>

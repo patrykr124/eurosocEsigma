@@ -44,11 +44,18 @@ module.exports = {
   				blue: 'hsl(var(--secondary-blue))',
   				'blue-hover': 'hsl(var(--secondary-blue-hover))'
   			},
-  			tertiary: {
-  				DEFAULT: 'hsl(var(--tertiary))',
-  				background: 'hsl(var(--tertiary-background))'
-  			}
+			"black-1": "#080808",
+			"gray-1": "#363636",
+			"gray-2": "#E3E3E3",
+			"gray-3": "#FCFCFC",
+			"blue-1": "#0022E9",
+			"blue-1-hover": "rgba(0,34,234,0.87)",
+            "red-1": "#E90022",
+			"red-1-hover": "rgba(233,0,34,0.76)",
   		},
+		boxShadow: {
+			'light': '0px 0px 4px 2px rgba(0, 0, 0, 0.1)',
+		},
   		fontFamily: {
   			ubuntumono: ["var(--font-ubuntu-mono)"]
   		},

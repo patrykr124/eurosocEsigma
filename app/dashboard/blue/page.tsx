@@ -10,21 +10,21 @@ import Services from "@/components/UI/blue/section/service/Services";
 
 
 function Blue() {
-  return <div>
-
-    <Header />
-    {/* <Prologue /> */}
-    <MorgueeText />
-    <Services />
-    {/* <Onas /> */}
-    <Dlaczego />
-    <Tabs />
-    <Map />
-    <Opinie />
-    <Certificate />
-    <FAQBlueHome />
-
-  </div>;
+    return (
+        <div>
+            <Header/>
+            {/* <Prologue /> */}
+            <MorgueeText/>
+            <Services/>
+            {/* <Onas /> */}
+            <Dlaczego/>
+            <Tabs/>
+            <Map/>
+            <Opinie/>
+            <Certificate/>
+            <FAQBlueHome/>
+        </div>
+    )
 }
 
 export default Blue;
