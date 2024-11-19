@@ -45,7 +45,7 @@ function Page() {
                             <div className="box flex flex-col justify-evenly h-full ">
                                 <div className="flex gap-4">
                                 <MdEmail color="white" size="30"/>
-                                    <Link href="mailto:Info@eurosoc.pl"><p className="text-white">Info@eurosoc.pl</p>
+                                    <Link href="mailto:hello@eurosoc.pl"><p className="text-white">hello@eurosoc.pl</p>
                                     </Link>
                                 </div>
                                 <div className="flex gap-4">
