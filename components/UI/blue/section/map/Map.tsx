@@ -4,10 +4,6 @@ import dynamic from 'next/dynamic';
 function Map() {
 
 
-    const MapLealfet = dynamic(() => import('../../../LeafletMap'), {
-        ssr: false,
-    });
-
 
     return (
         <div className=''>
