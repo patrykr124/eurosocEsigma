@@ -1,23 +1,36 @@
+'use client'
 import {Facebook, FactoryIcon, Instagram, LinkedinIcon, MapPinIcon, PhoneCallIcon} from 'lucide-react'
 import Image from 'next/image'
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import FooterNavbarItems from './FooterNavbarItems'
 import Link from "next/link";
+import {usePathname, useRouter} from "next/navigation";
 
 export default function Footer() {
+    const pathName = usePathname();
+    const [logo, setLogo] = useState<string>('/assets/img/logo-blue.svg');
+
+    useEffect(() => {
+        if (pathName && pathName.startsWith('/dashboard/red')){
+            setLogo('/assets/img/red/logoRed.svg')
+        }
+    }, []);
+
+
     return (
         <div className='common-padding bg-black-1'>
             <div className="wrapper">
                 <div className="flex md:flex-row flex-col gap-16">
                     <div className="left flex flex-col gap-4 flex-1">
                         <div className="pb-4 ">
-                            <Image src='/assets/img/logo-blue.svg' width={200} height={50} alt='logo'/>
+                            <Image src={logo} width={200} height={50} alt='logo'/>
                         </div>
                         <div className="contact space-y-4 pt-3">
                             <p className="text-white flex gap-4">
                                 <PhoneCallIcon size={20}/> 123-456-7890</p>
                             <div className="local">
-                                <Link target="_blank" className="flex gap-4" href="https://maps.app.goo.gl/jtMrtqAxUUqFgqVY9">
+                                <Link target="_blank" className="flex gap-4"
+                                      href="https://maps.app.goo.gl/jtMrtqAxUUqFgqVY9">
                                     <MapPinIcon size={20} color='white'/>
                                     <div className="">
                                         <p className="text-white">ul. Polska 20</p>

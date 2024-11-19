@@ -6,12 +6,7 @@ import Link from "next/link";
 
 function Page() {
     return (
-        <section className="" style={{
-            backgroundImage: "url('/assets/img/bg-blue.png')",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover"
-        }}>
+        <section className="" >
             <div className="sectionPadding justify-center items-center flex" style={{
                 backgroundImage: "url('/assets/img/services/email.png')",
                 backgroundPosition: "center",
@@ -21,9 +16,9 @@ function Page() {
             }}>
                 <h1 className="h1-bold text-gray-3 text-center">Kontakt</h1>
             </div>
-            <div className="common-padding flex" style={{
-                backgroundImage: "url('/assets/img/backgroundBottom.png')",
-                backgroundPosition: "bottom",
+            <div className="common-padding relative flex" style={{
+                backgroundImage: "url('/assets/img/background.png')",
+                backgroundPosition: "top",
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat"
             }}>
