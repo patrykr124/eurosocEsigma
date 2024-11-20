@@ -5,6 +5,8 @@ import { useRef } from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import {sectionAnimation} from "@/constants/animations/animation";
+import { motion } from 'framer-motion';
 
 function OpinieRed() {
 
@@ -55,7 +57,8 @@ function OpinieRed() {
 
   return (
     <div className="common-padding">
-      <div className='wrapper'>
+      <motion.div variants={sectionAnimation} initial="hidden" whileInView="visible"
+           viewport={{once: true, amount: 0.5}} className='wrapper'>
         <div className="flex flex-col gap-6">
           <div className="flex flex-col justify-center items-center">
             <h2 className='titleFrame-red'>REFERENCJE</h2>
@@ -85,7 +88,7 @@ function OpinieRed() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   )
 }

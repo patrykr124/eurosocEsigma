@@ -1,13 +1,13 @@
 import React from "react";
+import {BlogPost} from "@/type/type";
 
 interface Propos {
     headerImg: string;
     position: string;
-    title: string;
-    title2: string;
+    content: BlogPost | undefined;
 }
 
-function HeaderBlog({headerImg,position,title,title2} : Propos) {
+function HeaderBlog({headerImg, position, content}: Propos) {
     return (
         <header style={{
             backgroundImage: `url('${headerImg}')`,
@@ -16,8 +16,7 @@ function HeaderBlog({headerImg,position,title,title2} : Propos) {
             backgroundAttachment: "fixed",
         }} className="sectionPadding flex flex-col justify-center items-center">
             <div className="wrapper">
-                <h1 className='h1-bold text-gray-3 text-center'>{title}</h1>
-                <h2 className='h4-medium text-gray-3 text-center'>{title2}</h2>
+                <h1 className='h1-bold text-gray-3 text-center'>{content?.title}</h1>
             </div>
         </header>
     );

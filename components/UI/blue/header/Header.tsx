@@ -1,6 +1,9 @@
+'use client'
 import Link from "next/link"
 import {FlipWords} from "../../flip-words";
 import EncryptButton from "../../EncryptButton";
+import {motion} from "framer-motion";
+import {headerAnimation, headerAnimationButton, headerAnimationP} from "@/constants/animations/animation";
 
 function Header() {
 
@@ -18,15 +21,26 @@ function Header() {
 
                 <div className="wrapper flex justify-start">
                     <div className="title max-w-4xl gap-8 flex flex-col items-start">
-                        <div className="top">
-                            <p className="p-semibold-20 text-gray-2">Tworzymy Bezpieczne Cyfrowe Rozwiązania</p>
-                            <h1 className="h1-bold text-gray-2">Twoje cyberbezpieczeństwo oparte na <FlipWords
-                                words={words}/></h1></div>
+                        <div className="top overflow-hidden">
+                            <motion.p variants={headerAnimationP} initial="hidden" animate="visible"
+                                      className="p-semibold-20 text-gray-2">Tworzymy Bezpieczne Cyfrowe Rozwiązania
+                            </motion.p>
+                            <div className="overflow-hidden">
+                                <motion.h1 variants={headerAnimation} initial="hidden" animate="visible"
+                                           className="h1-bold text-gray-2">Twoje cyberbezpieczeństwo oparte
+                                    na <FlipWords
+                                        words={words}/>
+                                </motion.h1>
+                            </div>
+                        </div>
 
+                        <div className="overflow-hidden py-1">
+                            <motion.div variants={headerAnimationButton} initial="hidden" animate="visible"
+                                        className="space-x-5 text-end">
+                                <EncryptButton textData="Zabezpiecz się" className="bg-blue-1 hover:bg-blue-1-hover"/>
+                                <Link className="button-white" href="#">Więcej</Link>
 
-                        <div className="space-x-5 text-end">
-                            <EncryptButton textData="Zabezpiecz się" className="bg-blue-1 hover:bg-blue-1-hover"/>
-                            <Link className="button-white" href="#">Więcej</Link>
+                            </motion.div>
                         </div>
                     </div>
                 </div>

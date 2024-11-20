@@ -1,9 +1,12 @@
+'use client'
 import React from 'react'
 import Monitoring1 from '../../../../public/assets/img/monitoringImg1.png'
 import Image from 'next/image'
 import EncryptButton from '../../EncryptButton'
 import Parciple from "@/components/UI/blue/section/Onas/Parciple";
 import ParcipleService from "@/components/UI/services/serviceSite/ParcipleService";
+import { motion } from 'framer-motion';
+import {sectionAnimation} from "@/constants/animations/animation";
 
 interface props {
     desc: React.ReactNode,
@@ -22,7 +25,8 @@ export default function AboutServices({desc, titleAboutService, urlImage, size,c
             backgroundPosition: "bottom",
             backgroundRepeat: "no-repeat",
         }}>
-            <div className="wrapper">
+            <motion.div variants={sectionAnimation} initial="hidden" animate="visible" whileInView="visible"
+                        viewport={{once: true, amount: 0.5}} className="wrapper">
                 <div className="flex lg:flex-row flex-col ">
                     <div className="left  flex-1 flex flex-col">
                         <h2 className={classH2}>O USŁUDZE</h2>
@@ -35,7 +39,7 @@ export default function AboutServices({desc, titleAboutService, urlImage, size,c
                         <ParcipleService url={urlImage} size={size}/>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </section>
     )
 }

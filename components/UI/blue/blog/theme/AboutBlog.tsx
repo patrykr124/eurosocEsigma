@@ -3,7 +3,7 @@ import Avatar from "@/components/UI/blue/blog/theme/Avatar";
 import {BlogPost} from "@/type/type";
 
 interface Props {
-    content: BlogPost[];
+    content: BlogPost;
 }
 
 function AboutBlog({content} :Props) {

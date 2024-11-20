@@ -15,12 +15,16 @@ import {
 } from "@/components/UI/blue/nav/index";
 import {ChevronDown} from "lucide-react";
 import {usePathname} from "next/navigation";
+import {motion} from "framer-motion";
+import {navbarAnimation, navbarAnimationTransitio} from "@/constants/animations/animation";
+import UseMenuShowOnScroll from "@/hooks/useMenuShowOnScroll";
 
 function NavbarBlue() {
     const [ishandleOpen, setIsHandleOpen] = useState(false)
     const [openMobile, setOpenMobile] = useState(false)
     const [openMobile2, setOpenMobile2] = useState(false)
     const pathname = usePathname();
+    const [hiddenMenu, setHiddenMenu] = useState(false)
     const servicesItemUslugi = itemsMenu.find(item => item.name === 'Usługi')
 
     function isOpen(hoveritem: string) {
@@ -39,8 +43,13 @@ function NavbarBlue() {
         setOpenMobile2((prevState) => !prevState);
     }
 
+    UseMenuShowOnScroll(setHiddenMenu)
+
+
     return (
-        <header className='bg-black-1 h-16 flex items-center fixed inset-0 z-[9999]'>
+        <motion.header variants={navbarAnimation} animate={hiddenMenu ? 'hidden' : 'visible'}
+                       transition={navbarAnimationTransitio}
+                       className='bg-black-1 h-16 flex items-center fixed inset-0 z-[9999]'>
             <nav className='wrapper '>
                 <div className="lg:flex hidden justify-between items-center">
                     <div className="logo">
@@ -51,8 +60,6 @@ function NavbarBlue() {
                     </div>
                     <Switch/>
                 </div>
-
-
 
 
                 {/*MOBILE*/}
@@ -166,7 +173,7 @@ function NavbarBlue() {
             <NavOpen ishandleOpen={ishandleOpen} setIsHandleOpen={setIsHandleOpen}/>
 
 
-        </header>
+        </motion.header>
     )
 }
 

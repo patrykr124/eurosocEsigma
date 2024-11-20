@@ -9,8 +9,8 @@ interface data {
 }
 
 interface Props {
-    FAQLeft: data[]
-    FAQRight: data[]
+    FAQLeft: data[] | undefined;
+    FAQRight: data[] | undefined;
 }
 
 function FaqTemplate({FAQLeft, FAQRight}: Props) {

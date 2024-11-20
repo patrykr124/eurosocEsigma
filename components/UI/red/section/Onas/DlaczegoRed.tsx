@@ -1,13 +1,17 @@
+'use client'
 import {CheckCheckIcon} from 'lucide-react'
 import React from 'react'
 import ParcipleRed from './ParcipleRed'
 import EncryptButton from '@/components/UI/EncryptButton'
 import EncryptButtonRed from "@/components/UI/EncryptButtonRed";
+import {sectionAnimation} from "@/constants/animations/animation";
+import { motion } from 'framer-motion'
 
 export default function DlaczegoRed() {
     return (
         <div className='common-padding bg-gray-2 '>
-            <div className="wrapper">
+            <motion.div variants={sectionAnimation} initial="hidden" whileInView="visible"
+                        viewport={{once: true, amount: 0.5}} className="wrapper">
                 <div className="flex md:flex-row flex-col">
                     <div className="flex flex-col w-full md:w-1/2 justify-center">
                         <div className="">
@@ -33,14 +37,14 @@ export default function DlaczegoRed() {
                                     na rzecz niezrównanej cyberobrony </p>
                                 </div>
                             </div>
-                            <EncryptButtonRed textData="Zabezpiecz się"  className="bg-red-1 hover:bg-red-1-hover w-fit"/>
+                            <EncryptButtonRed onClick="" textData="Zabezpiecz się"  className="bg-red-1 hover:bg-red-1-hover w-fit"/>
                         </div>
                     </div>
                     <div className="flex w-full md:w-1/2   justify-center p-2">
                         <ParcipleRed url="/assets/img/logoRed.png"/>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </div>
     )
 }

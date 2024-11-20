@@ -6,9 +6,13 @@ import NavbarItems from './NavbarItems'
 import Link from 'next/link'
 import NavOpen from './NavOpen'
 import Switch from "@/components/UI/Switch";
+import {motion} from 'framer-motion'
+import UseMenuShowOnScroll from "@/hooks/useMenuShowOnScroll";
+import {navbarAnimation, navbarAnimationTransitio} from "@/constants/animations/animation";
 
 function NavbarRed() {
     const [ishandleOpen, setIsHandleOpen] = useState(false)
+    const [hiddenMenu, setHiddenMenu] = useState(false)
 
     function isOpen(hoveritem: string) {
         if (hoveritem === 'Usługi') {
@@ -18,8 +22,12 @@ function NavbarRed() {
         }
     }
 
+    UseMenuShowOnScroll(setHiddenMenu)
+
     return (
-        <header className='bg-black-1 h-16 flex items-center fixed inset-0 z-[9999]'>
+        <motion.header variants={navbarAnimation} animate={hiddenMenu ? 'hidden' : 'visible'}
+                       transition={navbarAnimationTransitio}
+                       className='bg-black-1 h-16 flex items-center fixed inset-0 z-[9999]'>
             <nav className='wrapper'>
                 <div className="flex justify-between items-center">
                     <div className="logo">
@@ -39,7 +47,7 @@ function NavbarRed() {
             <NavOpen ishandleOpen={ishandleOpen} setIsHandleOpen={setIsHandleOpen}/>
 
 
-        </header>
+        </motion.header>
     )
 }
 
