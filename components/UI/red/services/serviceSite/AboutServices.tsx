@@ -1,8 +1,4 @@
 import React from 'react'
-import Monitoring1 from '../../../../public/assets/img/monitoringImg1.png'
-import Image from 'next/image'
-import EncryptButton from '../../EncryptButton'
-import Parciple from "@/components/UI/blue/section/Onas/Parciple";
 import ParcipleService from "@/components/UI/services/serviceSite/ParcipleService";
 
 interface props {
@@ -14,7 +10,7 @@ interface props {
     BUTTON: React.ReactNode,
 }
 
-export default function AboutServices({desc, titleAboutService, urlImage, size,classH2,BUTTON}: props) {
+export default function AboutServices({desc, titleAboutService, urlImage, size, classH2, BUTTON}: props) {
     return (
         <section className='common-padding' style={{
             backgroundImage: `url("/assets/img/backgroundLeft.png")`,
