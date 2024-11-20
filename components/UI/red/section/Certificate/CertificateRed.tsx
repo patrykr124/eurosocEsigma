@@ -13,10 +13,11 @@ function CertificateRed() {
                         provident autem! Culpa pariatur dolorem ad officia aut modi minus quae.</p>
                 </div>
                 <div className="certificates flex md:gap-12 justify-center flex-wrap">
-                    <Image src='/assets/img/sigma.png' alt='certificate' width={200} height={200}/>
                     <Image src='/assets/img/nask.png' alt='certificate' width={200} height={200}/>
                     <Image src='/assets/img/exatel.png' alt='certificate' width={200} height={200}/>
-                    <Image src='/assets/img/3s.png' alt='certificate' width={200} height={200}/>
+                    <Image src='/assets/img/certificate/hyp.png' className="object-contain" alt='certificate'
+                           width={300} height={100}/>
+                    <Image src='/assets/img/certificate/adva.svg' alt='certificate' width={220} height={200}/>
                 </div>
             </div>
 

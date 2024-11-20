@@ -1,8 +1,11 @@
 import Image from "next/image";
 import EncryptButton from "@/components/UI/EncryptButton";
 import EncryptButtonRed from "@/components/UI/EncryptButtonRed";
-
-function BlogOtherSmallBox() {
+import {BlogPost} from "@/type/type";
+interface BlogPostProps {
+    item: BlogPost;
+}
+function BlogOtherSmallBox({item} : BlogPostProps) {
     function truncateText(text: string, wordLimit: number) {
         const words = text.split(" ");
         if (words.length > wordLimit) {
@@ -11,8 +14,8 @@ function BlogOtherSmallBox() {
         return text;
     }
 
-    const desc = "truncateText(Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias atque consequuntur deserunt distinctio ducimus est eum id impedit iusto laudantium, natus neque nulla odit optio quibusdam quos sed soluta voluptates!"
-    const truncateTextData = truncateText(desc, 10);
+    const desc = item.desc;
+    const truncateTextData = truncateText(desc, 30);
 
 
     return (
@@ -21,7 +24,7 @@ function BlogOtherSmallBox() {
                 <Image layout="fill" objectFit="cover" src="/assets/img/blog1.jpg" alt="blog"/>
             </div>
             <div className="left flex-1 gap-2 flex flex-col bg-gray-3 text-black p-8 ">
-                <h1 className="p-medium-28">Atak hackerski a odpowiedzialność firmy</h1>
+                <h1 className="p-medium-28">{item.title}</h1>
                 <hr/>
                 <div className="avatar flex justify-start items-center gap-4">
                     <div className=" w-10 h-10 relative">
@@ -41,7 +44,8 @@ function BlogOtherSmallBox() {
                 </div>
 
                 <div className="mt-6">
-                    <EncryptButtonRed onClick={'/dashboard/red/blog/1'} className="bg-red-1 hover:bg-red-1-hover" textData="Czytaj więcej"/>
+                    <EncryptButtonRed onClick={'/dashboard/red/blog/1'} className="bg-red-1 hover:bg-red-1-hover"
+                                      textData="Czytaj więcej"/>
                 </div>
             </div>
 

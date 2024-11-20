@@ -1,4 +1,12 @@
+'use client'
+import { motion } from 'framer-motion'
 import React from 'react'
+import {
+    headerAnimation,
+    headerAnimationButton,
+    servicesHeaderAnimation,
+    servicesHeaderAnimation2
+} from "@/constants/animations/animation";
 
 
 interface Props {
@@ -16,9 +24,9 @@ export default function Header({title, title2,headerImg, position}: Props) {
             backgroundSize: "cover",
             backgroundAttachment: "fixed",
         }}  className="sectionPadding flex flex-col justify-center items-center">
-            <div className="wrapper">
-                <h1 className='h1-bold text-gray-3 text-center'>{title}</h1>
-                <h2 className='h4-medium text-gray-3 text-center'>{title2}</h2>
+            <div className="wrapper overflow-hidden">
+                <motion.h1 variants={servicesHeaderAnimation} initial="hidden" animate="visible" className='h1-bold text-gray-3 text-center'>{title}</motion.h1>
+                <motion.h2 variants={servicesHeaderAnimation2} initial="hidden" animate="visible" className='h4-medium text-gray-3 text-center'>{title2}</motion.h2>
             </div>
         </header>
     )
