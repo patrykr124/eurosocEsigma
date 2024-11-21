@@ -62,7 +62,7 @@ function Opinie() {
                 <div className="flex flex-col gap-6">
                     <div className="flex flex-col justify-center items-center">
                         <h2 className='titleFrame'>REFERENCJE</h2>
-                        <h2 className='h2-medium-42 flex justify-center'>Dołącz do grona naszych zadowolonych
+                        <h2 className='h2-medium-42 flex justify-center text-center'>Dołącz do grona naszych zadowolonych
                             klientów</h2>
                     </div>
                     <div className="slider-container space-y-5">

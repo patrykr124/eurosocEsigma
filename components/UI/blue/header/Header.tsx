@@ -11,12 +11,12 @@ function Header() {
 
     return (
         <div className="w-full h-[70vh] lg:h-[85vh] overflow-hidden" style={{
-            backgroundImage: "linear-gradient(180deg, rgba(255,255,255,0.1) 20%, rgba(0,0,0,1) 100%)",
+            backgroundImage: "linear-gradient(180deg, rgba(255,255,255,0.1) 25%, rgba(0,0,0,1) 100%)",
         }}>
             < div className="relative h-full w-full flex flex-col  justify-center items-center">
                 <video className="absolute inset-0 -z-10 h-full w-full object-cover" autoPlay loop muted playsInline
                        preload="none">
-                    <source src='/assets/video/eurosoc.video.blue2.mp4' type="video/mp4"/>
+                    <source src='/assets/video/eurosoc.video.blue2H.mp4' type="video/mp4"/>
                 </video>
 
                 <div className="wrapper flex justify-start">
@@ -25,7 +25,7 @@ function Header() {
                             <motion.p variants={headerAnimationP} initial="hidden" animate="visible"
                                       className="p-semibold-20 text-gray-2">Tworzymy Bezpieczne Cyfrowe Rozwiązania
                             </motion.p>
-                            <div className="overflow-hidden">
+                            <div className="overflow-hidden py-2">
                                 <motion.h1 variants={headerAnimation} initial="hidden" animate="visible"
                                            className="h1-bold text-gray-2">Twoje cyberbezpieczeństwo oparte
                                     na <FlipWords
@@ -34,7 +34,7 @@ function Header() {
                             </div>
                         </div>
 
-                        <div className="overflow-hidden py-1">
+                        <div className="overflow-hidden py-2">
                             <motion.div variants={headerAnimationButton} initial="hidden" animate="visible"
                                         className="space-x-5 text-end">
                                 <EncryptButton textData="Zabezpiecz się" className="bg-blue-1 hover:bg-blue-1-hover"/>

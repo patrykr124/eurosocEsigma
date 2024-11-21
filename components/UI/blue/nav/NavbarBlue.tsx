@@ -69,12 +69,13 @@ function NavbarBlue() {
                             <Link href='/dashboard/blue'><Image src={Logo} alt='logo' width={150} height={150}/></Link>
                         </div>
                         <div className="input_box flex">
-                            <label className="bar" htmlFor="check">
-                                <input onClick={openMobileMenu} type="checkbox" id="check"/>
-                                <span className="top"></span>
-                                <span className="middle"></span>
-                                <span className="bottom"></span>
-                            </label>
+                            <div className="bar" onClick={openMobileMenu}>
+                                <span className={`top ${openMobile ? "rotate-45 !top-2" : ""}`}></span>
+                                <span
+                                    className={`middle ${openMobile ? "translate-x-[-20px] opacity-0" : ""}`}
+                                ></span>
+                                <span className={`bottom ${openMobile ? "rotate-[-45deg] !top-2" : ""}`}></span>
+                            </div>
                         </div>
                     </div>
                     <div
@@ -85,7 +86,8 @@ function NavbarBlue() {
                                     <li key={item.id}>
                                         <div className="flex">
                                             <Link onClick={openMobileMenu}
-                                                  className={`linkMobile text-2xl flex items-center`} href={item.url}>
+                                                  className={`linkMobile text-2xl flex items-center`}
+                                                  href={item.url}>
                                                 {item.name}
                                             </Link>
                                             {item.arrow &&
@@ -97,7 +99,8 @@ function NavbarBlue() {
                                                 <div
                                                     className=" gap-2 w-full flex  flex-col items-start justify-between ">
                                                     <div className="1 flex flex-col gap-4 justify-center py-10 ">
-                                                        <h2 className="p-bold-18 text-white">Usługi wdrożeniowe </h2>
+                                                        <h2 className="p-bold-18 text-white">Usługi
+                                                            wdrożeniowe </h2>
                                                         <div className="flex flex-col gap-4">
                                                             {servicesItemUslugi && servicesItemUslugi.featured && servicesItemUslugi.featured.map((item) => {
                                                                 const isActive = pathname === item.url
@@ -105,7 +108,7 @@ function NavbarBlue() {
                                                                     <Link onClick={() => setIsHandleOpen(false)}
                                                                           href={item.url}
                                                                           className={`${isActive ? " text-grey-400 text-[12px]" : "linkSmall"} 
-                                relative flex mainLinkBlue`} key={item.id}>
+                                                                            relative flex mainLinkBlue`} key={item.id}>
                                                                         {item.name}
                                                                     </Link>
                                                                 )
@@ -113,14 +116,15 @@ function NavbarBlue() {
                                                         </div>
                                                     </div>
                                                     <div className="2 flex flex-col gap-4 justify-center  ">
-                                                        <h2 className="p-bold-18 text-white">Usługi audytorskie </h2>
+                                                        <h2 className="p-bold-18 text-white">Usługi
+                                                            audytorskie </h2>
                                                         {itemsMenuUslugiAudytorskie.map((item) => {
                                                             const isActive = pathname === item.url
                                                             return (
                                                                 <Link onClick={() => setIsHandleOpen(false)}
                                                                       href={item.url}
                                                                       className={`${isActive ? " text-grey-400 text-[12px]" : "linkSmall"} 
-                                relative flex mainLinkBlue`} key={item.id}>
+                                                                            relative flex mainLinkBlue`} key={item.id}>
                                                                     {item.name}
                                                                 </Link>
                                                             )
@@ -128,7 +132,8 @@ function NavbarBlue() {
                                                         })}
                                                     </div>
                                                     <div className="3 flex flex-col gap-4 justify-center ">
-                                                        <h2 className="p-bold-18 text-white">Usługi szkoleniowe </h2>
+                                                        <h2 className="p-bold-18 text-white">Usługi
+                                                            szkoleniowe </h2>
                                                         {itemsMenuUslugiSzkoleniowe.map((item) => {
                                                             const isActive = pathname === item.url
                                                             return (
@@ -143,7 +148,8 @@ function NavbarBlue() {
                                                         })}
                                                     </div>
                                                     <div className="2 flex  flex-col gap-4 justify-center py-10 ">
-                                                        <h2 className="p-bold-18 text-white">Usługi utrzymaniowe </h2>
+                                                        <h2 className="p-bold-18 text-white">Usługi
+                                                            utrzymaniowe </h2>
                                                         {itemMenuUslugiUtrzymaniowe.map((item) => {
                                                             const isActive = pathname === item.url
                                                             return (
