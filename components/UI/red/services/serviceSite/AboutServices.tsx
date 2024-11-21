@@ -5,7 +5,7 @@ interface props {
     desc: React.ReactNode,
     titleAboutService: string,
     urlImage: string | undefined,
-    size: number | undefined,
+    size: number ,
     classH2: string,
     BUTTON: React.ReactNode,
 }
