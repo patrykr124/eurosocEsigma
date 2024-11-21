@@ -396,11 +396,6 @@ hr {
 
 }
 
-.parallax-bg {
-    background-image: url("/assets/img/servicesMonitoring.png");
-    background-size: cover;
-    background-position: center;
-}
 
 .icons {
     border-radius: 100%;
