@@ -1,6 +1,5 @@
 //MENU ANIMATION
-
-export const navbarAnimation = {
+export const navbarAnimation =  {
     visible: {y: 0}, hidden: {y: '-100%'}
 }
 
@@ -63,9 +62,15 @@ export const sectionAnimation = {
         y: 0,
         opacity: 100,
         transition: {
-            duration: 0.8,
-            delay: 0.2,
-            ease: 'easeInOut'
+            y:{
+                duration: 0.6,
+                ease: 'easeInOut'
+            },
+            opacity:{
+                duration: 0.8,
+                ease: 'easeInOut'
+            }
+
         }
     },
     hidden: {
@@ -81,14 +86,15 @@ export const servicesHeaderAnimation = {
     visible: {
         y: 0,
         transition: {
-            duration: 2,
+            duration: 1.2,
             delay: 0.2,
             type: 'spring',
+            bounce: 0.4,
             ease: 'easeInOut'
         }
     },
     hidden: {
-        y: '-200%',
+        y: '-20vh',
     }
 }
 

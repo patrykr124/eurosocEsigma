@@ -25,7 +25,7 @@ function HeaderRed() {
                             <motion.p variants={headerAnimationP} initial="hidden" animate="visible"
                                       className="p-semibold-20 text-gray-2">Tworzymy Bezpieczne Cyfrowe Rozwiązania
                             </motion.p>
-                            <div className="overflow-hidden">
+                            <div className="overflow-hidden py-2">
                                 <motion.h1 variants={headerAnimation} initial="hidden" animate="visible"
                                            className="h1-bold text-gray-2">Twoje cyberbezpieczeństwo oparte
                                     na <FlipWords
@@ -33,8 +33,7 @@ function HeaderRed() {
                                 </motion.h1>
                             </div>
                         </div>
-
-                        <div className="overflow-hidden py-1">
+                        <div className="overflow-hidden py-2">
                             <motion.div variants={headerAnimationButton} initial="hidden" animate="visible"
                                         className="space-x-5 text-end">
                                 <EncryptButtonRed onClick="" textData="Zabezpiecz się"

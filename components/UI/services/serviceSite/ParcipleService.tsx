@@ -1,6 +1,7 @@
 "use client"
 import dynamic from "next/dynamic";
 import {forces, ParticleForce, ParticleOptions, Vector,} from "react-particle-image";
+import {useEffect, useState} from "react";
 
 // Dynamiczny import komponentu ParticleImage z wyłączonym SSR
 const ParticleImage = dynamic(() => import("react-particle-image"), {
@@ -35,17 +36,26 @@ const motionForce = (x: number, y: number): ParticleForce => {
 
 interface Props {
     url: string | any;
-    size: number | undefined;
+    size: number ;
 }
 
 export default function ParcipleService({url, size} : Props) {
+    const [windowSize, setWindowSize] = useState<number>(size)
+
+    useEffect(() => {
+        if (window.matchMedia("(max-width: 768px)").matches) {
+            setWindowSize(0.15)
+        } else {
+            setWindowSize(size)
+        }
+    }, []);
 
     return (
         <ParticleImage
             src={url}
             width={600}
             height={600}
-            scale={size}
+            scale={windowSize}
             entropy={20}
             maxParticles={8500}
             particleOptions={particleOptions}

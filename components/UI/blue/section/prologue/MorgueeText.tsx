@@ -12,7 +12,7 @@ export default function MorgueeText() {
     return (
         <div id="Onas" className=' ' style={{ backgroundImage: "linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,34,233,1) 100%)" }}>
             <div className='w-full overflow-x-hidden'>
-                <div className='prologue pb-48 pt-0 flex flex-row overflow-hidden gap-32 justify-center'>
+                <div className='hidden lg:flex prologue pb-48 pt-0 flex-row overflow-hidden gap-32 justify-center'>
                     <motion.div style={{x}} className="min-w-[280px]">
                         <Image src='/assets/img/certificate/nask.png' alt='certificate' width={280} height={280}/>
                     </motion.div>
@@ -20,10 +20,28 @@ export default function MorgueeText() {
                         <Image src='/assets/img/certificate/exatel.png' alt='certificate' width={280} height={280}/>
                     </motion.div>
                     <motion.div style={{x}} className="min-w-[280px]">
-                        <Image  src='/assets/img/certificate/hyper.png' alt='certificate' width={280} height={280}/>
+                        <Image src='/assets/img/certificate/hyper.png' alt='certificate' width={280} height={280}/>
                     </motion.div>
                     <motion.div style={{x}} className="min-w-[280px]">
                         <Image src='/assets/img/certificate/adva.png' alt='certificate' width={280} height={280}/>
+                    </motion.div>
+
+                </div>
+
+                {/*MOBILE*/}
+
+                <div className='lg:hidden  prologue pb-48 pt-0 flex flex-row gap-4 overflow-hidden justify-center'>
+                    <motion.div style={{x}} className="min-w-[180px]">
+                        <Image src='/assets/img/certificate/nask.png' alt='certificate' width={180} height={280}/>
+                    </motion.div>
+                    <motion.div style={{x}} className="min-w-[180px]">
+                        <Image src='/assets/img/certificate/exatel.png' alt='certificate' width={180} height={280}/>
+                    </motion.div>
+                    <motion.div style={{x}} className="min-w-[180px]">
+                        <Image src='/assets/img/certificate/hyper.png' alt='certificate' width={180} height={280}/>
+                    </motion.div>
+                    <motion.div style={{x}} className="min-w-[180px]">
+                        <Image src='/assets/img/certificate/adva.png' alt='certificate' width={180} height={280}/>
                     </motion.div>
 
                 </div>
