@@ -11,6 +11,7 @@ import FAQRedHome from "@/components/UI/red/section/FAQ/FAQRedHome";
 import PageTransition from "@/constants/animations/PageTransition";
 import {AnimatePresence, motion} from "framer-motion";
 import {usePathname} from "next/navigation";
+import Vurnerabilities from "@/components/UI/red/section/vulnerabilitiers/Vurnerabilities";
 
 function Red() {
     const pathname = usePathname();
@@ -29,7 +30,7 @@ function Red() {
                 <ServicesRed/>
                 <DlaczegoRed/>
                 <TabsRed/>
-                {/*<Map/>*/}
+                {/*<Vurnerabilities/>*/}
                 <OpinieRed/>
                 <CertificateRed/>
                 <FAQRedHome/>

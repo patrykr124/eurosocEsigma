@@ -8,4 +8,5 @@ export interface BlogPost {
     p2: string;
     h3: string;
     p3: string;
+    imgHeader: string;
 }

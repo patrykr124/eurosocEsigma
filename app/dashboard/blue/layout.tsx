@@ -12,10 +12,7 @@ export default function layout({children}: LayoutProps) {
     return (
         <>
             <NavbarBlue/>
-            <div>
-                {children}
-            </div>
-
+            {children}
             <Footer/>
         </>
     )

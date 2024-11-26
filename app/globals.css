@@ -13,8 +13,8 @@ html {
     scroll-behavior: smooth;
 }
 
-body , html {
-   @apply font-ubuntumono overflow-x-hidden;
+body {
+    @apply font-ubuntumono overflow-x-hidden ;
 
 }
 
@@ -24,6 +24,7 @@ body , html {
 }
 
 /* ========================================== TAILWIND STYLES */
+
 @layer utilities {
     .wrapper {
         @apply mx-auto w-full max-w-screen-xl px-4;
@@ -44,7 +45,8 @@ body , html {
     .common-padding-huge {
         @apply py-36;
     }
-    p{
+
+    p {
         @apply leading-[18px]
     }
 
@@ -92,7 +94,7 @@ body , html {
 
     /* 32 */
     .h4-medium {
-        @apply font-medium text-[32px] leading-[40px];
+        @apply font-medium text-[32px] leading-[35px] ;
     }
 
     .p-medium-32 {
@@ -101,7 +103,7 @@ body , html {
 
     /* 28 */
     .h5-bold {
-        @apply font-bold text-[28px] leading-[36px];
+        @apply font-bold text-[28px] leading-[35px];
     }
 
     .h5-link {
@@ -109,7 +111,7 @@ body , html {
     }
 
     .p-medium-28 {
-        @apply font-medium text-[28px];
+        @apply font-medium text-[28px] leading-[30px];
     }
 
     .p-medium-28-semibold {
@@ -527,4 +529,10 @@ hr {
     bottom: 0;
 }
 
+
+/*//BLOG*/
+
+.imgBlog{
+    @apply w-full h-[400px] object-cover my-8 rounded-xl
+}
 

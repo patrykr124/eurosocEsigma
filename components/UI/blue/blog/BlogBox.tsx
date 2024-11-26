@@ -42,7 +42,7 @@ function BlogBox({BlogDataItemLast,params} : BlogBoxProps) {
                     </div>
                 </div>
                 <div className="right w-full flex h-auto relative">
-                    <Image layout="fill" objectFit="cover" src="/assets/img/blog1.jpg" alt="blog"/>
+                    <Image layout="fill" objectFit="cover" src={BlogDataItemLast.imgHeader} alt="blog"/>
                 </div>
             </div>
         </div>

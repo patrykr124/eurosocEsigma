@@ -39,7 +39,7 @@ export default function Dlaczego() {
                             <EncryptButton textData="Zabezpiecz się" className="bg-blue-1 hover:bg-blue-1-hover w-fit"/>
                         </div>
                     </div>
-                    <div className="flex w-full md:w-1/2   justify-center p-2">
+                    <div className="flex w-full md:w-1/2   justify-center p-2 mt-6 ">
                         <Parciple url="/assets/img/logoIcon.png"/>
                     </div>
                 </div>

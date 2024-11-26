@@ -1,5 +1,4 @@
 "use client"
-
 import Image from 'next/image'
 import React, {useState} from 'react'
 import Logo from '../../../../public/assets/img/logo-blue.svg'
@@ -131,7 +130,7 @@ function NavbarBlue() {
 
                                                         })}
                                                     </div>
-                                                    <div className="3 flex flex-col gap-4 justify-center ">
+                                                    <div className="3 flex flex-col gap-4 justify-center pt-10">
                                                         <h2 className="p-bold-18 text-white">Usługi
                                                             szkoleniowe </h2>
                                                         {itemsMenuUslugiSzkoleniowe.map((item) => {
@@ -147,7 +146,7 @@ function NavbarBlue() {
 
                                                         })}
                                                     </div>
-                                                    <div className="2 flex  flex-col gap-4 justify-center py-10 ">
+                                                    <div className="2 flex  flex-col gap-4 justify-center py-10">
                                                         <h2 className="p-bold-18 text-white">Usługi
                                                             utrzymaniowe </h2>
                                                         {itemMenuUslugiUtrzymaniowe.map((item) => {

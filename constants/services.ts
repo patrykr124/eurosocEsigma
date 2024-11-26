@@ -208,7 +208,8 @@ export const servicesData = [
                 content:
                     "Wdrożenie DLP zwiększa bezpieczeństwo danych, minimalizuje ryzyko kar finansowych za naruszenia przepisów, buduje zaufanie klientów oraz zwiększa świadomość bezpieczeństwa wśród pracowników, co w rezultacie może chronić reputację i finanse firmy.",
             },
-        ]
+        ],
+        filter:'technicznesrodkizabezpieczen'
 
 
     },
@@ -420,7 +421,8 @@ export const servicesData = [
                 content:
                     "Choć MFA dodaje dodatkowy krok do logowania, jego wpływ na czas logowania jest minimalny, a korzyści w zakresie bezpieczeństwa znacznie przewyższają niewielką różnicę czasową.",
             },
-        ]
+        ],
+        filter:'technicznesrodkizabezpieczen'
     },
     {
         id: "korporacyjna",
@@ -630,7 +632,8 @@ export const servicesData = [
                 content:
                     "Tak, korporacyjna poczta z sandboxem jest przydatna zarówno dla małych, jak i dużych firm, chroniąc przed zagrożeniami bez względu na wielkość organizacji",
             },
-        ]
+        ],
+        filter:'technicznesrodkizabezpieczen'
 
     },
     {
@@ -841,7 +844,8 @@ export const servicesData = [
                 content:
                     "Tak, systemy automatyzacji umożliwiają priorytetyzację aktualizacji krytycznych, co zapewnia, że ważne łatki bezpieczeństwa są wdrażane bez opóźnień.",
             },
-        ]
+        ],
+        filter:'technicznesrodkizabezpieczen'
     },
     {
         id: "inwentaryzacja",
@@ -1052,7 +1056,8 @@ export const servicesData = [
                 content:
                     "Tak, system inwentaryzacji pomaga organizacjom spełniać wymogi dotyczące zarządzania zasobami i zgodności z licencjami, co ułatwia kontrolę i audyt zasobów.\n",
             },
-        ]
+        ],
+        filter:'technicznesrodkizabezpieczen'
 
     },
     {
@@ -1264,7 +1269,8 @@ export const servicesData = [
                 content:
                     "Tak, wiele systemów zarządzania hasłami oferuje wsparcie dla logowania wieloskładnikowego, co dodatkowo zwiększa poziom bezpieczeństwa.",
             },
-        ]
+        ],
+        filter:'technicznesrodkizabezpieczen'
 
     },
     {
@@ -1277,7 +1283,8 @@ export const servicesData = [
         headerImg: "/assets/img/services/bg.png",
         position: "bottom",
         size: 0.4,
-        description: "Data Loss Prevention (DLP) to zaawansowane rozwiązanie wdrożeniowe, które pomaga firmom zabezpieczyć ich wrażliwe dane przed przypadkowym lub celowym ujawnieniem. Wdrożenie DLP umożliwia śledzenie i kontrolowanie przepływu informacji w organizacji, zapewniając, że dane są chronione zarówno w ruchu, jak i w spoczynku.\n\nDzięki tej usłudze firmy mogą lepiej zabezpieczać się przed nieautoryzowanym dostępem, wyciekami danych i naruszeniami zgodności z regulacjami prawnymi. DLP daje pełną widoczność nad tym, jak dane są wykorzystywane, kto ma do nich dostęp i gdzie są przesyłane, co znacząco redukuje ryzyko wycieku."
+        description: "Data Loss Prevention (DLP) to zaawansowane rozwiązanie wdrożeniowe, które pomaga firmom zabezpieczyć ich wrażliwe dane przed przypadkowym lub celowym ujawnieniem. Wdrożenie DLP umożliwia śledzenie i kontrolowanie przepływu informacji w organizacji, zapewniając, że dane są chronione zarówno w ruchu, jak i w spoczynku.\n\nDzięki tej usłudze firmy mogą lepiej zabezpieczać się przed nieautoryzowanym dostępem, wyciekami danych i naruszeniami zgodności z regulacjami prawnymi. DLP daje pełną widoczność nad tym, jak dane są wykorzystywane, kto ma do nich dostęp i gdzie są przesyłane, co znacząco redukuje ryzyko wycieku.",
+        filter:'monitoringinfrastruktury'
 
     },
     {
@@ -1488,7 +1495,8 @@ export const servicesData = [
                 content:
                     "Raporty i alerty generowane przez SIEM powinny być przeglądane regularnie, najlepiej codziennie, aby zapewnić szybką reakcję na incydenty i utrzymanie pełnej widoczności nad bezpieczeństwem infrastruktury.\n",
             },
-        ]
+        ],
+        filter:'monitoringinfrastruktury'
 
     },
     {
@@ -1699,7 +1707,8 @@ export const servicesData = [
                 content:
                     "Tak, MDM może być stosowany również na prywatnych urządzeniach używanych w firmie, z funkcją rozdzielenia danych prywatnych od służbowych, aby zapewnić bezpieczeństwo danych firmowych.",
             },
-        ]
+        ],
+        filter:'technicznesrodkizabezpieczen'
 
     },
     {
@@ -1911,7 +1920,8 @@ export const servicesData = [
                 content:
                     "Tak, UTM można dostosować do potrzeb zarówno małych, jak i dużych organizacji, co czyni go odpowiednim rozwiązaniem niezależnie od wielkości firmy.",
             },
-        ]
+        ],
+        filter:'technicznesrodkizabezpieczen'
 
     },
     {
@@ -2123,7 +2133,8 @@ export const servicesData = [
                 content:
                     "Tak, rozwiązania te mogą być dostosowane do potrzeb mniejszych firm, oferując skalowalność i elastyczność, co pozwala na efektywne zarządzanie zasobami IT niezależnie od wielkości organizacji.",
             },
-        ]
+        ],
+        filter:'technicznesrodkizabezpieczen'
     },
     {
         id: "ochronaurzadzenkoncowych",
@@ -2333,7 +2344,8 @@ export const servicesData = [
                 content:
                     "Największe wyzwania to odpowiednia konfiguracja, integracja z innymi systemami bezpieczeństwa oraz monitorowanie i reakcja na alerty w celu zapewnienia skutecznej ochrony.\n",
             },
-        ]
+        ],
+        filter:'technicznesrodkizabezpieczen'
 
     },
     {
@@ -2544,7 +2556,8 @@ export const servicesData = [
                 content:
                     "Tak, wiele firm specjalizuje się w opracowywaniu dokumentacji SZBI, co jest korzystnym rozwiązaniem, zwłaszcza jeśli organizacja nie posiada wewnętrznych specjalistów ds. bezpieczeństwa informacji.",
             },
-        ]
+        ],
+        filter:'dokumentacjabezpieczenstwa'
 
     },
     {
@@ -2756,7 +2769,8 @@ export const servicesData = [
                 content:
                     "Tak, polityka bezpieczeństwa powinna określać zasady kontroli dostępu, aby ograniczyć dostęp do danych wyłącznie dla upoważnionych osób.",
             },
-        ]
+        ],
+        filter:'dokumentacjabezpieczenstwa'
 
     },
     {
@@ -2969,7 +2983,8 @@ export const servicesData = [
                 content:
                     "Nie, polityka ciągłości działania obejmuje szeroki zakres zakłóceń, takich jak klęski żywiołowe, cyberataki, przerwy w dostawie energii i inne sytuacje kryzysowe, które mogą wpływać na działalność firmy.\n",
             },
-        ]
+        ],
+        filter:'dokumentacjabezpieczenstwa'
 
     },
     {
@@ -3180,7 +3195,8 @@ export const servicesData = [
                 content:
                     "Tak, polityka powinna określać harmonogram i procedury testowania kopii zapasowych, aby upewnić się, że w razie potrzeby można skutecznie przywrócić dane.",
             },
-        ]
+        ],
+        filter:'kopiezapasowe'
 
     },
     {
@@ -3391,7 +3407,8 @@ export const servicesData = [
                 content:
                     "Tak, audyt zgodności z NIS2 zazwyczaj obejmuje ocenę technicznych zabezpieczeń, takich jak firewalle, systemy antywirusowe i rozwiązania monitorujące. Ocena ta pozwala zidentyfikować luki w infrastrukturze bezpieczeństwa oraz dostarczyć rekomendacji dotyczących wzmocnienia ochrony przed cyberzagrożeniami.\n",
             },
-        ]
+        ],
+        filter:'audyty'
 
     },
     {
@@ -3602,7 +3619,8 @@ export const servicesData = [
                 content:
                     "Zaleca się przeprowadzanie audytu zgodności z KRI co najmniej raz w roku lub przy istotnych zmianach w infrastrukturze IT, aby utrzymać zgodność i szybko reagować na nowe zagrożenia oraz przepisy.",
             },
-        ]
+        ],
+        filter:'audyty'
 
     },
     {
@@ -3812,7 +3830,8 @@ export const servicesData = [
                 content:
                     "Zaleca się przeprowadzanie audytu co najmniej raz w roku lub w przypadku znaczących zmian w infrastrukturze IT, aby zapewnić bieżącą zgodność i bezpieczeństwo.",
             },
-        ]
+        ],
+        filter:'audyty'
 
     },
     {
@@ -4023,7 +4042,8 @@ export const servicesData = [
                 content:
                     "Najczęstsze wyzwania to wdrożenie kompleksowych procedur zarządzania ryzykiem, zapewnienie ciągłości działania systemów, szkolenie personelu oraz dokumentacja procesów zgodnie z normą ISO/IEC 27001.",
             },
-        ]
+        ],
+        filter:'audyty'
 
     },
     {
@@ -4234,7 +4254,8 @@ export const servicesData = [
                 content:
                     "Tak, zaangażowanie kadry zarządzającej jest kluczowe, ponieważ decyzje i wsparcie kierownictwa są niezbędne do skutecznego wdrożenia i utrzymania systemu zarządzania ciągłością działania zgodnego z ISO/IEC 22301.\n",
             },
-        ]
+        ],
+        filter:'audyty'
 
     },
     {
@@ -4447,7 +4468,8 @@ export const servicesData = [
                 content:
                     "Najczęstsze błędy to używanie słabych haseł, otwieranie złośliwych linków lub załączników, brak uwagi na procedury bezpieczeństwa oraz ignorowanie komunikatów ostrzegawczych systemu.",
             },
-        ]
+        ],
+        filter:'szkolenia'
 
     },
     {
@@ -4658,7 +4680,8 @@ export const servicesData = [
                 content:
                     "Najczęstsze wyzwania to brak znajomości nowych zagrożeń, niewłaściwe zarządzanie incydentami, brak monitorowania sieci, nieodpowiednia konfiguracja zabezpieczeń oraz trudności w spełnianiu wymagań regulacyjnych dotyczących bezpieczeństwa.",
             },
-        ]
+        ],
+        filter:'szkolenia'
 
     },
     {
@@ -4869,7 +4892,8 @@ export const servicesData = [
                 content:
                     "Najczęstsze wyzwania to brak świadomości ryzyka, niewystarczające inwestycje w zabezpieczenia, nieodpowiednia reakcja na incydenty oraz ryzyko niezgodności z przepisami dotyczącymi ochrony danych.\n",
             },
-        ]
+        ],
+        filter:'szkolenia'
 
     },
     {
@@ -5080,7 +5104,8 @@ export const servicesData = [
                 content:
                     "Tak, II linia wsparcia często sporządza szczegółowe raporty z incydentów, zawierające analizę problemu, zastosowane środki zaradcze oraz rekomendacje na przyszłość.",
             },
-        ]
+        ],
+        filter:'obslugaincydentow'
 
     },
     {
@@ -5291,7 +5316,8 @@ export const servicesData = [
                 content:
                     "Tak, usługa może być dostosowana pod względem częstotliwości, zakresu przechowywanych logów oraz czasu ich retencji, aby spełniać unikalne wymagania danej organizacji.",
             },
-        ]
+        ],
+        filter:'kopiezapasowe'
     },
     {
         id: "cykliczne_testy_odtworzeniowe",
@@ -5501,7 +5527,8 @@ export const servicesData = [
                 content:
                     "Tak, testy mogą obejmować zarówno fizyczne, jak i wirtualne środowiska, aby zapewnić pełną gotowość wszystkich zasobów do przywrócenia w sytuacji awaryjnej.\n",
             },
-        ]
+        ],
+        filter:'testy'
 
     },
     {
@@ -5713,7 +5740,8 @@ export const servicesData = [
                 content:
                     "SOC szybko wykrywa i reaguje na incydenty, co pozwala ograniczyć ich skalę i wpływ na organizację. Dzięki temu minimalizuje skutki zagrożeń, a także dostarcza rekomendacje dotyczące poprawy bezpieczeństwa.\n",
             },
-        ]
+        ],
+        filter:'monitoringinfrastruktury'
 
     },
     {
@@ -5924,7 +5952,8 @@ export const servicesData = [
                 content:
                     "Tak, często wykorzystuje się specjalistyczne narzędzia do tworzenia, przechowywania i szyfrowania odmiejscowionych kopii zapasowych, które zapewniają bezpieczeństwo i łatwość dostępu do danych w sytuacji awaryjnej.",
             },
-        ]
+        ],
+        filter:'kopiezapasowe'
 
     },
 ]

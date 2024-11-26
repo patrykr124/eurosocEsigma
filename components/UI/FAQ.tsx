@@ -17,7 +17,7 @@ export default function FAQ({FAQLeft, FAQRight}: Props) {
 
     return (
 
-        <Accordion type="single" collapsible className="w-full flex flex-col lg:flex-row lg:gap-4">
+        <Accordion type="single" collapsible className="w-full gap-4 flex flex-col lg:flex-row">
             <div className=" lg:w-1/2 flex flex-col lg:gap-2 gap-4">
                 {FAQLeft?.map((item) => (
                     <AccordionItem key={item.id} value={`item-${item.id}`}
