@@ -27,10 +27,10 @@ export default function SwiperSlider() {
     };
 
     useEffect(() => {
-        let interval: NodeJS.Timer | null = null;
-        let timeout: NodeJS.Timeout | null = null;
+        let interval: number | null = null;
+        let timeout: number | null = null;
         if (activeIndex !== null) {
-            interval = setInterval(() => {
+            interval = window.setInterval(() => {
                 setTexts((prevTexts) =>
                     prevTexts.map((text, index) =>
                         activeIndex === index
@@ -39,15 +39,15 @@ export default function SwiperSlider() {
                     )
                 );
             }, 100);
-            timeout = setTimeout(() => {
-                clearInterval(interval);
+            timeout = window.setTimeout(() => {
+                if (interval) window.clearInterval(interval);
                 setTexts(SWIPER_DATA_BLUE.map((item) => item.title));
             }, 800);
         }
 
         return () => {
-            clearInterval(interval);
-            clearTimeout(timeout!);
+            if (interval) window.clearInterval(interval);
+            if (timeout) window.clearTimeout(timeout);
         };
     }, [activeIndex]);
 
