@@ -102,7 +102,7 @@ export default function SwiperSlider() {
                             <Image className=' rounded-xl w-[500px] object-cover' src={item.img} alt='services' fill/>
                             <div className="absolute max-w-[80%]">
                                 <div className="overflow-hidden flex ">
-                                    <h4 className={`${activeIndex === item.id ? 'flex' : 'hidden'} swiperHeaderText p-medium-32 text-center text-white z-20`}>{texts[item.id]}</h4>
+                                    <h4 className={`${activeIndex === item.id ? 'opacity-1' : 'opacity-0'} transition-all duration-700   swiperHeaderText p-medium-32 text-center  text-white z-20`}>{texts[item.id]}</h4>
                                 </div>
                             </div>
                         </div>

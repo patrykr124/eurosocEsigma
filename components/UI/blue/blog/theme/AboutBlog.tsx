@@ -1,6 +1,6 @@
 import Avatar from "@/components/UI/blue/blog/theme/Avatar";
 import {BlogPost} from "@/types/type";
-import RecentPost from "@/components/UI/blue/blog/theme/RecentPost";
+import RecentPost from "@/components/UI/RecentPost";
 
 interface Props {
     content: BlogPost;

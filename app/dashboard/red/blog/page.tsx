@@ -15,11 +15,8 @@ function Page() {
                             <BlogBox params={BlogDataItemLast.id.toString()} BlogDataItemLast={BlogDataItemLast}/>}
                     </div>
                     <div className="other_posts grid grid-cols-2 gap-6 ">
-                        {
-                            BlogDataItemAll.map((item, index) => (
-                                <BlogOtherSmallBox item={item} key={index}/>
-                            ))
-                        }
+                        {BlogDataItemAll.map((item, index) => (
+                                <BlogOtherSmallBox item={item} key={index}/>))}
                     </div>
                 </div>
             </div>

@@ -10,7 +10,7 @@ const ubuntumono = Ubuntu_Mono({
 
 export const metadata: Metadata = {
   title: "EUROSOC",
-  description: "EventCoders is a platform for every evcents next app",
+  description: "Twoje cyberbezpieczeństwo oparte na szkoleniac",
   icons: {
     icon: "/assets/images/logo.svg",
   },
