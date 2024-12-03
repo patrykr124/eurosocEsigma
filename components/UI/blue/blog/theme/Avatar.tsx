@@ -1,5 +1,5 @@
 import Image from "next/image";
-import {BlogPost} from "@/type/type";
+import {BlogPost} from "@/types/type";
 interface Props {
     data: BlogPost;
 }

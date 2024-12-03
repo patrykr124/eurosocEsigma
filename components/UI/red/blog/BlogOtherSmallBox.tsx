@@ -1,6 +1,6 @@
 import Image from "next/image";
 import EncryptButtonRed from "@/components/UI/EncryptButtonRed";
-import {BlogPost} from "@/type/type";
+import {BlogPost} from "@/types/type";
 
 interface BlogPostProps {
     item: BlogPost;
