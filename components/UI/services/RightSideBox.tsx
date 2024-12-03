@@ -18,11 +18,10 @@ function RightSideBox({activeFilters}: Props) {
     }
 
     const servicesFilterData = servicesData.filter((item) =>
-        activeFilters.length === 0 || activeFilters.includes(item.filter)
+        activeFilters.length === 0 || activeFilters.includes(item.filter) || activeFilters.includes(item.filter2)
     );
 
 
-    console.log(servicesFilterData)
 
     return (
         <div className="flex flex-wrap lg:gap-6 gap-2 ">

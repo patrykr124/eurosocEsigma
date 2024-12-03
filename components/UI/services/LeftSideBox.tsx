@@ -25,7 +25,7 @@ function LeftSideBox({setActiveFilters}: Props) {
             <div className="flex items-center justify-center gap-4 flex-col text-black">
                 <div className="flex flex-col gap-2">
                     {filtrData.map((item) => (
-                        <InputTemplate onChange={() => handleCheckboxChange(item.id)} id={item.id} title={item.title}/>
+                        <InputTemplate key={item.id} onChange={() => handleCheckboxChange(item.id)} id={item.id} title={item.title}/>
                     ))}
                 </div>
             </div>

@@ -6,9 +6,9 @@ import { itemsMenu } from '../nav'
 export default function FooterNavbarItems() {
     return (
         <>
-            <ul className='flex flex-row gap-8'>
+            <ul className='flex flex-row lg:gap-8 gap-4'>
                 {itemsMenu.map((item) => (
-                    <li key={item.id}><Link className='text-primary-50 p-medium-20 hover:text-white/80 transition-all' href={item.url}>{item.name}</Link></li>
+                    <li key={item.id}><Link className='text-primary-50 lg:p-medium-20 text-sm  hover:text-white/80 transition-all' href={item.url}>{item.name}</Link></li>
                 ))}
             </ul>
         </>

@@ -15,7 +15,7 @@ interface Props{
 function DozapamietaniaContentRed({doZapamietaniaBottom, doZapamietaniaTop}: Props) {
     return (
         <div className="icon gap-10 flex flex-col">
-            <div className="top grid grid-cols-2 gap-8">
+            <div className="top grid lg:grid-cols-2 grid-cols-1 lg:gap-8 gap-10">
                 {doZapamietaniaTop?.map((item) => (
                     <div className="box flex gap-4">
                         <div className="image min-h-[60px] min-w-[60px] relative">
@@ -29,7 +29,7 @@ function DozapamietaniaContentRed({doZapamietaniaBottom, doZapamietaniaTop}: Pro
                 ))}
 
             </div>
-            <div className="bottom grid grid-cols-2  gap-8">
+            <div className="bottom grid lg:grid-cols-2 grid-cols-1 lg:gap-8 gap-10">
                 {doZapamietaniaBottom?.map((item) => (
                     <div className="box flex gap-4">
                         <div className="image min-h-[60px] min-w-[60px] relative">

@@ -41,12 +41,15 @@ interface Props {
 
 export default function ParcipleService({url, size} : Props) {
     const [windowSize, setWindowSize] = useState<number>(size)
+    const [heightSize, setHeightSize] = useState<number>(600)
 
     useEffect(() => {
         if (window.matchMedia("(max-width: 768px)").matches) {
             setWindowSize(0.15)
+            setHeightSize(400)
         } else {
             setWindowSize(size)
+            setHeightSize(600)
         }
     }, []);
 
@@ -54,7 +57,7 @@ export default function ParcipleService({url, size} : Props) {
         <ParticleImage
             src={url}
             width={600}
-            height={600}
+            height={heightSize}
             scale={windowSize}
             entropy={20}
             maxParticles={8500}

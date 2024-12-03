@@ -37,7 +37,8 @@ function Header() {
                         <div className="overflow-hidden py-2">
                             <motion.div variants={headerAnimationButton} initial="hidden" animate="visible"
                                         className="space-x-5 text-end">
-                                <EncryptButton textData="Zabezpiecz się" className="bg-blue-1 hover:bg-blue-1-hover"/>
+                                <EncryptButton textData="Zabezpiecz się" className="bg-blue-1 hover:bg-blue-1-hover"
+                                              />
                                 <Link className="button-white" href="#">Więcej</Link>
 
                             </motion.div>

@@ -17,11 +17,12 @@ function RightSideBoxRed({activeFilters}: Props) {
     }
 
     const servicesFilterData = servicesData.filter((item) =>
-        activeFilters.length === 0 || activeFilters.includes(item.filter)
+        activeFilters.length === 0 || activeFilters.includes(item.filter) || activeFilters.includes(item.filter2)
     );
 
     return (
         <div className="flex flex-wrap lg:gap-6 gap-2 ">
+            {servicesFilterData.length === 0 && <div className="w-full h-full flex justify-center items-center"><p>Brak usługi</p></div>}
             {servicesFilterData.map((item) => (
                 <motion.div key={item.id} initial={{opacity: 0, scale: 0.98}} animate={{opacity: 1, scale: 1}}
                             transition={{duration: 0.5}}>

@@ -1,15 +1,56 @@
 'use client'
-import {Autoplay, EffectCoverflow, Navigation, Pagination} from '@/node_modules/swiper';
 import {Swiper, SwiperSlide} from 'swiper/react';
-
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import {ArrowLeft, ArrowRight} from 'lucide-react';
 import Image from 'next/image';
+import {Autoplay, EffectCoverflow, Navigation, Pagination} from "swiper";
+import {SWIPER_DATA_BLUE} from "@/constants/SwiperData";
+import {ArrowLeft, ArrowRight} from "lucide-react";
+import {useEffect, useState} from "react";
 
 
 export default function SwiperSlider() {
+    const [activeIndex, setActiveIndex] = useState<number>(0);
+    const [texts, setTexts] = useState<string[]>(SWIPER_DATA_BLUE.map((item) => item.title))
+
+    const scrambleText = (text: string): string => {
+        const CHARS = "011001001";
+        return text
+            .split("")
+            .map((char) =>
+                Math.random() > 0.8
+                    ? CHARS[Math.floor(Math.random() * CHARS.length)]
+                    : char
+            )
+            .join("");
+    };
+
+    useEffect(() => {
+        let interval: NodeJS.Timer | null = null;
+        let timeout: NodeJS.Timeout | null = null;
+        if (activeIndex !== null) {
+            interval = setInterval(() => {
+                setTexts((prevTexts) =>
+                    prevTexts.map((text, index) =>
+                        activeIndex === index
+                            ? scrambleText(SWIPER_DATA_BLUE[index].title)
+                            : SWIPER_DATA_BLUE[index].title
+                    )
+                );
+            }, 100);
+            timeout = setTimeout(() => {
+                clearInterval(interval);
+                setTexts(SWIPER_DATA_BLUE.map((item) => item.title));
+            }, 800);
+        }
+
+        return () => {
+            clearInterval(interval);
+            clearTimeout(timeout!);
+        };
+    }, [activeIndex]);
+
 
     return (
         <div>
@@ -18,9 +59,12 @@ export default function SwiperSlider() {
                 grabCursor={true}
                 loop={true}
                 modules={[Pagination, Navigation, EffectCoverflow, Autoplay]}
-                autoplay={{delay: 2800, disableOnInteraction: false}}
+                // autoplay={{delay: 2800, disableOnInteraction: false}}
                 spaceBetween={0}
                 slidesPerView={1.1}
+                onSlideChange={(swiper) => {
+                    setActiveIndex(swiper.realIndex)
+                }}
                 breakpoints={{
                     640: {
                         slidesPerView: 2,
@@ -44,61 +88,33 @@ export default function SwiperSlider() {
                     rotate: 0,
                     stretch: 10,
                     depth: 200,
-                    modifier: 2,
+                    modifier: 2.2,
                     slideShadows: false,
 
                 }}
                 className='swiper_container'
 
             >
-                <SwiperSlide>
-                    <div className="w-full h-[400px] rounded-xl relative flex justify-center items-center bg-black ">
-                        <Image className=' rounded-xl w-[500px] object-cover' src='/assets/img/open.png' alt='services'
-                               fill/>
-                        <h4 className="absolute p-medium-32 p-8 text-center text-white z-20">Wdrożenia komercyjne i Open
-                            Source</h4>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="w-full h-[400px] rounded-xl relative flex justify-center items-center bg-black">
-                        <Image className=' rounded-xl w-[500px] object-cover' src='/assets/img/szkolenie.png'
-                               alt='services' fill/>
-                        <h4 className="absolute p-medium-32 p-8 text-center text-white z-20">Szkolenia z zakresu
-                            cyberbezpieczeństwa</h4>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="w-full h-[400px] rounded-xl relative flex justify-center items-center bg-black">
-                        <Image className=' rounded-xl w-[500px] object-cover' src='/assets/img/servicesMonitoring.png'
-                               alt='services' fill/>
-                        <h4 className="absolute p-medium-32 p-8 text-center text-white z-20">Monitorowanie
-                            infrastruktury w trybie ciągłym / SOC</h4>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="w-full h-[400px] rounded-xl relative flex justify-center items-center bg-black">
-                        <Image className=' rounded-xl w-[500px] object-cover' src='/assets/img/wsparcie.png'
-                               alt='services' fill/>
-                        <h4 className="absolute p-medium-32 p-8 text-center text-white z-20">II linia wsparcia
-                            technicznego </h4>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="w-full h-[400px] rounded-xl relative flex justify-center items-center bg-black">
-                        <Image className=' rounded-xl w-[500px] object-cover' src='/assets/img/kopia.png' alt='services'
-                               fill/>
-                        <h4 className="absolute p-medium-32 p-8 text-center text-white z-20">odmiejscowienie kopi
-                            zapasowych</h4>
-                    </div>
-                </SwiperSlide>
-
+                {SWIPER_DATA_BLUE.map((item) => (
+                    <SwiperSlide key={item.id}>
+                        <div
+                            className="w-full overflow-hidden h-[400px] rounded-xl relative flex justify-center items-center bg-black ">
+                            <Image className=' rounded-xl w-[500px] object-cover' src={item.img} alt='services' fill/>
+                            <div className="absolute max-w-[80%]">
+                                <div className="overflow-hidden flex ">
+                                    <h4 className={`${activeIndex === item.id ? 'flex' : 'hidden'} swiperHeaderText p-medium-32 text-center text-white z-20`}>{texts[item.id]}</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                ))}
 
                 <div className="slider-controler flex justify-center items-center">
                     <div className="swiper-button-prev slider-arrow">
-                        <ArrowLeft className='arrow'/>
+                        <ArrowLeft className="arrow"/>
                     </div>
                     <div className="swiper-button-next slider-arrow">
-                        <ArrowRight className='arrow'/>
+                        <ArrowRight className="arrow"/>
                     </div>
                     <div className="swiper-pigination gap-2 flex justify-center items-center mt-4"></div>
                 </div>

@@ -1,7 +1,7 @@
 import HeaderBlog from "@/components/UI/blue/blog/theme/HeaderBlog";
 import AboutBlog from "@/components/UI/blue/blog/theme/AboutBlog";
+import React from "react";
 import {BlogData} from "@/components/UI/blue/blog/BlogData";
-
 
 
 interface Props {

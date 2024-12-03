@@ -2,6 +2,7 @@
 import {useRef, useState} from "react";
 import {motion} from "framer-motion";
 import {useRouter} from "next/navigation";
+import Link from "next/link";
 
 
 interface EncryptButtonProps {
@@ -74,11 +75,14 @@ const EncryptButton = ({textData, icon, className, onClick}: EncryptButtonProps)
             className={`group relative overflow-hidden rounded-lg tracking-wide px-4 h-fit py-2 font-medium uppercase text-gray-3 transition-colors duration-500 ${className}`}
             onClick={handleClick}
         >
-            <div className="relative z-10 flex items-center gap-2">
+            <Link href="/dashboard/blue/kontakt" >
+                <div className="relative z-10 flex items-center gap-2">
 
-                <span>{text}</span>
-                {icon}
-            </div>
+                    <span>{text}</span>
+                    {icon}
+
+                </div>
+            </Link>
             <motion.span
                 initial={{
                     y: "100%",
@@ -95,6 +99,7 @@ const EncryptButton = ({textData, icon, className, onClick}: EncryptButtonProps)
                 className="duration-300 absolute inset-0 z-0 scale-125 bg-gradient-to-t from-indigo-400/0 from-40% via-indigo-400/100 to-indigo-400/0 to-60% opacity-0 transition-opacity group-hover:opacity-100"
             />
         </motion.button>
+
     );
 };
 

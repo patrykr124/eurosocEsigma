@@ -40,7 +40,7 @@ export default function DlaczegoRed() {
                             <EncryptButtonRed onClick="" textData="Zabezpiecz się"  className="bg-red-1 hover:bg-red-1-hover w-fit"/>
                         </div>
                     </div>
-                    <div className="flex w-full md:w-1/2   justify-center p-2">
+                    <div className="hidden lg:flex w-full md:w-1/2   justify-center p-2">
                         <ParcipleRed url="/assets/img/logoRed.png"/>
                     </div>
                 </div>

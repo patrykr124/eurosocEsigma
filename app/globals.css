@@ -141,7 +141,7 @@ body {
     }
 
     .p-semibold-20 {
-        @apply text-[18px] lg:text-[20px] font-semibold leading-[30px] tracking-[2%];
+        @apply text-[18px] lg:text-[20px] font-semibold leading-[22px] tracking-[2%];
     }
 
     .p-medium-20 {
@@ -154,7 +154,7 @@ body {
 
     /* 18 */
     .p-semibold-18 {
-        @apply text-[18px] font-semibold leading-[28px] tracking-[2%];
+        @apply text-[18px] font-semibold leading-[22px] tracking-[2%];
     }
 
     .p-medium-18 {
@@ -398,6 +398,10 @@ hr {
 
 }
 
+.swiper-slide-active{
+
+}
+
 
 .icons {
     border-radius: 100%;
@@ -536,3 +540,19 @@ hr {
     @apply w-full h-[400px] object-cover my-8 rounded-xl
 }
 
+
+/*// HOME*/
+
+.leftFire , .rightFire {
+    filter: grayscale(0%);
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+}
+
+.leftLinkHand:hover ~ .leftFire{
+    filter: grayscale(100%);
+}
+
+.RightLinkHand:hover ~ .rightFire{
+    filter: grayscale(100%);
+}

@@ -1,6 +1,9 @@
 import Image from "next/image";
-
-function Avatar() {
+import {BlogPost} from "@/type/type";
+interface Props {
+    data: BlogPost;
+}
+function Avatar({data} : Props) {
     return (
         <div className="avatar flex justify-start items-center gap-4">
             <div className=" w-10 h-10 relative">
@@ -11,7 +14,7 @@ function Avatar() {
                 <p>Patryk Różycki</p>
             </div>
             <div className="">
-                <p>15.10.2024</p>
+                <p>{data.data}</p>
             </div>
         </div>
     );

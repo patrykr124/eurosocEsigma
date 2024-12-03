@@ -209,7 +209,8 @@ export const servicesData = [
                     "Tak, oferujemy raporty w języku polskim lub angielskim, w zależności od preferencji klienta.",
             },
         ],
-        filter: 'testy'
+        filter: 'testy',
+        filter2:'jednorazowe',
 
 
     },
@@ -422,7 +423,8 @@ export const servicesData = [
                     "Tak, raporty mogą być przygotowane w języku polskim lub angielskim w zależności od preferencji klienta.",
             },
         ],
-        filter: 'testy'
+        filter: 'testy',
+        filter2:'jednorazowe',
     },
     {
         id: "testybezpieczenstwafizycznego",
@@ -633,7 +635,8 @@ export const servicesData = [
                     "Tak, nasze testy obejmują zarówno zagrożenia zewnętrzne, jak i wewnętrzne, takie jak nieautoryzowany dostęp pracowników.",
             },
         ],
-        filter: 'testy'
+        filter: 'testy',
+        filter2:'jednorazowe',
 
     },
     {
@@ -845,7 +848,8 @@ export const servicesData = [
                     "Tak, analizujemy także podatność na ataki z wykorzystaniem botnetów.",
             },
         ],
-        filter: 'testy'
+        filter: 'testy',
+        filter2:'jednorazowe',
     },
     {
         id: "skanypodatnosci",
@@ -1057,7 +1061,8 @@ export const servicesData = [
                     "Nasze narzędzia identyfikują także zagrożenia typu zero-day, jeśli są one znane w momencie skanowania.",
             },
         ],
-        filter:'monitoringinfrastruktury'
+        filter:'monitoringinfrastruktury',
+        filter2:'jednorazowe',
     },
     {
         id: "szkoleniezcyberbezpieczenstwa",
@@ -1241,7 +1246,8 @@ export const servicesData = [
                 content: "Tak, szkolenia mogą być częścią kompleksowej strategii bezpieczeństwa."
             }
         ],
-        filter:'szkolenia'
+        filter:'szkolenia',
+        filter2:'jednorazowe',
     },
     {
         id: "dlakadryinformatycznej",
@@ -1430,7 +1436,8 @@ export const servicesData = [
                 content: "Zwiększenie kompetencji zespołu IT, lepsza ochrona przed zagrożeniami i efektywne zarządzanie systemami.",
             },
         ],
-        filter:'szkolenia'
+        filter:'szkolenia',
+        filter2:'jednorazowe',
     },
     {
         id: "wsparcie_w_obsludze_incydentu",
@@ -1615,7 +1622,8 @@ export const servicesData = [
                 content: "Tak, dostarczamy wskazówki, które pomagają zwiększyć bezpieczeństwo w przyszłości.",
             },
         ],
-        filter:'obslugaincydentow'
+        filter:'obslugaincydentow',
+        filter2:'abonamentowe',
     },
     {
         id: "III_linia_wsparcia_technicznego",
@@ -1799,7 +1807,8 @@ export const servicesData = [
                 content: "Tak, dostarczamy szczegółowe raporty po rozwiązaniu problemów.",
             },
         ],
-        filter:'obslugaincydentow'
+        filter:'obslugaincydentow',
+        filter2:'abonamentowe',
     },
     {
         id: "cykliczne_testy_socjotechniczne",
@@ -2011,7 +2020,8 @@ export const servicesData = [
                     "Tak, system inwentaryzacji pomaga organizacjom spełniać wymogi dotyczące zarządzania zasobami i zgodności z licencjami, co ułatwia kontrolę i audyt zasobów.\n",
             },
         ],
-        filter:'testy'
+        filter:'testy',
+        filter2: 'abonamentowe'
     },
 
 ]
