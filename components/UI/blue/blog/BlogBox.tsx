@@ -1,7 +1,7 @@
 import Image from "next/image";
 import EncryptButton from "@/components/UI/EncryptButton";
 import Avatar from "@/components/UI/blue/blog/theme/Avatar";
-import {BlogPost} from "@/type/type";
+import {BlogPost} from "@/types/type";
 
 
 interface BlogBoxProps {

@@ -1,4 +1,4 @@
-import {BlogPost} from "@/type/type";
+import {BlogPost} from "@/types/type";
 
 export const BlogDataRed: BlogPost[] = [
     {

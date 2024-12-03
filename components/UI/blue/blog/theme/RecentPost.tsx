@@ -1,7 +1,7 @@
 import Image from "next/image";
 import {BlogData} from "@/components/UI/blue/blog/BlogData";
 import Link from "next/link";
-import {BlogPost} from "@/type/type";
+import {BlogPost} from "@/types/type";
 interface Props {
     contentId: BlogPost;
 }

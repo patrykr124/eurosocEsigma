@@ -17,3 +17,5 @@ export interface S {
     title: string;
     img: string;
 }
+
+

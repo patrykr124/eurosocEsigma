@@ -1,4 +1,4 @@
-import {S} from "@/type/type";
+import {S} from "@/types/type";
 
 
 export const SWIPER_DATA_BLUE:S[] = [

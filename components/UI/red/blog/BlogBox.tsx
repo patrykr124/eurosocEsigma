@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Avatar from "@/components/UI/red/blog/theme/Avatar";
 import EncryptButtonRed from "@/components/UI/EncryptButtonRed";
-import {BlogPost} from "@/type/type";
+import {BlogPost} from "@/types/type";
 
 interface BlogBoxProps {
     BlogDataItemLast: BlogPost;

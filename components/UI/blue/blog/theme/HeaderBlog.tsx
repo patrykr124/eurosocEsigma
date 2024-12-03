@@ -1,5 +1,5 @@
 import React from "react";
-import {BlogPost} from "@/type/type";
+import {BlogPost} from "@/types/type";
 
 interface Propos {
     headerImg: string;
