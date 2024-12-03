@@ -30,14 +30,12 @@ function Page({params}: ServicePageProps) {
         notFound();
     }
 
-
     return (
         <div>
             <Header title={serviceFetchData.title}
                     title2={serviceFetchData.title2}
                     headerImg={serviceFetchData.headerImg}
-                    position={serviceFetchData.position}
-            />
+                    position={serviceFetchData.position}/>
 
             <AboutServices titleAboutService={serviceFetchData.titleAboutService}
                            desc={<span style={{whiteSpace: 'pre-wrap'}}>{serviceFetchData.description}</span>}
@@ -45,9 +43,7 @@ function Page({params}: ServicePageProps) {
                            size={serviceFetchData.size}
                            classH2={"titleFrame-red"}
                            BUTTON={<EncryptButtonRed onClick="" textData="Zabezpiecz się"
-                                                     className="bg-red-1 hover:bg-red-1-hover w-fit my-4"/>}
-
-            />
+                                                     className="bg-red-1 hover:bg-red-1-hover w-fit my-4"/>}/>
             <Why
                 iconsBlue={serviceFetchData.iconsTop}
                 iconsRed={serviceFetchData.iconsRed}

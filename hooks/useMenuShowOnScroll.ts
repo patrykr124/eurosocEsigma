@@ -1,4 +1,6 @@
+'use client'
 import {useMotionValueEvent, useScroll} from "framer-motion";
+import React from "react";
 
 
 const UseMenuShowOnScroll = (setHiddenMenu: React.Dispatch<React.SetStateAction<boolean>>) => {

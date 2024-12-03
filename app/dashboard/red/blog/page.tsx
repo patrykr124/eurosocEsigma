@@ -1,9 +1,8 @@
 import BlogBox from "@/components/UI/red/blog/BlogBox";
 import BlogOtherSmallBox from "@/components/UI/red/blog/BlogOtherSmallBox";
-import {BlogData} from "@/components/UI/blue/blog/BlogData";
 import {BlogDataRed} from "@/components/UI/red/blog/BlogDataRed";
 
-const BlogDataItemLast = BlogDataRed.length > 0 ? BlogData[BlogData.length - 1] : undefined;
+const BlogDataItemLast = BlogDataRed.length > 0 ? BlogDataRed[BlogDataRed.length - 1] : undefined;
 const BlogDataItemAll = BlogDataRed;
 
 function Page() {

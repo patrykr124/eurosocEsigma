@@ -208,7 +208,9 @@ export const servicesData = [
                 content:
                     "Wdrożenie DLP zwiększa bezpieczeństwo danych, minimalizuje ryzyko kar finansowych za naruszenia przepisów, buduje zaufanie klientów oraz zwiększa świadomość bezpieczeństwa wśród pracowników, co w rezultacie może chronić reputację i finanse firmy.",
             },
-        ]
+        ],
+        filter:'technicznesrodkizabezpieczen',
+        filter2:'jednorazowe'
 
 
     },
@@ -420,7 +422,9 @@ export const servicesData = [
                 content:
                     "Choć MFA dodaje dodatkowy krok do logowania, jego wpływ na czas logowania jest minimalny, a korzyści w zakresie bezpieczeństwa znacznie przewyższają niewielką różnicę czasową.",
             },
-        ]
+        ],
+        filter:'technicznesrodkizabezpieczen',
+        filter2:'jednorazowe'
     },
     {
         id: "korporacyjna",
@@ -477,7 +481,7 @@ export const servicesData = [
             },
         ],
         //red
-        iconsRedTop: [
+        iconsRed: [
             {
                 id: 1,
                 image: "/assets/img/icons/utrata.svg",
@@ -630,7 +634,9 @@ export const servicesData = [
                 content:
                     "Tak, korporacyjna poczta z sandboxem jest przydatna zarówno dla małych, jak i dużych firm, chroniąc przed zagrożeniami bez względu na wielkość organizacji",
             },
-        ]
+        ],
+        filter:'technicznesrodkizabezpieczen',
+        filter2:'jednorazowe'
 
     },
     {
@@ -841,7 +847,9 @@ export const servicesData = [
                 content:
                     "Tak, systemy automatyzacji umożliwiają priorytetyzację aktualizacji krytycznych, co zapewnia, że ważne łatki bezpieczeństwa są wdrażane bez opóźnień.",
             },
-        ]
+        ],
+        filter:'technicznesrodkizabezpieczen',
+        filter2:'jednorazowe'
     },
     {
         id: "inwentaryzacja",
@@ -1052,7 +1060,9 @@ export const servicesData = [
                 content:
                     "Tak, system inwentaryzacji pomaga organizacjom spełniać wymogi dotyczące zarządzania zasobami i zgodności z licencjami, co ułatwia kontrolę i audyt zasobów.\n",
             },
-        ]
+        ],
+        filter:'technicznesrodkizabezpieczen',
+        filter2:'jednorazowe'
 
     },
     {
@@ -1264,12 +1274,14 @@ export const servicesData = [
                 content:
                     "Tak, wiele systemów zarządzania hasłami oferuje wsparcie dla logowania wieloskładnikowego, co dodatkowo zwiększa poziom bezpieczeństwa.",
             },
-        ]
+        ],
+        filter:'technicznesrodkizabezpieczen',
+        filter2:'jednorazowe'
 
     },
     {
         id: "ochrona",
-        title: "Ochrona przed wyciekami danych (DLP) ",
+        title: "Ochrona przed wyciekami danych (DLP)",
         title2: '',
         titleAboutService: "Dlaczego warto zakupić usługę ochrony przed wyciekami danych (DLP)?",
         url: "/dashboard/blue/services/ochrona",
@@ -1277,9 +1289,195 @@ export const servicesData = [
         headerImg: "/assets/img/services/bg.png",
         position: "bottom",
         size: 0.4,
-        description: "Data Loss Prevention (DLP) to zaawansowane rozwiązanie wdrożeniowe, które pomaga firmom zabezpieczyć ich wrażliwe dane przed przypadkowym lub celowym ujawnieniem. Wdrożenie DLP umożliwia śledzenie i kontrolowanie przepływu informacji w organizacji, zapewniając, że dane są chronione zarówno w ruchu, jak i w spoczynku.\n\nDzięki tej usłudze firmy mogą lepiej zabezpieczać się przed nieautoryzowanym dostępem, wyciekami danych i naruszeniami zgodności z regulacjami prawnymi. DLP daje pełną widoczność nad tym, jak dane są wykorzystywane, kto ma do nich dostęp i gdzie są przesyłane, co znacząco redukuje ryzyko wycieku."
-
+        description: "Data Loss Prevention (DLP) to zaawansowane rozwiązanie wdrożeniowe, które pomaga firmom zabezpieczyć ich wrażliwe dane przed przypadkowym lub celowym ujawnieniem. Wdrożenie DLP umożliwia śledzenie i kontrolowanie przepływu informacji w organizacji, zapewniając, że dane są chronione zarówno w ruchu, jak i w spoczynku.\n\nDzięki tej usłudze firmy mogą lepiej zabezpieczać się przed nieautoryzowanym dostępem, wyciekami danych i naruszeniami zgodności z regulacjami prawnymi. DLP daje pełną widoczność nad tym, jak dane są wykorzystywane, kto ma do nich dostęp i gdzie są przesyłane, co znacząco redukuje ryzyko wycieku.",
+        titleKrzysci: "Korzyści z zastosowania ochrony przed wyciekami danych (DLP):",
+        titleZagrozenia: "Zagrożenia, gdy usługa nie jest zakupiona:",
+        //icon BLUE
+        iconsTop: [
+            {
+                id: 1,
+                image: "/assets/img/icons/zabezpieczenie.svg",
+                title: "Ochrona danych",
+                desc: "Zapewnia bezpieczeństwo wrażliwych danych w firmie.",
+            },
+            {
+                id: 2,
+                image: "/assets/img/icons/monitoring.png",
+                title: "Kontrola przepływu",
+                desc: "Śledzenie i kontrolowanie przepływu danych w organizacji.",
+            },
+            {
+                id: 3,
+                image: "/assets/img/icons/ochrona.svg",
+                title: "Zgodność z przepisami",
+                desc: "Spełnienie wymogów prawnych dotyczących ochrony danych.",
+            },
+            {
+                id: 4,
+                image: "/assets/img/icons/rodo.svg",
+                title: "Zmniejszenie ryzyka",
+                desc: "Minimalizacja ryzyka przypadkowego lub celowego ujawnienia danych.",
+            },
+            {
+                id: 5,
+                image: "/assets/img/icons/zaufanie.svg",
+                title: "Większa widoczność",
+                desc: "Pełna widoczność nad tym, jak dane są wykorzystywane.",
+            },
+            {
+                id: 6,
+                image: "/assets/img/icons/zapobieganie.svg",
+                title: "Zabezpieczenie przesyłanych danych",
+                desc: "Ochrona danych zarówno w ruchu, jak i w spoczynku.",
+            },
+        ],
+        //red
+        iconsRed: [
+            {
+                id: 1,
+                image: "/assets/img/icons/utrata.svg",
+                title: "Brak ochrony",
+                desc: "Ryzyko wycieku wrażliwych danych z firmy.",
+            },
+            {
+                id: 2,
+                image: "/assets/img/icons/kara.svg",
+                title: "Naruszenie przepisów",
+                desc: "Możliwość naruszenia przepisów związanych z ochroną danych.",
+            },
+            {
+                id: 3,
+                image: "/assets/img/icons/ryzyko.svg",
+                title: "Utrata kontroli",
+                desc: "Brak widoczności nad przepływem danych w organizacji.",
+            },
+            {
+                id: 4,
+                image: "/assets/img/icons/przestoje.png",
+                title: "Nieautoryzowany dostęp",
+                desc: "Ryzyko dostępu do danych przez nieuprawnione osoby.",
+            },
+            {
+                id: 5,
+                image: "/assets/img/icons/kradziez.svg",
+                title: "Wysokie koszty",
+                desc: "Koszty związane z naruszeniem danych i karami prawnymi.",
+            },
+            {
+                id: 6,
+                image: "/assets/img/icons/kontrola.svg",
+                title: "Zagrożenie reputacji",
+                desc: "Utrata zaufania klientów w wyniku wycieków danych.",
+            },
+        ],
+        doZapamietaniaTop: [
+            {
+                id: 1,
+                image: "/assets/img/icons/zapobieganie.svg",
+                title: "Zabezpieczenie danych",
+                desc: "DLP chroni wrażliwe dane i minimalizuje ryzyko ich wycieku."
+            },
+            {
+                id: 2,
+                image: "/assets/img/icons/zabezpieczenie.svg",
+                title: "Kontrola",
+                desc: "Pozwala na pełną kontrolę nad przepływem informacji w organizacji."
+            },
+        ],
+        doZapamietaniaBottom: [
+            {
+                id: 1,
+                image: "/assets/img/icons/rodo.svg",
+                title: "Spełnianie wymogów",
+                desc: "Pomaga spełniać wymogi prawne dotyczące ochrony danych."
+            },
+            {
+                id: 2,
+                image: "/assets/img/icons/ochrona.svg",
+                title: "Bezpieczeństwo",
+                desc: "Zwiększa bezpieczeństwo danych i zmniejsza ryzyko incydentów."
+            },
+        ],
+        FAQLeft: [
+            {
+                id: 1,
+                title: "Czym jest ochrona przed wyciekami danych (DLP)?",
+                content:
+                    "DLP to rozwiązanie, które umożliwia śledzenie, kontrolowanie i zabezpieczanie przepływu danych w organizacji, minimalizując ryzyko wycieku danych.",
+            },
+            {
+                id: 2,
+                title: "Jakie są główne korzyści z wdrożenia DLP?",
+                content:
+                    "Korzyści obejmują ochronę wrażliwych danych, zgodność z przepisami, kontrolę nad przepływem informacji i zmniejszenie ryzyka incydentów związanych z danymi.",
+            },
+            {
+                id: 3,
+                title: "Czy DLP chroni dane w ruchu i w spoczynku?",
+                content:
+                    "Tak, DLP zapewnia ochronę danych zarówno w ruchu (podczas przesyłania), jak i w spoczynku (na nośnikach i serwerach).",
+            },
+            {
+                id: 4,
+                title: "Czy DLP może pomóc w spełnianiu wymogów prawnych?",
+                content:
+                    "Tak, DLP wspiera zgodność z regulacjami dotyczącymi ochrony danych, takimi jak RODO, dzięki zaawansowanym mechanizmom kontroli i ochrony.",
+            },
+            {
+                id: 5,
+                title: "Jak DLP kontroluje przepływ danych?",
+                content:
+                    "DLP monitoruje i analizuje przesyłane dane, aby upewnić się, że są przesyłane zgodnie z polityką bezpieczeństwa organizacji.",
+            },
+            {
+                id: 6,
+                title: "Jak działa ochrona przed przypadkowym wyciekiem danych?",
+                content:
+                    "DLP wykrywa i zapobiega przesyłaniu wrażliwych danych poza organizację, ostrzegając użytkownika lub blokując transmisję.",
+            },
+        ],
+        FAQRight: [
+            {
+                id: 7,
+                title: "Czy DLP można zintegrować z istniejącymi systemami IT?",
+                content:
+                    "Tak, DLP można zintegrować z różnymi systemami IT, takimi jak poczta elektroniczna, systemy przechowywania danych czy sieci korporacyjne.",
+            },
+            {
+                id: 8,
+                title: "Czy DLP działa w czasie rzeczywistym?",
+                content:
+                    "Tak, DLP może działać w czasie rzeczywistym, monitorując przepływ danych i zapobiegając naruszeniom polityki bezpieczeństwa.",
+            },
+            {
+                id: 9,
+                title: "Jakie są wyzwania związane z wdrożeniem DLP?",
+                content:
+                    "Wyzwania obejmują odpowiednią konfigurację systemu, edukację użytkowników oraz integrację z istniejącymi procesami i systemami.",
+            },
+            {
+                id: 10,
+                title: "Czy DLP chroni przed kradzieżą danych przez wewnętrznych użytkowników?",
+                content:
+                    "Tak, DLP identyfikuje podejrzane działania wewnętrznych użytkowników i może zapobiec kradzieży danych.",
+            },
+            {
+                id: 11,
+                title: "Czy DLP obsługuje szyfrowanie danych?",
+                content:
+                    "Tak, wiele rozwiązań DLP wspiera szyfrowanie danych w celu dodatkowego zabezpieczenia podczas ich przesyłania lub przechowywania.",
+            },
+            {
+                id: 12,
+                title: "Czy DLP współpracuje z logowaniem wieloskładnikowym (MFA)?",
+                content:
+                    "Tak, DLP może być używane razem z MFA w celu zwiększenia bezpieczeństwa dostępu do danych.",
+            },
+        ],
+        filter: 'monitoringinfrastruktury',
+        filter2: 'jednorazowe'
     },
+
     {
         id: "monitorowanie",
         title: "Monitorowanie infrastruktury w trybie ciągłym (SIEM)",
@@ -1488,7 +1686,9 @@ export const servicesData = [
                 content:
                     "Raporty i alerty generowane przez SIEM powinny być przeglądane regularnie, najlepiej codziennie, aby zapewnić szybką reakcję na incydenty i utrzymanie pełnej widoczności nad bezpieczeństwem infrastruktury.\n",
             },
-        ]
+        ],
+        filter:'monitoringinfrastruktury',
+        filter2:'jednorazowe'
 
     },
     {
@@ -1699,7 +1899,9 @@ export const servicesData = [
                 content:
                     "Tak, MDM może być stosowany również na prywatnych urządzeniach używanych w firmie, z funkcją rozdzielenia danych prywatnych od służbowych, aby zapewnić bezpieczeństwo danych firmowych.",
             },
-        ]
+        ],
+        filter:'technicznesrodkizabezpieczen',
+        filter2:'jednorazowe'
 
     },
     {
@@ -1911,7 +2113,9 @@ export const servicesData = [
                 content:
                     "Tak, UTM można dostosować do potrzeb zarówno małych, jak i dużych organizacji, co czyni go odpowiednim rozwiązaniem niezależnie od wielkości firmy.",
             },
-        ]
+        ],
+        filter:'technicznesrodkizabezpieczen',
+        filter2:'jednorazowe'
 
     },
     {
@@ -2123,7 +2327,9 @@ export const servicesData = [
                 content:
                     "Tak, rozwiązania te mogą być dostosowane do potrzeb mniejszych firm, oferując skalowalność i elastyczność, co pozwala na efektywne zarządzanie zasobami IT niezależnie od wielkości organizacji.",
             },
-        ]
+        ],
+        filter:'technicznesrodkizabezpieczen',
+        filter2:'jednorazowe'
     },
     {
         id: "ochronaurzadzenkoncowych",
@@ -2333,7 +2539,9 @@ export const servicesData = [
                 content:
                     "Największe wyzwania to odpowiednia konfiguracja, integracja z innymi systemami bezpieczeństwa oraz monitorowanie i reakcja na alerty w celu zapewnienia skutecznej ochrony.\n",
             },
-        ]
+        ],
+        filter:'technicznesrodkizabezpieczen',
+        filter2:'jednorazowe'
 
     },
     {
@@ -2544,7 +2752,9 @@ export const servicesData = [
                 content:
                     "Tak, wiele firm specjalizuje się w opracowywaniu dokumentacji SZBI, co jest korzystnym rozwiązaniem, zwłaszcza jeśli organizacja nie posiada wewnętrznych specjalistów ds. bezpieczeństwa informacji.",
             },
-        ]
+        ],
+        filter:'dokumentacjabezpieczenstwa',
+        filter2:'jednorazowe'
 
     },
     {
@@ -2756,7 +2966,9 @@ export const servicesData = [
                 content:
                     "Tak, polityka bezpieczeństwa powinna określać zasady kontroli dostępu, aby ograniczyć dostęp do danych wyłącznie dla upoważnionych osób.",
             },
-        ]
+        ],
+        filter:'dokumentacjabezpieczenstwa',
+        filter2:'jednorazowe'
 
     },
     {
@@ -2969,7 +3181,9 @@ export const servicesData = [
                 content:
                     "Nie, polityka ciągłości działania obejmuje szeroki zakres zakłóceń, takich jak klęski żywiołowe, cyberataki, przerwy w dostawie energii i inne sytuacje kryzysowe, które mogą wpływać na działalność firmy.\n",
             },
-        ]
+        ],
+        filter:'dokumentacjabezpieczenstwa',
+        filter2:'jednorazowe'
 
     },
     {
@@ -3180,7 +3394,9 @@ export const servicesData = [
                 content:
                     "Tak, polityka powinna określać harmonogram i procedury testowania kopii zapasowych, aby upewnić się, że w razie potrzeby można skutecznie przywrócić dane.",
             },
-        ]
+        ],
+        filter:'kopiezapasowe',
+        filter2:'jednorazowe'
 
     },
     {
@@ -3391,7 +3607,9 @@ export const servicesData = [
                 content:
                     "Tak, audyt zgodności z NIS2 zazwyczaj obejmuje ocenę technicznych zabezpieczeń, takich jak firewalle, systemy antywirusowe i rozwiązania monitorujące. Ocena ta pozwala zidentyfikować luki w infrastrukturze bezpieczeństwa oraz dostarczyć rekomendacji dotyczących wzmocnienia ochrony przed cyberzagrożeniami.\n",
             },
-        ]
+        ],
+        filter:'audyty',
+        filter2:'jednorazowe'
 
     },
     {
@@ -3602,7 +3820,9 @@ export const servicesData = [
                 content:
                     "Zaleca się przeprowadzanie audytu zgodności z KRI co najmniej raz w roku lub przy istotnych zmianach w infrastrukturze IT, aby utrzymać zgodność i szybko reagować na nowe zagrożenia oraz przepisy.",
             },
-        ]
+        ],
+        filter:'audyty',
+        filter2:'jednorazowe'
 
     },
     {
@@ -3812,7 +4032,9 @@ export const servicesData = [
                 content:
                     "Zaleca się przeprowadzanie audytu co najmniej raz w roku lub w przypadku znaczących zmian w infrastrukturze IT, aby zapewnić bieżącą zgodność i bezpieczeństwo.",
             },
-        ]
+        ],
+        filter:'audyty',
+        filter2:'jednorazowe'
 
     },
     {
@@ -4023,7 +4245,9 @@ export const servicesData = [
                 content:
                     "Najczęstsze wyzwania to wdrożenie kompleksowych procedur zarządzania ryzykiem, zapewnienie ciągłości działania systemów, szkolenie personelu oraz dokumentacja procesów zgodnie z normą ISO/IEC 27001.",
             },
-        ]
+        ],
+        filter:'audyty',
+        filter2:'jednorazowe'
 
     },
     {
@@ -4234,7 +4458,9 @@ export const servicesData = [
                 content:
                     "Tak, zaangażowanie kadry zarządzającej jest kluczowe, ponieważ decyzje i wsparcie kierownictwa są niezbędne do skutecznego wdrożenia i utrzymania systemu zarządzania ciągłością działania zgodnego z ISO/IEC 22301.\n",
             },
-        ]
+        ],
+        filter:'audyty',
+        filter2:'jednorazowe'
 
     },
     {
@@ -4447,7 +4673,9 @@ export const servicesData = [
                 content:
                     "Najczęstsze błędy to używanie słabych haseł, otwieranie złośliwych linków lub załączników, brak uwagi na procedury bezpieczeństwa oraz ignorowanie komunikatów ostrzegawczych systemu.",
             },
-        ]
+        ],
+        filter:'szkolenia',
+        filter2:'jednorazowe'
 
     },
     {
@@ -4658,7 +4886,9 @@ export const servicesData = [
                 content:
                     "Najczęstsze wyzwania to brak znajomości nowych zagrożeń, niewłaściwe zarządzanie incydentami, brak monitorowania sieci, nieodpowiednia konfiguracja zabezpieczeń oraz trudności w spełnianiu wymagań regulacyjnych dotyczących bezpieczeństwa.",
             },
-        ]
+        ],
+        filter:'szkolenia',
+        filter2:'jednorazowe'
 
     },
     {
@@ -4869,7 +5099,9 @@ export const servicesData = [
                 content:
                     "Najczęstsze wyzwania to brak świadomości ryzyka, niewystarczające inwestycje w zabezpieczenia, nieodpowiednia reakcja na incydenty oraz ryzyko niezgodności z przepisami dotyczącymi ochrony danych.\n",
             },
-        ]
+        ],
+        filter:'szkolenia',
+        filter2:'jednorazowe'
 
     },
     {
@@ -5080,7 +5312,9 @@ export const servicesData = [
                 content:
                     "Tak, II linia wsparcia często sporządza szczegółowe raporty z incydentów, zawierające analizę problemu, zastosowane środki zaradcze oraz rekomendacje na przyszłość.",
             },
-        ]
+        ],
+        filter:'obslugaincydentow',
+        filter2:'abonamentowe'
 
     },
     {
@@ -5291,7 +5525,9 @@ export const servicesData = [
                 content:
                     "Tak, usługa może być dostosowana pod względem częstotliwości, zakresu przechowywanych logów oraz czasu ich retencji, aby spełniać unikalne wymagania danej organizacji.",
             },
-        ]
+        ],
+        filter:'kopiezapasowe',
+        filter2:'abonamentowe'
     },
     {
         id: "cykliczne_testy_odtworzeniowe",
@@ -5501,7 +5737,9 @@ export const servicesData = [
                 content:
                     "Tak, testy mogą obejmować zarówno fizyczne, jak i wirtualne środowiska, aby zapewnić pełną gotowość wszystkich zasobów do przywrócenia w sytuacji awaryjnej.\n",
             },
-        ]
+        ],
+        filter:'testy',
+        filter2:'abonamentowe'
 
     },
     {
@@ -5713,7 +5951,9 @@ export const servicesData = [
                 content:
                     "SOC szybko wykrywa i reaguje na incydenty, co pozwala ograniczyć ich skalę i wpływ na organizację. Dzięki temu minimalizuje skutki zagrożeń, a także dostarcza rekomendacje dotyczące poprawy bezpieczeństwa.\n",
             },
-        ]
+        ],
+        filter:'monitoringinfrastruktury',
+        filter2:'abonamentowe'
 
     },
     {
@@ -5722,10 +5962,10 @@ export const servicesData = [
         title2: '',
         titleAboutService: "DlaczegoRed warto zakupić usługę odmiejscowienia kopii zapasowych (Disaster Recovery)?",
         url: "/dashboard/blue/services/odmiejscowienie_kopii_zapasowych_(disaster_recovery)",
-        urlImage: "/assets/img/dr.svg",
+        urlImage: "/assets/img/recovery.png",
         headerImg: "/assets/img/services/bg.png",
         position: "bottom",
-        size: 1.2,
+        size: 0.8,
         description: "Usługa odmiejscowienia kopii zapasowych to kluczowy element planu Disaster Recovery, który zapewnia bezpieczne przechowywanie danych poza główną lokalizacją firmy.\n\nPrzenoszenie kopii zapasowych do zewnętrznych lokalizacji (off-site) chroni przed ich utratą w wyniku poważnych incydentów, takich jak pożary, powodzie, ataki ransomware czy inne awarie lokalne. Dzięki odmiejscowieniu kopii zapasowych organizacja może szybko odzyskać dane i wznowić działalność, nawet w przypadku kryzysu, który uszkodził lub zniszczył główne systemy.\n\nJest to niezbędne rozwiązanie dla firm, które chcą zapewnić sobie pełne bezpieczeństwo danych oraz minimalizację ryzyka przestojów.",
         titleKrzysci: "Korzyści z odmiejscowienia kopii zapasowych (Disaster Recovery):",
         titleZagrozenia: "Zagrożenia, gdy odmiejscowione kopie zapasowe nie są przechowywane:",
@@ -5924,8 +6164,9 @@ export const servicesData = [
                 content:
                     "Tak, często wykorzystuje się specjalistyczne narzędzia do tworzenia, przechowywania i szyfrowania odmiejscowionych kopii zapasowych, które zapewniają bezpieczeństwo i łatwość dostępu do danych w sytuacji awaryjnej.",
             },
-        ]
-
+        ],
+        filter:'kopiezapasowe',
+        filter2:'abonamentowe'
     },
 ]
 

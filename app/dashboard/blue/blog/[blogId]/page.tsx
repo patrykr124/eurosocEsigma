@@ -1,6 +1,8 @@
 import HeaderBlog from "@/components/UI/blue/blog/theme/HeaderBlog";
 import AboutBlog from "@/components/UI/blue/blog/theme/AboutBlog";
+import React from "react";
 import {BlogData} from "@/components/UI/blue/blog/BlogData";
+
 
 interface Props {
     params: { blogId: string }
@@ -14,10 +16,12 @@ function Page({params}: Props) {
         return <p>Post not found</p>;
     }
 
+    console.log(
+        BlogDataParams)
 
     return (
         <div>
-            <HeaderBlog content={BlogDataParams} headerImg="/assets/img/services/bg.png" position="center"/>
+            <HeaderBlog content={BlogDataParams} position="center" headerImg={""}/>
             <AboutBlog content={BlogDataParams}/>
         </div>
     );

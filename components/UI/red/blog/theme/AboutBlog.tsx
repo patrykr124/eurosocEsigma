@@ -13,18 +13,19 @@ function AboutBlog({content} : Props) {
                 <div className=" flex flex-row gap-10 ">
                     <div className="left flex flex-[3] flex-col gap-12">
                         <div className="flex-col flex gap-4">
-                            <h1 className="p-medium-28-semibold ">{content.h1}</h1>
-                            <p className="text-justify" style={{whiteSpace: 'pre-wrap'}}>{content.p1}</p>
-                        </div>
-                        <div className="relative w-full h-[450px] overflow-hidden rounded-xl">
-                            <Image fill className="object-cover" src="/assets/img/concept.jpg" alt="blog"/>
+                            <h1 className="h3-bold ">{content.h1}</h1>
+                            <p className="text-justify" style={{whiteSpace: 'pre-wrap'}}
+                               dangerouslySetInnerHTML={{__html: content.desc}}></p>
+                            <p className="text-justify" style={{whiteSpace: 'pre-wrap'}}
+                               dangerouslySetInnerHTML={{__html: content.p1}}></p>
                         </div>
                         <div className="flex-col flex gap-4">
-                            <h1 className="p-medium-28-semibold">{content.h2}</h1>
-                            <p className="text-justify" style={{whiteSpace: 'pre-wrap'}}>{content.p2}</p>
+                            <h1 className="h3-bold" dangerouslySetInnerHTML={{__html: content.h2}}></h1>
+                            <p className="text-justify" style={{whiteSpace: 'pre-wrap'}}
+                               dangerouslySetInnerHTML={{__html: content.p2}}></p>
                         </div>
                         <hr className="w-full border-gray-2"/>
-                        <Avatar/>
+                        <Avatar data={content}/>
                     </div>
 
                     <div className="right flex-1 flex flex-col gap-12">

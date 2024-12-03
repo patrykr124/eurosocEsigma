@@ -10,7 +10,7 @@ function HeaderRed() {
     const words = ["wdrożeniach", "szkoleniach", "audytach", "bezpieczeństwie"];
 
     return (
-        <div className="w-full h-[85vh] overflow-hidden" style={{
+        <div className="w-full h-[70vh] lg:h-[85vh] overflow-hidden" style={{
             backgroundImage: "linear-gradient(180deg, rgba(255,255,255,0.1) 50%, rgba(0,0,0,1) 100%)",
         }}>
             < div className="relative h-full w-full flex flex-col  justify-center items-center">

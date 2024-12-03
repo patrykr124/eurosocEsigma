@@ -8,10 +8,10 @@ interface Propos {
 
 }
 
-function HeaderBlog({headerImg,position,content} : Propos) {
+function HeaderBlog({position,content} : Propos) {
     return (
         <header style={{
-            backgroundImage: `url('${headerImg}')`,
+            backgroundImage: `url('${content?.imgHeader}')`,
             backgroundPosition: `${position}`,
             backgroundSize: "cover",
             backgroundAttachment: "fixed",

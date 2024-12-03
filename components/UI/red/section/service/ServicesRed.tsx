@@ -23,7 +23,7 @@ function ServicesRed() {
     useEffect(() => {
         let str = generateRandomString(1500);
         setRandomString(str);
-    }, []);
+    }, [100]);
 
 
 
@@ -46,13 +46,13 @@ function ServicesRed() {
             <div  className="box flex flex-col items-center gap-20 rounded-xl  pb-8">
                 <div  onMouseMove={onMouseMove} className="-mt-36 bg-white relative rounded-3xl shadow-lg w-full xl:w-[1400px] py-8 pb-12 overflow-hidden group/box">
                     <BoxAnimationHover mouseX={mouseX} mouseY={mouseY} randomString={randomString} />
-                    <div className="wrapper gap-16 flex flex-col ">
-                        <div className="text justify-between flex flex-row gap-12 ">
-                            <div className="flex-1 z-10">
+                    <div className="wrapper lg:gap-16 flex flex-col ">
+                        <div className="text justify-between flex md:flex-row flex-col lg:gap-12 gap-4 ">
+                            <div className="flex-1 z-10 flex flex-col items-center md:items-start">
                                 <h2 className='titleRedFrame'>O NAS</h2>
                                 <h2 className='h2-medium-42'>Co zyskasz dzięki EUROSOC?</h2>
                             </div>
-                            <div className="links flex flex-col md:flex-row justify-end items-end mb-4 gap-8 flex-1 z-10">
+                            <div className="links flex flex-row  justify-end items-end mb-4 gap-8 flex-1 z-10">
                                 <EncryptButtonRed onClick="" textData="Usługi abonamentowe" icon={<ArrowRight />} className="bg-red-1 hover:bg-red-hover" />
                                 <EncryptButtonRed onClick="" textData="Usługi jednorazowe" icon={<ArrowRight />} className="bg-red-1 hover:bg-red-hover" />
 

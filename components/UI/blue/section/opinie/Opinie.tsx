@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {motion} from 'framer-motion';
 import {sectionAnimation} from "@/constants/animations/animation";
+import {opinieData} from "@/constants/opinieData";
 
 function Opinie() {
 
@@ -24,14 +25,14 @@ function Opinie() {
         infinite: true,
         speed: 500,
         slidesToScroll: 1,
-        slidesToShow: 3,
+        slidesToShow: 2,
         arrows: false,
         responsive: [
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
                     infinite: true,
                     dots: true
                 }
@@ -40,7 +41,7 @@ function Opinie() {
                 breakpoint: 768,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToScroll:1
                 }
             },
             {
@@ -72,9 +73,9 @@ function Opinie() {
                             }}
                             {...settings}
                         >
-                            <ReviewCart/>
-                            <ReviewCart/>
-                            <ReviewCart/>
+                            <ReviewCart title={opinieData[0].title} desc={opinieData[0].desc} author={opinieData[0].author} />
+                            <ReviewCart title={opinieData[1].title} desc={opinieData[1].desc} author={opinieData[1].author} />
+                            <ReviewCart title={opinieData[2].title} desc={opinieData[2].desc} author={opinieData[2].author} />
                         </Slider>
                         <div className='flex justify-end '>
 

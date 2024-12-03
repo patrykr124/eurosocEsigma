@@ -30,7 +30,7 @@ function BlogBox({BlogDataItemLast,params} : BlogBoxProps) {
                 <div className="left w-3/4 gap-4 flex flex-col bg-gray-3 text-black p-8  ">
                     <h1 className="h4-medium" style={{whiteSpace: 'pre-wrap'}}>{BlogDataItemLast?.title}</h1>
                     <hr/>
-                    <Avatar/>
+                    <Avatar data={BlogDataItemLast}/>
                     <div className="desc">
                         <p>{truncateTextData}
                         </p>
@@ -42,7 +42,7 @@ function BlogBox({BlogDataItemLast,params} : BlogBoxProps) {
                     </div>
                 </div>
                 <div className="right w-full flex h-auto relative">
-                    <Image layout="fill" objectFit="cover" src="/assets/img/blog1.jpg" alt="blog"/>
+                    <Image layout="fill" objectFit="cover" src={BlogDataItemLast.imgHeader} alt="blog"/>
                 </div>
             </div>
         </div>

@@ -1,8 +1,8 @@
 "use client"
-import { useRef, useState } from "react";
-import { motion } from "framer-motion";
-import { cn } from "@/lib/utils";
+import {useRef, useState} from "react";
+import {motion} from "framer-motion";
 import {useRouter} from "next/navigation";
+import Link from "next/link";
 
 
 interface EncryptButtonProps {
@@ -12,7 +12,7 @@ interface EncryptButtonProps {
     onClick: string;
 }
 
-const EncryptButtonRed = ({ textData, icon, className, onClick }: EncryptButtonProps) => {
+const EncryptButtonRed = ({textData, icon, className, onClick}: EncryptButtonProps) => {
     const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
     const route = useRouter();
     const TARGET_TEXT = `${textData}`;
@@ -22,7 +22,6 @@ const EncryptButtonRed = ({ textData, icon, className, onClick }: EncryptButtonP
     const CHARS = "!@#$%^&*():{};|,.<>/?";
 
     const [text, setText] = useState(TARGET_TEXT);
-
 
 
     const scramble = () => {
@@ -62,6 +61,7 @@ const EncryptButtonRed = ({ textData, icon, className, onClick }: EncryptButtonP
             route.push(onClick);
         }
     }
+
     return (
         <motion.button
             whileHover={{
@@ -74,12 +74,14 @@ const EncryptButtonRed = ({ textData, icon, className, onClick }: EncryptButtonP
             onMouseLeave={stopScramble}
             className={`group relative overflow-hidden rounded-lg tracking-wide px-4 h-fit py-2 font-medium uppercase text-white transition-colors duration-500 ${className}`}
             onClick={handleClick}
-        >
+        ><Link href="/dashboard/red/kontakt">
             <div className="relative z-10 flex items-center gap-2">
 
                 <span>{text}</span>
                 {icon}
+
             </div>
+        </Link>
             <motion.span
                 initial={{
                     y: "100%",
@@ -95,7 +97,7 @@ const EncryptButtonRed = ({ textData, icon, className, onClick }: EncryptButtonP
                 }}
                 className="duration-300 absolute inset-0 z-0 scale-125 bg-gradient-to-t from-indigo-400/0 from-40% via-white to-indigo-400/0 to-60% opacity-0 transition-opacity group-hover:opacity-100"
             />
-        </motion.button >
+        </motion.button>
     );
 };
 
