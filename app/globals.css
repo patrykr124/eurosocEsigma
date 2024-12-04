@@ -544,15 +544,15 @@ hr {
 /*// HOME*/
 
 .leftFire , .rightFire {
-    filter: grayscale(0%);
+    filter: grayscale(100%);
     transition-duration: 0.2s;
     transition-timing-function: ease-in;
 }
 
 .leftLinkHand:hover ~ .leftFire{
-    filter: grayscale(100%);
+    filter: grayscale(0%);
 }
 
 .RightLinkHand:hover ~ .rightFire{
-    filter: grayscale(100%);
+    filter: grayscale(0%);
 }
