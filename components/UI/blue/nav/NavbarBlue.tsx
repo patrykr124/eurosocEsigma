@@ -3,7 +3,7 @@ import Image from 'next/image'
 import React, {useState} from 'react'
 import Logo from '../../../../public/assets/img/logo-blue.svg'
 import NavbarItems from './NavbarItems'
-import Link from 'next/link'
+
 import NavOpen from './NavOpen'
 import Switch from "@/components/UI/Switch";
 import {
@@ -19,6 +19,7 @@ import {navbarAnimation, navbarAnimationTransitio} from "@/constants/animations/
 import UseMenuShowOnScroll from "@/hooks/useMenuShowOnScroll";
 import LocaleSwitcher from "@/components/UI/LocaleSwitch/LocaleSwitcher";
 import {useTranslations} from "use-intl";
+import {Link} from "@/navigation";
 
 function NavbarBlue() {
     const [ishandleOpen, setIsHandleOpen] = useState(false)
@@ -26,6 +27,7 @@ function NavbarBlue() {
     const [openMobile2, setOpenMobile2] = useState(false)
     const pathname = usePathname();
     const [hiddenMenu, setHiddenMenu] = useState(false)
+
     const servicesItemUslugi = itemsMenu.find(item => item.name === 'Usługi')
 
     const t = useTranslations("menu.home")

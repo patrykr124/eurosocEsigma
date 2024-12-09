@@ -1,9 +1,12 @@
 'use client';
 import {usePathname, useRouter} from "next/navigation";
 import {useEffect, useState} from "react";
+import {useLocale} from "use-intl";
 
 
 function Switch() {
+    const locale = useLocale();
+
     const [switchButton, setSwitchButton] = useState('loading');
 
     const pathName = usePathname();
@@ -30,20 +33,20 @@ function Switch() {
         if (pathName && pathName.includes('/services')) {
 
             if (switchButton === 'blueServices') {
-                router.push('/dashboard/red/services');
+                router.push(`/${locale}/dashboard/red/services`);
                 setSwitchButton('redServices');
 
             } else if (switchButton === 'redServices') {
-                router.push('/dashboard/blue/services');
+                router.push(`/${locale}/dashboard/blue/services`);
                 setSwitchButton('blueServices');
             }
 
         } else {
             if (switchButton === 'blueTeam') {
-                router.push('/dashboard/red');
+                router.push(`/${locale}/dashboard/red`);
                 setSwitchButton('redTeam');
             } else {
-                router.push('/dashboard/blue');
+                router.push(`/${locale}/dashboard/blue`);
                 setSwitchButton('blueTeam');
             }
         }

@@ -3,7 +3,7 @@ import Image from 'next/image'
 import React, {useState} from 'react'
 import Logo from '../../../../public/assets/img/red/logoRed.svg'
 import NavbarItems from './NavbarItems'
-import Link from 'next/link'
+
 import NavOpen from './NavOpen'
 import Switch from "@/components/UI/Switch";
 import {motion} from 'framer-motion'
@@ -12,11 +12,15 @@ import {navbarAnimation, navbarAnimationTransitio} from "@/constants/animations/
 import {
     itemMenuUslugiUtrzymaniowe,
     itemsMenu,
+    itemsMenu_EN,
     itemsMenuObslugaIncydentow,
     itemsMenuUslugiSzkoleniowe
 } from "@/components/UI/red/nav";
 import {ChevronDown} from "lucide-react";
 import {usePathname} from "next/navigation";
+import LocaleSwitcher from "@/components/UI/LocaleSwitch/LocaleSwitcher";
+import {Link} from "@/navigation";
+import {useLocale, useTranslations} from "use-intl";
 
 function NavbarRed() {
     const [ishandleOpen, setIsHandleOpen] = useState(false)
@@ -24,10 +28,13 @@ function NavbarRed() {
     const [openMobile, setOpenMobile] = useState(false)
     const [openMobile2, setOpenMobile2] = useState(false)
     const pathname = usePathname();
-    const servicesItemUslugi = itemsMenu.find(item => item.name === 'Usługi')
+    const locale = useLocale();
+    const t = useTranslations('menu.home');
+    const servicesItemUslugiLocale = locale === "pl" ? itemsMenu : itemsMenu_EN
+    const servicesItemUslugi = servicesItemUslugiLocale.find(item => item.name === t("uslugi"))
 
     function isOpen(hoveritem: string) {
-        if (hoveritem === 'Usługi') {
+        if (hoveritem === t("uslugi")) {
             setIsHandleOpen(true)
         } else {
             setIsHandleOpen(false)
@@ -59,7 +66,10 @@ function NavbarRed() {
                         <NavbarItems isOpen={isOpen} ishandleOpen={ishandleOpen} setIsHandleOpen={setIsHandleOpen}/>
 
                     </div>
-                    <Switch/>
+                    <div className="flex justify-center items-center gap-2">
+                        <LocaleSwitcher/>
+                        <Switch/>
+                    </div>
 
 
                 </div>
@@ -83,7 +93,7 @@ function NavbarRed() {
                     <div
                         className={`bg-black-1 fixed overflow-y-auto left-0 top-16 w-screen h-screen ${openMobile ? '-translate-y-0 opacity-100' : '-translate-y-full opacity-0'} transition-opacity duration-500`}>
                         <div className="wrapper flex flex-col gap-6 my-10">
-                            {itemsMenu.map(item => {
+                            {servicesItemUslugiLocale.map(item => {
                                 return (
                                     <li key={item.id}>
                                         <div className="flex">
@@ -96,7 +106,7 @@ function NavbarRed() {
                                                 <ChevronDown onClick={openMobileMenu2} color="white" size={25}
                                                              className={`${openMobile2 ? 'rotate-180' : ''} `}/>}
                                         </div>
-                                        {item.name === 'Usługi' && openMobile2 && (
+                                        {item.name === t("uslugi")  && openMobile2 && (
                                             <div onClick={openMobileMenu} className="ItemsClick">
                                                 <div
                                                     className=" gap-2 w-full flex  flex-col items-start justify-between ">
@@ -105,7 +115,7 @@ function NavbarRed() {
                                                         </h2>
                                                         <div className="flex flex-col gap-4">
                                                             {servicesItemUslugi && servicesItemUslugi.featured && servicesItemUslugi.featured.map((item) => {
-                                                                const isActive = pathname === item.url
+                                                                const isActive = pathname && pathname.includes(item.url)
                                                                 return (
                                                                     <Link onClick={() => setIsHandleOpen(false)}
                                                                           href={item.url}

@@ -54,8 +54,6 @@ function Services() {
                             <div className="links flex flex-row justify-end items-end mb-4 gap-8 flex-1 z-10">
                                 <EncryptButton textData={t("encrypt1")} icon={<ArrowRight/>}
                                                className="bg-blue-1 hover:bg-blue-1-hover"/>
-                                <EncryptButton textData={t("encrypt2")} icon={<ArrowRight/>}
-                                               className="bg-blue-1 hover:bg-blue-1-hover"/>
                             </div>
                         </div>
                         <SwiperSlider/>

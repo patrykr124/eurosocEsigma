@@ -587,11 +587,11 @@ export const servicesData_EN = [
         filter2: "one-time",
     },
     {
-        id: "automation",
+        id: "automatyzacja",
         title: "Software Update Automation",
         title2: "backup copies",
         titleAboutService: "Why should you purchase the software update automation service?",
-        url: "/dashboard/blue/services/automation",
+        url: "/dashboard/blue/services/automatyzacja",
         urlImage: "/assets/img/update.png",
         headerImg: "/assets/img/services/updates.png",
         position: "center",
@@ -783,11 +783,11 @@ export const servicesData_EN = [
         filter2: "one-time",
     },
     {
-        id: "inventory",
+        id: "inwentaryzacja",
         title: "Inventory Management",
         title2: "continuous mode",
         titleAboutService: "Why should you implement an inventory management system for hardware and software?",
-        url: "/dashboard/blue/services/inventory",
+        url: "/dashboard/blue/services/inwentaryzacja",
         urlImage: "/assets/img/inventory.png",
         headerImg: "/assets/img/services/inventory.png",
         position: "center",
@@ -979,11 +979,11 @@ export const servicesData_EN = [
         filter2: "one-time",
     },
     {
-        id: "central",
+        id: "centralny",
         title: "Central Password Management System",
         title2: '',
         titleAboutService: "Why should you invest in a central password management system?",
-        url: "/dashboard/blue/services/central",
+        url: "/dashboard/blue/services/centralny",
         urlImage: "/assets/img/key.png",
         headerImg: "/assets/img/services/password.png",
         position: "center",
@@ -1175,11 +1175,11 @@ export const servicesData_EN = [
         filter2: "one-time",
     },
     {
-        id: "data-protection",
+        id: "ochrona",
         title: "Data Loss Prevention (DLP)",
         title2: '',
         titleAboutService: "Why should you invest in Data Loss Prevention (DLP)?",
-        url: "/dashboard/blue/services/data-protection",
+        url: "/dashboard/blue/services/ochrona",
         urlImage: "/assets/img/DLP.png",
         headerImg: "/assets/img/services/bg.png",
         position: "bottom",
@@ -1375,7 +1375,7 @@ export const servicesData_EN = [
         "title": "Continuous Infrastructure Monitoring (SIEM)",
         "title2": "",
         "titleAboutService": "Why should you invest in continuous infrastructure monitoring (SIEM)?",
-        "url": "/dashboard/blue/services/monitorowanie",
+        url: "/dashboard/blue/services/monitorowanie",
         "urlImage": "/assets/img/SIEM.png",
         "headerImg": "/assets/img/services/bg.png",
         "position": "bottom",
@@ -1555,11 +1555,11 @@ export const servicesData_EN = [
         "filter2": "one-time"
     },
     {
-        "id": "mobile_devices",
+        id: "mobilnych",
         "title": "Mobile Device Protection (MDM)",
         "title2": "",
         "titleAboutService": "Why is it worth purchasing the Mobile Device Protection (MDM) service?",
-        "url": "/dashboard/blue/services/mobile_devices",
+        url: "/dashboard/blue/services/mobilnych",
         "urlImage": "/assets/img/MDM.png",
         "headerImg": "/assets/img/services/bg.png",
         "position": "bottom",
@@ -1739,11 +1739,11 @@ export const servicesData_EN = [
         "filter2": "one_time"
     },
     {
-        "id": "(UTM)",
+        id: "(UTM)",
         "title": "Internet Gateway Protection (UTM)",
         "title2": "",
         "titleAboutService": "Why is it worth purchasing the Internet Gateway Protection (UTM) service?",
-        "url": "/dashboard/blue/services/(UTM)",
+        url: "/dashboard/blue/services/(UTM)",
         "urlImage": "/assets/img/internet.svg",
         "headerImg": "/assets/img/services/bg.png",
         "position": "bottom",
@@ -1923,11 +1923,11 @@ export const servicesData_EN = [
         "filter2": "one_time"
     },
     {
-        "id": "virtualization",
+        id: "wirtualizacja",
         "title": "Server Virtualization and High Availability Clusters",
         "title2": "",
         "titleAboutService": "Why is it worth purchasing the Server Virtualization and High Availability Cluster implementation service?",
-        "url": "/dashboard/blue/services/virtualization",
+        url: "/dashboard/blue/services/wirtualizacja",
         "urlImage": "/assets/img/server.svg",
         "headerImg": "/assets/img/services/bg.png",
         "position": "bottom",
@@ -2107,11 +2107,11 @@ export const servicesData_EN = [
         "filter2": "one-time"
     },
     {
-        "id": "endpointprotection",
+        id: "ochronaurzadzenkoncowych",
         "title": "Endpoint Protection (EDR / XDR)",
         "title2": "",
         "titleAboutService": "Why is it worth purchasing the Endpoint Protection (EDR/XDR) implementation service?",
-        "url": "/dashboard/blue/services/endpointprotection",
+        url: "/dashboard/blue/services/ochronaurzadzenkoncowych",
         "urlImage": "/assets/img/device.svg",
         "headerImg": "/assets/img/services/bg.png",
         "position": "bottom",
@@ -2479,16 +2479,16 @@ The ISMS documentation development service helps companies build solid informati
         filter2: "one-time"
     },
     {
-    id: "development_of_security_policy",
-    title: "Development of Security Policy",
-    title2: "",
-    titleAboutService: "Why is it worth purchasing the security policy development service?",
-    url: "/dashboard/blue/services/opracowanie-polityki-bezpieczenstwa",
-    urlImage: "/assets/img/polityka.svg",
-    headerImg: "/assets/img/services/bg.png",
-    position: "bottom",
-    size: 1,
-    description: `A security policy is a key document that defines the rules and guidelines for protecting data and IT infrastructure within an organization. Developing a coherent security policy allows the company to clearly outline what actions are taken to ensure information security and how employees should act to minimize the risk of breaches.
+        id: "opracowanie-polityki-bezpieczenstwa",
+        title: "Development of Security Policy",
+        title2: "",
+        titleAboutService: "Why is it worth purchasing the security policy development service?",
+        url: "/dashboard/blue/services/opracowanie-polityki-bezpieczenstwa",
+        urlImage: "/assets/img/polityka.svg",
+        headerImg: "/assets/img/services/bg.png",
+        position: "bottom",
+        size: 1,
+        description: `A security policy is a key document that defines the rules and guidelines for protecting data and IT infrastructure within an organization. Developing a coherent security policy allows the company to clearly outline what actions are taken to ensure information security and how employees should act to minimize the risk of breaches.
 
 Properly prepared security policies support compliance with legal regulations (e.g., GDPR) and standards such as ISO 27001, while fostering a culture of security within the organization.
 
@@ -2667,11 +2667,11 @@ This document serves as the foundation for managing information security and pro
     filter2: "one-time"
 },
     {
-        "id": "business_continuity_policy_development",
+        id: "opracowanie_polityki_ciaglosci_dzialania",
         "title": "Business Continuity Policy Development",
         "title2": "",
         "titleAboutService": "Why is it worth purchasing the Business Continuity Policy Development service?",
-        "url": "/dashboard/blue/services/business_continuity_policy_development",
+        url: "/dashboard/blue/services/opracowanie_polityki_ciaglosci_dzialania",
         "urlImage": "/assets/img/polityka.svg",
         "headerImg": "/assets/img/services/bg.png",
         "position": "bottom",
@@ -2851,7 +2851,7 @@ This document serves as the foundation for managing information security and pro
         "filter2": "one-time"
     },
     {
-        id: "development_of_backup_policy",
+        id: "opracowanie_polityki_kopii_zapasowych",
         title: "Development of Backup Policy",
         title2: "",
         titleAboutService: "Why is it worth purchasing the backup policy development service?",
@@ -3035,16 +3035,16 @@ This document serves as the foundation for managing information security and pro
         filter2: "one-time"
     },
     {
-    id: "compliance_audit_with_nis2",
-    title: "Compliance Audit with NIS2",
-    title2: "",
-    titleAboutService: "Why should you purchase the NIS2 compliance audit service?",
-    url: "/dashboard/blue/services/audyt_zgodnosci_z_NIS2",
-    urlImage: "/assets/img/audyt.svg",
-    headerImg: "/assets/img/services/bg.png",
-    position: "bottom",
-    size: 1.1,
-    description: `The compliance audit with the NIS2 directive (Network and Information Security Directive 2) is a comprehensive assessment that evaluates the degree to which an organization meets the security requirements set forth by European Union legislation.
+        id: "audyt_zgodnosci_z_NIS2",
+        title: "Compliance Audit with NIS2",
+        title2: "",
+        titleAboutService: "Why should you purchase the NIS2 compliance audit service?",
+        url: "/dashboard/blue/services/audyt_zgodnosci_z_NIS2",
+        urlImage: "/assets/img/audyt.svg",
+        headerImg: "/assets/img/services/bg.png",
+        position: "bottom",
+        size: 1.1,
+        description: `The compliance audit with the NIS2 directive (Network and Information Security Directive 2) is a comprehensive assessment that evaluates the degree to which an organization meets the security requirements set forth by European Union legislation.
 
 The NIS2 directive mandates organizations to implement effective measures to protect IT networks and systems and manage cybersecurity risks. This audit allows businesses to identify potential security gaps, gain a comprehensive view of their current security state, and implement necessary corrective actions to comply with the directive.
 
@@ -3223,11 +3223,11 @@ This service is crucial for critical sector companies and essential service prov
     filter2: "one-time"
 },
     {
-        "id": "compliance_audit_KRI",
+        id: "audyt_zgodnosci_z_KRI",
         "title": "Compliance Audit with KRI",
         "title2": "",
         "titleAboutService": "Why is it worth purchasing the Compliance Audit with KRI service?",
-        "url": "/dashboard/blue/services/compliance_audit_KRI",
+        url: "/dashboard/blue/services/audyt_zgodnosci_z_KRI",
         "urlImage": "/assets/img/audit.svg",
         "headerImg": "/assets/img/services/bg.png",
         "position": "bottom",
@@ -3407,11 +3407,11 @@ This service is crucial for critical sector companies and essential service prov
         "filter2": "one-time"
     },
     {
-        "id": "audyt_isoiec",
+        id: "audyt_SZBI",
         "title": "Audit of SZBI (ISO/IEC 27001)",
         "title2": "",
         "titleAboutService": "Why is it worth purchasing the ISO/IEC 22301 compliance audit service?",
-        "url": "/dashboard/blue/services/audyt_isoiec",
+        url: "/dashboard/blue/services/audyt_SZBI",
         "urlImage": "/assets/img/audyt.svg",
         "headerImg": "/assets/img/services/bg.png",
         "position": "bottom",
@@ -3591,7 +3591,7 @@ This service is crucial for critical sector companies and essential service prov
         "filter2": "one-time"
     },
     {
-        id: "compliance_audit_with_KSC",
+        id: "audyt_zgodnosci_z_KSC",
         title: "Compliance Audit with KSC",
         title2: "",
         titleAboutService: "Why should you purchase the KSC compliance audit service?",
@@ -3781,11 +3781,11 @@ Through this audit, organizations can safeguard against potential cyberattacks a
         filter2: "one-time"
     },
     {
-        "id": "cybersecurity_training_for_it_staff",
+        id: "szkolenie_z_cyberbezpieczenstwa_dla_kadry_informatycznej",
         "title": "Cybersecurity Training for IT Staff",
         "title2": "",
         "titleAboutService": "Why is it worth purchasing the cybersecurity training for IT staff?",
-        "url": "/dashboard/blue/services/szkolenie_z_cyberbezpieczenstwa_dla_kadry_informatycznej",
+        url: "/dashboard/blue/services/szkolenie_z_cyberbezpieczenstwa_dla_kadry_informatycznej",
         "urlImage": "/assets/img/course.svg",
         "headerImg": "/assets/img/services/course.png",
         "position": "top",
@@ -3965,7 +3965,7 @@ Through this audit, organizations can safeguard against potential cyberattacks a
         "filter2": "one-time"
     },
     {
-        id: "cybersecurity_training_for_administrative_staff",
+        id: "szkolenie_z_cyberbezpieczenstwa_dla_kadry_administracyjnej",
         title: "Cybersecurity Training for Administrative Staff",
         title2: "",
         titleAboutService: "Why should you purchase the cybersecurity training service for administrative staff?",
@@ -4155,7 +4155,7 @@ This training is essential for organizations aiming to minimize risks arising fr
         filter2: "one-time"
     },
     {
-        id: "cybersecurity_training_for_management",
+        id: "szkolenie_z_cyberbezpieczenstwa_dla_kadry_zarzadzajacej",
         title: "Cybersecurity Training for Management",
         title2: "",
         titleAboutService: "Why should you purchase the cybersecurity training service for management?",
@@ -4345,7 +4345,7 @@ It is essential to ensure protection against potential financial and reputationa
         filter2: "one-time"
     },
     {
-        id: "II_line_technical_support",
+        id: "II_linia_wsparcia_technicznego",
         title: "II Line Technical Support",
         title2: "",
         titleAboutService: "Why should you purchase the Second Line Technical Support service?",
@@ -4535,11 +4535,11 @@ Second Line Support is essential for companies that require immediate access to 
         filter2: "subscription"
     },
     {
-        id: "cyclic_recovery_tests",
+        id: "codzienne_kopie_zapasowe_logow",
         title: "Cyclic Recovery Tests",
         title2: "",
         titleAboutService: "Why should you purchase the Cyclic Recovery Tests service?",
-        url: "/dashboard/blue/services/cykliczne_testy_odtworzeniowe",
+        url: "/dashboard/blue/services/codzienne_kopie_zapasowe_logow",
         urlImage: "/assets/img/test.svg",
         headerImg: "/assets/img/services/bg.png",
         position: "bottom",
@@ -4913,7 +4913,7 @@ This service is essential for organizations looking to ensure comprehensive prot
         filter2: "subscription"
     },
     {
-        id: "offsite_backup",
+        id: "odmiejscowienie_kopii_zapasowych_(disaster_recovery)",
         title: "Offsite Backup (Disaster Recovery)",
         title2: "",
         titleAboutService: "Why should you purchase the Offsite Backup (Disaster Recovery) service?",
@@ -5101,11 +5101,11 @@ This solution is essential for companies seeking comprehensive data security and
         filter2: "subscription"
     },
     {
-        id: "daily_log_backups",
+        id: "codzienne_kopie_zapasowe_logow",
         title: "Daily Log Backups",
         title2: "",
         titleAboutService: "Why is it worth purchasing the daily log backup service?",
-        url: "/dashboard/blue/services/daily_log_backups",
+        url: "/dashboard/blue/services/codzienne_kopie_zapasowe_logow",
         urlImage: "/assets/img/log.svg",
         headerImg: "/assets/img/services/bg.png",
         position: "bottom",

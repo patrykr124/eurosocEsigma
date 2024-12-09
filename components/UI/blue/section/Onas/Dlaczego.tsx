@@ -34,7 +34,7 @@ export default function Dlaczego() {
                             </div>
                             <motion.div initial={{opacity: 0, y: 100}} whileInView={{opacity: 1, y: 0}}
                                         viewport={{amount: 1,once:true}} transition={{duration: 0.9, ease: "easeOut"}} className="">
-                                <EncryptButton textData="Zabezpiecz się"
+                                <EncryptButton textData={t("button")}
                                                className="bg-blue-1 hover:bg-blue-1-hover w-fit"/>
                             </motion.div>
                         </div>

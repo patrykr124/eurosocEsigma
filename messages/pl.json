@@ -16,8 +16,7 @@
   "services": {
     "h21": "O NAS",
     "h22": "Co zyskasz dzięki EUROSOC?",
-    "encrypt1": "Usługi abonamentowe",
-    "encrypt2": "Usługi jednorazowe"
+    "encrypt1": "Wszystkie usługi"
   },
   "dlaczego": {
     "h21": "O NAS",
@@ -82,6 +81,12 @@
       "title2": "Usługi audytorskie ",
       "title3": "Usługi szkoleniowe ",
       "title4": "Usługi utrzymaniowe "
+    },
+    "servicesRed": {
+      "title1": "Usługi audytorskie",
+      "title2": "Usługi szkoleniowe",
+      "title3": "Obsługa incydentów",
+      "title4": "Usługi utrzymaniowe"
     }
 
   },
@@ -93,6 +98,17 @@
   },
   "kontakt": {
     "title": "Kontakt"
+  },
+  "servicesPage": {
+    "title":"O USŁUDZE",
+    "button": "Zabezpiecz się",
+    "switchTabBlue": "KORZYŚCI",
+    "switchTabRed": "ZAGROŻENIA",
+    "h2": "Czy to coś dla Ciebie?",
+    "p": "Skontaktuj się z nami, by porozmawiać o korzyściach przeprowadzenia wybranego testu penetracyjnego w Twojej organizacji.",
+    "h22": "WAŻNE",
+    "h23": "Najważniejsze do zapamiętania",
+    "FAQh2": "Pytania i odpowiedzi"
   },
 
 

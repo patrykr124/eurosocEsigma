@@ -7,8 +7,13 @@
   "dashboard": {
     "header": {
       "p": "We Create Secure Digital Solutions",
-      "h1": "Your Cybersecurity Based on",
-      "words": ["implementations", "trainings", "audits", "security"],
+      "h1": "Your Cybersecurity Based\non",
+      "words": [
+        "implementations",
+        "trainings",
+        "audits",
+        "security"
+      ],
       "buttonMain": "Secure Yourself",
       "buttonInfo": "Learn More"
     }
@@ -16,11 +21,11 @@
   "services": {
     "h21": "ABOUT US",
     "h22": "What will you gain with EUROSOC?",
-    "encrypt1": "Subscription services",
-    "encrypt2": "One-time services"
+    "encrypt1": "All Services"
+
   },
   "dlaczego": {
-    "h21": "About Us",
+    "h21": "ABOUT US",
     "h22": "A Leading Position in Cybersecurity Solutions and Innovation",
     "p": "EUROSOC delivers innovative cybersecurity solutions, protecting your digital world with expertise, commitment, and a personalized approach.",
     "checkIcon1": "Innovative cybersecurity solutions for modern threats",
@@ -65,9 +70,8 @@
     "title2": "Our Certificates",
     "p1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, provident autem! Culpa pariatur dolorem ad officia aut modi minus quae."
   },
-
   "FAQ": {
-    "title":"questions and answers",
+    "title": "Questions and answers",
     "p": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, laboriosam aut illo ducimus natus dicta in deleniti excepturi fugiat omnis."
   },
   "menu": {
@@ -82,9 +86,13 @@
       "title2": "Auditing Services",
       "title3": "Training Services",
       "title4": "Maintenance Services"
+    },
+    "servicesRed": {
+      "title1": "Auditing services",
+      "title2": "Training services",
+      "title3": "Incident handling",
+      "title4": "Maintenance services"
     }
-
-
   },
   "homeServices": {
     "title": "Services",
@@ -94,11 +102,18 @@
   },
   "kontakt": {
     "title": "Contact"
-
   },
-
-
-
+  "servicesPage": {
+    "title": "ABOUT SERVICES",
+    "button": "PROTECT YOURSELF",
+    "switchTabBlue": "BENEFITS ",
+    "switchTabRed": "DANGER",
+    "h2": "Is this something for you?",
+    "p": "Contact us to discuss the benefits of conducting your chosen penetration test at your organisation.",
+    "h22": "IMPORTANT",
+    "h23": "The most important to remember",
+    "FAQh2": "Questions and answers"
+  },
   "label": {
     "label": "EN",
     "locale": "{locale, select, en {EN} pl {PL} other {Unknown} }"
@@ -106,5 +121,6 @@
   "layout": {
     "title": "EUROSOC",
     "description": "EUROSOC provides comprehensive cybersecurity solutions tailored to your needs."
-  }
+  },
+  "RedHome": ""
 }

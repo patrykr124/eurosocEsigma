@@ -3,6 +3,7 @@ import React from 'react'
 import ParcipleService from "@/components/UI/services/serviceSite/ParcipleService";
 import {motion} from 'framer-motion';
 import {sectionAnimation} from "@/constants/animations/animation";
+import {useTranslations} from "use-intl";
 
 interface props {
     desc: React.ReactNode,
@@ -14,6 +15,7 @@ interface props {
 }
 
 export default function AboutServices({desc, titleAboutService, urlImage, size, classH2, BUTTON}: props) {
+    const t = useTranslations('servicesPage');
     return (
         <section className='common-padding' style={{
             backgroundImage: `url("/assets/img/backgroundLeft.png")`,
@@ -25,7 +27,7 @@ export default function AboutServices({desc, titleAboutService, urlImage, size, 
                         viewport={{once: true, amount: 0.5}} className="wrapper">
                 <div className="flex lg:flex-row flex-col ">
                     <div className="left  lg:order-1 flex-1 flex flex-col">
-                        <h2 className={classH2}>O USŁUDZE</h2>
+                        <h2 className={classH2}>{t("title")}</h2>
                         <h2 className='h2-medium-42'>{titleAboutService}</h2>
                         <p>{desc}</p>
                         {BUTTON}

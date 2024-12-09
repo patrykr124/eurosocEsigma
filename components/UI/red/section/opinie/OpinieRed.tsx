@@ -7,7 +7,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {sectionAnimation} from "@/constants/animations/animation";
 import { motion } from 'framer-motion';
-import {opinieData} from "@/constants/opinieData";
+import {opinieData, opinieData_EN} from "@/constants/opinieData";
+import {useLocale, useTranslations} from "use-intl";
 
 function OpinieRed() {
 
@@ -54,7 +55,10 @@ function OpinieRed() {
     ]
 
   };
+  const locale = useLocale();
+  const t = useTranslations("opinie");
 
+  const opinieDataLocal = locale === "pl" ? opinieData : opinieData_EN
 
   return (
     <div className="common-padding">
@@ -62,8 +66,8 @@ function OpinieRed() {
            viewport={{once: true, amount: 0.5}} className='wrapper'>
         <div className="flex flex-col gap-6">
           <div className="flex flex-col justify-center items-center">
-            <h2 className='titleFrame-red'>REFERENCJE</h2>
-            <h2 className='h2-medium-42 flex justify-center'>Dołącz do grona naszych zadowolonych klientów</h2>
+            <h2 className='titleFrame-red'>{t("title1")}</h2>
+            <h2 className='h2-medium-42 flex justify-center'>{t("h2")}</h2>
           </div>
           <div className="slider-container space-y-5">
             <Slider
@@ -72,9 +76,9 @@ function OpinieRed() {
               }}
               {...settings}
             >
-              <ReviewCart title={opinieData[2].title} desc={opinieData[2].desc} author={opinieData[2].author} />
-              <ReviewCart title={opinieData[3].title} desc={opinieData[3].desc} author={opinieData[3].author}/>
-              <ReviewCart title={opinieData[4].title} desc={opinieData[4].desc} author={opinieData[4].author}/>
+              <ReviewCart title={opinieDataLocal[2].title} desc={opinieDataLocal[2].desc} author={opinieDataLocal[2].author} />
+              <ReviewCart title={opinieDataLocal[3].title} desc={opinieDataLocal[3].desc} author={opinieDataLocal[3].author}/>
+              <ReviewCart title={opinieDataLocal[4].title} desc={opinieDataLocal[4].desc} author={opinieDataLocal[4].author}/>
             </Slider>
             <div className='flex justify-end '>
 

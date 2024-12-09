@@ -17,7 +17,7 @@ function DozapamietaniaContent({doZapamietaniaBottom, doZapamietaniaTop}: Props)
         <div className="icon gap-10 flex flex-col">
             <div className="top grid lg:grid-cols-2 grid-cols-1 lg:gap-8 gap-10">
                 {doZapamietaniaTop?.map((item) => (
-                    <div className="box flex gap-4">
+                    <div key={item.id} className="box flex gap-4">
                         <div className="image min-h-[60px] min-w-[60px] relative">
                             <Image width="60" height="60" className="object-contain" src={item.image} alt={item.image}/>
                         </div>
@@ -31,7 +31,7 @@ function DozapamietaniaContent({doZapamietaniaBottom, doZapamietaniaTop}: Props)
             </div>
             <div className="bottom grid lg:grid-cols-2 grid-cols-1 lg:gap-8 gap-10">
                 {doZapamietaniaBottom?.map((item) => (
-                    <div className="box flex gap-4">
+                    <div key={item.id} className="box flex gap-4">
                         <div className="image min-h-[60px] min-w-[60px] relative">
                             <Image width="60" height="60" className="object-contain" src={item.image} alt={item.image}/>
                         </div>

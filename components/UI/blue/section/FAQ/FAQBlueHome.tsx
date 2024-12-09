@@ -18,8 +18,8 @@ export default function FAQBlueHome() {
                 <div className="title flex flex-col">
                     <h2 className="titleFrame">FAQ</h2>
                     <h2 className="h2-medium-42">{t('title')}</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, laboriosam aut illo ducimus natus
-                        dicta in deleniti excepturi fugiat omnis.</p>
+                    {/*<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, laboriosam aut illo ducimus natus*/}
+                    {/*    dicta in deleniti excepturi fugiat omnis.</p>*/}
                 </div>
                 <FAQ FAQRight={FAQData.ContentRight} FAQLeft={FAQData.ContentLeft} />
             </div>
