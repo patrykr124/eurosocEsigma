@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Avatar from "@/components/UI/red/blog/theme/Avatar";
 import {BlogPost} from "@/types/type";
+import RecentPost from "@/components/UI/RecentPost";
 
 interface Props {
     content: BlogPost;
@@ -28,26 +29,7 @@ function AboutBlog({content} : Props) {
                         <Avatar data={content}/>
                     </div>
 
-                    <div className="right flex-1 flex flex-col gap-12">
-                        <div className="box bg-gray-2 rounded-xl overflow-hidden">
-                            <div className="w-full h-[180px] relative">
-                                <Image fill src="/assets/img/hacker.jpg" alt="recentBlog"/>
-                            </div>
-                            <div className="flex flex-col gap-2 p-4">
-                                <h4 className="p-semibold-18 ">Ochrona a kary finansowe</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, omnis?</p>
-                            </div>
-                        </div>
-                        <div className="box bg-gray-2 rounded-xl overflow-hidden">
-                            <div className="w-full h-[180px] relative ">
-                                <Image fill src="/assets/img/hacker.jpg" alt="recentBlog"/>
-                            </div>
-                            <div className="flex flex-col gap-2 p-4">
-                                <h4 className="p-semibold-18 ">Ochrona a kary finansowe</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, omnis?</p>
-                            </div>
-                        </div>
-                    </div>
+                    <RecentPost contentId={content}/>
                 </div>
             </div>
 

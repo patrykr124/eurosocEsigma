@@ -1,0 +1,110 @@
+{
+  "home": {
+    "redTitle": "EUROSOC RED TEAM offers services in the field of IT security,including audits such as penetration testing, social engineering tests, and vulnerability scans, which help identify threats.\n\nWe organize cybersecurity training and provide support for incident handling, ensuring rapid response to threats.\n\nWe also offer periodic tests and third-line technical support to ensure the security of your organization.",
+    "blueTitle": "EUROSOC BLUE TEAM offers a wide range of services in\nthe field of IT security protection and maintenance.\n\nWe specialize in implementing modern\nsolutions such as network segmentation, strong authentication mechanisms, and data leakage protection.\n\nWe also provide compliance audits, ISMS documentation development, and cybersecurity training for various groups of staff.\nAdditionally, we offer technical support, infrastructure monitoring, and backup recovery,ensuring your organization operates safely and reliably.",
+    "wybor": "Choose your color here or make a selection on the page using the menu on the right."
+  },
+  "dashboard": {
+    "header": {
+      "p": "We Create Secure Digital Solutions",
+      "h1": "Your Cybersecurity Based on",
+      "words": ["implementations", "trainings", "audits", "security"],
+      "buttonMain": "Secure Yourself",
+      "buttonInfo": "Learn More"
+    }
+  },
+  "services": {
+    "h21": "ABOUT US",
+    "h22": "What will you gain with EUROSOC?",
+    "encrypt1": "Subscription services",
+    "encrypt2": "One-time services"
+  },
+  "dlaczego": {
+    "h21": "About Us",
+    "h22": "A Leading Position in Cybersecurity Solutions and Innovation",
+    "p": "EUROSOC delivers innovative cybersecurity solutions, protecting your digital world with expertise, commitment, and a personalized approach.",
+    "checkIcon1": "Innovative cybersecurity solutions for modern threats",
+    "checkIcon2": "Expert teams dedicated to your security",
+    "checkIcon3": "Strong partnership for unparalleled cyber defense",
+    "button": "Secure Yourself"
+  },
+  "tabs": {
+    "tabsSwitches": {
+      "buttonBlue": "BENEFITS",
+      "buttonRed": "THREATS"
+    },
+    "content": {
+      "korzysci": {
+        "title1": "Legal Protection for the Board",
+        "p1": "Thanks to the implementation of the most effective solution and periodic reports.",
+        "title2": "You Will Be Prepared",
+        "p2": "If hackers attack your company, we will be ready to support you in defense.",
+        "title3": "Immediate Response",
+        "p3": "to emerging threats minimizes the impact of incidents.",
+        "title4": "24/7/365 Monitoring",
+        "p4": "of systems ensures protection even on holidays and non-working days.",
+        "title5": "Real-Time System Monitoring",
+        "p5": "enables early detection of breaches."
+      },
+      "zagrozenia": {
+        "title1": "The number of threats in cyberspace is increasing exponentially",
+        "p1": "According to the latest data, 375 new threats emerge every minute, and the number of ransomware breaches in July 2021 exceeded the total number of breaches in 2020.",
+        "title2": "Data breaches are one of the biggest threats to organizations",
+        "p2": "Every hour, up to a million data records are at risk in terms of information security. Additionally, in Europe, GDPR applies, and personal data breaches are subject to high financial penalties.",
+        "title3": "Financial losses and penalties",
+        "p3": "Currently, companies lose over $16 billion daily due to cyberattacks, and this amount is increasing yearly. Furthermore, the fine for a personal data breach costs up to 20 million euros or 4% of global turnover."
+      }
+    }
+  },
+  "opinie": {
+    "title1": "REFERENCES",
+    "h2": "Join the ranks of our satisfied clients"
+  },
+  "certyfikaty": {
+    "title1": "CERTIFICATES",
+    "title2": "Our Certificates",
+    "p1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, provident autem! Culpa pariatur dolorem ad officia aut modi minus quae."
+  },
+
+  "FAQ": {
+    "title":"questions and answers",
+    "p": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, laboriosam aut illo ducimus natus dicta in deleniti excepturi fugiat omnis."
+  },
+  "menu": {
+    "home": {
+      "uslugi": "Services",
+      "dlaczego": "Why us",
+      "Onas": "About us",
+      "kontakt": "Contact"
+    },
+    "services": {
+      "title1": "Implementation Services",
+      "title2": "Auditing Services",
+      "title3": "Training Services",
+      "title4": "Maintenance Services"
+    }
+
+
+  },
+  "homeServices": {
+    "title": "Services",
+    "title2": "One-Click Protection",
+    "switchTitle1": "one-time",
+    "switchTitle2": "subscription"
+  },
+  "kontakt": {
+    "title": "Contact"
+
+  },
+
+
+
+  "label": {
+    "label": "EN",
+    "locale": "{locale, select, en {EN} pl {PL} other {Unknown} }"
+  },
+  "layout": {
+    "title": "EUROSOC",
+    "description": "EUROSOC provides comprehensive cybersecurity solutions tailored to your needs."
+  }
+}

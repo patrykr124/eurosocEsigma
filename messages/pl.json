@@ -1,0 +1,109 @@
+{
+  "home": {
+    "redTitle": "EUROSOC RED TEAM oferuje usługi z zakresu bezpieczeństwa IT,w tym audyty, takie jak testy penetracyjne, socjotechniczne i skany podatności,\nktóre pomagają wykrywać zagrożenia.\n\nOrganizujemy szkolenia z cyberbezpieczeństwa oraz wspieramy w obsłudze incydentów, zapewniając szybkie  reagowanie na zagrożenia.\n\nOferujemy także cykliczne testy i trzecią linię wsparcia technicznego, dbając o bezpieczeństwo organizacji.",
+    "blueTitle": "EUROSOC BLUE TEAM oferuje szeroki zakres usług z zakresu ochrony i utrzymania bezpieczeństwa IT. Specjalizujemy się w wdrażaniu nowoczesnych rozwiązań, takich jak segmentacja sieci, mechanizmy silnego uwierzytelniania czy ochrona przed wyciekami danych.\n\nŚwiadczymy również audyty zgodności z normami, opracowanie dokumentacji SZBI oraz szkolenia z cyberbezpieczeństwa dla różnych grup kadry.\n\nPonadto  zapewniamy wsparcie techniczne, monitoring infrastruktury i odzyskiwanie kopii zapasowych,\nby Twoja organizacja działała bezpiecznie i niezawodnie.",
+    "wybor": "Wybierz swój kolor tutaj lub dokonaj wyboru na stronie po prawej stronie w menu"
+  },
+  "dashboard": {
+    "header": {
+      "p": "Tworzymy Bezpieczne Cyfrowe Rozwiązania",
+      "h1": "Twoje cyberbezpieczeństwo oparte na",
+      "words": "wdrożeniach, szkoleniach, audytach, bezpieczeństwie",
+      "buttonMain": "Zabezpiecz się",
+      "buttonInfo": "Więcej"
+    }
+  },
+  "services": {
+    "h21": "O NAS",
+    "h22": "Co zyskasz dzięki EUROSOC?",
+    "encrypt1": "Usługi abonamentowe",
+    "encrypt2": "Usługi jednorazowe"
+  },
+  "dlaczego": {
+    "h21": "O NAS",
+    "h22": "Wiodąca pozycja w zakresie rozwiązań i innowacji w zakresie cyberbezpieczeństwa",
+    "p": "EUROSOC dostarcza innowacyjne rozwiązania w zakresie cyberbezpieczeństwa, chroniąc Twój cyfrowy świat dzięki specjalistycznej wiedzy, zaangażowaniu i spersonalizowanemu podejściu.",
+    "checkIcon1": "Innowacyjne rozwiązania w zakresie cyberbezpieczeństwa dla współczesnych zagrożeń ",
+    "checkIcon2": "Zespoły ekspertów zaangażowane w Twoje bezpieczeństwo ",
+    "checkIcon3": "Silne partnerstwo na rzecz niezrównanej cyberobrony ",
+    "button": "Zabezpiecz się"
+  },
+  "tabs": {
+    "tabsSwitches": {
+      "buttonBlue": "KORZYŚCI",
+      "buttonRed": "ZAGROŻENIA"
+    },
+    "content": {
+      "korzysci": {
+        "title1": "Ochrona prawna Zarządu",
+        "p1": "Dzięki wdrożeniu najskuteczniejszego rozwiązania i okresowym sprawozdaniom.",
+        "title2": "Będziesz przygotowany",
+        "p2": "Jeśli hakerzy zaatakują Twoją firmę, będziemy przygotowani, aby wesprzeć Cię w obronie.",
+        "title3": "Natychmiastowa reakcja",
+        "p3": "na pojawiające się zagrożenia minimalizuje skutki incydentów.",
+        "title4": "24/7/365 monitoring",
+        "p4": "systemów oznacza ochronę również w dni wolne od pracy i święta.",
+        "title5": "Monitorowanie systemu w czasie rzeczywistym",
+        "p5": "umożliwia wykrywanie włamań na wczesnym etapie."
+      },
+      "zagrozenia": {
+        "title1": "Liczba zagrożeń w cyberprzestrzeni wzrasta w tempie wykładniczym",
+        "p1": "Według najnowszych danych, co minutę powstaje 375 nowych zagrożeń, a liczba włamań z wykorzystaniem ransomware w lipcu 2021 roku przekroczyła wartość wszystkich włamań w 2020 roku.",
+        "title2": "Wycieki danych są jednym z największych zagrożeń dla organizacji",
+        "p2": "Co godzinę nawet milion rekordów danych jest narażonych na szwank pod względem bezpieczeństwa informacji. Ponadto w Europie obowiązuje GDPR, a wycieki danych osobowych wiążą się z wysokimi karami finansowymi.",
+        "title3": "Straty finansowe i kary",
+        "p3": "Obecnie firmy tracą ponad 16 miliardów dolarów dziennie z powodu cyberataków, a kwota ta rośnie z roku na rok. Dodatkowo należy pamiętać, że kara za wyciek danych osobowych kosztuje do 20 mln euro lub 4% światowego obrotu."
+      }
+
+    }
+  },
+  "opinie": {
+    "title1": "REFERENCJE",
+    "h2": "Dołącz do grona naszych zadowolonych klientów"
+  },
+  "certyfikaty": {
+    "title1":"CERTYFIKATY",
+    "title2": "Nasze certyfikaty",
+    "p1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, provident autem! Culpa pariatur dolorem ad officia aut modi minus quae."
+  },
+  "FAQ": {
+      "title":"Pytania i odpowiedzi",
+      "p": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, laboriosam aut illo ducimus natus dicta in deleniti excepturi fugiat omnis."
+  },
+  "menu": {
+    "home": {
+      "uslugi": "Usługi",
+      "dlaczego": "Dlaczego my",
+      "Onas": "O nas",
+      "kontakt": "Kontakt"
+    },
+    "services": {
+      "title1": "Usługi wdrożeniowe",
+      "title2": "Usługi audytorskie ",
+      "title3": "Usługi szkoleniowe ",
+      "title4": "Usługi utrzymaniowe "
+    }
+
+  },
+  "homeServices": {
+    "title": "Usługi",
+    "title2": "Ochrona jednym kliknięciem",
+    "switchTitle1": "jednorazowe",
+    "switchTitle2": "abonamentowe"
+  },
+  "kontakt": {
+    "title": "Kontakt"
+  },
+
+
+
+
+  "label": {
+    "label": "EN",
+    "locale": "{locale, select, en {EN} pl {PL} other {Unknown} }"
+  },
+  "layout": {
+    "title": "EUROSOC",
+    "description": "EUROSOC twoje bezpieczeństwo"
+  }
+}

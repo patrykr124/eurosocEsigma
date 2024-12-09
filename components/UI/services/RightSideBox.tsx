@@ -1,14 +1,21 @@
 import {servicesData} from "@/constants/services";
-import Link from "next/link";
+
 import EncryptButton from "@/components/UI/EncryptButton";
 import {ArrowRight} from "lucide-react";
 import React from "react";
 import {motion} from "framer-motion";
+import {useLocale} from "use-intl";
+import {servicesData_EN} from "@/constants/services_EN";
+import {Link} from "@/navigation";
+
 interface Props {
     activeFilters: string[]
 }
 
 function RightSideBox({activeFilters}: Props) {
+    const locale = useLocale();
+
+    const servicesAllData = locale === "pl" ? servicesData : servicesData_EN
 
     function truncetData(word: string, maxWord: number) {
         if (!word) return;
@@ -17,7 +24,7 @@ function RightSideBox({activeFilters}: Props) {
         }
     }
 
-    const servicesFilterData = servicesData.filter((item) =>
+    const servicesFilterData = servicesAllData.filter((item) =>
         activeFilters.length === 0 || activeFilters.includes(item.filter) || activeFilters.includes(item.filter2)
     );
 
@@ -41,9 +48,7 @@ function RightSideBox({activeFilters}: Props) {
                                 <div className="flex flex-col gap-2">
                                     <p className='p-medium-14'>{truncetData(item.description, 160)}</p>
                                 </div>
-                                <EncryptButton textData="Zapisz się"
-                                               className="bg-blue-1 hover:bg-blue-1-hover w-fit text-sm mt-2"
-                                               icon={<ArrowRight/>}/>
+                                <div className="bg-blue-1 flex uppercase rounded-xl text-white p-3 gap-2 hover:bg-blue-1-hover w-fit text-sm mt-2"><p className="p-regular-14 ">Czytaj więcej</p> <ArrowRight  color="white" size="20"/></div>
                             </div>
                         </div>
 

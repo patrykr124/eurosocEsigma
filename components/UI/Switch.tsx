@@ -12,13 +12,13 @@ function Switch() {
 
 
     useEffect(() => {
-       if (pathName && pathName.startsWith("/dashboard/blue/services")) {
+       if (pathName && pathName.includes("/dashboard/blue/services")) {
            setSwitchButton('blueServices')
-       } else if(pathName && pathName.startsWith("/dashboard/red/services")) {
+       } else if(pathName && pathName.includes("/dashboard/red/services")) {
            setSwitchButton('redServices');
-       } else if (pathName && pathName.startsWith("/dashboard/blue")) {
+       } else if (pathName && pathName.includes("/dashboard/blue")) {
            setSwitchButton('blueTeam')
-       } else if (pathName && pathName.startsWith("/dashboard/red")) {
+       } else if (pathName && pathName.includes("/dashboard/red")) {
            setSwitchButton('redTeam');
        }
         return () => (
