@@ -1,6 +1,6 @@
 import {Ubuntu_Mono} from "next/font/google";
 import "./globals.css";
-import {getMessages, getTranslations} from "next-intl/server";
+import {getMessages, getTranslations, setRequestLocale} from "next-intl/server";
 import {NextIntlClientProvider} from "next-intl";
 import React, {ReactNode} from "react";
 import {locales} from "@/config";
@@ -44,7 +44,7 @@ export async function generateMetadata({params: {locale}}: Omit<Props, 'children
 }
 
 export default async function RootLayout({children, params: {locale}}: Props) {
-
+    setRequestLocale(locale);
     const messages = await getMessages({locale});
 
     return (
