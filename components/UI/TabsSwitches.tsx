@@ -1,14 +1,16 @@
 import {motion} from "framer-motion";
+import {useTranslations} from "use-intl";
 
 function TabsSwitches({switchTabs, setSwitchTabs,css, textOtherColor}: { switchTabs: string, setSwitchTabs: any,css: string, textOtherColor: string}) {
+    const t = useTranslations("tabs.tabsSwitches")
     return (
         <div className=" relative flex w-fit gap-6 lg:gap-0  items-center rounded-full  ">
 
             <button onClick={() => setSwitchTabs('korzysci')}
-                    className={`${css}  ${switchTabs === 'korzysci' ? ' text-white' : textOtherColor}`}>KORZYŚCI
+                    className={`${css}  ${switchTabs === 'korzysci' ? ' text-white' : textOtherColor}`}>{t("buttonBlue")}
             </button>
             <button onClick={() => setSwitchTabs('zagrozenia')}
-                    className={`${css}   ${switchTabs === 'zagrozenia' ? ' text-white' : 'text-black'}`}>ZAGROŻENIA
+                    className={`${css}   ${switchTabs === 'zagrozenia' ? ' text-white' : 'text-black'}`}>{t("buttonRed")}
             </button>
 
 

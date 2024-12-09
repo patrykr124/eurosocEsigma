@@ -49,3 +49,38 @@ export const opinieData = [
         author:'Wiceprezes zarządu Maciej Podraza',
     },
 ]
+
+
+
+export const opinieData_EN = [
+    {
+        id: 1,
+        title: 'District Hospital named after Prałat J. Glowatzki',
+        desc: 'We would like to recommend EUROSOC for conducting a professional security audit in our organization. As an expert in the field of cybersecurity, EUROSOC demonstrated exceptional competence and commitment at every stage of the project.\n\nThe security audit conducted by the EUROSOC team provided us with an in-depth insight into our IT infrastructure and revealed potential threats and vulnerabilities we were previously unaware of. Their report and recommendations enabled us to take the necessary steps to improve the security of our systems and protect sensitive data.\n\nEUROSOC displayed not only a high level of professionalism but also flexibility and thoroughness during the audit. Communication with the team was smooth and open, allowing us to easily track progress and get answers to our questions.\n\nThanks to the security audit conducted by EUROSOC, our organization gained a better understanding of potential risks and the knowledge needed to minimize them. We highly recommend EUROSOC to any organization seeking to enhance its cybersecurity and increase protection against attacks.',
+        author: 'Director',
+    },
+    {
+        id: 2,
+        title: 'Healthcare Facility in Biała',
+        desc: 'During the project to enhance the security of teleinformatics systems, EUROSOC applied modern and proven project management methods. Their team consisted of qualified specialists who worked with full commitment and adhered to deadlines for each stage of the project. Cooperation with EUROSOC was seamless, and project management was carried out efficiently and in an organized manner.\n\nWe highly commend EUROSOC for their professional execution of an IT security audit in our facility. As experts in cybersecurity, EUROSOC showcased impressive knowledge and dedication throughout the entire process.\n\nThe security audit conducted by EUROSOC specialists provided us with precise insights into our IT infrastructure, identifying potential threats and weaknesses we were previously unaware of. The report and recommendations prepared by EUROSOC allowed us to implement appropriate measures to strengthen our system security and protect confidential data.\n\nEUROSOC was characterized not only by high professionalism but also by flexibility and accuracy in conducting the audit. Communication with the team was smooth and transparent, enabling us to monitor progress and receive answers to our inquiries.\n\nAs a result of the cooperation with EUROSOC, our company gained a better understanding of existing risks and the knowledge necessary to mitigate them. We strongly recommend EUROSOC to any organization looking to improve its cybersecurity and protect against attacks.',
+        author: 'Healthcare Team',
+    },
+    {
+        id: 3,
+        title: 'Independent Public Healthcare Institution in Hajnówka',
+        desc: 'We hereby confirm that EUROSOC Sp. z o.o., based in Gdynia at Śląska 53/B505, 81-304 Gdynia, has carried out a service for the Independent Public Healthcare Institution in Hajnówka involving the "Implementation of a security management system in the information system used to provide a key service."\n\nThe service included:\n\n1. Vulnerability scanning of IT systems;\n2. Cybersecurity training;\n3. Development and implementation of a Security Management System in the information system used to provide a key service based on the PN ISO/IEC 27001 standard (ISMS) and Business Continuity (BCM/BCP).\n\nDuring the contract implementation, the contractor demonstrated high potential, particularly in personnel and organizational-technical aspects. They showcased not only solid technical knowledge but also professionalism and flexibility in adapting to our needs.\n\nThe above-described project was carried out diligently, and we can confidently recommend EUROSOC as a professional, reliable, and credible partner in the field of IT cybersecurity and security management systems.',
+        author: 'Authorized by the Director of SPZOZ in Hajnówka',
+    },
+    {
+        id: 4,
+        title: 'Stobrawskie Medical Center',
+        desc: 'It is our pleasure to recommend EUROSOC Sp. z o.o. as a partner in the field of cybersecurity and IT. Their expertise and commitment brought us significant benefits, strengthened our security systems, and contributed to the development of our IT infrastructure.\n\nThe EUROSOC Sp. z o.o. team demonstrated not only solid technical knowledge but also professionalism and flexibility in meeting our needs. Their speed and effectiveness in delivering solutions were impressive.\n\nCollaboration with EUROSOC Sp. z o.o. was an exceptionally positive experience for us, and I can wholeheartedly recommend them as a reliable partner in the field of cybersecurity and IT.',
+        author: 'Marek Drobik',
+    },
+    {
+        id: 5,
+        title: 'HASCO-LEK S.A.',
+        desc: 'The Pharmaceutical Production Company HASCO-LEK S.A., part of the HASCO Group, confirms its business relations with EUROSOC Sp. z o.o. The cooperation lasted from December 5, 2023, to December 31, 2023, based on a contract. During this time, EUROSOC Sp. z o.o. was responsible for infrastructure tests, penetration tests, and application security tests.\n\nEUROSOC Sp. z o.o. diligently and timely carried out the specified tasks. The actions taken were characterized by professionalism and a comprehensive approach to the tasks performed. The cooperation proceeded smoothly and with great commitment, which is why we identify EUROSOC Sp. z o.o. as a specialist in its field.\n\nHASCO-LEK S.A. informs that the information provided above is accurate and consistent with the factual state as of the date of issue. At the same time, HASCO-LEK S.A. reserves the right to revoke, amend, or supplement these references at any time.',
+        author: 'Vice President of the Board Maciej Podraza',
+    },
+]

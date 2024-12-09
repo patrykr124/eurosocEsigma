@@ -32,3 +32,38 @@ export const filtrData = [
         title:'Testy'
     },
 ]
+
+export const filtrData_EN = [
+    {
+        id: 'technicznesrodkizabezpieczen',
+        title: 'Technical Security Measures'
+    },
+    {
+        id: 'monitoringinfrastruktury',
+        title: 'Infrastructure Monitoring'
+    },
+    {
+        id: 'dokumentacjabezpieczenstwa',
+        title: 'Security Documentation'
+    },
+    {
+        id: 'obslugaincydentow',
+        title: 'Incident Management'
+    },
+    {
+        id: 'kopiezapasowe',
+        title: 'Backups'
+    },
+    {
+        id: 'szkolenia',
+        title: 'Training'
+    },
+    {
+        id: 'audyty',
+        title: 'Audits'
+    },
+    {
+        id: 'testy',
+        title: 'Testing'
+    },
+];

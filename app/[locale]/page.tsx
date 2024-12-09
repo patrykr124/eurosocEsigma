@@ -1,16 +1,15 @@
 'use client'
-import Link from "next/link";
+
 import Image from "next/image";
 import {motion} from 'framer-motion'
-import {useState} from "react";
-import {useTranslation} from 'next-i18next';
-
+import React, {useState} from "react";
+import {useTranslations} from "use-intl";
+import {Link} from "@/navigation";
+import LocaleSwitcher from "@/components/UI/LocaleSwitch/LocaleSwitcher";
 
 
 export default function Home() {
-    const { t, i18n } = useTranslation("common");
-
-    console.log("Current language:", i18n.language);
+    const t = useTranslations("home");
 
 
     const [hover, setHover] = useState(false);
@@ -49,15 +48,8 @@ export default function Home() {
                     <motion.p variants={vsgVariants} initial="hidden" animate={hover2 ? 'visible' : 'hidden'}
                               transition={{
                                   duration: 0.5, ease: "easeInOut", delay: 0.12
-                              }} className="text-gray-3 max-w-lg border-white  border-[1px] p-8 rounded-lg z-50">EUROSOC
-                        BLUE TEAM oferuje szeroki zakres usług z
-                        zakresu ochrony i utrzymania bezpieczeństwa IT. Specjalizujemy się w wdrażaniu nowoczesnych
-                        rozwiązań, takich jak segmentacja sieci, mechanizmy silnego uwierzytelniania czy ochrona
-                        przed wyciekami danych.<br/><br/> Świadczymy również audyty zgodności z normami, opracowanie
-                        dokumentacji SZBI oraz szkolenia z cyberbezpieczeństwa dla różnych grup
-                        kadry.<br/><br/> Ponadto
-                        zapewniamy wsparcie techniczne, monitoring infrastruktury i odzyskiwanie kopii
-                        zapasowych,<br/> by Twoja organizacja działała bezpiecznie i niezawodnie.
+                              }}
+                              className="text text-gray-3 max-w-lg border-white  border-[1px] p-8 rounded-lg z-50">{t("blueTitle")}
                     </motion.p>
 
                 </div>
@@ -67,15 +59,8 @@ export default function Home() {
                     <motion.p variants={vsgVariants} initial="hidden" animate={hover ? 'visible' : 'hidden'}
                               transition={{
                                   duration: 0.5, ease: "easeInOut", delay: 0.12
-                              }} className="text-gray-3 max-w-lg border-white  border-[1px] p-8 rounded-lg z-50">EUROSOC
-                        RED TEAM oferuje usługi z zakresu
-                        bezpieczeństwa IT,<br/> w tym audyty, takie jak testy penetracyjne, socjotechniczne<br/> i
-                        skany podatności, które pomagają wykrywać zagrożenia.<br/><br/> Organizujemy szkolenia z
-                        cyberbezpieczeństwa oraz wspieramy<br/> w obsłudze incydentów, zapewniając szybkie
-                        reagowanie<br/> na zagrożenia.<br/><br/> Oferujemy także cykliczne testy i trzecią linię
-                        wsparcia
-                        technicznego, dbając o
-                        bezpieczeństwo organizacji.
+                              }}
+                              className="text text-gray-3 max-w-lg border-white  border-[1px] p-8 rounded-lg z-50">{t("redTitle")}
                     </motion.p>
 
                 </div>
@@ -94,7 +79,10 @@ export default function Home() {
 
                 <Image className="absolute left-0 top-0 p-8" width="250" height="250" src="/assets/img/logo-blue.svg"
                        alt="logo"/>
-                <h1 className="p-medium-16 text-white absolute right-0 top-0 p-8">{t("home")}</h1>
+                <h1 className="p-medium-16 text-white absolute right-0 top-0 p-8">{t("wybor")}</h1>
+                <div className="z-50 absolute bottom-0 right-0 p-8">
+                    <LocaleSwitcher/>
+                </div>
             </div>
         </main>
     );

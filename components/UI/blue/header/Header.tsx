@@ -4,10 +4,15 @@ import {FlipWords} from "../../flip-words";
 import EncryptButton from "../../EncryptButton";
 import {motion} from "framer-motion";
 import {headerAnimation, headerAnimationButton, headerAnimationP} from "@/constants/animations/animation";
+import {useLocale, useTranslations} from "use-intl";
 
 function Header() {
+    const t = useTranslations("dashboard")
+    const locale = useLocale();
 
-    const words = ["wdrożeniach", "szkoleniach", "audytach", "bezpieczeństwie"];
+
+    const words = locale === "pl" ? ["wdrożeniach", "szkoleniach", "audytach", "bezpieczeństwie"] : ["training", "security", "academic", "security"];
+
 
     return (
         <div className="w-full h-[70vh] lg:h-[85vh] overflow-hidden" style={{
@@ -23,12 +28,11 @@ function Header() {
                     <div className="title max-w-4xl gap-8 flex flex-col items-start">
                         <div className="top overflow-hidden">
                             <motion.p variants={headerAnimationP} initial="hidden" animate="visible"
-                                      className="p-semibold-20 text-gray-2">Tworzymy Bezpieczne Cyfrowe Rozwiązania
+                                      className="p-semibold-20 text-gray-2">{ t("header.p")}
                             </motion.p>
                             <div className="overflow-hidden py-2">
                                 <motion.h1 variants={headerAnimation} initial="hidden" animate="visible"
-                                           className="h1-bold text-gray-2">Twoje cyberbezpieczeństwo oparte
-                                    na <FlipWords
+                                           className="h1-bold text-gray-2">{ t("header.h1")} <FlipWords
                                         words={words}/>
                                 </motion.h1>
                             </div>
@@ -37,9 +41,9 @@ function Header() {
                         <div className="overflow-hidden py-2">
                             <motion.div variants={headerAnimationButton} initial="hidden" animate="visible"
                                         className="space-x-5 text-end">
-                                <EncryptButton textData="Zabezpiecz się" className="bg-blue-1 hover:bg-blue-1-hover"
+                                <EncryptButton textData={t("header.buttonMain")} className="bg-blue-1 hover:bg-blue-1-hover"
                                               />
-                                <Link className="button-white" href="#">Więcej</Link>
+                                <Link className="button-white" href="#">{t("header.buttonInfo")}</Link>
 
                             </motion.div>
                         </div>

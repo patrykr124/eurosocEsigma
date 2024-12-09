@@ -1,6 +1,7 @@
 import InputTemplate from "@/components/UI/InputTemplate";
-import {filtrData} from "@/constants/filtrData";
+import {filtrData, filtrData_EN} from "@/constants/filtrData";
 import React, {useState} from "react";
+import {useLocale} from "use-intl";
 
 
 interface Props {
@@ -8,6 +9,8 @@ interface Props {
 }
 
 function LeftSideBox({setActiveFilters}: Props) {
+    const locale = useLocale();
+    const filterAllData = locale === "pl" ? filtrData: filtrData_EN
     const [selectedFilters, setSelectedFilters] = useState<string[]>([])
 
     const handleCheckboxChange = (id: string) => {
@@ -24,8 +27,9 @@ function LeftSideBox({setActiveFilters}: Props) {
         <div className="sticky flex top-[10%] lg:shadow-light  lg:bg-gray-3 w-full h-[250px] rounded-xl p-4 ">
             <div className="flex items-center justify-center gap-4 flex-col text-black">
                 <div className="flex flex-col gap-2">
-                    {filtrData.map((item) => (
-                        <InputTemplate key={item.id} onChange={() => handleCheckboxChange(item.id)} id={item.id} title={item.title}/>
+                    {filterAllData.map((item) => (
+                        <InputTemplate key={item.id} onChange={() => handleCheckboxChange(item.id)} id={item.id}
+                                       title={item.title} selectedFilters={[]}/>
                     ))}
                 </div>
             </div>

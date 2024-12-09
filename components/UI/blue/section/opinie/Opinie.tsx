@@ -7,9 +7,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {motion} from 'framer-motion';
 import {sectionAnimation} from "@/constants/animations/animation";
-import {opinieData} from "@/constants/opinieData";
+import {opinieData, opinieData_EN} from "@/constants/opinieData";
+import {useLocale, useTranslations} from "use-intl";
 
 function Opinie() {
+    const t = useTranslations('opinie')
+    const locale = useLocale();
+    const opinieLocalData = locale === "pl" ? opinieData : opinieData_EN
 
     const BUTTON_CSS = 'button bg-blue-1 px-4 py-2 mr-4 rounded-xl shadow-md hover:bg-primary-blue-background transition-all duration-300 ease-in-out';
 
@@ -62,9 +66,9 @@ function Opinie() {
                         viewport={{once: true, amount: 0.5}} className='wrapper'>
                 <div className="flex flex-col gap-6">
                     <div className="flex flex-col justify-center items-center">
-                        <h2 className='titleFrame'>REFERENCJE</h2>
-                        <h2 className='h2-medium-42 flex justify-center text-center'>Dołącz do grona naszych zadowolonych
-                            klientów</h2>
+                        <h2 className='titleFrame'>{t('title1')}</h2>
+                        <h2 className='h2-medium-42 flex justify-center text-center'>{t('h2')}
+                        </h2>
                     </div>
                     <div className="slider-container space-y-5">
                         <Slider
@@ -73,9 +77,9 @@ function Opinie() {
                             }}
                             {...settings}
                         >
-                            <ReviewCart title={opinieData[0].title} desc={opinieData[0].desc} author={opinieData[0].author} />
-                            <ReviewCart title={opinieData[1].title} desc={opinieData[1].desc} author={opinieData[1].author} />
-                            <ReviewCart title={opinieData[2].title} desc={opinieData[2].desc} author={opinieData[2].author} />
+                            <ReviewCart title={opinieLocalData[0].title} desc={opinieLocalData[0].desc} author={opinieLocalData[0].author} />
+                            <ReviewCart title={opinieLocalData[1].title} desc={opinieLocalData[1].desc} author={opinieLocalData[1].author} />
+                            <ReviewCart title={opinieLocalData[2].title} desc={opinieLocalData[2].desc} author={opinieLocalData[2].author} />
                         </Slider>
                         <div className='flex justify-end '>
 

@@ -8,9 +8,11 @@ import "slick-carousel/slick/slick.css";
 import SwiperSlider from './SwiperSlider';
 import {BoxAnimationHover} from "@/components/UI/BoxAnimationHover";
 import {generateRandomString} from "@/components/UI/evervault-card";
+import {useTranslations} from "use-intl";
 
 
 function Services() {
+    const t = useTranslations("services")
 
     let mouseX = useMotionValue(0);
     let mouseY = useMotionValue(0);
@@ -46,13 +48,13 @@ function Services() {
                     <div className="wrapper lg:gap-16 flex flex-col ">
                         <div className="text justify-between flex md:flex-row flex-col lg:gap-12 gap-4 ">
                             <div className="flex-1 z-10 flex flex-col items-center md:items-start ">
-                                <h2 className='titleFrame'>O NAS</h2>
-                                <h2 className='h2-medium-42 text-center md:text-end'>Co zyskasz dzięki EUROSOC?</h2>
+                                <h2 className='titleFrame'>{t("h21")}</h2>
+                                <h2 className='h2-medium-42 text-center md:text-start'>{t("h22")}</h2>
                             </div>
                             <div className="links flex flex-row justify-end items-end mb-4 gap-8 flex-1 z-10">
-                                <EncryptButton textData="Usługi abonamentowe" icon={<ArrowRight/>}
+                                <EncryptButton textData={t("encrypt1")} icon={<ArrowRight/>}
                                                className="bg-blue-1 hover:bg-blue-1-hover"/>
-                                <EncryptButton textData="Usługi jednorazowe" icon={<ArrowRight/>}
+                                <EncryptButton textData={t("encrypt2")} icon={<ArrowRight/>}
                                                className="bg-blue-1 hover:bg-blue-1-hover"/>
                             </div>
                         </div>

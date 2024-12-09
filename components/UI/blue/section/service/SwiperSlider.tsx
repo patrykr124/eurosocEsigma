@@ -5,14 +5,19 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import Image from 'next/image';
 import {Autoplay, EffectCoverflow, Navigation, Pagination} from "swiper";
-import {SWIPER_DATA_BLUE} from "@/constants/SwiperData";
+import {SWIPER_DATA_BLUE, SWIPER_DATA_BLUE_EN} from "@/constants/SwiperData";
 import {ArrowLeft, ArrowRight} from "lucide-react";
 import {useEffect, useState} from "react";
+import {useLocale} from "use-intl";
 
 
 export default function SwiperSlider() {
+    const locale = useLocale();
     const [activeIndex, setActiveIndex] = useState<number>(0);
     const [texts, setTexts] = useState<string[]>(SWIPER_DATA_BLUE.map((item) => item.title))
+
+    const LocalSliderDate = locale === 'pl' ? SWIPER_DATA_BLUE : SWIPER_DATA_BLUE_EN
+
 
     const scrambleText = (text: string): string => {
         const CHARS = "011001001";
@@ -34,14 +39,14 @@ export default function SwiperSlider() {
                 setTexts((prevTexts) =>
                     prevTexts.map((text, index) =>
                         activeIndex === index
-                            ? scrambleText(SWIPER_DATA_BLUE[index].title)
-                            : SWIPER_DATA_BLUE[index].title
+                            ? scrambleText(LocalSliderDate[index].title)
+                            : LocalSliderDate[index].title
                     )
                 );
             }, 100);
             timeout = window.setTimeout(() => {
                 if (interval) window.clearInterval(interval);
-                setTexts(SWIPER_DATA_BLUE.map((item) => item.title));
+                setTexts(LocalSliderDate.map((item) => item.title));
             }, 800);
         }
 
@@ -95,14 +100,14 @@ export default function SwiperSlider() {
                 className='swiper_container'
 
             >
-                {SWIPER_DATA_BLUE.map((item) => (
+                {LocalSliderDate.map((item) => (
                     <SwiperSlide key={item.id}>
                         <div
                             className="w-full overflow-hidden h-[400px] rounded-xl relative flex justify-center items-center bg-black ">
                             <Image className=' rounded-xl w-[500px] object-cover' src={item.img} alt='services' fill/>
                             <div className="absolute max-w-[80%]">
                                 <div className="overflow-hidden flex ">
-                                    <h4 className={`${activeIndex === item.id ? 'opacity-1' : 'opacity-0'} transition-all duration-700   swiperHeaderText p-medium-32 text-center  text-white z-20`}>{texts[item.id]}</h4>
+                                    <h4 className={`${activeIndex === item.id ? 'opacity-1 text' : 'opacity-0 '} transition-all duration-700   swiperHeaderText p-medium-32 text-center  text-white z-20`}>{texts[item.id]}</h4>
                                 </div>
                             </div>
                         </div>

@@ -1477,7 +1477,6 @@ export const servicesData = [
         filter: 'monitoringinfrastruktury',
         filter2: 'jednorazowe'
     },
-
     {
         id: "monitorowanie",
         title: "Monitorowanie infrastruktury w trybie ciągłym (SIEM)",
@@ -2172,7 +2171,6 @@ export const servicesData = [
                 desc: "Zgodność z najlepszymi praktykami i wymaganiami regulacyjnymi dotyczącymi ciągłości działania.",
             },
         ],
-
         //red
         iconsRed: [
             {

@@ -29,3 +29,31 @@ export const SWIPER_DATA_BLUE:S[] = [
     },
 
 ]
+
+export const SWIPER_DATA_BLUE_EN: S[] = [
+    {
+        id: 0,
+        img: '/assets/img/open.png',
+        title: 'Commercial\nand Open Source Implementations'
+    },
+    {
+        id: 1,
+        img: '/assets/img/szkolenie.png',
+        title: 'Cybersecurity Training'
+    },
+    {
+        id: 2,
+        img: '/assets/img/servicesMonitoring.png',
+        title: 'Continuous Infrastructure Monitoring / SOC'
+    },
+    {
+        id: 3,
+        img: '/assets/img/wsparcie.png',
+        title: 'Second-Line Technical Support'
+    },
+    {
+        id: 4,
+        img: '/assets/img/kopia.png',
+        title: 'Offsite Backup Storage'
+    },
+];

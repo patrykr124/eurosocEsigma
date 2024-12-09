@@ -1,8 +1,17 @@
 'use client'
-import Link from 'next/link'
-import {itemMenuUslugiUtrzymaniowe, itemsMenu, itemsMenuUslugiAudytorskie, itemsMenuUslugiSzkoleniowe} from '.'
+
+import {
+    itemMenuUslugiUtrzymaniowe, itemMenuUslugiUtrzymaniowe_EN,
+    itemsMenu,
+    itemsMenu_EN,
+    itemsMenuUslugiAudytorskie, itemsMenuUslugiAudytorskie_EN,
+    itemsMenuUslugiSzkoleniowe, itemsMenuUslugiSzkoleniowe_EN
+} from '.'
 
 import {usePathname} from 'next/navigation'
+import {useLocale, useTranslations} from "use-intl";
+import {Link} from "@/navigation";
+
 
 
 interface NavOpenProps {
@@ -11,9 +20,19 @@ interface NavOpenProps {
 }
 
 export default function NavOpen({ishandleOpen, setIsHandleOpen}: NavOpenProps) {
+    const locale = useLocale();
+    const t = useTranslations("menu.services")
+    const t2 = useTranslations("menu.home")
 
 
-    const servicesItem = itemsMenu.find(item => item.name === 'Usługi')
+    const servicesItemData = locale === "pl" ? itemsMenu : itemsMenu_EN
+    const itemsMenuUslugiAudytorskieData = locale === "pl" ? itemsMenuUslugiAudytorskie : itemsMenuUslugiAudytorskie_EN
+    const itemsMenuUslugiSzkolenioweData = locale === "pl" ? itemsMenuUslugiSzkoleniowe : itemsMenuUslugiSzkoleniowe_EN
+    const itemMenuUslugiUtrzymanioweData = locale === "pl" ? itemMenuUslugiUtrzymaniowe : itemMenuUslugiUtrzymaniowe_EN
+
+
+    const servicesItem = servicesItemData.find(item => item.name === t2("uslugi") )
+
 
 
     const pathname = usePathname();
@@ -26,7 +45,7 @@ export default function NavOpen({ishandleOpen, setIsHandleOpen}: NavOpenProps) {
             <div className="bg-black" onMouseLeave={() => setIsHandleOpen(false)}>
                 <div className="wrapper min-h-[40vh] gap-10 w-full flex lg:flex-row flex-col items-start justify-between pb-6">
                     <div className="1 flex flex-col gap-4 justify-center py-10 ">
-                        <h2 className="p-bold-24 text-white">Usługi wdrożeniowe </h2>
+                        <h2 className="p-bold-24 text-white">{t("title1")}</h2>
                         <div className="flex flex-col gap-4">
                             {servicesItem && servicesItem.featured && servicesItem.featured.map((item) => {
                                 const isActive = pathname === item.url
@@ -42,8 +61,8 @@ export default function NavOpen({ishandleOpen, setIsHandleOpen}: NavOpenProps) {
                         </div>
                     </div>
                     <div className="2 flex  flex-col gap-4 justify-center py-10 ">
-                        <h2 className="p-bold-24 text-white">Usługi audytorskie </h2>
-                        {itemsMenuUslugiAudytorskie.map((item) => {
+                        <h2 className="p-bold-24 text-white">{t("title2")}</h2>
+                        {itemsMenuUslugiAudytorskieData.map((item) => {
                             const isActive = pathname === item.url
                             return (
                                 <Link onClick={() => setIsHandleOpen(false)}
@@ -57,8 +76,8 @@ export default function NavOpen({ishandleOpen, setIsHandleOpen}: NavOpenProps) {
                         })}
                     </div>
                     <div className="2 flex  flex-col gap-4 justify-center py-10 ">
-                        <h2 className="p-bold-24 text-white">Usługi szkoleniowe </h2>
-                        {itemsMenuUslugiSzkoleniowe.map((item) => {
+                        <h2 className="p-bold-24 text-white">{t("title3")}</h2>
+                        {itemsMenuUslugiSzkolenioweData.map((item) => {
                             const isActive = pathname === item.url
                             return (
                                 <Link onClick={() => setIsHandleOpen(false)}
@@ -72,8 +91,8 @@ export default function NavOpen({ishandleOpen, setIsHandleOpen}: NavOpenProps) {
                         })}
                     </div>
                     <div className="2 flex  flex-col gap-4 justify-center py-10 ">
-                        <h2 className="p-bold-24 text-white">Usługi utrzymaniowe </h2>
-                        {itemMenuUslugiUtrzymaniowe.map((item) => {
+                        <h2 className="p-bold-24 text-white">{t("title4")}</h2>
+                        {itemMenuUslugiUtrzymanioweData.map((item) => {
                             const isActive = pathname === item.url
                             return (
                                 <Link onClick={() => setIsHandleOpen(false)}

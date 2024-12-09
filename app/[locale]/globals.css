@@ -556,3 +556,10 @@ hr {
 .RightLinkHand:hover ~ .rightFire{
     filter: grayscale(0%);
 }
+
+
+/*//////////////////////*/
+
+.text{
+    white-space: pre-wrap;
+}

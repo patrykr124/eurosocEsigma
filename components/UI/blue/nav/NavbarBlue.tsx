@@ -17,6 +17,8 @@ import {usePathname} from "next/navigation";
 import {motion} from "framer-motion";
 import {navbarAnimation, navbarAnimationTransitio} from "@/constants/animations/animation";
 import UseMenuShowOnScroll from "@/hooks/useMenuShowOnScroll";
+import LocaleSwitcher from "@/components/UI/LocaleSwitch/LocaleSwitcher";
+import {useTranslations} from "use-intl";
 
 function NavbarBlue() {
     const [ishandleOpen, setIsHandleOpen] = useState(false)
@@ -26,8 +28,10 @@ function NavbarBlue() {
     const [hiddenMenu, setHiddenMenu] = useState(false)
     const servicesItemUslugi = itemsMenu.find(item => item.name === 'Usługi')
 
+    const t = useTranslations("menu.home")
+
     function isOpen(hoveritem: string) {
-        if (hoveritem === 'Usługi') {
+        if (hoveritem === t("uslugi")) {
             setIsHandleOpen(true)
         } else {
             setIsHandleOpen(false)
@@ -49,7 +53,7 @@ function NavbarBlue() {
         <motion.header variants={navbarAnimation} animate={hiddenMenu ? 'hidden' : 'visible'}
                        transition={navbarAnimationTransitio}
                        className='bg-black-1 h-16 flex items-center fixed inset-0 z-[9999]'>
-            <nav className='wrapper '>
+            <nav className='wrapper relative '>
                 <div className="lg:flex hidden justify-between items-center">
                     <div className="logo">
                         <Link href='/dashboard/blue'><Image src={Logo} alt='logo' width={160} height={160}/></Link>
@@ -57,7 +61,13 @@ function NavbarBlue() {
                     <div className="items">
                         <NavbarItems isOpen={isOpen} ishandleOpen={ishandleOpen} setIsHandleOpen={setIsHandleOpen}/>
                     </div>
-                    <Switch/>
+
+                    <div className="flex justify-center items-center gap-2">
+                        <LocaleSwitcher/>
+                        <Switch/>
+                    </div>
+
+
                 </div>
 
 
@@ -176,6 +186,8 @@ function NavbarBlue() {
                 </div>
             </nav>
             <NavOpen ishandleOpen={ishandleOpen} setIsHandleOpen={setIsHandleOpen}/>
+
+
 
 
         </motion.header>
