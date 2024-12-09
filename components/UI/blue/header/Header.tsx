@@ -32,7 +32,7 @@ function Header() {
                             </motion.p>
                             <div className="overflow-hidden py-2">
                                 <motion.h1 variants={headerAnimation} initial="hidden" animate="visible"
-                                           className="h1-bold text-gray-2">{ t("header.h1")} <FlipWords
+                                           className="h1-bold whitespace-pre-wrap text-gray-2">{ t("header.h1")} <FlipWords
                                         words={words}/>
                                 </motion.h1>
                             </div>
