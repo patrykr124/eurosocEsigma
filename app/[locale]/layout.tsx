@@ -44,7 +44,7 @@ export async function generateMetadata({params: {locale}}: Omit<Props, 'children
 }
 
 export default async function RootLayout({children, params: {locale}}: Props) {
-    setRequestLocale(locale);
+    setRequestLocale(locale)
     const messages = await getMessages({locale});
 
     return (
