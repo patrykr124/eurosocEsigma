@@ -2,6 +2,8 @@
 import { ChevronDown } from 'lucide-react';
 import Link from 'next/link';
 import { itemsMenu } from '.';
+import {useLocale} from "use-intl";
+import {itemsMenu_EN} from "@/components/UI/blue/nav";
 
 
 
@@ -12,12 +14,12 @@ interface NavbarItemsProps {
     setIsHandleOpen: (value: boolean) => void
 }
 function NavbarItems({ isOpen, ishandleOpen, setIsHandleOpen }: NavbarItemsProps) {
-
-
+    const locale = useLocale();
+    const itemsMenuLocal = locale === "pl" ? itemsMenu : itemsMenu_EN
 
     return (
         <ul className='flex flex-row gap-8'>
-            {itemsMenu.map(item => {
+            {itemsMenuLocal.map(item => {
                 return (
                     <li key={item.id}>
                         <Link onClick={() => setIsHandleOpen(false)} onMouseEnter={() => isOpen(item.name)} className={`link flex items-center`} href={item.url}>

@@ -3,6 +3,7 @@ import React, {useEffect, useState} from "react";
 import Image from "next/image";
 import TabsSwitches from "@/components/UI/TabsSwitches";
 import {usePathname} from "next/navigation";
+import {useTranslations} from "use-intl";
 
 interface IconData {
     id: number;
@@ -21,6 +22,7 @@ interface Props {
 function Why({titleKorzysci, titleZagrozenia, iconsBlue, iconsRed}: Props) {
     const [switchTabs, setSwitchTabs] = useState("korzysci")
     const pathname = usePathname()
+    const t = useTranslations("servicesPage")
 
     useEffect(() => {
         if (pathname?.includes("/dashboard/red/")) {
@@ -38,7 +40,7 @@ function Why({titleKorzysci, titleZagrozenia, iconsBlue, iconsRed}: Props) {
 
                 <div className="flex lg:flex-row flex-col justify-between lg:items-center lg:gap-20">
                     <div className="lg:min-h-[180px] min-h-[220px]">
-                        <h2 className={`${switchTabs === "korzysci" ? "titleFrame" : "titleFrame-red"}`}>{switchTabs === "korzysci" ? "KORZYŚCI" : "ZAGROŻENIA"}</h2>
+                        <h2 className={`${switchTabs === "korzysci" ? "titleFrame" : "titleFrame-red"}`}>{switchTabs === "korzysci" ? t("switchTabBlue") : t("switchTabRed")}</h2>
                         <h2 className="h2-medium-42">{`${switchTabs === "korzysci" ? titleKorzysci : titleZagrozenia}`}</h2>
                     </div>
                     <TabsSwitches css={BUTTON_CLASSES} switchTabs={switchTabs} setSwitchTabs={setSwitchTabs}

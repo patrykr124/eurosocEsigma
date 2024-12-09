@@ -8,10 +8,14 @@ import "slick-carousel/slick/slick.css";
 import SliderCartRed from './SliderCartRed';
 import SwiperSliderRed from './SwiperSliderRed';
 import EncryptButtonRed from "@/components/UI/EncryptButtonRed";
+import {useTranslations} from "use-intl";
+import {generateRandomString} from "@/components/UI/evervault-card";
+import {BoxAnimationHover} from "@/components/UI/BoxAnimationHover";
 
 
 
 function ServicesRed() {
+    const t = useTranslations("services");
 
 
 
@@ -26,10 +30,8 @@ function ServicesRed() {
     }, [100]);
 
 
-
-
-    function onMouseMove({ currentTarget, clientX, clientY }: any) {
-        let { left, top } = currentTarget.getBoundingClientRect();
+    function onMouseMove({currentTarget, clientX, clientY}: any) {
+        let {left, top} = currentTarget.getBoundingClientRect();
         mouseX.set(clientX - left);
         mouseY.set(clientY - top);
 
@@ -49,12 +51,11 @@ function ServicesRed() {
                     <div className="wrapper lg:gap-16 flex flex-col ">
                         <div className="text justify-between flex md:flex-row flex-col lg:gap-12 gap-4 ">
                             <div className="flex-1 z-10 flex flex-col items-center md:items-start">
-                                <h2 className='titleRedFrame'>O NAS</h2>
-                                <h2 className='h2-medium-42'>Co zyskasz dzięki EUROSOC?</h2>
+                                <h2 className='titleRedFrame'>{t("h21")}</h2>
+                                <h2 className='h2-medium-42'>{t("h22")}</h2>
                             </div>
                             <div className="links flex flex-row  justify-end items-end mb-4 gap-8 flex-1 z-10">
-                                <EncryptButtonRed onClick="" textData="Usługi abonamentowe" icon={<ArrowRight />} className="bg-red-1 hover:bg-red-hover" />
-                                <EncryptButtonRed onClick="" textData="Usługi jednorazowe" icon={<ArrowRight />} className="bg-red-1 hover:bg-red-hover" />
+                                <EncryptButtonRed onClick="" textData={t("encrypt1")} icon={<ArrowRight />} className="bg-red-1 hover:bg-red-hover" />
 
                             </div>
                         </div>
@@ -71,36 +72,4 @@ function ServicesRed() {
 export default ServicesRed
 
 
-export function BoxAnimationHover({ mouseX, mouseY, randomString }: any) {
 
-    let maskImage = useMotionTemplate`radial-gradient(100px at ${mouseX}px ${mouseY}px, white, transparent)`;
-    let style = { maskImage, WebkitMaskImage: maskImage };
-    return (
-        <div className="pointer-events-none ">
-
-            <motion.div
-                className="absolute inset-0 rounded-2xl bg-grey-400 opacity-0  group-hover/box:opacity-100 backdrop-blur-xl transition duration-500"
-                style={style}
-            />
-            <motion.div
-                className="absolute inset-0 rounded-2xl opacity-0 mix-blend-overlay group-hover/box:opacity-100"
-                style={style}
-            >
-                <p className="absolute inset-0 text-sm h-full w-full break-words whitespace-pre-wrap text-white font-mono font-bold transition duration-500">
-                    {randomString}
-                </p>
-            </motion.div>
-        </div>
-    )
-}
-
-
-const characters =
-    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-const generateRandomString = (length: number) => {
-    let result = "";
-    for (let i = 0; i < length; i++) {
-        result += characters.charAt(Math.floor(Math.random() * characters.length));
-    }
-    return result;
-};

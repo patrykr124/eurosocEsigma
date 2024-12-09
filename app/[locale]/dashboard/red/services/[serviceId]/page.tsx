@@ -1,3 +1,4 @@
+'use client'
 import {servicesData} from "@/constants/servicesRed";
 
 import {notFound} from "next/navigation";
@@ -10,11 +11,11 @@ import EncryptButtonRed from "@/components/UI/EncryptButtonRed";
 import DoZapamietaniaRed from "@/components/UI/red/services/serviceSite/DoZapamietaniaRed";
 import FAQTemplateRed from "@/components/UI/red/services/serviceSite/FAQ/FAQTemplateRed";
 
-export async function generateStaticParams() {
-    return servicesData.map((service) => ({
-        serviceId: service.id,
-    }))
-}
+// export async function generateStaticParams() {
+//     return servicesData.map((service) => ({
+//         serviceId: service.id,
+//     }))
+// }
 
 interface ServicePageProps {
     params: {

@@ -57,3 +57,63 @@ export const SWIPER_DATA_BLUE_EN: S[] = [
         title: 'Offsite Backup Storage'
     },
 ];
+
+
+export const SWIPER_DATA_RED:S[] = [
+    {
+        id:0,
+        img:'/assets/img/services/auditServices.png',
+        title:'Kompleksowe usługi audytorskie'
+    },
+    {
+        id:1,
+        img:'/assets/img/services/courseServices.png',
+        title:'Profesjonalne szkolenia z cyberbezpieczeństwa'
+    },
+    {
+        id:2,
+        img:'/assets/img/services/help.png',
+        title:'Skany podatności i testy bezpieczeństwa fizycznego'
+    },
+    {
+        id:3,
+        img:'/assets/img/services/dds.png',
+        title:'Testy penetracyjne i DDoS'
+    },
+    {
+        id:4,
+        img:'/assets/img/services/iii.png',
+        title:'Cykliczne testy socjotechniczne i III linia wsparcia'
+    },
+
+]
+
+
+
+export const SWIPER_DATA_RED_EN: S[] = [
+    {
+        id: 0,
+        img: '/assets/img/services/auditServices.png',
+        title: 'Comprehensive auditing services'
+    },
+    {
+        id: 1,
+        img: '/assets/img/services/courseServices.png',
+        title: 'Professional cybersecurity training'
+    },
+    {
+        id: 2,
+        img: '/assets/img/services/help.png',
+        title: 'Vulnerability scans and physical security testing'
+    },
+    {
+        id: 3,
+        img: '/assets/img/services/dds.png',
+        title: 'Penetration tests and DDoS'
+    },
+    {
+        id: 4,
+        img: '/assets/img/services/iii.png',
+        title: 'Cyclic social engineering tests and 3rd line support'
+    }
+];

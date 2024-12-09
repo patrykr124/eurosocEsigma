@@ -1,13 +1,18 @@
 import {servicesData} from "@/constants/servicesRed";
-import Link from "next/link";
+
 import React from "react";
 import EncryptButtonRed from "@/components/UI/EncryptButtonRed";
 import {motion} from "framer-motion";
+import {useLocale} from "use-intl";
+import {servicesDataRed_EN} from "@/constants/servicesRed_EN";
+import {Link} from "@/navigation";
+
 interface Props {
     activeFilters: string[]
 }
 
 function RightSideBoxRed({activeFilters}: Props) {
+    const locale = useLocale();
 
     function truncetData(word: string, maxWord: number) {
         if (!word) return;
@@ -16,13 +21,16 @@ function RightSideBoxRed({activeFilters}: Props) {
         }
     }
 
-    const servicesFilterData = servicesData.filter((item) =>
+    const serviceDataLocale = locale === "pl" ? servicesData : servicesDataRed_EN
+    const servicesFilterData = serviceDataLocale.filter((item) =>
         activeFilters.length === 0 || activeFilters.includes(item.filter) || activeFilters.includes(item.filter2)
     );
+    console.log(serviceDataLocale);
 
     return (
         <div className="flex flex-wrap lg:gap-6 gap-2 ">
-            {servicesFilterData.length === 0 && <div className="w-full h-full flex justify-center items-center"><p>Brak usługi</p></div>}
+            {servicesFilterData.length === 0 &&
+                <div className="w-full h-full flex justify-center items-center"><p>Brak usługi</p></div>}
             {servicesFilterData.map((item) => (
                 <motion.div key={item.id} initial={{opacity: 0, scale: 0.98}} animate={{opacity: 1, scale: 1}}
                             transition={{duration: 0.5}}>

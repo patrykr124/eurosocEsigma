@@ -8,11 +8,13 @@ import {usePathname} from "next/navigation";
 
 export default function Footer() {
     const pathName = usePathname();
-    const [logo, setLogo] = useState<string>('/assets/img/logo-blue.svg');
-
+    const [logo, setLogo] = useState<string>('');
+    console.log(pathName)
     useEffect(() => {
-        if (pathName && pathName.startsWith('/dashboard/red')) {
+        if (pathName && pathName.includes('/dashboard/red')) {
             setLogo('/assets/img/red/logoRed.svg')
+        } else {
+            setLogo("/assets/img/logo-blue.svg")
         }
     }, []);
 

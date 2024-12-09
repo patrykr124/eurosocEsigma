@@ -2,7 +2,8 @@
 import {useRef, useState} from "react";
 import {motion} from "framer-motion";
 import {useRouter} from "next/navigation";
-import Link from "next/link";
+import {Link} from "@/navigation";
+
 
 
 interface EncryptButtonProps {
@@ -75,7 +76,7 @@ const EncryptButton = ({textData, icon, className, onClick}: EncryptButtonProps)
             className={`group relative overflow-hidden rounded-lg tracking-wide px-4 h-fit py-2 font-medium uppercase text-gray-3 transition-colors duration-500 ${className}`}
             onClick={handleClick}
         >
-            <Link href="/dashboard/blue/kontakt" >
+            <Link href="/dashboard/blue/services" >
                 <div className="relative z-10 flex items-center gap-2">
 
                     <span>{text}</span>

@@ -1,12 +1,13 @@
 import Image from 'next/image'
 import React from 'react'
 import Slider from "react-slick";
+import {useTranslations} from "use-intl";
 
 
 function CertificateRed() {
+    const t = useTranslations("certyfikaty");
 
     const settings = {
-
         infinite: true,
         speed: 500,
         slidesToScroll: 1,
@@ -26,12 +27,11 @@ function CertificateRed() {
     const CSS_SLIDER = '!flex items-center justify-center p-2  max-h-[150px] w-full';
     return (
         <div className='common-padding flex flex-col items-center justify-center bg-gray-2 pb-12'>
-            <h2 className="titleFrame-red">CERTYFIKATY</h2>
+            <h2 className="titleFrame-red">{t("title1")}</h2>
             <div className="wrapper flex flex-col gap-12">
                 <div className="text flex flex-col  justify-center items-center">
-                    <h2 className='h2-medium-42'>Nasze certyfikaty</h2>
-                    <p className='max-w-2xl text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
-                        provident autem! Culpa pariatur dolorem ad officia aut modi minus quae.</p>
+                    <h2 className='h2-medium-42'>{t("title2")}</h2>
+                    <p className='max-w-2xl text-center'>{t("p1")}</p>
                 </div>
                 <div className=" slider-container  md:gap-12 justify-center">
 
