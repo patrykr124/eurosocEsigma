@@ -71,13 +71,13 @@ export default function Home() {
                     {/*/image/*/}
 
                     <div className="rightFire size-[160%] -translate-x-[30%] -translate-y-[12%] absolute  ">
-                        <Image className=" object-contain" fill src="/assets/img/home/blue.png" alt="bluefire"/>
+                        <Image className=" object-contain" fill   src="/assets/img/home/blue.png" alt="bluefire"/>
 
 
                     </div>
                     <div
                         className="leftFire size-[160%] absolute -translate-x-[8%] -translate-y-[14%]  overflow-hidden">
-                        <Image className=" object-contain" fill src="/assets/img/home/red.png" alt="redfire"/>
+                        <Image className=" object-contain" fill  src="/assets/img/home/red.png" alt="redfire"/>
 
                     </div>
 
