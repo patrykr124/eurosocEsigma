@@ -10,6 +10,8 @@ import Header from "@/components/UI/services/serviceSite/Header";
 import EncryptButtonRed from "@/components/UI/EncryptButtonRed";
 import DoZapamietaniaRed from "@/components/UI/red/services/serviceSite/DoZapamietaniaRed";
 import FAQTemplateRed from "@/components/UI/red/services/serviceSite/FAQ/FAQTemplateRed";
+import {useLocale, useTranslations} from "use-intl";
+import {servicesDataRed_EN} from "@/constants/servicesRed_EN";
 
 // export async function generateStaticParams() {
 //     return servicesData.map((service) => ({
@@ -24,8 +26,12 @@ interface ServicePageProps {
 }
 
 function Page({params}: ServicePageProps) {
+    const locale = useLocale();
+    const t = useTranslations("servicesPage");
 
-    const serviceFetchData = servicesData.find((service) => service.id === params.serviceId);
+    const servicesDataLocale = locale === "pl" ? servicesData : servicesDataRed_EN;
+
+    const serviceFetchData = servicesDataLocale.find((service) => service.id === params.serviceId);
 
     if (!serviceFetchData) {
         notFound();
@@ -43,15 +49,15 @@ function Page({params}: ServicePageProps) {
                            urlImage={serviceFetchData.urlImage}
                            size={serviceFetchData.size}
                            classH2={"titleFrame-red"}
-                           BUTTON={<EncryptButtonRed onClick="" textData="Zabezpiecz się"
-                                                     className="bg-red-1 hover:bg-red-1-hover w-fit my-4"/>}/>
+                           BUTTON={<EncryptButtonRed onClick="" textData={t ("button")}
+                                                     className="bg-red-1 hover:bg-red-1-hover w-fit my-8"/>}/>
             <Why
                 iconsBlue={serviceFetchData.iconsTop}
                 iconsRed={serviceFetchData.iconsRed}
                 titleKorzysci={serviceFetchData?.titleKrzysci}
                 titleZagrozenia={serviceFetchData?.titleZagrozenia}/>
 
-            <ParallaxInfo classH2={"titleFrame-red"} BUTTON={<EncryptButtonRed onClick="" textData="Zabezpiecz się"
+            <ParallaxInfo classH2={"titleFrame-red"} BUTTON={<EncryptButtonRed onClick="" textData={t ("button")}
                                                                                className="bg-red-1 hover:bg-red-1-hover w-fit my-4"/>}/>
             <DoZapamietaniaRed doZapamietaniaTop={serviceFetchData.doZapamietaniaTop}
                                doZapamietaniaBottom={serviceFetchData.doZapamietaniaBottom}/>

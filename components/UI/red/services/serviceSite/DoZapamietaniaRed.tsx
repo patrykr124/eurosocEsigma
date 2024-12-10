@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import DozapamietaniaContentRed from "@/components/UI/red/services/serviceSite/DozapamietaniaContentRed";
+import {useTranslations} from "use-intl";
 
 interface data {
     id: number;
@@ -15,6 +16,7 @@ interface Props {
 }
 
 function DoZapamietaniaRed({doZapamietaniaTop, doZapamietaniaBottom}: Props) {
+    const t = useTranslations("servicesPage")
     return (
         <div className="common-padding bg-gray-2">
             <div className="wrapper flex flex-col gap-8">
@@ -24,8 +26,8 @@ function DoZapamietaniaRed({doZapamietaniaTop, doZapamietaniaBottom}: Props) {
                     </div>
                     <div className="right flex-1 gap-8 flex flex-col">
                         <div className="">
-                            <h2 className='titleFrame-red'>WAŻNE</h2>
-                            <h2 className='h2-medium-42'>Najważniejsze do zapamiętania</h2>
+                            <h2 className='titleFrame-red'>{t("h22")}</h2>
+                            <h2 className='h2-medium-42'>{t("h23")}</h2>
                         </div>
                         <div className="flex ">
                             <DozapamietaniaContentRed doZapamietaniaTop={doZapamietaniaTop}

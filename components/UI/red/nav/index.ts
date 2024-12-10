@@ -152,22 +152,22 @@ export const itemsMenu_EN = [
     {
         id: 3,
         name: "Why Us",
-        url: "/dashboard/blue/#dlaczegomy",
+        url: "/dashboard/red/#dlaczegomy",
     },
     {
         id: 4,
         name: "About Us",
-        url: "/dashboard/blue/#Onas",
+        url: "/dashboard/red/#Onas",
     },
     {
         id: 5,
         name: "Blog",
-        url: "/dashboard/blue/blog",
+        url: "/dashboard/red/blog",
     },
     {
         id: 6,
         name: "Contact",
-        url: "/dashboard/blue/kontakt",
+        url: "/dashboard/red/kontakt",
     },
 ];
 

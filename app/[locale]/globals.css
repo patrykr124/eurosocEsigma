@@ -308,15 +308,15 @@ hr {
 }
 
 .titleFrame {
-    @apply bg-blue-1 w-fit rounded-xl px-8 text-white mb-2;
+    @apply bg-blue-1 w-fit rounded-lg px-8 text-white mb-2;
 }
 
 .titleRedFrame {
-    @apply bg-red-1 w-fit rounded-xl px-8 text-white mb-2;
+    @apply bg-red-1 w-fit rounded-lg px-8 text-white mb-2;
 }
 
 .titleFrame-red {
-    @apply bg-red-600 w-fit rounded-xl px-8 text-white mb-2;
+    @apply bg-red-600 w-fit rounded-lg px-8 text-white mb-2;
 }
 
 .slick-dots {

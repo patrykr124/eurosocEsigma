@@ -8,7 +8,7 @@ import NavOpen from './NavOpen'
 import Switch from "@/components/UI/Switch";
 import {
     itemMenuUslugiUtrzymaniowe,
-    itemsMenu,
+    itemsMenu, itemsMenu_EN,
     itemsMenuUslugiAudytorskie,
     itemsMenuUslugiSzkoleniowe
 } from "@/components/UI/blue/nav/index";
@@ -18,7 +18,7 @@ import {motion} from "framer-motion";
 import {navbarAnimation, navbarAnimationTransitio} from "@/constants/animations/animation";
 import UseMenuShowOnScroll from "@/hooks/useMenuShowOnScroll";
 import LocaleSwitcher from "@/components/UI/LocaleSwitch/LocaleSwitcher";
-import {useTranslations} from "use-intl";
+import {useLocale, useTranslations} from "use-intl";
 import {Link} from "@/navigation";
 
 function NavbarBlue() {
@@ -27,10 +27,13 @@ function NavbarBlue() {
     const [openMobile2, setOpenMobile2] = useState(false)
     const pathname = usePathname();
     const [hiddenMenu, setHiddenMenu] = useState(false)
-
-    const servicesItemUslugi = itemsMenu.find(item => item.name === 'Usługi')
-
+    const locale = useLocale();
     const t = useTranslations("menu.home")
+    const t2 = useTranslations("menu.services")
+
+    const itemsMenuLocale = locale === "pl" ? itemsMenu : itemsMenu_EN
+
+    const servicesItemUslugi = itemsMenuLocale.find(item => item.name === t("uslugi"))
 
     function isOpen(hoveritem: string) {
         if (hoveritem === t("uslugi")) {
@@ -77,8 +80,10 @@ function NavbarBlue() {
                 <div className="flex lg:hidden">
                     <div className="flex w-full  justify-between items-center z-10">
                         <div className="logo">
-                            <Link href='/dashboard/blue'><Image src={Logo} alt='logo' width={150} height={150}/></Link>
+                            <Link href='/dashboard/blue'><Image src={Logo} alt='logo' width={120} height={120}/></Link>
                         </div>
+                        <LocaleSwitcher/>
+                        <Switch/>
                         <div className="input_box flex">
                             <div className="bar" onClick={openMobileMenu}>
                                 <span className={`top ${openMobile ? "rotate-45 !top-2" : ""}`}></span>
@@ -87,12 +92,13 @@ function NavbarBlue() {
                                 ></span>
                                 <span className={`bottom ${openMobile ? "rotate-[-45deg] !top-2" : ""}`}></span>
                             </div>
+
                         </div>
                     </div>
                     <div
                         className={`bg-black-1 fixed overflow-y-auto left-0 top-16 w-screen h-screen ${openMobile ? '-translate-y-0 opacity-100' : '-translate-y-full opacity-0'} transition-opacity duration-500`}>
                         <div className="wrapper flex flex-col gap-6 my-10">
-                            {itemsMenu.map(item => {
+                            {itemsMenuLocale.map(item => {
                                 return (
                                     <li key={item.id}>
                                         <div className="flex">
@@ -105,13 +111,12 @@ function NavbarBlue() {
                                                 <ChevronDown onClick={openMobileMenu2} color="white" size={25}
                                                              className={`${openMobile2 ? 'rotate-180' : ''} `}/>}
                                         </div>
-                                        {item.name === 'Usługi' && openMobile2 && (
+                                        {item.name === t("uslugi") && openMobile2 && (
                                             <div onClick={openMobileMenu} className="ItemsClick">
                                                 <div
                                                     className=" gap-2 w-full flex  flex-col items-start justify-between ">
                                                     <div className="1 flex flex-col gap-4 justify-center py-10 ">
-                                                        <h2 className="p-bold-18 text-white">Usługi
-                                                            wdrożeniowe </h2>
+                                                        <h2 className="p-bold-18 text-white">{ t2("title1")}</h2>
                                                         <div className="flex flex-col gap-4">
                                                             {servicesItemUslugi && servicesItemUslugi.featured && servicesItemUslugi.featured.map((item) => {
                                                                 const isActive = pathname === item.url
@@ -127,8 +132,7 @@ function NavbarBlue() {
                                                         </div>
                                                     </div>
                                                     <div className="2 flex flex-col gap-4 justify-center  ">
-                                                        <h2 className="p-bold-18 text-white">Usługi
-                                                            audytorskie </h2>
+                                                        <h2 className="p-bold-18 text-white">{ t2("title2")}</h2>
                                                         {itemsMenuUslugiAudytorskie.map((item) => {
                                                             const isActive = pathname === item.url
                                                             return (
@@ -143,8 +147,7 @@ function NavbarBlue() {
                                                         })}
                                                     </div>
                                                     <div className="3 flex flex-col gap-4 justify-center pt-10">
-                                                        <h2 className="p-bold-18 text-white">Usługi
-                                                            szkoleniowe </h2>
+                                                        <h2 className="p-bold-18 text-white">{ t2("title3")}</h2>
                                                         {itemsMenuUslugiSzkoleniowe.map((item) => {
                                                             const isActive = pathname === item.url
                                                             return (
@@ -159,8 +162,7 @@ function NavbarBlue() {
                                                         })}
                                                     </div>
                                                     <div className="2 flex  flex-col gap-4 justify-center py-10">
-                                                        <h2 className="p-bold-18 text-white">Usługi
-                                                            utrzymaniowe </h2>
+                                                        <h2 className="p-bold-18 text-white">{ t2("title4")}</h2>
                                                         {itemMenuUslugiUtrzymaniowe.map((item) => {
                                                             const isActive = pathname === item.url
                                                             return (
