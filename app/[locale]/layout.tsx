@@ -33,15 +33,17 @@ export function generateStaticParams() {
 //dodajemy to do każdej page//
 
 export async function generateMetadata({params: {locale}}: Omit<Props, 'children'>) {
-    const t = await getTranslations({locale, namespaces: "layout"});
-
+    const t = await getTranslations('layout');
 
     return {
-        title: t("title") ,
-        description: t("description")
+        title: t('title'),
+        description: t('description'),
+        icons: {
+            icon: "/assets/images/logo.png",
+        },
     };
-
 }
+
 
 export default async function RootLayout({children, params: {locale}}: Props) {
     setRequestLocale(locale)

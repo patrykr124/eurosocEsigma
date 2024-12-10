@@ -27,7 +27,7 @@ export default function Home() {
 
     return (
         <>
-            <main className=" h-dvh overflow-hidden hidden lg:flex">
+            <main className=" h-dvh overflow-hidden hidden md:flex">
                 <div className="w-full h-full relative flex" style={{
                     backgroundImage: "url('/assets/img/home/hand.png') ",
                     backgroundSize: "cover",
@@ -71,13 +71,13 @@ export default function Home() {
                     {/*/image/*/}
 
                     <div className="rightFire size-[160%] -translate-x-[30%] -translate-y-[12%] absolute  ">
-                        <Image className=" object-contain" fill src="/assets/img/home/blue.png" alt="bluefire"/>
+                        <Image className=" object-contain" fill   src="/assets/img/home/blue.png" alt="bluefire"/>
 
 
                     </div>
                     <div
                         className="leftFire size-[160%] absolute -translate-x-[8%] -translate-y-[14%]  overflow-hidden">
-                        <Image className=" object-contain" fill src="/assets/img/home/red.png" alt="redfire"/>
+                        <Image className=" object-contain" fill  src="/assets/img/home/red.png" alt="redfire"/>
 
                     </div>
 
@@ -91,8 +91,8 @@ export default function Home() {
                     </div>
                 </div>
             </main>
-
-            <main className="h-dvh relative flex lg:hidden bg-black">
+                {/*//mobile//*/}
+            <main className="h-dvh relative flex md:hidden bg-black">
                 <div className=" flex flex-col">
                     <div className="p-6 top flex flex-col gap-8">
                         <Image className=" left-0 top-0" width="150" height="150"
@@ -101,14 +101,14 @@ export default function Home() {
                         <h1 className="p-medium-16 text-white  lg:right-0 top-20 lg:top-0">{t("wybor")}</h1>
                     </div>
                     <div className="flex flex-col gap-12 justify-center items-center h-[75vh]">
-                        <Link href="/dashboard/blue" className="top relative">
+                        <Link href="/dashboard/blue" className="top relative w-full ">
                             <Image className="" width="500" height="500" src="/assets/img/blueMobile.png" alt="blueMobile"/>
-                            <p className="px-6 absolute top-0 left-40 translate-y-[45%]  text text-[12px] text-gray-3  rounded-lg z-50"><span className="text-blue-1 font-bold">EUROSOC BLUE TEAM</span> {t("blueTitleMobile")}
+                            <p className="px-6 absolute inset-y-0 left-40  sm:left-56 flex flex-col justify-center text text-[12px] text-gray-3  rounded-lg z-50"><span className="text-blue-1 font-bold">EUROSOC BLUE TEAM</span> {t("blueTitleMobile")}
                             </p>
                         </Link>
-                        <Link href="/dashboard/red" className="bottom relative">
-                            <Image width="500" height="500" src="/assets/img/redMobile.png" alt="blueMobile"/>
-                            <p className="px-6 absolute top-0 right-40 translate-y-[45%] text text-[12px] text-gray-3  rounded-lg z-50"><span className="text-red-1 font-bold">EUROSOC RED TEAM </span>{t("blueTitleMobile")}
+                        <Link href="/dashboard/red" className="bottom relative w-full flex justify-end">
+                            <Image className="" width="500" height="500" src="/assets/img/redMobile.png" alt="blueMobile"/>
+                            <p className="px-6 absolute inset-y-0 right-40 flex sm:right-56 flex-col justify-center text text-[12px] text-gray-3  rounded-lg z-50"><span className="text-red-1 font-bold">EUROSOC RED TEAM </span>{t("blueTitleMobile")}
                             </p>
                         </Link>
                     </div>
