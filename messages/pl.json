@@ -2,7 +2,9 @@
   "home": {
     "redTitle": "EUROSOC RED TEAM oferuje usługi z zakresu bezpieczeństwa IT,w tym audyty, takie jak testy penetracyjne, socjotechniczne i skany podatności,\nktóre pomagają wykrywać zagrożenia.\n\nOrganizujemy szkolenia z cyberbezpieczeństwa oraz wspieramy w obsłudze incydentów, zapewniając szybkie  reagowanie na zagrożenia.\n\nOferujemy także cykliczne testy i trzecią linię wsparcia technicznego, dbając o bezpieczeństwo organizacji.",
     "blueTitle": "EUROSOC BLUE TEAM oferuje szeroki zakres usług z zakresu ochrony i utrzymania bezpieczeństwa IT. Specjalizujemy się w wdrażaniu nowoczesnych rozwiązań, takich jak segmentacja sieci, mechanizmy silnego uwierzytelniania czy ochrona przed wyciekami danych.\n\nŚwiadczymy również audyty zgodności z normami, opracowanie dokumentacji SZBI oraz szkolenia z cyberbezpieczeństwa dla różnych grup kadry.\n\nPonadto  zapewniamy wsparcie techniczne, monitoring infrastruktury i odzyskiwanie kopii zapasowych,\nby Twoja organizacja działała bezpiecznie i niezawodnie.",
-    "wybor": "Wybierz swój kolor tutaj lub dokonaj wyboru na stronie po prawej stronie w menu"
+    "wybor": "Wybierz swój kolor tutaj lub dokonaj wyboru na stronie po prawej stronie w menu",
+    "blueTitleMobile": "oferuje kompleksowe usługi bezpieczeństwa IT, obejmujące nowoczesne rozwiązania, audyty, szkolenia, wsparcie techniczne oraz monitoring, aby zapewnić bezpieczne i niezawodne działanie organizacji.",
+    "redTitleMobile": " oferuje audyty bezpieczeństwa IT, szkolenia, obsługę incydentów, cykliczne testy i wsparcie techniczne, zapewniając wykrywanie zagrożeń i szybkie reagowanie dla ochrony organizacji."
   },
   "dashboard": {
     "header": {

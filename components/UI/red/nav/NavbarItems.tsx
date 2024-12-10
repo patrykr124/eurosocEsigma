@@ -1,9 +1,10 @@
 "use client";
 import { ChevronDown } from 'lucide-react';
-import Link from 'next/link';
+
 import { itemsMenu } from '.';
 import {useLocale} from "use-intl";
-import {itemsMenu_EN} from "@/components/UI/blue/nav";
+import {itemsMenu_EN} from "@/components/UI/red/nav";
+import {Link} from "@/navigation";
 
 
 

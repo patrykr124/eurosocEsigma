@@ -2,12 +2,14 @@
   "home": {
     "redTitle": "EUROSOC RED TEAM offers services in the field of IT security,including audits such as penetration testing, social engineering tests, and vulnerability scans, which help identify threats.\n\nWe organize cybersecurity training and provide support for incident handling, ensuring rapid response to threats.\n\nWe also offer periodic tests and third-line technical support to ensure the security of your organization.",
     "blueTitle": "EUROSOC BLUE TEAM offers a wide range of services in\nthe field of IT security protection and maintenance.\n\nWe specialize in implementing modern\nsolutions such as network segmentation, strong authentication mechanisms, and data leakage protection.\n\nWe also provide compliance audits, ISMS documentation development, and cybersecurity training for various groups of staff.\nAdditionally, we offer technical support, infrastructure monitoring, and backup recovery,ensuring your organization operates safely and reliably.",
-    "wybor": "Choose your color here or make a selection on the page using the menu on the right."
+    "wybor": "Choose your color here or make a selection on the page using the menu on the right.",
+    "blueTitleMobile": "offers comprehensive IT security services, including modern solutions, audits, training, technical support, and monitoring to ensure the safe and reliable operation of your organization.",
+    "redTitleMobile": "EUROSOC RED TEAM provides IT security audits, training, incident response, regular testing, and technical support, ensuring threat detection and rapid response to protect your organization."
   },
   "dashboard": {
     "header": {
       "p": "We Create Secure Digital Solutions",
-      "h1": "Your Cybersecurity Based\non",
+      "h1": "Your Cybersecurity Based on",
       "words": [
         "implementations",
         "trainings",
