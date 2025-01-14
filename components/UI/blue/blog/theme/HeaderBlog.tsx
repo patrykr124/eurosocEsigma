@@ -4,20 +4,20 @@ import {BlogPost} from "@/types/type";
 interface Propos {
     headerImg: string;
     position: string;
-    content: BlogPost | undefined;
+    content: BlogPost | string | undefined | any;
 
 }
 
-function HeaderBlog({position,content} : Propos) {
+function HeaderBlog({position,content, headerImg} : Propos) {
     return (
         <header style={{
-            backgroundImage: `url('${content?.imgHeader}')`,
+            backgroundImage: `url('${content?.imgHeader || `${headerImg}`} ')`,
             backgroundPosition: `${position}`,
             backgroundSize: "cover",
             backgroundAttachment: "fixed",
         }} className="sectionPadding flex flex-col justify-center items-center">
             <div className="wrapper">
-                <h1 className='h1-bold text-gray-3 text-center'>{content?.title}</h1>
+                <h1 className='h1-bold text-gray-3 text-center'>{content?.title || `${content}`}</h1>
             </div>
         </header>
     );

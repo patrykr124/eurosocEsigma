@@ -50,17 +50,17 @@ function Page() {
                         </motion.div>
                     </div>
                     <div className="left flex flex-1 justify-center items-center">
-                        <motion.div animate={{opacity: 1}} initial={{opacity: 0,}} transition={{duration: 1.2,delay:0.4}} className="w-full h-[500px] bg-black-1 rounded-xl p-10 gap-4 flex flex-col shadow-xl">
+                        <motion.div animate={{opacity: 1}} initial={{opacity: 0,}} transition={{duration: 1.2,delay:0.4}} className="w-full md:h-[500px] bg-black-1 rounded-xl p-10 gap-4 flex flex-col shadow-xl">
                             <h1 className="h3-bold text-white">Info</h1>
-                            <div className="box flex flex-col justify-evenly h-full ">
+                            <div className="box flex flex-col gap-4 md:justify-evenly h-full ">
                                 <div className="flex gap-4">
                                     <MdEmail color="white" size="30"/>
-                                    <Link href="mailto:hello@eurosoc.pl"><p className="text-white">hello@eurosoc.pl</p>
+                                    <Link className="flex items-center" href="mailto:hello@eurosoc.pl"><p className="text-white">hello@eurosoc.pl</p>
                                     </Link>
                                 </div>
                                 <div className="flex gap-4">
                                     <AiFillPhone color="white" size="30"/>
-                                    <Link href="tel:+48587746289"><p className="text-white">+48 58 774 62 89</p></Link>
+                                    <Link className="flex items-center" href="tel:+48587746289"><p className="text-white">+48 58 774 62 89</p></Link>
                                 </div>
                                 <div className="flex gap-4 items-center">
                                     <FaCity color="white" size="30"/>

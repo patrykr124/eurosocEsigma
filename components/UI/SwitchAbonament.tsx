@@ -10,7 +10,7 @@ interface Props {
 
 function SwitchAbonament({setActiveFilters}: Props) {
     const t = useTranslations("homeServices");
-    const BUTTON_CLASSES = "h5-link flex items-center gap-2 px-3 md:pl-3 md:pr-3.5 py-3 md:py-1.5 transition-colors justify-center w-64 relative z-10"
+    const BUTTON_CLASSES = "h5-link flex items-center gap-2 px-3 md:pl-3 md:pr-3.5 py-2 md:py-1.5 transition-colors justify-center w-64 relative z-10"
     const [switchTabs, setSwitchTabs] = useState(t('switchTitle1'))
 
     function handleSwitch(tab: string) {
@@ -34,7 +34,7 @@ function SwitchAbonament({setActiveFilters}: Props) {
                 <h2 className="h2-medium text-center lg:text-left">{t("title2")}</h2>
             </div>
 
-            <div className=" relative flex w-fit  rounded-full  ">
+            <div className=" relative h-fit flex w-fit  rounded-full  ">
                 <button onClick={() => handleSwitch(t('switchTitle1'))}
                         className={`${BUTTON_CLASSES}  ${HANDLE_JEDNORAZOWE_CSS} uppercase`}>{t('switchTitle1')}
                 </button>

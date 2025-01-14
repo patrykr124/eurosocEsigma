@@ -62,7 +62,7 @@ body {
 
     /* 64 */
     .h1-bold {
-        @apply font-bold text-[35px] leading-[48px] lg:text-[48px] lg:leading-[60px]  xl:text-[58px] xl:leading-[60px];
+        @apply font-bold text-4xl  md:text-5xl  lg:text-6xl ;
     }
 
     /*42 */
@@ -94,11 +94,11 @@ body {
 
     /* 32 */
     .h4-medium {
-        @apply font-medium text-[32px] leading-[35px] ;
+        @apply font-medium text-[32px] leading-[44px] ;
     }
 
     .p-medium-32 {
-        @apply font-medium text-[32px];
+        @apply font-medium text-2xl md:text-3xl;
     }
 
     /* 28 */

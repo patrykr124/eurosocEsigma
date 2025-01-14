@@ -12,11 +12,7 @@ import EncryptButton from "@/components/UI/EncryptButton";
 import {useLocale, useTranslations} from "use-intl";
 import {servicesData_EN} from "@/constants/services_EN";
 
-// export async function generateStaticParams() {
-//     return servicesData.map((service) => ({
-//         serviceId: service.id,
-//     }))
-// }
+
 
 interface ServicePageProps {
     params: {

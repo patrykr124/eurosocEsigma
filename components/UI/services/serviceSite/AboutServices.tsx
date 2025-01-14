@@ -32,8 +32,7 @@ export default function AboutServices({desc, titleAboutService, urlImage, size, 
                         <p>{desc}</p>
                         {BUTTON}
                     </div>
-                    <div
-                        className="right  lg:order-2 pointer-events-none lg:pointer-events-auto flex-1 flex justify-center items-center -mb-10 -mt-10">
+                    <div className="hidden md:flex right  lg:order-2 pointer-events-none lg:pointer-events-auto flex-1  justify-center items-center -mb-10 -mt-10">
 
                         <ParcipleService url={urlImage} size={size}/>
                     </div>

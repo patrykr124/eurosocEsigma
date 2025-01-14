@@ -15,11 +15,10 @@ interface EncryptButtonProps {
 
 const EncryptButton = ({textData, icon, className, onClick}: EncryptButtonProps) => {
     const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
-    const route = useRouter();
     const TARGET_TEXT = `${textData}`;
     const CYCLES_PER_LETTER = 2;
     const SHUFFLE_TIME = 50;
-
+  
     const CHARS = "!@#$%^&*():{};|,.<>/?";
 
     const [text, setText] = useState(TARGET_TEXT);
@@ -57,11 +56,7 @@ const EncryptButton = ({textData, icon, className, onClick}: EncryptButtonProps)
         setText(TARGET_TEXT);
     };
 
-    function handleClick() {
-        if (onClick) {
-            route.push(onClick);
-        }
-    }
+   
 
     return (
         <motion.button
@@ -74,9 +69,9 @@ const EncryptButton = ({textData, icon, className, onClick}: EncryptButtonProps)
             onMouseEnter={scramble}
             onMouseLeave={stopScramble}
             className={`group relative overflow-hidden rounded-lg tracking-wide px-4 h-fit py-2 font-medium uppercase text-gray-3 transition-colors duration-500 ${className}`}
-            onClick={handleClick}
+           
         >
-            <Link href="/dashboard/blue/services" >
+            <Link href={`${onClick}`} >
                 <div className="relative z-10 flex items-center gap-2">
 
                     <span>{text}</span>

@@ -1,6 +1,6 @@
 import {BlogPost} from "@/types/type";
 
-export const BlogData: BlogPost[] = [
+export const BlogData_EN: BlogPost[] = [
 
     {
         id: 1,
@@ -24,7 +24,6 @@ export const BlogData: BlogPost[] = [
             "- Audyty bezpieczeństwa Twojej organizacji.",
         imgHeader: '/assets/img/blueblog/phishing/phishingbg.jpg',
         data: '13.10.2024'
-        
     },
 
     {

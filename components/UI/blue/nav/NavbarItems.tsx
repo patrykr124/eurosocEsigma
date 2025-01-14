@@ -24,7 +24,7 @@ function NavbarItems({ isOpen, ishandleOpen, setIsHandleOpen }: NavbarItemsProps
             {itemMenuData.map(item => {
                 return (
                     <li key={item.id}>
-                        <Link onClick={() => setIsHandleOpen(false)} onMouseEnter={() => isOpen(item.name)} className={`link flex items-center`} href={item.url}>
+                        <Link onClick={() => setIsHandleOpen(false)} onMouseEnter={() => isOpen(item.name)} className={`link flex items-center `} href={item.url}>
                             {item.name} {item.arrow && <ChevronDown size={18} className={`${ishandleOpen ? 'rotate-180' : ''} `} />}
                         </Link>
                     </li>

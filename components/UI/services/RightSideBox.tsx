@@ -31,11 +31,11 @@ function RightSideBox({activeFilters}: Props) {
 
 
     return (
-        <div className="flex flex-wrap lg:gap-6 gap-2 ">
+        <div className="grid sm:grid-cols-3 gap-4 w-full">
             {servicesFilterData.map((item) => (
                 <motion.div key={item.id} initial={{opacity:0, scale:0.98}} animate={{opacity:1,scale:1}}  transition={{duration:0.5}} >
                     <Link
-                          className='group relative shadow-light text-black flex w-[190px] lg:w-[280px] lg:h-[400px] rounded-xl overflow-hidden'
+                          className='group relative shadow-light text-black flex  rounded-xl overflow-hidden'
                           href={item.url}>
                         <div className="w-full relative bg-gray-3  flex flex-col ">
                             <div className="top ">
@@ -46,7 +46,7 @@ function RightSideBox({activeFilters}: Props) {
                             </div>
                             <div className="bottom h-full   flex flex-col justify-between lg:py-6 py-3 px-3 lg:px-6 ">
                                 <div className="flex flex-col gap-2">
-                                    <p className='p-medium-14'>{truncetData(item.description, 160)}</p>
+                                    <p className='p-medium-14 md:flex hidden'>{truncetData(item.description, 160)}</p>
                                 </div>
                                 <div className="bg-blue-1 flex uppercase rounded-xl text-white p-3 gap-2 hover:bg-blue-1-hover w-fit text-sm mt-2"><p className="p-regular-14 ">Czytaj więcej</p> <ArrowRight  color="white" size="20"/></div>
                             </div>
