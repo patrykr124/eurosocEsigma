@@ -1,30 +1,32 @@
 'use client'
+import { BlogData } from "@/components/UI/blue/blog/BlogData";
+import { BlogDataRed } from "@/components/UI/red/blog/BlogDataRed";
+import { BlogPost } from "@/types/type";
 import Image from "next/image";
-import {BlogData} from "@/components/UI/blue/blog/BlogData";
 import Link from "next/link";
-import {BlogPost} from "@/types/type";
-import {usePathname} from "next/navigation";
-import {BlogDataRed} from "@/components/UI/red/blog/BlogDataRed";
+import { usePathname } from "next/navigation";
 
 interface Props {
     contentId: BlogPost;
 }
 
-function RecentPost({contentId}: Props) {
+function RecentPost({ contentId }: Props) {
     const route = usePathname()
-    console.log(route);
+
+
 
     let recentBlog: BlogPost[] = [];
     let hrefLink = "";
 
-    if (route && route.startsWith("/dashboard/blue/blog")) {
+    if (route && route.includes("/dashboard/blue/blog")) {
         recentBlog = BlogData.filter((item) => item.id !== contentId.id).slice(0, 3);
         hrefLink = 'blue'
-    } else if (route && route.startsWith("/dashboard/red/blog")) {
+    } else if (route && route.includes("/dashboard/red/blog")) {
         recentBlog = BlogDataRed.filter((item) => item.id !== contentId.id).slice(0, 3);
         hrefLink = 'red'
     }
 
+    console.log(recentBlog)
 
 
 
@@ -36,22 +38,26 @@ function RecentPost({contentId}: Props) {
 
     return (
         <div className="right flex-1 gap-12 flex flex-col">
-            {recentBlog.map((item) => (
-                <Link key={item.id} href={`/dashboard/${hrefLink}/blog/${item.id}`}>
-                    <div className="gap-12 flex flex-col">
-                        <div className="box bg-gray-2 rounded-xl overflow-hidden">
-                            <div className="w-full h-[180px] relative">
-                                <Image fill src={item.imgHeader} alt="recentBlog"/>
+               <h3 className="h4-medium  ">Polecane posty</h3>
+            {recentBlog.map((item) => {
+                const urlPost = route?.replace(/\/\d+$/, "") +"/"+ `${item.id}`
+                return (
+                    <Link key={item.id} href={`${urlPost}`}>
+                        <div className="gap-12 flex flex-col">
+                            <div className="box bg-gray-2 rounded-xl overflow-hidden">
+                                <div className="w-full h-[180px] relative">
+                                    <Image fill src={item.imgHeader} alt="recentBlog" />
+                                </div>
+                                <div className="flex flex-col gap-2 p-4">
+                                    <h4 className="p-semibold-20 ">{item.title}</h4>
+                                    <p>{truncateText(item.desc, 150)}</p>
+                                </div>
                             </div>
-                            <div className="flex flex-col gap-2 p-4">
-                                <h4 className="p-semibold-20 ">{item.title}</h4>
-                                <p>{truncateText(item.desc, 150)}</p>
-                            </div>
-                        </div>
 
-                    </div>
-                </Link>
-            ))}
+                        </div>
+                    </Link>
+                )
+            })}
         </div>
     );
 }

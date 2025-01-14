@@ -78,14 +78,14 @@ function NavbarBlue() {
 
                 {/*MOBILE*/}
                 <div className="flex lg:hidden">
-                    <div className="flex w-full  justify-between items-center z-10">
+                    <div className="flex w-full justify-between items-center z-10">
                         <div className="logo">
                             <Link href='/dashboard/blue'><Image src={Logo} alt='logo' width={120} height={120}/></Link>
                         </div>
                         <LocaleSwitcher/>
                         <Switch/>
-                        <div className="input_box flex">
-                            <div className="bar" onClick={openMobileMenu}>
+                        <div className="input_box flex -mr-2">
+                            <div className="bar flex  " onClick={openMobileMenu}>
                                 <span className={`top ${openMobile ? "rotate-45 !top-2" : ""}`}></span>
                                 <span
                                     className={`middle ${openMobile ? "translate-x-[-20px] opacity-0" : ""}`}
@@ -119,11 +119,12 @@ function NavbarBlue() {
                                                         <h2 className="p-bold-18 text-white">{ t2("title1")}</h2>
                                                         <div className="flex flex-col gap-4">
                                                             {servicesItemUslugi && servicesItemUslugi.featured && servicesItemUslugi.featured.map((item) => {
-                                                                const isActive = pathname === item.url
+                                                                const isActive = pathname?.replace("/pl", "") === item.url
+                                                               
                                                                 return (
                                                                     <Link onClick={() => setIsHandleOpen(false)}
                                                                           href={item.url}
-                                                                          className={`${isActive ? " text-grey-400 text-[12px]" : "linkSmall"} 
+                                                                          className={`${isActive ? " text-blue-1 text-[12px] " : "linkSmall"} 
                                                                             relative flex mainLinkBlue`} key={item.id}>
                                                                         {item.name}
                                                                     </Link>
@@ -134,8 +135,8 @@ function NavbarBlue() {
                                                     <div className="2 flex flex-col gap-4 justify-center  ">
                                                         <h2 className="p-bold-18 text-white">{ t2("title2")}</h2>
                                                         {itemsMenuUslugiAudytorskie.map((item) => {
-                                                            const isActive = pathname === item.url
-                                                            return (
+                                                                const isActive = pathname?.replace("/pl", "") === item.url
+                                                                return (
                                                                 <Link onClick={() => setIsHandleOpen(false)}
                                                                       href={item.url}
                                                                       className={`${isActive ? " text-grey-400 text-[12px]" : "linkSmall"} 
@@ -149,8 +150,8 @@ function NavbarBlue() {
                                                     <div className="3 flex flex-col gap-4 justify-center pt-10">
                                                         <h2 className="p-bold-18 text-white">{ t2("title3")}</h2>
                                                         {itemsMenuUslugiSzkoleniowe.map((item) => {
-                                                            const isActive = pathname === item.url
-                                                            return (
+                                                                const isActive = pathname?.replace("/pl", "") === item.url
+                                                                return (
                                                                 <Link onClick={() => setIsHandleOpen(false)}
                                                                       href={item.url}
                                                                       className={`${isActive ? " text-grey-400 text-[12px]" : "linkSmall"} 
@@ -164,8 +165,8 @@ function NavbarBlue() {
                                                     <div className="2 flex  flex-col gap-4 justify-center py-10">
                                                         <h2 className="p-bold-18 text-white">{ t2("title4")}</h2>
                                                         {itemMenuUslugiUtrzymaniowe.map((item) => {
-                                                            const isActive = pathname === item.url
-                                                            return (
+                                                                const isActive = pathname?.replace("/pl", "") === item.url
+                                                                return (
                                                                 <Link onClick={() => setIsHandleOpen(false)}
                                                                       href={item.url}
                                                                       className={`${isActive ? " text-grey-400 text-[12px]" : "linkSmall"} 

@@ -14,12 +14,10 @@ export default function FAQBlueHome() {
             backgroundRepeat: "no-repeat",
             backgroundPosition: "0% 30%"
         }} className="common-padding bg-gray-3">
-            <div className="wrapper space-y-10">
+            <div className="wrapper flex flex-col gap-4 md:gap-6 ">
                 <div className="title flex flex-col">
                     <h2 className="titleFrame">FAQ</h2>
                     <h2 className="h2-medium-42">{t('title')}</h2>
-                    {/*<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, laboriosam aut illo ducimus natus*/}
-                    {/*    dicta in deleniti excepturi fugiat omnis.</p>*/}
                 </div>
                 <FAQ FAQRight={FAQData.ContentRight} FAQLeft={FAQData.ContentLeft} />
             </div>

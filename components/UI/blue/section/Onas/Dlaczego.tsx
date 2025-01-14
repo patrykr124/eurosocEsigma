@@ -12,8 +12,8 @@ export default function Dlaczego() {
     return (
         <div className='common-padding bg-gray-2 '>
             <div className="wrapper">
-                <div className="flex md:flex-row flex-col">
-                    <div className="flex flex-col w-full md:w-1/2 justify-center">
+                <div className="flex md:flex-row flex-col -my-20">
+                    <div className="flex flex-col w-full md:w-1/2 justify-center ">
                         <div className="">
                             <motion.h2 initial={{opacity: 0, y: 100}} whileInView={{opacity: 1, y: 0}}
                                        viewport={{amount: 1,once:true}} transition={{duration: 0.4, ease: "easeOut"}} className='titleFrame'>{ t("h21")}
@@ -40,7 +40,7 @@ export default function Dlaczego() {
                         </div>
                     </div>
                     <motion.div initial={{opacity: 0}} whileInView={{opacity: 1}}
-                                viewport={{amount: 1,once:true}} transition={{duration: 1.2, ease: "easeOut"}} className="hidden lg:flex w-full md:w-1/2   justify-center p-2 mt-6 ">
+                                viewport={{amount: 1,once:true}} transition={{duration: 1.2, ease: "easeOut"}} className="hidden lg:flex w-full md:w-1/2  justify-center p-2 mt-6 ">
                         <Parciple url="/assets/img/logoIcon.png"/>
                     </motion.div>
                 </div>

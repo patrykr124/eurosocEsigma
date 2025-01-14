@@ -24,7 +24,7 @@ function LeftSideBox({setActiveFilters}: Props) {
 
 
     return (
-        <div className="sticky flex top-[10%] lg:shadow-light  lg:bg-gray-3 w-full h-[250px] rounded-xl p-4 ">
+        <div className="sticky flex top-[10%] lg:shadow-light  lg:bg-gray-3 w-full h-[300px] xl:h-[250px] rounded-xl p-4 ">
             <div className="flex items-center justify-center gap-4 flex-col text-black">
                 <div className="flex flex-col gap-2">
                     {filterAllData.map((item) => (

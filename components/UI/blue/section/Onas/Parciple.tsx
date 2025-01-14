@@ -49,7 +49,7 @@ export default function Parciple({url} : Props) {
             <ParticleImage
                 src={url}
                 width={600}
-                height={500}
+                height={600}
                 scale={0.4}
                 entropy={10}
                 maxParticles={6000}
@@ -57,6 +57,7 @@ export default function Parciple({url} : Props) {
                 mouseMoveForce={motionForce}
                 touchMoveForce={motionForce}
                 backgroundColor="#E3E3E3"
+                
             />
         </div>
             );

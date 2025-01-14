@@ -51,7 +51,7 @@ function Services() {
                                 <h2 className='titleFrame'>{t("h21")}</h2>
                                 <h2 className='h2-medium-42 text-center md:text-start'>{t("h22")}</h2>
                             </div>
-                            <div className="links flex flex-row justify-end items-end mb-4 gap-8 flex-1 z-10">
+                            <div className="links flex flex-row justify-center items-end mb-4 gap-8 flex-1 z-10">
                                 <EncryptButton textData={t("encrypt1")} icon={<ArrowRight/>}
                                                className="bg-blue-1 hover:bg-blue-1-hover"/>
                             </div>

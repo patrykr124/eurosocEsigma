@@ -10,7 +10,7 @@ function AboutBlog({content}: Props) {
     return (
         <div className="common-padding bg-gray-3">
             <div className="wrapper ">
-                <div className=" flex flex-row gap-16 ">
+                <div className=" flex md:flex-row flex-col gap-16 ">
                     <div className="left flex flex-[3] flex-col gap-12">
                         <div className="flex-col flex gap-4">
                             <h1 className="h3-bold ">{content.h1}</h1>
