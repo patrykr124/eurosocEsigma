@@ -1,13 +1,13 @@
-import {Ubuntu_Mono} from "next/font/google";
+import {Ubuntu} from "next/font/google";
 import "./globals.css";
 import {getMessages, getTranslations, setRequestLocale} from "next-intl/server";
 import {NextIntlClientProvider} from "next-intl";
 import React, {ReactNode} from "react";
 import {locales} from "@/config";
 
-const ubuntumono = Ubuntu_Mono({
+const ubuntumono = Ubuntu({
     subsets: ["latin"],
-    weight: ["400", "700"],
+    weight: ["300", "400","500", "700"],
     variable: "--font-ubuntu-mono",
 });
 

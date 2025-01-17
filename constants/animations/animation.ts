@@ -15,12 +15,12 @@ export const headerAnimation = {
         transition: {
             duration: 2.5,
             type: 'spring',
-            bounce: 0.4,
+            bounce: 0.3,
             ease: 'easeInOut'
         }
     },
     hidden: {
-        y: '-100%',
+        y: '-120%',
     }
 }
 export const headerAnimationP = {

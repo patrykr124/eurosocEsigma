@@ -55,7 +55,7 @@ function Page({params}: ServicePageProps) {
                 titleZagrozenia={serviceFetchData?.titleZagrozenia}/>
 
             <ParallaxInfo classH2={"titleFrame"} BUTTON={<EncryptButton textData={t("button")}
-                                                                        className="bg-blue-1 hover:bg-blue-1-hover w-fit my-4"/>}/>
+                                                                        className="bg-blue-1 hover:bg-blue-1-hover my-4"/>}/>
             <DoZapamietania doZapamietaniaTop={serviceFetchData.doZapamietaniaTop}
                             doZapamietaniaBottom={serviceFetchData.doZapamietaniaBottom}/>
             <FAQTemplate FAQLeft={serviceFetchData.FAQLeft} FAQRight={serviceFetchData.FAQRight}/>

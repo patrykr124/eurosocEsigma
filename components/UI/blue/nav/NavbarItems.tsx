@@ -20,7 +20,7 @@ function NavbarItems({ isOpen, ishandleOpen, setIsHandleOpen }: NavbarItemsProps
 
 
     return (
-        <ul className='flex flex-row gap-8'>
+        <ul className='flex flex-row gap-10'>
             {itemMenuData.map(item => {
                 return (
                     <li key={item.id}>

@@ -10,10 +10,10 @@ interface LayoutProps {
 export default function layout({children}: LayoutProps) {
 
     return (
-        <>
+        <div className=''>
             <NavbarBlue/>
             {children}
             <Footer/>
-        </>
+        </div>
     )
 }
