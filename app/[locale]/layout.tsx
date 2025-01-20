@@ -1,25 +1,16 @@
-import {Ubuntu} from "next/font/google";
+import { locales } from "@/config";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
+import { Ubuntu } from "next/font/google";
+import { ReactNode } from "react";
 import "./globals.css";
-import {getMessages, getTranslations, setRequestLocale} from "next-intl/server";
-import {NextIntlClientProvider} from "next-intl";
-import React, {ReactNode} from "react";
-import {locales} from "@/config";
 
 const ubuntumono = Ubuntu({
     subsets: ["latin"],
-    weight: ["300", "400","500", "700"],
+    weight: ["300", "400", "500", "700"],
     variable: "--font-ubuntu-mono",
 });
 
-// export const metadata: Metadata = {
-//     title: "EUROSOC",
-//     description: "Twoje cyberbezpieczeństwo oparte na szkoleniac",
-//     icons: {
-//         icon: "/assets/images/logo.svg",
-//     },
-// };
-
-//static
 
 interface Props {
     children: ReactNode;
@@ -27,12 +18,13 @@ interface Props {
 }
 
 export function generateStaticParams() {
-    return locales.map(locale => ({locale}))
+    return locales.map(locale => ({ locale }))
 }
 
 //dodajemy to do każdej page//
 
-export async function generateMetadata({params: {locale}}: Omit<Props, 'children'>) {
+export async function generateMetadata({ params: { locale } }: Omit<Props, 'children'>) {
+    setRequestLocale(locale);
     const t = await getTranslations('layout');
 
     return {
@@ -45,17 +37,17 @@ export async function generateMetadata({params: {locale}}: Omit<Props, 'children
 }
 
 
-export default async function RootLayout({children, params: {locale}}: Props) {
+export default async function RootLayout({ children, params: { locale } }: Props) {
     setRequestLocale(locale)
-    const messages = await getMessages({locale});
+    const messages = await getMessages({ locale });
 
     return (
         <html lang={locale}>
-        <body className={ubuntumono.variable}>
-        <NextIntlClientProvider messages={messages} locale={locale}>
-            {children}
-        </NextIntlClientProvider>
-        </body>
+            <body className={ubuntumono.variable}>
+                <NextIntlClientProvider messages={messages} locale={locale}>
+                    {children}
+                </NextIntlClientProvider>
+            </body>
         </html>
     );
 }

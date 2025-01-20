@@ -5,6 +5,7 @@ import {BlogData} from "@/components/UI/blue/blog/BlogData";
 import { useLocale } from "next-intl";
 import { BlogData_EN } from "@/components/UI/blue/blog/BlogData_EN";
 
+export const dynamic = "force-dynamic";
 
 interface Props {
     params: { blogId: string }
