@@ -3,6 +3,7 @@ import { BlogData } from "@/components/UI/blue/blog/BlogData";
 import BlogOtherSmallBox from "@/components/UI/blue/blog/BlogOtherSmallBox";
 import HeaderBlog from "@/components/UI/blue/blog/theme/HeaderBlog";
 
+export const dynamic = "force-dynamic";
 
 const BlogDataItemLast = BlogData.length > 0 ? BlogData[BlogData.length - 1] : undefined;
 const BlogDataItemAll = BlogData;
