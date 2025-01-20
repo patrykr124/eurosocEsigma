@@ -11,6 +11,7 @@
 
 html {
     scroll-behavior: smooth;
+    
 }
 
 body {
@@ -62,7 +63,7 @@ body {
 
     /* 64 */
     .h1-bold {
-        @apply font-bold text-4xl  md:text-5xl  lg:text-6xl ;
+        @apply font-bold text-4xl  md:text-5xl  lg:text-6xl leading-[45px] lg:leading-[65px]; ;
     }
 
     /*42 */

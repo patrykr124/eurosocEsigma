@@ -138,5 +138,10 @@
   "layout": {
     "title": "EUROSOC",
     "description": "EUROSOC twoje bezpieczeństwo"
+  },
+  "seo":{
+    "services": {
+      
+    }
   }
 }

@@ -193,6 +193,11 @@ export const servicesData_EN = [
         ],
         filter: "technicznesrodkizabezpieczen",
         filter2: "one-time",
+        seo:{
+            title: "Network Segmentation",
+            description: "Network segmentation allows dividing the IT infrastructure into smaller, isolated segments, increasing security and control over data.",
+            keywords: "network segmentation, IT security, access management",
+        }
     },
     {
         id: "mechanizmy",

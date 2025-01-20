@@ -1,16 +1,15 @@
 "use client"
-import {servicesData} from "@/constants/services";
-import {notFound} from "next/navigation";
+import EncryptButton from "@/components/UI/EncryptButton";
 import AboutServices from "@/components/UI/services/serviceSite/AboutServices";
-import React from "react";
-import Why from "@/components/UI/services/serviceSite/Why";
-import ParallaxInfo from "@/components/UI/services/serviceSite/ParallaxInfo";
 import DoZapamietania from "@/components/UI/services/serviceSite/DoZapamietania";
 import FAQTemplate from "@/components/UI/services/serviceSite/FAQ/FAQTemplate";
 import Header from "@/components/UI/services/serviceSite/Header";
-import EncryptButton from "@/components/UI/EncryptButton";
-import {useLocale, useTranslations} from "use-intl";
-import {servicesData_EN} from "@/constants/services_EN";
+import ParallaxInfo from "@/components/UI/services/serviceSite/ParallaxInfo";
+import Why from "@/components/UI/services/serviceSite/Why";
+import { servicesData } from "@/constants/services";
+import { servicesData_EN } from "@/constants/services_EN";
+import { notFound } from "next/navigation";
+import { useLocale, useTranslations } from "use-intl";
 
 
 
@@ -20,9 +19,17 @@ interface ServicePageProps {
     }
 }
 
-function Page({params}: ServicePageProps) {
+
+
+
+
+function Page({ params }: ServicePageProps) {
+
+
     const locale = useLocale();
     const t = useTranslations("servicesPage");
+
+
 
     const serviceFetchAllData = locale === "pl" ? servicesData : servicesData_EN
 
@@ -36,29 +43,29 @@ function Page({params}: ServicePageProps) {
     return (
         <div>
             <Header title={serviceFetchData.title}
-                    title2={serviceFetchData.title2}
-                    headerImg={serviceFetchData.headerImg}
-                    position={serviceFetchData.position}
+                title2={serviceFetchData.title2}
+                headerImg={serviceFetchData.headerImg}
+                position={serviceFetchData.position}
             />
             <AboutServices titleAboutService={serviceFetchData.titleAboutService}
-                           desc={<span style={{whiteSpace: 'pre-wrap'}}>{serviceFetchData.description}</span>}
-                           urlImage={serviceFetchData.urlImage}
-                           size={serviceFetchData.size}
-                           classH2={"titleFrame"}
-                           BUTTON={<EncryptButton textData={t("button")}
-                                                  className="bg-blue-1 hover:bg-blue-1-hover w-fit my-4"/>}
+                desc={<span style={{ whiteSpace: 'pre-wrap' }}>{serviceFetchData.description}</span>}
+                urlImage={serviceFetchData.urlImage}
+                size={serviceFetchData.size}
+                classH2={"titleFrame"}
+                BUTTON={<EncryptButton textData={t("button")}
+                    className="bg-blue-1 hover:bg-blue-1-hover w-fit my-4" />}
             />
             <Why
                 iconsBlue={serviceFetchData.iconsTop}
                 iconsRed={serviceFetchData.iconsRed}
                 titleKorzysci={serviceFetchData?.titleKrzysci}
-                titleZagrozenia={serviceFetchData?.titleZagrozenia}/>
+                titleZagrozenia={serviceFetchData?.titleZagrozenia} />
 
             <ParallaxInfo classH2={"titleFrame"} BUTTON={<EncryptButton textData={t("button")}
-                                                                        className="bg-blue-1 hover:bg-blue-1-hover my-4"/>}/>
+                className="bg-blue-1 hover:bg-blue-1-hover my-4" />} />
             <DoZapamietania doZapamietaniaTop={serviceFetchData.doZapamietaniaTop}
-                            doZapamietaniaBottom={serviceFetchData.doZapamietaniaBottom}/>
-            <FAQTemplate FAQLeft={serviceFetchData.FAQLeft} FAQRight={serviceFetchData.FAQRight}/>
+                doZapamietaniaBottom={serviceFetchData.doZapamietaniaBottom} />
+            <FAQTemplate FAQLeft={serviceFetchData.FAQLeft} FAQRight={serviceFetchData.FAQRight} />
         </div>
     );
 }

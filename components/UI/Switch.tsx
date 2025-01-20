@@ -55,7 +55,7 @@ function Switch() {
     return (
         <div onClick={handleSwitch}
              className={`${switchButton === "loading"
-                 ? "bg-gray-400" : switchButton === "redTeam" || switchButton === "redServices" ? "bg-red-1" : "bg-blue-1"} transition-all duration-300 cursor-pointer rounded-full text-white  overflow-hidden w-[100px] md:w-[120px]  h-7  items-center justify-center`}>
+                 ? "bg-gray-400" : switchButton === "redTeam" || switchButton === "redServices" ? "bg-red-1" : "bg-blue-1"} transition-all duration-300 cursor-pointer rounded-full text-white  overflow-hidden w-[110px] md:w-[120px]  h-7  items-center justify-center`}>
             <div
                 className={`${switchButton === "blueTeam" || switchButton === "blueServices" ? "justify-end" : "justify-start"} flex  items-center h-full relative px-0.5`}>
                 <span
