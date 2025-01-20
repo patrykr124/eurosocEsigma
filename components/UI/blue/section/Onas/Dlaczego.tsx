@@ -12,7 +12,7 @@ export default function Dlaczego() {
     return (
         <div className='common-padding bg-gray-2 '>
             <div className="wrapper">
-                <div className="flex md:flex-row flex-col -my-20">
+                <div className="flex md:flex-row flex-col md:-my-20 mb-2">
                     <div className="flex flex-col w-full md:w-1/2 justify-center ">
                         <div className="">
                             <motion.h2 initial={{opacity: 0, y: 100}} whileInView={{opacity: 1, y: 0}}
@@ -35,7 +35,7 @@ export default function Dlaczego() {
                             <motion.div initial={{opacity: 0, y: 100}} whileInView={{opacity: 1, y: 0}}
                                         viewport={{amount: 1,once:true}} transition={{duration: 0.9, ease: "easeOut"}} className="">
                                 <EncryptButton textData={t("button")}
-                                               className="bg-blue-1 hover:bg-blue-1-hover w-fit"/>
+                                               className="bg-blue-1 hover:bg-blue-1-hover"/>
                             </motion.div>
                         </div>
                     </div>

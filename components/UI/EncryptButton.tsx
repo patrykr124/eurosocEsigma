@@ -68,7 +68,7 @@ const EncryptButton = ({textData, icon, className, onClick}: EncryptButtonProps)
             }}
             onMouseEnter={scramble}
             onMouseLeave={stopScramble}
-            className={`group relative overflow-hidden rounded-lg tracking-wide px-4 h-fit py-2 font-medium uppercase text-gray-3 transition-colors duration-500 ${className}`}
+            className={`group relative flex justify-center items-center flex-col overflow-hidden w-[230px] rounded-lg tracking-wide px-4 h-fit py-2 font-medium uppercase text-gray-3 transition-colors duration-500 ${className}`}
            
         >
             <Link href={`${onClick}`} >

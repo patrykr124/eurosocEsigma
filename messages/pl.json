@@ -1,9 +1,29 @@
 {
   "home": {
-    "redTitle": "EUROSOC RED TEAM oferuje usługi z zakresu bezpieczeństwa IT,w tym audyty, takie jak testy penetracyjne, socjotechniczne i skany podatności,\nktóre pomagają wykrywać zagrożenia.\n\nOrganizujemy szkolenia z cyberbezpieczeństwa oraz wspieramy w obsłudze incydentów, zapewniając szybkie  reagowanie na zagrożenia.\n\nOferujemy także cykliczne testy i trzecią linię wsparcia technicznego, dbając o bezpieczeństwo organizacji.",
-    "blueTitle": "EUROSOC BLUE TEAM oferuje szeroki zakres usług z zakresu ochrony i utrzymania bezpieczeństwa IT. Specjalizujemy się w wdrażaniu nowoczesnych rozwiązań, takich jak segmentacja sieci, mechanizmy silnego uwierzytelniania czy ochrona przed wyciekami danych.\n\nŚwiadczymy również audyty zgodności z normami, opracowanie dokumentacji SZBI oraz szkolenia z cyberbezpieczeństwa dla różnych grup kadry.\n\nPonadto  zapewniamy wsparcie techniczne, monitoring infrastruktury i odzyskiwanie kopii zapasowych,\nby Twoja organizacja działała bezpiecznie i niezawodnie.",
-    "wybor": "Wybierz swój kolor tutaj lub dokonaj wyboru na stronie po prawej stronie w menu",
+    "red": {
+      "title": "EUROSOC RED TEAM oferuje usługi bezpieczeństwa IT, w tym:",
+      "points": [
+        "Audyty: testy penetracyjne, socjotechniczne i skany podatności pomagające wykrywać zagrożenia.",
+        "Szkolenia z cyberbezpieczeństwa i wsparcie w obsłudze incydentów, zapewniając szybkie reagowanie.",
+        "Cykliczne testy i trzecią linię wsparcia technicznego dla ochrony organizacji."
+      ],
+     "summary": "Wykrywamy zagrożenia i zapewniamy bezpieczeństwo IT."
+    },
+    "blue": {
+      "title": "EUROSOC BLUE TEAM oferuje szeroki zakres usług IT, w tym:",
+      "points": [
+        "Wdrażanie nowoczesnych rozwiązań.",
+        "Audyty zgodności z normami.",
+        "Szkolenia z cyberbezpieczeństwa.",
+        "Wsparcie techniczne i monitoring infrastruktury."
+      ],
+      "summary": "Dzięki temu organizacje mogą działać bezpiecznie i niezawodnie."
+    },
+
+    "wybor": "Wybierz swoje przeznaczenie tutaj lub dokonaj wyboru na stronie po prawej stronie w menu",
+
     "blueTitleMobile": "oferuje kompleksowe usługi bezpieczeństwa IT, obejmujące nowoczesne rozwiązania, audyty, szkolenia, wsparcie techniczne oraz monitoring, aby zapewnić bezpieczne i niezawodne działanie organizacji.",
+
     "redTitleMobile": " oferuje audyty bezpieczeństwa IT, szkolenia, obsługę incydentów, cykliczne testy i wsparcie techniczne, zapewniając wykrywanie zagrożeń i szybkie reagowanie dla ochrony organizacji."
   },
   "dashboard": {
@@ -55,7 +75,6 @@
         "title3": "Straty finansowe i kary",
         "p3": "Obecnie firmy tracą ponad 16 miliardów dolarów dziennie z powodu cyberataków, a kwota ta rośnie z roku na rok. Dodatkowo należy pamiętać, że kara za wyciek danych osobowych kosztuje do 20 mln euro lub 4% światowego obrotu."
       }
-
     }
   },
   "opinie": {
@@ -63,13 +82,13 @@
     "h2": "Dołącz do grona naszych zadowolonych klientów"
   },
   "certyfikaty": {
-    "title1":"CERTYFIKATY",
+    "title1": "CERTYFIKATY",
     "title2": "Nasze certyfikaty",
     "p1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, provident autem! Culpa pariatur dolorem ad officia aut modi minus quae."
   },
   "FAQ": {
-      "title":"Pytania i odpowiedzi",
-      "p": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, laboriosam aut illo ducimus natus dicta in deleniti excepturi fugiat omnis."
+    "title": "Pytania i odpowiedzi",
+    "p": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, laboriosam aut illo ducimus natus dicta in deleniti excepturi fugiat omnis."
   },
   "menu": {
     "home": {
@@ -90,7 +109,6 @@
       "title3": "Obsługa incydentów",
       "title4": "Usługi utrzymaniowe"
     }
-
   },
   "homeServices": {
     "title": "Usługi",
@@ -102,7 +120,7 @@
     "title": "Kontakt"
   },
   "servicesPage": {
-    "title":"O USŁUDZE",
+    "title": "O USŁUDZE",
     "button": "Zabezpiecz się",
     "switchTabBlue": "KORZYŚCI",
     "switchTabRed": "ZAGROŻENIA",
@@ -113,9 +131,6 @@
     "FAQh2": "Pytania i odpowiedzi"
   },
 
-
-
-
   "label": {
     "label": "EN",
     "locale": "{locale, select, en {EN} pl {PL} other {Unknown} }"
@@ -123,5 +138,10 @@
   "layout": {
     "title": "EUROSOC",
     "description": "EUROSOC twoje bezpieczeństwo"
+  },
+  "seo":{
+    "services": {
+      
+    }
   }
 }

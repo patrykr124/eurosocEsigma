@@ -210,7 +210,12 @@ export const servicesData = [
             },
         ],
         filter:'technicznesrodkizabezpieczen',
-        filter2:'jednorazowe'
+        filter2:'jednorazowe',
+        seo:{
+            title: "Segmentacja sieci",
+            description: "Segmentacja sieci pozwala na podział infrastruktury IT na mniejsze, odizolowane segmenty, zwiększając bezpieczeństwo i kontrolę nad danymi.",
+            keywords: "segmentacja sieci, bezpieczeństwo IT, zarządzanie dostępem",
+        }
 
 
     },
@@ -424,7 +429,12 @@ export const servicesData = [
             },
         ],
         filter:'technicznesrodkizabezpieczen',
-        filter2:'jednorazowe'
+        filter2:'jednorazowe',
+        seo:{
+            title: "Mechanizmy Ochronne",
+            description: "Mechanizmy ochronne to zaawansowane rozwiązania zabezpieczające infrastrukturę IT przed zagrożeniami i minimalizujące ryzyko przestojów.",
+            keywords: "mechanizmy ochronne, zabezpieczenia IT, ochrona infrastruktury",
+        }
     },
     {
         id: "korporacyjna",
@@ -636,7 +646,12 @@ export const servicesData = [
             },
         ],
         filter:'technicznesrodkizabezpieczen',
-        filter2:'jednorazowe'
+        filter2:'jednorazowe',
+        seo:{
+            title: "Korporacyjna Ochrona Danych",
+            description: "Korporacyjna ochrona danych zapewnia kompleksowe zabezpieczenie wrażliwych informacji biznesowych przed utratą lub wyciekiem.",
+            keywords: "ochrona danych, bezpieczeństwo danych, polityka bezpieczeństwa",
+        }
 
     },
     {
@@ -849,7 +864,12 @@ export const servicesData = [
             },
         ],
         filter:'technicznesrodkizabezpieczen',
-        filter2:'jednorazowe'
+        filter2:'jednorazowe',
+        seo:{
+            title: "Automatyzacja Procesów Bezpieczeństwa",
+            description: "Automatyzacja procesów bezpieczeństwa to narzędzia, które zwiększają efektywność i skracają czas reakcji na zagrożenia.",
+            keywords: "automatyzacja bezpieczeństwa, systemy IT, monitoring 24/7",
+        }
     },
     {
         id: "inwentaryzacja",
@@ -1062,7 +1082,12 @@ export const servicesData = [
             },
         ],
         filter:'technicznesrodkizabezpieczen',
-        filter2:'jednorazowe'
+        filter2:'jednorazowe',
+        seo:{
+            title: "Inwentaryzacja Infrastruktury IT",
+            description: "Inwentaryzacja infrastruktury IT pozwala na dokładne zmapowanie zasobów firmy, zwiększając przejrzystość i kontrolę nad infrastrukturą.",
+            keywords: "inwentaryzacja IT, zarządzanie zasobami, analiza infrastruktury",
+        }
 
     },
     {
@@ -1276,7 +1301,12 @@ export const servicesData = [
             },
         ],
         filter:'technicznesrodkizabezpieczen',
-        filter2:'jednorazowe'
+        filter2:'jednorazowe',
+        seo:{
+            title: "Centralne Zarządzanie Infrastruktura IT",
+            description: "Centralne zarządzanie infrastrukturą IT pozwala na kontrolowanie i monitorowanie systemów z jednego miejsca, zwiększając efektywność i bezpieczeństwo.",
+            keywords: "zarządzanie infrastrukturą IT, monitoring systemów, kontrola IT",
+        }
 
     },
     {
@@ -1475,7 +1505,12 @@ export const servicesData = [
             },
         ],
         filter: 'monitoringinfrastruktury',
-        filter2: 'jednorazowe'
+        filter2: 'jednorazowe',
+        seo:{
+            title: "Ochrona Infrastruktury IT",
+            description: "Ochrona infrastruktury IT zapewnia stałą ochronę systemów przed zagrożeniami, minimalizując ryzyko ataków i przestojów.",
+            keywords: "ochrona IT, bezpieczeństwo infrastruktury, cyberbezpieczeństwo",
+        }
     },
     {
         id: "monitorowanie",
@@ -1687,7 +1722,12 @@ export const servicesData = [
             },
         ],
         filter:'monitoringinfrastruktury',
-        filter2:'jednorazowe'
+        filter2:'jednorazowe',
+        seo:{
+            title: "Monitorowanie Infrastruktury IT",
+            description: "Monitorowanie infrastruktury IT pozwala na stałą analizę działania systemów i szybką reakcję na potencjalne zagrożenia.",
+            keywords: "monitoring IT, analiza ruchu sieciowego, ochrona systemów",
+        }
 
     },
     {
@@ -1900,7 +1940,12 @@ export const servicesData = [
             },
         ],
         filter:'technicznesrodkizabezpieczen',
-        filter2:'jednorazowe'
+        filter2:'jednorazowe',
+        seo:{
+            title: "Ochrona Urządzeń Mobilnych",
+            description: "Ochrona urządzeń mobilnych zabezpiecza smartfony i tablety przed zagrożeniami, chroniąc wrażliwe dane firmowe.",
+            keywords: "ochrona urządzeń mobilnych, bezpieczeństwo mobilne, MDM",
+        }
 
     },
     {
@@ -2114,7 +2159,12 @@ export const servicesData = [
             },
         ],
         filter:'technicznesrodkizabezpieczen',
-        filter2:'jednorazowe'
+        filter2:'jednorazowe',
+        seo:{
+            title: "UTM (Unified Threat Management)",
+            description: "UTM to kompleksowe rozwiązanie chroniące sieć przed różnymi typami zagrożeń, zapewniające łatwość zarządzania i wysoki poziom bezpieczeństwa.",
+            keywords: "UTM, zarządzanie zagrożeniami, ochrona sieci",
+        }
 
     },
     {
@@ -2327,7 +2377,12 @@ export const servicesData = [
             },
         ],
         filter:'technicznesrodkizabezpieczen',
-        filter2:'jednorazowe'
+        filter2:'jednorazowe',
+        seo:{
+            title: "Wirtualizacja",
+            description: "Wirtualizacja umożliwia efektywne wykorzystanie zasobów IT poprzez tworzenie wirtualnych środowisk, zwiększając elastyczność i redukując koszty.",
+            keywords: "wirtualizacja, optymalizacja zasobów, elastyczność IT",
+        }
     },
     {
         id: "ochronaurzadzenkoncowych",
@@ -2539,7 +2594,8 @@ export const servicesData = [
             },
         ],
         filter:'technicznesrodkizabezpieczen',
-        filter2:'jednorazowe'
+        filter2:'jednorazowe',
+        
 
     },
     {

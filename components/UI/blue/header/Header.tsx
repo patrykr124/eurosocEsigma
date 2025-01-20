@@ -38,9 +38,9 @@ function Header() {
                             </div>
                         </div>
 
-                        <div className="overflow-hidden py-2">
+                        <div className="overflow-y-hidden py-2 px-1 ">
                             <motion.div variants={headerAnimationButton} initial="hidden" animate="visible"
-                                        className="space-x-5 text-end">
+                                        className="space-x-5 text-end flex">
                                 <EncryptButton textData={t("header.buttonMain")} className="bg-blue-1 hover:bg-blue-1-hover"
                                               />
                                 <Link className="button-white" href="#">{t("header.buttonInfo")}</Link>

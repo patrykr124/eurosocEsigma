@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 * {
-    list-style: none;
+
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
@@ -11,6 +11,7 @@
 
 html {
     scroll-behavior: smooth;
+    
 }
 
 body {
@@ -62,7 +63,7 @@ body {
 
     /* 64 */
     .h1-bold {
-        @apply font-bold text-4xl  md:text-5xl  lg:text-6xl ;
+        @apply font-bold text-4xl  md:text-5xl  lg:text-6xl leading-[45px] lg:leading-[65px]; ;
     }
 
     /*42 */
@@ -107,7 +108,7 @@ body {
     }
 
     .h5-link {
-        @apply font-normal text-[28px] leading-[36px];
+        @apply font-normal text-[24px] leading-[36px];
     }
 
     .p-medium-28 {
@@ -148,8 +149,12 @@ body {
         @apply text-[20px] font-medium leading-[30px];
     }
 
-    .p-regular-20 {
+    /* .p-regular-20 {
         @apply text-[20px] font-normal leading-[50px] tracking-[2%];
+    } */
+    
+    .p-regular-20 {
+        @apply text-[22px] font-thin leading-6 ;
     }
 
     /* 18 */
@@ -226,7 +231,7 @@ body {
     }
 
     .button-white {
-        @apply rounded-lg h-[54px] p-regular-16 px-4 py-3 text-white border-[1px];
+        @apply rounded-lg h-fit  p-regular-16 px-4 py-2 text-white border-[1px];
     }
 
     .select-item {
