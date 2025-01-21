@@ -4,7 +4,7 @@ export const servicesData = [
     title: "Segmentacja sieci",
     title2: "",
     titleAboutService:
-      "Dlaczego warto zakupić usługę segmentacji i konfiguracji sieci?",
+      "Dlaczego warto zakupić usługę Segmentacja sieci?",
     url: "/dashboard/blue/services/segmentacja",
     urlImage: "/assets/img/net.png",
     headerImg: "/assets/img/services/net.png",
@@ -214,7 +214,7 @@ export const servicesData = [
   {
     id: "mechanizmy",
     title: "Mechanizmy Ochronne",
-    title2: "obsługa incydentów",
+    title2: "",
     titleAboutService:
       "Dlaczego warto zakupić usługę wdrożenia mechanizmów silnego uwierzytelniania?",
     url: "/dashboard/blue/services/mechanizmy",
@@ -639,7 +639,7 @@ export const servicesData = [
   {
     id: "automatyzacja",
     title: "Automatyzacja Procesów Bezpieczeństwa",
-    title2: "kopii zapasowych",
+    title2: "",
     titleAboutService:
       "Dlaczego warto zakupić usługę automatyzacji aktualizacji oprogramowania?",
     url: "/dashboard/blue/services/automatyzacja",
@@ -648,7 +648,7 @@ export const servicesData = [
     position: "center",
     size: 0.28,
     description:
-      "Automatyzacja aktualizacji oprogramowania to kluczowe rozwiązanie pozwalające firmom utrzymać swoje systemy zawsze na bieżąco i bezpieczne. Regularne aktualizacje są niezbędne, by usuwać luki bezpieczeństwa i poprawiać wydajność oprogramowania, ale ich ręczne wdrażanie może być czasochłonne i podatne na błędy.\n\nAutomatyzacja aktualizacji zapewnia, że wszystkie aplikacje, systemy operacyjne i urządzenia są aktualizowane zgodnie z harmonogramem i bez przestojów. To z kolei minimalizuje ryzyko cyberataków i pomaga spełniać wymagania bezpieczeństwa.",
+      "Automatyzacja aktualizacji oprogramowania to kluczowe rozwiązanie pozwalające firmom utrzymać swoje systemy zawsze na bieżąco i bezpieczne.\n\nRegularne aktualizacje są niezbędne, by usuwać luki bezpieczeństwa i poprawiać wydajność oprogramowania, ale ich ręczne wdrażanie może być czasochłonne i podatne na błędy.\n\nAutomatyzacja aktualizacji zapewnia, że wszystkie aplikacje, systemy operacyjne i urządzenia są aktualizowane zgodnie z harmonogramem i bez przestojów. To z kolei minimalizuje ryzyko cyberataków i pomaga spełniać wymagania bezpieczeństwa.",
     titleKrzysci:
       "Korzyści z zastosowania automatyzacji aktualizacji oprogramowania:",
     titleZagrozenia: "Zagrożenia, gdy usługa nie jest zakupiona:",
@@ -2141,7 +2141,7 @@ export const servicesData = [
     title: "Wirtualizacja",
     title2: "",
     titleAboutService:
-      "DlaczegoRed warto zakupić usługę wdrożenia wirtualizacji serwerów i klastra wysokiej dostępności?",
+      "Dlaczego warto zakupić usługę wdrożenia wirtualizacji serwerów i klastra wysokiej dostępności?",
     url: "/dashboard/blue/services/wirtualizacja",
     urlImage: "/assets/img/server.svg",
     headerImg: "/assets/img/services/bg.png",
@@ -2353,7 +2353,7 @@ export const servicesData = [
     title: "Ochrona urządzeń końcowych",
     title2: "",
     titleAboutService:
-      "DlaczegoRed warto zakupić usługę wdrożenia ochrony urządzeń końcowych (EDR/XDR)?",
+      "Dlaczego warto zakupić usługę wdrożenia ochrony urządzeń końcowych (EDR/XDR)?",
     url: "/dashboard/blue/services/ochronaurzadzenkoncowych",
     urlImage: "/assets/img/device.svg",
     headerImg: "/assets/img/services/bg.png",
@@ -2777,7 +2777,7 @@ export const servicesData = [
     title: "Opracowanie polityki bezpieczeństwa",
     title2: "",
     titleAboutService:
-      "DlaczegoRed warto zakupić usługę opracowania polityki bezpieczeństwa?",
+      "Dlaczego warto zakupić usługę opracowania polityki bezpieczeństwa?",
     url: "/dashboard/blue/services/opracowanie-polityki-bezpieczenstwa",
     urlImage: "/assets/img/polityka.svg",
     headerImg: "/assets/img/services/bg.png",
@@ -2993,7 +2993,7 @@ export const servicesData = [
     title: "Opracowanie polityki ciągłości działania",
     title2: "",
     titleAboutService:
-      "DlaczegoRed warto zakupić usługę opracowania polityki ciągłości działania?",
+      "Dlaczego warto zakupić usługę opracowania polityki ciągłości działania?",
     url: "/dashboard/blue/services/opracowanie_polityki_ciaglosci_dzialania",
     urlImage: "/assets/img/polityka.svg",
     headerImg: "/assets/img/services/bg.png",
@@ -3214,7 +3214,7 @@ export const servicesData = [
     title: "Opracowanie polityki kopii zapasowych",
     title2: "",
     titleAboutService:
-      "DlaczegoRed warto zakupić usługę opracowania polityki kopii zapasowych?",
+      "Dlaczego warto zakupić usługę opracowania polityki kopii zapasowych?",
     url: "/dashboard/blue/services/opracowanie_polityki_kopii_zapasowych",
     urlImage: "/assets/img/politykaKopii.svg",
     headerImg: "/assets/img/services/bg.png",
@@ -3431,7 +3431,7 @@ export const servicesData = [
     title: "Audyt zgodności z NIS2",
     title2: "",
     titleAboutService:
-      "DlaczegoRed warto zakupić usługę audytu zgodności z NIS2?",
+      "Dlaczego warto zakupić usługę audytu zgodności z NIS2?",
     url: "/dashboard/blue/services/audyt_zgodnosci_z_NIS2",
     urlImage: "/assets/img/audyt.svg",
     headerImg: "/assets/img/services/bg.png",
@@ -3646,7 +3646,7 @@ export const servicesData = [
     title: "Audyt zgodności z KRI",
     title2: "",
     titleAboutService:
-      "DlaczegoRed warto zakupić usługę audytu zgodności z KRI?",
+      "Dlaczego warto zakupić usługę audytu zgodności z KRI?",
     url: "/dashboard/blue/services/audyt_zgodnosci_z_KRI",
     urlImage: "/assets/img/audyt.svg",
     headerImg: "/assets/img/services/bg.png",
@@ -3861,7 +3861,7 @@ export const servicesData = [
     title: "Audyt zgodności z KSC",
     title2: "",
     titleAboutService:
-      "DlaczegoRed warto zakupić usługę audytu zgodności z KSC?",
+      "Dlaczego warto zakupić usługę audytu zgodności z KSC?",
     url: "/dashboard/blue/services/audyt_zgodnosci_z_KSC",
     urlImage: "/assets/img/audyt.svg",
     headerImg: "/assets/img/services/bg.png",
@@ -4075,7 +4075,7 @@ export const servicesData = [
     title: "Audyt SZBI",
     title2: "",
     titleAboutService:
-      "DlaczegoRed warto zakupić usługę audytu SZBI (ISO/IEC 27001)?",
+      "Dlaczego warto zakupić usługę audytu SZBI (ISO/IEC 27001)?",
     url: "/dashboard/blue/services/audyt_SZBI",
     urlImage: "/assets/img/audyt.svg",
     headerImg: "/assets/img/services/bg.png",
@@ -4292,7 +4292,7 @@ export const servicesData = [
     title: "Audyt ISO/IEC",
     title2: "",
     titleAboutService:
-      "DlaczegoRed warto zakupić usługę audytu zgodności z ISO/IEC 22301?",
+      "Dlaczego warto zakupić usługę audytu zgodności z ISO/IEC 22301?",
     url: "/dashboard/blue/services/audyt_isoiec",
     urlImage: "/assets/img/audyt.svg",
     headerImg: "/assets/img/services/bg.png",
@@ -4509,7 +4509,7 @@ export const servicesData = [
     title: "Szkolenie z cyberbezpieczeństwa dla kadry administracyjnej",
     title2: "",
     titleAboutService:
-      "DlaczegoRed warto zakupić usługę szkolenia z cyberbezpieczeństwa dla kadry administracyjnej?",
+      "Dlaczego warto zakupić usługę szkolenia z cyberbezpieczeństwa dla kadry administracyjnej?",
     url: "/dashboard/blue/services/szkolenie_z_cyberbezpieczenstwa_dla_kadry_administracyjnej",
     urlImage: "/assets/img/course.svg",
     headerImg: "/assets/img/services/course.png",
@@ -4732,7 +4732,7 @@ export const servicesData = [
     title: "Szkolenie z cyberbezpieczeństwa dla kadry informatycznej",
     title2: "",
     titleAboutService:
-      "DlaczegoRed warto zakupić usługę szkolenia z cyberbezpieczeństwa dla kadry informatycznej?",
+      "Dlaczego warto zakupić usługę szkolenia z cyberbezpieczeństwa dla kadry informatycznej?",
     url: "/dashboard/blue/services/szkolenie_z_cyberbezpieczenstwa_dla_kadry_informatycznej",
     urlImage: "/assets/img/course.svg",
     headerImg: "/assets/img/services/course.png",
@@ -5177,7 +5177,7 @@ export const servicesData = [
     title: "II linia wsparcia technicznego",
     title2: "",
     titleAboutService:
-      "DlaczegoRed warto zakupić usługę II linii wsparcia technicznego?",
+      "Dlaczego warto zakupić usługę II linii wsparcia technicznego?",
     url: "/dashboard/blue/services/II_linia_wsparcia_technicznego",
     urlImage: "/assets/img/technical.svg",
     headerImg: "/assets/img/services/audit.png",
@@ -5395,7 +5395,7 @@ export const servicesData = [
     title: "Codzienne kopie zapasowe logów",
     title2: "",
     titleAboutService:
-      "DlaczegoRed warto zakupić usługę codziennych kopii zapasowych logów?",
+      "Dlaczego warto zakupić usługę codziennych kopii zapasowych logów?",
     url: "/dashboard/blue/services/codzienne_kopie_zapasowe_logow",
     urlImage: "/assets/img/log.svg",
     headerImg: "/assets/img/services/bg.png",
@@ -5613,7 +5613,7 @@ export const servicesData = [
     title: "Cykliczne testy odtwarzania",
     title2: "",
     titleAboutService:
-      "DlaczegoRed warto zakupić usługę cyklicznych testów odtworzeniowych?",
+      "Dlaczego warto zakupić usługę cyklicznych testów odtworzeniowych?",
     url: "/dashboard/blue/services/cykliczne_testy_odtworzeniowe",
     urlImage: "/assets/img/test.svg",
     headerImg: "/assets/img/services/bg.png",
@@ -5832,7 +5832,7 @@ export const servicesData = [
     title: "Security Operations Center (SOC)",
     title2: "",
     titleAboutService:
-      "DlaczegoRed warto zakupić usługę monitoringu infrastruktury (SOC)?",
+      "Dlaczego warto zakupić usługę monitoringu infrastruktury (SOC)?",
     url: "/dashboard/blue/services/security_operations_center",
     urlImage: "/assets/img/monitoring.svg",
     headerImg: "/assets/img/services/bg.png",
@@ -6045,7 +6045,7 @@ export const servicesData = [
     title: "Odmiejscowienie kopii zapasowych (Disaster Recovery)",
     title2: "",
     titleAboutService:
-      "DlaczegoRed warto zakupić usługę odmiejscowienia kopii zapasowych (Disaster Recovery)?",
+      "Dlaczego warto zakupić usługę odmiejscowienia kopii zapasowych (Disaster Recovery)?",
     url: "/dashboard/blue/services/odmiejscowienie_kopii_zapasowych_(disaster_recovery)",
     urlImage: "/assets/img/recovery.png",
     headerImg: "/assets/img/services/bg.png",

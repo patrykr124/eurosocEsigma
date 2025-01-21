@@ -1,8 +1,8 @@
 export const servicesData_EN = [
     {
         id: "segmentacja",
-        title: "Segmentation and Network Configuration",
-        title2: "server management",
+        title: "Network segmentation",
+        title2: "",
         titleAboutService: "Why should you purchase the segmentation and network configuration service?",
         url: "/dashboard/blue/services/segmentacja",
         urlImage: "/assets/img/net.png",
@@ -201,8 +201,8 @@ export const servicesData_EN = [
     },
     {
         id: "mechanizmy",
-        title: "Strong Authentication Mechanisms",
-        title2: "incident management",
+        title: "Safeguard mechanisms",
+        title2: "",
         titleAboutService: "Why should you purchase the strong authentication mechanisms implementation service?",
         url: "/dashboard/blue/services/mechanizmy",
         urlImage: "/assets/img/mechanizmy.png",
@@ -394,10 +394,18 @@ export const servicesData_EN = [
         ],
         filter: "technicznesrodkizabezpieczen",
         filter2: "one-time",
+        seo: {
+            title: "Protective Mechanisms",
+            description:
+              "Protective mechanisms are advanced solutions designed to safeguard IT infrastructure against threats and minimize the risk of downtime.",
+            keywords:
+              "protective mechanisms, IT security, infrastructure protection",
+        },
+        
     },
     {
         id: "korporacyjna",
-        title: "Corporate Email with Sandbox",
+        title: "Corporate Data Protection",
         title2: "incident management",
         url: "/dashboard/blue/services/korporacyjna",
         urlImage: "/assets/img/poster.png",
@@ -590,11 +598,19 @@ export const servicesData_EN = [
         ],
         filter: "technicznesrodkizabezpieczen",
         filter2: "one-time",
+        seo: {
+            title: "Corporate Data Protection",
+            description:
+              "Corporate data protection ensures comprehensive security of sensitive business information against loss or leakage.",
+            keywords:
+              "data protection, data security, security policy",
+        },
+        
     },
     {
         id: "automatyzacja",
-        title: "Software Update Automation",
-        title2: "backup copies",
+        title: "Automation of Security Processes",
+        title2: "",
         titleAboutService: "Why should you purchase the software update automation service?",
         url: "/dashboard/blue/services/automatyzacja",
         urlImage: "/assets/img/update.png",
@@ -786,10 +802,17 @@ export const servicesData_EN = [
         ],
         filter: "technicalsecuritymeasures",
         filter2: "one-time",
+        seo: {
+            title: "Security Process Automation",
+            description:
+              "Security process automation involves tools that enhance efficiency and reduce response time to threats.",
+            keywords: "security automation, IT systems, 24/7 monitoring",
+        },
+        
     },
     {
         id: "inwentaryzacja",
-        title: "Inventory Management",
+        title: "IT infrastructure inventory",
         title2: "continuous mode",
         titleAboutService: "Why should you implement an inventory management system for hardware and software?",
         url: "/dashboard/blue/services/inwentaryzacja",
@@ -982,10 +1005,18 @@ export const servicesData_EN = [
         ],
         filter: "technicalsecuritymeasures",
         filter2: "one-time",
+        seo: {
+            title: "IT Infrastructure Inventory",
+            description:
+              "IT infrastructure inventory enables precise mapping of company resources, improving transparency and control over the infrastructure.",
+            keywords:
+              "IT inventory, resource management, infrastructure analysis",
+        },
+        
     },
     {
         id: "centralny",
-        title: "Central Password Management System",
+        title: "Central IT Infrastructure Management",
         title2: '',
         titleAboutService: "Why should you invest in a central password management system?",
         url: "/dashboard/blue/services/centralny",
@@ -1178,10 +1209,18 @@ export const servicesData_EN = [
         ],
         filter: "technicalsecuritymeasures",
         filter2: "one-time",
+        seo: {
+            title: "Centralized IT Infrastructure Management",
+            description:
+              "Centralized IT infrastructure management enables control and monitoring of systems from a single location, enhancing efficiency and security.",
+            keywords:
+              "IT infrastructure management, system monitoring, IT control",
+        },
+        
     },
     {
         id: "ochrona",
-        title: "Data Loss Prevention (DLP)",
+        title: "IT infrastructure protection",
         title2: '',
         titleAboutService: "Why should you invest in Data Loss Prevention (DLP)?",
         url: "/dashboard/blue/services/ochrona",
@@ -1374,10 +1413,18 @@ export const servicesData_EN = [
         ],
         filter: 'monitoringinfrastructure',
         filter2: 'one-time',
+        seo: {
+            title: "IT Infrastructure Protection",
+            description:
+              "IT infrastructure protection provides constant safeguarding of systems against threats, minimizing the risk of attacks and downtime.",
+            keywords:
+              "IT protection, infrastructure security, cybersecurity",
+        },
+        
     },
     {
         "id": "monitorowanie",
-        "title": "Continuous Infrastructure Monitoring (SIEM)",
+        "title": "IT infrastructure monitoring",
         "title2": "",
         "titleAboutService": "Why should you invest in continuous infrastructure monitoring (SIEM)?",
         url: "/dashboard/blue/services/monitorowanie",
@@ -1557,11 +1604,18 @@ export const servicesData_EN = [
             }
         ],
         "filter": "monitoringinfrastruktury",
-        "filter2": "one-time"
+        "filter2": "one-time",
+        seo: {
+            title: "IT Infrastructure Monitoring",
+            description:
+              "IT infrastructure monitoring enables constant analysis of system performance and rapid response to potential threats.",
+            keywords: "IT monitoring, network traffic analysis, system protection",
+        },
+        
     },
     {
         id: "mobilnych",
-        "title": "Mobile Device Protection (MDM)",
+        "title": "Mobile Device Protection",
         "title2": "",
         "titleAboutService": "Why is it worth purchasing the Mobile Device Protection (MDM) service?",
         url: "/dashboard/blue/services/mobilnych",
@@ -1741,11 +1795,18 @@ export const servicesData_EN = [
             }
         ],
         "filter": "technical_security_measures",
-        "filter2": "one_time"
+        "filter2": "one-time",
+        seo: {
+            title: "IT Infrastructure Monitoring",
+            description:
+              "IT infrastructure monitoring allows for continuous analysis of system performance and quick response to potential threats.",
+            keywords: "IT monitoring, network traffic analysis, system protection",
+        },
+        
     },
     {
         id: "(UTM)",
-        "title": "Internet Gateway Protection (UTM)",
+        "title": "UTM (Unified Threat Management)",
         "title2": "",
         "titleAboutService": "Why is it worth purchasing the Internet Gateway Protection (UTM) service?",
         url: "/dashboard/blue/services/(UTM)",
@@ -1925,11 +1986,17 @@ export const servicesData_EN = [
             }
         ],
         "filter": "technical_security_measures",
-        "filter2": "one_time"
+        "filter2": "one-time",
+        seo: {
+            title: "UTM (Unified Threat Management)",
+            description:
+              "UTM is a comprehensive solution that protects the network from various types of threats, ensuring ease of management and a high level of security.",
+            keywords: "UTM, threat management, network protection",
+        },        
     },
     {
         id: "wirtualizacja",
-        "title": "Server Virtualization and High Availability Clusters",
+        "title": "Virtualisation",
         "title2": "",
         "titleAboutService": "Why is it worth purchasing the Server Virtualization and High Availability Cluster implementation service?",
         url: "/dashboard/blue/services/wirtualizacja",
@@ -2109,11 +2176,17 @@ export const servicesData_EN = [
             }
         ],
         "filter": "technical_security_measures",
-        "filter2": "one-time"
+        "filter2": "one-time",
+        seo: {
+            title: "Virtualization",
+            description:
+              "Virtualization enables efficient use of IT resources by creating virtual environments, increasing flexibility and reducing costs.",
+            keywords: "virtualization, resource optimization, IT flexibility",
+        },        
     },
     {
         id: "ochronaurzadzenkoncowych",
-        "title": "Endpoint Protection (EDR / XDR)",
+        "title": "Protection of terminal equipment",
         "title2": "",
         "titleAboutService": "Why is it worth purchasing the Endpoint Protection (EDR/XDR) implementation service?",
         url: "/dashboard/blue/services/ochronaurzadzenkoncowych",
@@ -2293,11 +2366,19 @@ export const servicesData_EN = [
             }
         ],
         "filter": "technical_security_measures",
-        "filter2": "one_time"
+        "filter2": "one-time",
+        seo: {
+            title: "Endpoint Protection",
+            description:
+              "Endpoint protection minimizes the risk of attacks on computers and other corporate devices, enhancing the organization's security level.",
+            keywords:
+              "endpoint protection, endpoint security, device protection",
+        },
+        
     },
     {
         id: "SZBI",
-        title: "Development of ISMS Documentation",
+        title: "Development of ISMS documentation",
         title2: "",
         titleAboutService: "Why is it worth purchasing the ISMS documentation development service?",
         url: "/dashboard/blue/services/SZBI",
@@ -2481,11 +2562,18 @@ The ISMS documentation development service helps companies build solid informati
             }
         ],
         filter: "dokumentacjabezpieczenstwa",
-        filter2: "one-time"
+        filter2: "one-time",
+        seo: {
+            title: "Development of ISMS Documentation",
+            description:
+              "Comprehensive development of ISMS documentation, including policies, procedures, and guidelines ensuring consistent information security management.",
+            keywords: "ISMS documentation, information security, IT policies",
+        },
+        
     },
     {
         id: "opracowanie-polityki-bezpieczenstwa",
-        title: "Development of Security Policy",
+        title: "Development of security policy",
         title2: "",
         titleAboutService: "Why is it worth purchasing the security policy development service?",
         url: "/dashboard/blue/services/opracowanie-polityki-bezpieczenstwa",
@@ -2669,11 +2757,18 @@ This document serves as the foundation for managing information security and pro
         }
     ],
     filter: "dokumentacjabezpieczenstwa",
-    filter2: "one-time"
+    filter2: "one-time",
+    seo: {
+        title: "Security Policy Development",
+        description:
+          "We create a security policy tailored to your company's needs, ensuring consistency in operations and protection against threats.",
+        keywords: "security policy, data protection, IT procedures",
+    },
+    
 },
     {
         id: "opracowanie_polityki_ciaglosci_dzialania",
-        "title": "Business Continuity Policy Development",
+        "title": "Development of a business continuity policy",
         "title2": "",
         "titleAboutService": "Why is it worth purchasing the Business Continuity Policy Development service?",
         url: "/dashboard/blue/services/opracowanie_polityki_ciaglosci_dzialania",
@@ -2853,11 +2948,19 @@ This document serves as the foundation for managing information security and pro
             }
         ],
         "filter": "security_documents",
-        "filter2": "one-time"
+        "filter2": "one-time",
+        seo: {
+            title: "Business Continuity Policy Development",
+            description:
+              "Developing a Business Continuity Policy enables your company to effectively respond to crisis situations, minimizing the risk of downtime and losses.",
+            keywords:
+              "business continuity, crisis management, contingency planning",
+        },
+        
     },
     {
         id: "opracowanie_polityki_kopii_zapasowych",
-        title: "Development of Backup Policy",
+        title: "Development of a backup policy",
         title2: "",
         titleAboutService: "Why is it worth purchasing the backup policy development service?",
         url: "/dashboard/blue/services/opracowanie_polityki_kopii_zapasowych",
@@ -3037,11 +3140,17 @@ This document serves as the foundation for managing information security and pro
             }
         ],
         filter: "kopiezapasowe",
-        filter2: "one-time"
+        filter2: "one-time",
+        seo: {
+            title: "Backup Policy Development",
+            description:
+              "We create a backup policy that defines the rules for creating and storing backups, protecting data from loss.",
+            keywords: "backup policy, data protection, backup",
+        },        
     },
     {
         id: "audyt_zgodnosci_z_NIS2",
-        title: "Compliance Audit with NIS2",
+        title: "NIS2 compliance audit",
         title2: "",
         titleAboutService: "Why should you purchase the NIS2 compliance audit service?",
         url: "/dashboard/blue/services/audyt_zgodnosci_z_NIS2",
@@ -3225,11 +3334,18 @@ This service is crucial for critical sector companies and essential service prov
     }
 ],
     filter: "audyty",
-    filter2: "one-time"
+    filter2: "one-time",
+    seo: {
+        title: "NIS2 Compliance Audit",
+        description:
+          "We conduct NIS2 compliance audits, identifying security gaps and helping to meet the directive's requirements.",
+        keywords: "NIS2 compliance, security audit, network protection",
+    },
+    
 },
     {
         id: "audyt_zgodnosci_z_KRI",
-        "title": "Compliance Audit with KRI",
+        "title": "KRI compliance audit",
         "title2": "",
         "titleAboutService": "Why is it worth purchasing the Compliance Audit with KRI service?",
         url: "/dashboard/blue/services/audyt_zgodnosci_z_KRI",
@@ -3409,11 +3525,18 @@ This service is crucial for critical sector companies and essential service prov
             }
         ],
         "filter": "audits",
-        "filter2": "one-time"
+        "filter2": "one-time",
+        seo: {
+            title: "KRI Compliance Audit",
+            description:
+              "We conduct a KRI compliance audit, assessing whether critical data is adequately protected in accordance with regulations.",
+            keywords: "KRI compliance, critical data protection, IT security",
+        },
+        
     },
     {
         id: "audyt_SZBI",
-        "title": "Audit of SZBI (ISO/IEC 27001)",
+        "title": "ISMS audit",
         "title2": "",
         "titleAboutService": "Why is it worth purchasing the ISO/IEC 22301 compliance audit service?",
         url: "/dashboard/blue/services/audyt_SZBI",
@@ -3593,7 +3716,16 @@ This service is crucial for critical sector companies and essential service prov
             }
         ],
         "filter": "audits",
-        "filter2": "one-time"
+        "filter2": "one-time",
+        seo: {
+            title: "ISMS Audit",
+            description:
+              "We evaluate the Information Security Management System (ISMS), identifying weaknesses and providing corrective recommendations.",
+            keywords:
+              "ISMS audit, information security management, security standards",
+        },
+        
+        
     },
     {
         id: "audyt_zgodnosci_z_KSC",
@@ -3783,11 +3915,18 @@ Through this audit, organizations can safeguard against potential cyberattacks a
             }
         ],
         filter: "audyty",
-        filter2: "one-time"
+        filter2: "one-time",
+        seo: {
+            title: "KSC Compliance Audit",
+            description:
+              "The KSC compliance audit enables verification of critical infrastructure protection and compliance with national regulations.",
+            keywords: "KSC compliance, critical infrastructure, cybersecurity",
+        },
+        
     },
     {
         id: "szkolenie_z_cyberbezpieczenstwa_dla_kadry_informatycznej",
-        "title": "Cybersecurity Training for IT Staff",
+        "title": "Cyber security training for IT staff",
         "title2": "",
         "titleAboutService": "Why is it worth purchasing the cybersecurity training for IT staff?",
         url: "/dashboard/blue/services/szkolenie_z_cyberbezpieczenstwa_dla_kadry_informatycznej",
@@ -3967,11 +4106,19 @@ Through this audit, organizations can safeguard against potential cyberattacks a
             }
         ],
         "filter": "trainings",
-        "filter2": "one-time"
+        "filter2": "one-time",
+        seo: {
+            title: "Cybersecurity Training for IT Staff",
+            description:
+              "Advanced training for IT staff enhances technical skills in protecting IT infrastructure, managing incidents, and implementing best practices.",
+            keywords:
+              "cybersecurity IT staff, infrastructure protection, incident management",
+        },
+        
     },
     {
         id: "szkolenie_z_cyberbezpieczenstwa_dla_kadry_administracyjnej",
-        title: "Cybersecurity Training for Administrative Staff",
+        title: "Cyber security training for administrative staff",
         title2: "",
         titleAboutService: "Why should you purchase the cybersecurity training service for administrative staff?",
         url: "/dashboard/blue/services/szkolenie_z_cyberbezpieczenstwa_dla_kadry_administracyjnej",
@@ -4157,11 +4304,19 @@ This training is essential for organizations aiming to minimize risks arising fr
             }
         ],
         filter: "szkolenia",
-        filter2: "one-time"
+        filter2: "one-time",
+        seo: {
+            title: "Cybersecurity Training for Administrative Staff",
+            description:
+              "Cybersecurity training for administrative staff enhances awareness and competencies of employees responsible for managing data and IT infrastructure. We offer theory, practice, and exercises tailored to your organization's needs.",
+            keywords:
+              "cybersecurity administrative staff, IT protection, data management",
+        },
+        
     },
     {
         id: "szkolenie_z_cyberbezpieczenstwa_dla_kadry_zarzadzajacej",
-        title: "Cybersecurity Training for Management",
+        title: "Cyber security training for executives",
         title2: "",
         titleAboutService: "Why should you purchase the cybersecurity training service for management?",
         url: "/dashboard/blue/services/szkolenie_z_cyberbezpieczenstwa_dla_kadry_zarzadzajacej",
@@ -4347,11 +4502,19 @@ It is essential to ensure protection against potential financial and reputationa
             }
         ],
         filter: "szkolenia",
-        filter2: "one-time"
+        filter2: "one-time",
+        seo: {
+            title: "Cybersecurity Training for Executive Staff",
+            description:
+              "An educational program for organizational leaders that provides understanding of cybersecurity threats, implementation of protection strategies, and effective risk management.",
+            keywords:
+              "cybersecurity executive staff, risk management, protection strategy",
+        },
+        
     },
     {
         id: "II_linia_wsparcia_technicznego",
-        title: "II Line Technical Support",
+        title: "2nd line of technical support",
         title2: "",
         titleAboutService: "Why should you purchase the Second Line Technical Support service?",
         url: "/dashboard/blue/services/II_linia_wsparcia_technicznego",
@@ -4537,11 +4700,18 @@ Second Line Support is essential for companies that require immediate access to 
             }
         ],
         filter: "obslugaincydentow",
-        filter2: "subscription"
+        filter2: "subscription",
+        seo: {
+            title: "Tier 2 Technical Support",
+            description:
+              "Tier 2 technical support provides assistance in resolving complex IT issues, minimizing downtime, and enhancing operational efficiency.",
+            keywords: "technical support, advanced problem solving, IT",
+        },
+        
     },
     {
         id: "codzienne_kopie_zapasowe_logow",
-        title: "Cyclic Recovery Tests",
+        title: "Daily log backups",
         title2: "",
         titleAboutService: "Why should you purchase the Cyclic Recovery Tests service?",
         url: "/dashboard/blue/services/codzienne_kopie_zapasowe_logow",
@@ -4727,11 +4897,18 @@ This service is essential for companies that want to minimize downtime risks and
             }
         ],
         filter: "testy",
-        filter2: "subscription"
+        filter2: "subscription",
+        seo: {
+            title: "Daily Backup of Logs",
+            description:
+              "Automated creation of daily backups for system and application logs, ensuring security and the ability to recover critical data.",
+            keywords: "log backup, daily backups, data archiving",
+        },
+        
     },
     {
         id: "security_operations_center",
-        title: "Infrastructure Monitoring (Security Operations Center)",
+        title: "Security Operations Center (SOC)",
         title2: "",
         titleAboutService: "Why should you purchase the Infrastructure Monitoring (SOC) service?",
         url: "/dashboard/blue/services/security_operations_center",
@@ -4915,11 +5092,18 @@ This service is essential for organizations looking to ensure comprehensive prot
             }
         ],
         filter: "monitoringinfrastruktury",
-        filter2: "subscription"
+        filter2: "subscription",
+        seo: {
+            title: "Security Operations Center (SOC)",
+            description:
+              "The Security Operations Center (SOC) is a hub for monitoring and managing IT security, ensuring rapid incident response and enhanced organizational security.",
+            keywords: "SOC, security monitoring, incident management",
+        },
+        
     },
     {
         id: "odmiejscowienie_kopii_zapasowych_(disaster_recovery)",
-        title: "Offsite Backup (Disaster Recovery)",
+        title: "Disaster recovery",
         title2: "",
         titleAboutService: "Why should you purchase the Offsite Backup (Disaster Recovery) service?",
         url: "/dashboard/blue/services/odmiejscowienie_kopii_zapasowych_(disaster_recovery)",
@@ -5103,7 +5287,14 @@ This solution is essential for companies seeking comprehensive data security and
             }
         ],
         filter: "kopiezapasowe",
-        filter2: "subscription"
+        filter2: "subscription",
+        seo: {
+            title: "Offsite Backups (Disaster Recovery)",
+            description:
+              "Offsite backups protect data from disasters by storing it in secure, separate physical locations.",
+            keywords: "offsite backups, disaster recovery, data protection",
+        },
+        
     },
     {
         id: "codzienne_kopie_zapasowe_logow",
@@ -5287,6 +5478,13 @@ This solution is essential for companies seeking comprehensive data security and
             }
         ],
         filter: "backups",
-        filter2: "subscription"
+        filter2: "subscription",
+        seo: {
+            title: "Daily Log Backups",
+            description:
+              "Automated daily backups of system and application logs, ensuring security and the ability to recover critical data.",
+            keywords: "log backups, daily backups, data archiving",
+        },
+        
     }
 ]
