@@ -9,7 +9,9 @@ export const servicesData_EN = [
         headerImg: "/assets/img/services/net.png",
         position: "center",
         size: 0.22,
-        description: "Segmentation and network configuration is a key element of modern IT security strategy.\n\nBy dividing the network into smaller, isolated zones, it is possible to increase control over network traffic and limit the potential scope of attacks.\n\nImplementing network segmentation minimizes the risk of unauthorized access, streamlines infrastructure management, and enhances effectiveness in detecting and responding to threats.\n\nAdditionally, a well-configured network facilitates resource management and ensures better performance.",
+        parallaxH2:"IT security",
+        parallaxP:"Network segmentation allows IT infrastructure to be divided into smaller, isolated segments, increasing security and control over data.",
+        description: "Network segmentation divides the IT infrastructure into smaller, isolated segments, which increases security and data control.\n\nThe process involves infrastructure analysis, segment design, policy implementation and monitoring.",
         titleKrzysci: "Benefits of using segmentation and network configuration:",
         titleZagrozenia: "Risks when the service is not purchased:",
         iconsTop: [
@@ -209,7 +211,9 @@ export const servicesData_EN = [
         headerImg: "/assets/img/services/auth.png",
         position: "bottom",
         size: 0.28,
-        description: "Strong authentication mechanisms (Multi-Factor Authentication, MFA) are advanced solutions that significantly increase the level of security when accessing IT resources.\n\nWith MFA, users must confirm their identity using more than one factor – for example, a password along with an additional code or biometrics.\n\nImplementing strong authentication mechanisms protects the company against unauthorized access attempts, phishing attacks, and identity theft. MFA is especially recommended for companies managing sensitive data, ensuring a high level of protection.",
+        parallaxH2:"Infrastructure protection",
+        parallaxP:"Protection mechanisms are advanced solutions that secure IT infrastructure against threats and minimise the risk of downtime.",
+        description: "Protection mechanisms are digital solutions that protect IT infrastructure by detecting and preventing incidents.\n\nThey involve risk assessment, tool selection, implementation and monitoring.\n\nThey enable companies to increase security, reduce the risk of downtime and maintain compliance.",
         titleKrzysci: "Benefits of implementing strong authentication mechanisms:",
         titleZagrozenia: "Risks when the service is not purchased:",
         iconsTop: [
@@ -412,8 +416,10 @@ export const servicesData_EN = [
         headerImg: "/assets/img/services/email.png",
         position: "center",
         size: 0.6,
+        parallaxH2:"Data protection",
+        parallaxP:"Corporate data protection provides comprehensive security for sensitive business information against loss or leakage.",
         titleAboutService: "Why should you purchase the corporate email service with sandbox?",
-        description: "Corporate email with sandbox functionality combines advanced tools for managing email communication with security mechanisms to protect against threats such as phishing, ransomware, or malicious attachments.\n\nThanks to the built-in sandbox feature, all suspicious attachments and links are isolated and analyzed in a secure environment before being opened.\n\nThis significantly reduces the risk of data leaks, system infections, and helps maintain the security of the company's network.",
+        description: "Corporate data protection is a sophisticated solution that safeguards sensitive business information.\n\nThe process includes data analysis, policy implementation, technical safeguards and audits.\n\nThis is a key way to protect against financial loss and maintain regulatory compliance.",
         titleKrzysci: "Benefits of corporate email with sandbox:",
         titleZagrozenia: "Risks when the service is not purchased:",
         iconsTop: [
@@ -617,7 +623,9 @@ export const servicesData_EN = [
         headerImg: "/assets/img/services/updates.png",
         position: "center",
         size: 0.28,
-        description: "Software update automation is a key solution that enables companies to keep their systems up-to-date and secure. Regular updates are essential to patch security vulnerabilities and improve software performance, but manual implementation can be time-consuming and prone to errors.\n\nAutomating updates ensures that all applications, operating systems, and devices are updated according to schedule without downtime. This minimizes the risk of cyberattacks and helps meet security requirements.",
+        parallaxH2:"Automation",
+        parallaxP:"Automation of security processes are tools that increase efficiency and reduce response times to threats.",
+        description: "Security process automation is technology that monitors systems 24/7, eliminating human error and accelerating response to threats.\n\nThe process includes analysis, tool selection, configuration and automated deployment.\n\nThis enables organisations to respond faster, save costs and better manage time.",
         titleKrzysci: "Benefits of automating software updates:",
         titleZagrozenia: "Risks if the service is not purchased:",
         iconsTop: [
@@ -820,7 +828,7 @@ export const servicesData_EN = [
         headerImg: "/assets/img/services/inventory.png",
         position: "center",
         size: 0.28,
-        description: "Implementing an inventory management system for hardware and software enables companies to automate IT asset management, ensuring continuous control over devices, licenses, and software.\n\nSuch a system not only helps monitor asset usage but also minimizes risks associated with outdated software, non-compliant licenses, and ensures regulatory compliance.\n\nAutomated inventory allows for quick identification and management of assets, optimizing costs and improving organizational security.",
+        description: "IT inventory is the process of mapping the devices, systems and software in an organisation.\n\nWith regular scans, categorisation and documentation, full control of the infrastructure is possible.",
         titleKrzysci: "Benefits of implementing an inventory management system:",
         titleZagrozenia: "Risks if the inventory system is not implemented:",
         iconsTop: [
@@ -1024,7 +1032,9 @@ export const servicesData_EN = [
         headerImg: "/assets/img/services/password.png",
         position: "center",
         size: 0.35,
-        description: "A central password management system is a tool that enables secure and efficient management of authentication data within a company.\n\nThis solution ensures that all passwords are stored in one secure location, eliminating the need to rely on ineffective and unsafe methods like saving passwords in text documents.\n\nIt allows for the automatic generation, storage, and sharing of passwords exclusively with authorized users, minimizing the risk of data breaches and unauthorized access.",
+        parallaxH2:"Monitoring of systems",
+        parallaxP:"Central IT infrastructure management allows systems to be controlled and monitored from a single location, increasing efficiency and security.",
+        description: "Central management is a comprehensive solution that enables control of the entire IT infrastructure from a single location.\n\nThe process includes systems integration, monitoring, automation and access management.",
         titleKrzysci: "Benefits of a central password management system:",
         titleZagrozenia: "Risks if the service is not utilized:",
         iconsTop: [
@@ -1228,7 +1238,9 @@ export const servicesData_EN = [
         headerImg: "/assets/img/services/bg.png",
         position: "bottom",
         size: 0.4,
-        description: "Data Loss Prevention (DLP) is an advanced implementation solution that helps companies secure sensitive data from accidental or intentional disclosure. Implementing DLP enables tracking and controlling the flow of information within the organization, ensuring data protection both in transit and at rest.\n\nThis service helps businesses safeguard against unauthorized access, data leaks, and regulatory compliance breaches. DLP provides full visibility into how data is used, who has access to it, and where it is being transmitted, significantly reducing the risk of leaks.",
+        parallaxH2:"Monitoring of systems",
+        parallaxP:"IT infrastructure protection ensures that systems are constantly protected from threats, minimising the risk of attacks and downtime.",
+        description: "IT infrastructure protection is a security system that protects a company from cyber threats.\n\nThe process includes threat identification, security implementation, monitoring and incident response.\n\nThe service minimises the risk of loss and downtime, providing peace of mind.",
         titleKrzysci: "Benefits of Data Loss Prevention (DLP):",
         titleZagrozenia: "Risks if the service is not utilized:",
         iconsTop: [
@@ -1432,7 +1444,9 @@ export const servicesData_EN = [
         "headerImg": "/assets/img/services/bg.png",
         "position": "bottom",
         "size": 0.45,
-        "description": "The SIEM (Security Information and Event Management) system is an advanced tool enabling continuous monitoring of the entire IT infrastructure for potential threats.\n\nSIEM collects and analyzes data from various sources such as operating systems, applications, network devices, and databases, allowing real-time detection of anomalies and threats.\n\nThis service enables businesses to respond immediately to incidents, minimizing the risk of operational downtime and financial losses while ensuring compliance with regulatory requirements.",
+        parallaxH2:"IT monitoring",
+        parallaxP:"Monitoring of the IT infrastructure allows continuous analysis of the performance of systems and a rapid response to potential threats.",
+        "description": "IT infrastructure monitoring is the constant control and analysis of networks and systems in real time.\n\nWith integration, notifications and rapid responses, it is possible to detect problems early and optimise system performance.",
         "titleKrzysci": "Benefits of continuous infrastructure monitoring (SIEM):",
         "titleZagrozenia": "Risks if the service is not utilized:",
         "iconsTop": [
@@ -1623,7 +1637,9 @@ export const servicesData_EN = [
         "headerImg": "/assets/img/services/bg.png",
         "position": "bottom",
         "size": 0.35,
-        "description": "Implementing a Mobile Device Management (MDM) system is a key solution for companies looking to ensure secure access to data and applications from mobile devices. MDM enables control over smartphones, tablets, and other mobile devices used by employees, allowing for remote management, configuration, monitoring, and protection of corporate data on these devices. This solution minimizes the risk of data breaches and malware infections, especially in remote work environments with access to corporate resources outside the office.",
+        parallaxH2:"Protection of mobile devices",
+        parallaxP:"Mobile Device Protection secures smartphones and tablets against threats, protecting sensitive corporate data.",
+        "description": "Mobile Device Protection is a comprehensive solution that secures smartphones and tablets from threats.\n\nThe process includes device identification, security implementation, monitoring and employee training.",
         "titleKrzysci": "Benefits of implementing Mobile Device Protection (MDM):",
         "titleZagrozenia": "Risks if the service is not purchased:",
         "iconsTop": [
@@ -1814,7 +1830,9 @@ export const servicesData_EN = [
         "headerImg": "/assets/img/services/bg.png",
         "position": "bottom",
         "size": 3.5,
-        "description": "Implementing a UTM (Unified Threat Management) system is a comprehensive solution for securing a company's connection point to the Internet. UTM combines firewall functions, intrusion detection and prevention systems, content filtering, antivirus protection, and network traffic monitoring.\n\nWith UTM, companies gain extensive protection against cyber threats and control over data flow, which is crucial for maintaining the integrity and security of the corporate network.\n\nUTM implementation significantly reduces the risk of unauthorized access, external attacks, and malicious network traffic.",
+        parallaxH2:"Threat management",
+        parallaxP:"UTM is a comprehensive solution that protects the network against various types of threats, providing ease of management and a high level of security.",
+        "description": "UTM is a comprehensive tool that combines various IT protection functions such as firewall, content filtering and access management.\n\nIt provides comprehensive network protection, ease of management and cost optimisation.",
         "titleKrzysci": "Benefits of implementing Internet Gateway Protection (UTM):",
         "titleZagrozenia": "Risks if the service is not purchased:",
         "iconsTop": [
@@ -2004,7 +2022,9 @@ export const servicesData_EN = [
         "headerImg": "/assets/img/services/bg.png",
         "position": "bottom",
         "size": 3.6,
-        "description": "Implementing server virtualization and a high availability (HA) cluster is a modern approach to IT resource management that enhances flexibility, efficiency, and infrastructure resilience to failures.\n\nVirtualization enables running multiple servers within a single physical environment, optimizing resource usage and reducing operational costs. Meanwhile, a high availability cluster ensures uninterrupted service operation even in the event of hardware failure, automatically switching workloads to other servers.\n\nThis solution is ideal for organizations requiring maximum reliability and flexibility.",
+        parallaxH2:"Optimisation of resources",
+        parallaxP:"Virtualisation enables efficient use of IT resources by creating virtual environments, increasing flexibility and reducing costs.",
+        "description": "Virtualisation is the process of creating virtual versions of IT resources on a single platform.\n\nIt enables efficient use of resources, cost optimisation and flexible management of the IT environment.",
         "titleKrzysci": "Benefits of implementing server virtualization and a high availability cluster:",
         "titleZagrozenia": "Risks if the service is not purchased:",
         "iconsTop": [
@@ -2194,7 +2214,9 @@ export const servicesData_EN = [
         "headerImg": "/assets/img/services/bg.png",
         "position": "bottom",
         "size": 6,
-        "description": "Implementing EDR (Endpoint Detection and Response) and XDR (Extended Detection and Response) systems is crucial for companies aiming to effectively protect their endpoints against advanced threats.\n\nEDR monitors activity at the endpoint level, allowing for quick detection and response to incidents. XDR extends protection by integrating data from other security systems, such as networks and servers, to provide a more comprehensive threat landscape.\n\nWith EDR/XDR implementation, companies gain comprehensive protection and minimize the risk of downtime and losses from cyberattacks.",
+        parallaxH2:"Endpoint security",
+        parallaxP:"End-device protection minimises the risk of attacks on computers and other corporate devices, increasing the security level of the organisation.",
+        "description": "Endpoint device protection is the safeguarding of computers and other devices used in the company.\n\nThe process includes security installation, monitoring, updates and access management.",
         "titleKrzysci": "Benefits of implementing Endpoint Protection (EDR/XDR):",
         "titleZagrozenia": "Risks if the service is not purchased:",
         "iconsTop": [
@@ -2386,11 +2408,9 @@ export const servicesData_EN = [
         headerImg: "/assets/img/services/audit.png",
         position: "bottom",
         size: 3.5,
-        description: `The Information Security Management System (ISMS) documentation is a comprehensive collection of procedures, policies, and guidelines that form the foundation for maintaining information security in an organization.
-
-Properly developed ISMS documentation not only ensures compliance with the ISO 27001 standard and other legal regulations but also provides an organized approach to risk management, data protection, and incident response.
-
-The ISMS documentation development service helps companies build solid information security foundations while preparing them for certification and future audits.`,
+        parallaxH2:"Information security",
+        parallaxP:"Comprehensive development of ISMS documentation, including policies, procedures and guidelines to ensure consistent information security management.",
+        description: `Developing an ISMS documentation is the creation of key documents, procedures and policies that form the basis of an Information Security Management System.\n\nThe process involves analysing the needs of the organisation, developing the documents and implementing them in the company.\n\nThe documentation ensures order, compliance with regulations and clear guidance for employees.`,
         titleKrzysci: "Benefits of developing ISMS documentation:",
         titleZagrozenia: "Risks when the service is not purchased:",
         iconsTop: [
@@ -2581,14 +2601,12 @@ The ISMS documentation development service helps companies build solid informati
         headerImg: "/assets/img/services/bg.png",
         position: "bottom",
         size: 1,
-        description: `A security policy is a key document that defines the rules and guidelines for protecting data and IT infrastructure within an organization. Developing a coherent security policy allows the company to clearly outline what actions are taken to ensure information security and how employees should act to minimize the risk of breaches.
-
-Properly prepared security policies support compliance with legal regulations (e.g., GDPR) and standards such as ISO 27001, while fostering a culture of security within the organization.
-
-This document serves as the foundation for managing information security and protection against internal and external threats.`,
-    titleKrzysci: "Benefits of developing a security policy:",
-    titleZagrozenia: "Risks when the service is not purchased:",
-    iconsTop: [
+        parallaxH2:"Security policy",
+        parallaxP:"We create a security policy tailored to your company's needs, ensuring consistency of operations and protection from threats.",
+        description: `A Security Policy is a document that defines the rules for protecting a company's information.\n\nCreating clear rules minimises the risk of chaos, protects data and increases compliance with regulations.`,
+        titleKrzysci: "Benefits of developing a security policy:",
+        titleZagrozenia: "Risks when the service is not purchased:",
+        iconsTop: [
         {
             id: 1,
             image: "/assets/img/icons/zabezpieczenie.svg",
@@ -2776,7 +2794,9 @@ This document serves as the foundation for managing information security and pro
         "headerImg": "/assets/img/services/bg.png",
         "position": "bottom",
         "size": 1,
-        "description": "A Business Continuity Policy is a document that defines the principles and procedures ensuring the organization’s ability to maintain key operations even during major disruptions.\n\nDeveloping this policy enables a company to prepare for emergency situations such as system failures, natural disasters, or cyberattacks, minimizing the impact of such events on operations.\n\nThe Business Continuity Policy helps maintain stability and safeguard critical processes, which is essential for protecting resources and ensuring the trust of clients and business partners. A well-prepared document supports compliance with regulations, standards, and guidelines such as ISO 22301.",
+        parallaxH2:"Backup policy",
+        parallaxP:"Developing a Business Continuity Policy enables your company to respond effectively to crisis situations, minimising the risk of downtime and loss.",
+        "description": "The Business Continuity Policy defines how the company should respond in crisis situations to ensure the uninterrupted operation of key processes.\n\nContingency planning, testing and improvement are steps that increase the company's resilience to crises.",
         "titleKrzysci": "Benefits of developing a Business Continuity Policy:",
         "titleZagrozenia": "Risks if a Business Continuity Policy is not developed:",
         "iconsTop": [
@@ -2968,7 +2988,9 @@ This document serves as the foundation for managing information security and pro
         headerImg: "/assets/img/services/bg.png",
         position: "bottom",
         size: 1.3,
-        description: `A backup policy is a document that precisely defines the rules for creating, storing, and managing backups of an organization's data. It ensures that all critical information is regularly archived and can be restored in case of a failure, cyberattack, or other incident that could result in data loss. A properly developed backup policy minimizes the risk of data loss, supports compliance with legal regulations and standards, and helps manage data storage resources, which is crucial for maintaining business continuity.`,
+        parallaxH2:"Backup policy",
+        parallaxP:"We create a backup policy that sets out the rules for creating and storing backups, protecting data from loss.",
+        description: `A Backup Policy is a document that sets out the rules for creating, storing and recovering data in the event of loss, so that a company can avoid data loss and ensure rapid recovery in the event of a disaster or attack.`,
         titleKrzysci: "Benefits of developing a backup policy:",
         titleZagrozenia: "Risks when a backup policy is not developed:",
         iconsTop: [
@@ -3158,11 +3180,9 @@ This document serves as the foundation for managing information security and pro
         headerImg: "/assets/img/services/bg.png",
         position: "bottom",
         size: 1.1,
-        description: `The compliance audit with the NIS2 directive (Network and Information Security Directive 2) is a comprehensive assessment that evaluates the degree to which an organization meets the security requirements set forth by European Union legislation.
-
-The NIS2 directive mandates organizations to implement effective measures to protect IT networks and systems and manage cybersecurity risks. This audit allows businesses to identify potential security gaps, gain a comprehensive view of their current security state, and implement necessary corrective actions to comply with the directive.
-
-This service is crucial for critical sector companies and essential service providers who must adhere to NIS2 regulations to avoid financial penalties and ensure operational continuity.`,
+        parallaxH2:"Security audit",
+        parallaxP:"We carry out NIS2 compliance audits, identifying security gaps and helping to meet the requirements of the directive.",
+        description: `The NIS2 compliance audit verifies that the company complies with the requirements of the NIS2 Directive on Network and Information Security.\n\nThe analysis of the current status, identification of non-compliance and recommendations help to avoid penalties and increase security.`,
     titleKrzysci: "Benefits of a compliance audit with NIS2:",
     titleZagrozenia: "Risks if a compliance audit with NIS2 is not conducted:",
     iconsTop: [
@@ -3353,7 +3373,9 @@ This service is crucial for critical sector companies and essential service prov
         "headerImg": "/assets/img/services/bg.png",
         "position": "bottom",
         "size": 1.1,
-        "description": "The Compliance Audit with National Interoperability Framework (KRI) is a key tool enabling public institutions and local government entities to evaluate their compliance with KRI requirements regarding information security. The KRI regulations define standards and requirements for data protection, IT system interoperability, and risk management in the public sector.\n\nThe audit allows the identification of potential gaps and areas requiring improvement, supporting compliance and helping to avoid potential penalties for non-compliance.\n\nThrough the audit, organizations gain a comprehensive view of their security status and readiness for potential inspections.",
+        parallaxH2:"KRI compliance",
+        parallaxP:"We audit KRI compliance, assessing whether critical data is adequately secured in accordance with regulations.",
+        "description": "A KRI compliance audit verifies that a company adequately safeguards critical information in accordance with regulations.\n\nThe process includes an assessment of policies and procedures, identification of gaps and recommendations, allowing for effective protection of critical data.",
         "titleKrzysci": "Benefits of the Compliance Audit with KRI:",
         "titleZagrozenia": "Risks if the Compliance Audit with KRI is not conducted:",
         "iconsTop": [
@@ -3538,13 +3560,15 @@ This service is crucial for critical sector companies and essential service prov
         id: "audyt_SZBI",
         "title": "ISMS audit",
         "title2": "",
-        "titleAboutService": "Why is it worth purchasing the ISO/IEC 22301 compliance audit service?",
+        "titleAboutService": "Why purchase an ISMS (ISO/IEC 27001) audit service?",
         url: "/dashboard/blue/services/audyt_SZBI",
         "urlImage": "/assets/img/audyt.svg",
         "headerImg": "/assets/img/services/bg.png",
         "position": "bottom",
         "size": 1.1,
-        "description": "The ISO/IEC 22301 compliance audit is an evaluation process that allows an organization to assess how its Business Continuity Management System (BCMS) meets the requirements of the international standard.\n\nISO/IEC 22301 is a standard that helps companies prepare for potential operational disruptions, such as technological failures, security incidents, or natural disasters.\n\nThe conducted audit identifies strengths and areas for improvement, enabling the organization to better manage risks and increase resilience to disruptions.\n\nFor companies aiming to minimize risks and enhance their reputation, the ISO/IEC 22301 compliance audit is a crucial step in preparing for certification.",
+        parallaxH2:"Critical infrastructure",
+        parallaxP:"The KSC compliance audit enables verification of critical infrastructure protection and compliance with national regulations.",
+        "description": "An ISMS audit assesses the effectiveness of the Information Security Management System.\n\nThe process includes reviewing policies, assessing compliance with standards and identifying non-compliance.\n\nThis is a key step in ensuring a high level of data protection within a company.",
         "titleKrzysci": "Benefits of ISO/IEC 22301 compliance audit:",
         "titleZagrozenia": "Risks when ISO/IEC 22301 compliance audit is not conducted:",
         "iconsTop": [
@@ -3737,13 +3761,9 @@ This service is crucial for critical sector companies and essential service prov
         headerImg: "/assets/img/services/bg.png",
         position: "bottom",
         size: 1.1,
-        description: `The compliance audit with the National Cybersecurity System (KSC) is an assessment process that helps organizations evaluate whether they meet the requirements of Polish cybersecurity regulations.
-
-The KSC Act mandates institutions and entities critical to national infrastructure to implement appropriate security measures and incident management procedures.
-
-This audit identifies potential security gaps, assesses the organization's readiness to handle cyber threats, and implements corrective actions to enhance security and ensure compliance with regulations.
-
-Through this audit, organizations can safeguard against potential cyberattacks and meet the requirements of the KSC Act, which is crucial for protecting critical systems and data.`,
+        parallaxH2:"Information security management",
+        parallaxP:"We review the information security management system (ISMS), identifying weaknesses and making remedial recommendations.",
+        description: `A KSC compliance audit verifies that a company is compliant with the National Cyber Security System.\n\nPolicy analysis, compliance verification and recommendations help protect critical infrastructure and build customer trust.`,
         titleKrzysci: "Benefits of the KSC compliance audit:",
         titleZagrozenia: "Risks if the KSC compliance audit is not conducted:",
         iconsTop: [
@@ -3934,6 +3954,8 @@ Through this audit, organizations can safeguard against potential cyberattacks a
         "headerImg": "/assets/img/services/course.png",
         "position": "top",
         "size": 3.5,
+        parallaxH2:"Cyber security IT staff",
+        parallaxP:"Advanced training for IT staff develops technical skills in IT infrastructure protection, incident management and best practice implementation.",
         "description": "IT staff are directly responsible for implementing, maintaining, and securing an organization's IT infrastructure.\n\nCybersecurity training for IT departments enhances their knowledge of the latest threats, protection techniques, and best practices in incident response.\n\nThe training program covers advanced topics such as risk management, network monitoring, endpoint security, threat analysis, and implementing solutions aligned with best security practices.\n\nThis training is essential for organizations that want to ensure a high level of protection and prepare their staff for IT security challenges.",
         "titleKrzysci": "Benefits of cybersecurity training for IT staff:",
         "titleZagrozenia": "Risks if cybersecurity training is not conducted:",
@@ -4126,13 +4148,9 @@ Through this audit, organizations can safeguard against potential cyberattacks a
         headerImg: "/assets/img/services/course.png",
         position: "top",
         size: 3.5,
-        description: `Administrative staff, who have daily access to sensitive data and IT systems, are a critical element in ensuring information security within an organization.
-
-Cybersecurity training specifically designed for administrative staff increases awareness of threats and provides knowledge about best practices for data protection and incident response.
-
-The training program covers key topics such as secure password management, threat recognition (e.g., phishing), data handling, and compliance with IT security policies.
-
-This training is essential for organizations aiming to minimize risks arising from human errors and safeguard their information assets.`,
+        parallaxH2:"Safety standards",
+        parallaxP:"Cyber security training for administrative staff increases the awareness and competence of staff responsible for managing data and IT infrastructure. We offer theory, practice and exercises tailored to your organisation's needs.",
+        description: `Cyber security training for administrative staff increases the awareness and competence of employees responsible for managing data and IT infrastructure.\n\nThe programme includes theory, practical exercises and simulations that teach how to prevent, recognise and respond to threats.`,
         titleKrzysci: "Benefits of cybersecurity training for administrative staff:",
         titleZagrozenia: "Risks if cybersecurity training is not conducted:",
         iconsTop: [
@@ -4324,13 +4342,9 @@ This training is essential for organizations aiming to minimize risks arising fr
         headerImg: "/assets/img/services/course.png",
         position: "top",
         size: 3.5,
-        description: `Management plays a crucial role in making strategic decisions related to information security and protection against cyber threats.
-
-Cybersecurity training specifically tailored for decision-makers provides knowledge on critical aspects of risk management, regulatory compliance, and practices in cyber resilience.
-
-This training equips management with the skills to identify threats, make informed investment decisions, and foster a culture of security across the organization.
-
-It is essential to ensure protection against potential financial and reputational losses.`,
+        parallaxH2:"Cyber security executives",
+        parallaxP:"An educational programme for organisational leaders to understand cyber security threats, implement protection strategies and effectively manage risk.",
+        description: `This executive training helps organisational leaders understand cyber security risks and implement best practices for risk management.\n\nThe programme focuses on crisis management strategies and decision-making that keep the whole company safe.`,
         titleKrzysci: "Benefits of cybersecurity training for management:",
         titleZagrozenia: "Risks if cybersecurity training is not conducted:",
         iconsTop: [
@@ -4522,13 +4536,9 @@ It is essential to ensure protection against potential financial and reputationa
         headerImg: "/assets/img/services/audit.png",
         position: "bottom",
         size: 0.6,
-        description: `Second Line Technical Support is a specialized service that ensures quick and professional resolution of more complex technical issues for organizations.
-
-When first-line IT support cannot solve an issue, the second line provides advanced analysis, problem diagnosis, and escalation to experts with higher levels of technical expertise.
-
-This service helps organizations reduce downtime, improve operational efficiency, and maintain the smooth functioning of their IT infrastructure.
-
-Second Line Support is essential for companies that require immediate access to experts capable of addressing technological challenges at the infrastructure, application, and security levels.`,
+        parallaxH2:"Technical support",
+        parallaxP:"Line II technical support provides assistance in solving complex IT problems, minimising downtime and increasing business efficiency.",
+        description: `The 2nd line of technical support is specialised assistance for more complex technical issues that were not resolved at the first level of support.\n\nExperts analyse requests, minimising downtime and ensuring the continuity of the IT infrastructure.`,
         titleKrzysci: "Benefits of Second Line Technical Support:",
         titleZagrozenia: "Risks if Second Line Technical Support is unavailable:",
         iconsTop: [
@@ -4719,13 +4729,9 @@ Second Line Support is essential for companies that require immediate access to 
         headerImg: "/assets/img/services/bg.png",
         position: "bottom",
         size: 1.1,
-        description: `Cyclic Recovery Tests allow organizations to regularly verify the effectiveness of data and system recovery processes after a failure.
-
-These tests are crucial to ensure that backups and recovery plans work correctly and are ready in case of an incident.
-
-Conducting tests at regular intervals enables quick identification and resolution of potential recovery issues, increasing confidence that the organization can quickly return to normal operation in an emergency.
-
-This service is essential for companies that want to minimize downtime risks and ensure business continuity.`,
+        parallaxH2:"Data archiving",
+        parallaxP:"Automatic daily backups of system and application logs, ensuring security and recoverability of key data.",
+        description: `Daily log backups are automatic backups of all system and application logs, ensuring data security, ease of recovery and full regulatory compliance.\n\nIt's like a digital journal that allows you to track incidents and analyse the history of your business operations.`,
         titleKrzysci: "Benefits of Cyclic Recovery Tests:",
         titleZagrozenia: "Risks when daily log backups are not performed:",
         iconsTop: [
@@ -4916,6 +4922,8 @@ This service is essential for companies that want to minimize downtime risks and
         headerImg: "/assets/img/services/bg.png",
         position: "bottom",
         size: 3.2,
+        parallaxH2:"Data recovery tests",
+        parallaxP:"The Security Operations Centre (SOC) is an IT security monitoring and management centre, providing rapid incident response and enhancing the security of the organisation.",
         description: `Infrastructure monitoring as part of the Security Operations Center (SOC) is an advanced service that provides constant oversight of the security of an organization's IT systems.
 
 With SOC, organizations can detect and respond to potential threats in real time, enabling swift identification of incidents and minimizing their impact. SOC not only analyzes current events but also proactively monitors network traffic, user activities, and system anomalies to prevent threats before they cause harm.
@@ -5111,6 +5119,8 @@ This service is essential for organizations looking to ensure comprehensive prot
         headerImg: "/assets/img/services/bg.png",
         position: "bottom",
         size: 0.8,
+        parallaxH2:"Disaster recovery",
+        parallaxP:"Regular recovery testing helps to ensure that backup systems are working properly and can be relied upon in the event of a disaster.",
         description: `Offsite backup is a critical component of a Disaster Recovery plan, ensuring secure storage of data outside the primary company location.
 
 Transferring backups to external (off-site) locations protects against data loss due to severe incidents such as fires, floods, ransomware attacks, or other local failures. With offsite backups, organizations can quickly recover data and resume operations even during crises that damage or destroy primary systems.
@@ -5306,6 +5316,8 @@ This solution is essential for companies seeking comprehensive data security and
         headerImg: "/assets/img/services/bg.png",
         position: "bottom",
         size: 1.3,
+        parallaxH2:"Data archiving",
+        parallaxP:"Automatic daily backups of system and application logs, ensuring security and recoverability of key data.",
         description: "System logs contain critical information about the operation of systems, applications, and networks. They are an essential component of security management and compliance with regulations.\n\nRegularly creating log backups allows organizations to secure these data, enabling effective activity tracking, incident analysis, and security audits.\n\nThe daily log backup service ensures that all information recorded by systems is regularly archived and accessible in the event of a failure, security breach, or audit need.\n\nThis minimizes the risk of log data loss and enhances an organization's ability to identify threats and draw insights.",
         titleKrzysci: "Benefits of daily log backups:",
         titleZagrozenia: "Risks if daily log backups are not performed:",
@@ -5486,5 +5498,212 @@ This solution is essential for companies seeking comprehensive data security and
             keywords: "log backups, daily backups, data archiving",
         },
         
-    }
+    },
+    {
+        "id": "cykliczne_testy_odtworzeniowe",
+        "title": "Cyclic playback tests",
+        "title2": "",
+        "titleAboutService":
+          "Why should you purchase the cyclic recovery testing service?",
+        "url": "/dashboard/blue/services/cykliczne_testy_odtworzeniowe",
+        "urlImage": "/assets/img/test.svg",
+        "headerImg": "/assets/img/services/bg.png",
+        "position": "bottom",
+        "size": 1.1,
+        parallaxH2:"Disaster recovery",
+        parallaxP:"Regular recovery testing helps to ensure that backup systems are working properly and can be relied upon in the event of a disaster.",
+        "description":
+          "Cyclic recovery tests are regular checks to ensure backup systems are functioning correctly and data can be restored in case of a failure.\n\nThese tests ensure readiness for crisis situations and allow quick restoration of normal business operations.\n\nThey are the foundation of failure resilience.",
+        "titleKrzysci": "Benefits of cyclic recovery tests:",
+        "titleZagrozenia":
+          "Risks of not performing daily backup log copies:",
+        "iconsTop": [
+          {
+            "id": 1,
+            "image": "/assets/img/icons/zabezpieczenie.svg",
+            "title": "Certainty",
+            "desc": "Confidence that backups are complete and functional."
+          },
+          {
+            "id": 2,
+            "image": "/assets/img/icons/monitoring.png",
+            "title": "Detection",
+            "desc": "Early detection of issues with recovery processes, allowing them to be fixed."
+          },
+          {
+            "id": 3,
+            "image": "/assets/img/icons/ochrona.svg",
+            "title": "Minimization",
+            "desc": "Minimizing downtime risks with effective and tested recovery plans."
+          },
+          {
+            "id": 4,
+            "image": "/assets/img/icons/rodo.svg",
+            "title": "Resilience",
+            "desc": "Enhancing organizational resilience to incidents and ensuring business continuity."
+          },
+          {
+            "id": 5,
+            "image": "/assets/img/icons/zaufanie.svg",
+            "title": "Compliance",
+            "desc": "Meeting compliance requirements with data security standards and regulations."
+          },
+          {
+            "id": 6,
+            "image": "/assets/img/icons/zapobieganie.svg",
+            "title": "Trust",
+            "desc": "Building customer and partner trust in the organization's data recovery capabilities."
+          }
+        ],
+        "iconsRed": [
+          {
+            "id": 1,
+            "image": "/assets/img/icons/utrata.svg",
+            "title": "Certainty",
+            "desc": "Lack of assurance that backups are ready for use in case of failure."
+          },
+          {
+            "id": 2,
+            "image": "/assets/img/icons/kara.svg",
+            "title": "Risk",
+            "desc": "High risk of operational downtimes and data loss during incidents."
+          },
+          {
+            "id": 3,
+            "image": "/assets/img/icons/ryzyko.svg",
+            "title": "Non-compliance",
+            "desc": "Failure to meet regulatory requirements for data recovery."
+          },
+          {
+            "id": 4,
+            "image": "/assets/img/icons/przestoje.png",
+            "title": "Loss",
+            "desc": "Potential loss of customer and partner trust due to unsuccessful system recovery."
+          },
+          {
+            "id": 5,
+            "image": "/assets/img/icons/kradziez.svg",
+            "title": "Efficiency",
+            "desc": "Low operational efficiency due to lack of tested recovery procedures."
+          },
+          {
+            "id": 6,
+            "image": "/assets/img/icons/kontrola.svg",
+            "title": "Risk",
+            "desc": "Increased financial risk from unpreparedness for emergency scenarios."
+          }
+        ],
+        "doZapamietaniaTop": [
+          {
+            "id": 1,
+            "image": "/assets/img/icons/zapobieganie.svg",
+            "title": "Testing",
+            "desc": "Cyclic recovery tests verify the readiness of backups and recovery procedures."
+          },
+          {
+            "id": 2,
+            "image": "/assets/img/icons/zabezpieczenie.svg",
+            "title": "Crisis situations",
+            "desc": "The service helps identify and resolve problems before crises occur."
+          }
+        ],
+        "doZapamietaniaBottom": [
+          {
+            "id": 1,
+            "image": "/assets/img/icons/rodo.svg",
+            "title": "Compliance",
+            "desc": "Tests ensure regulatory compliance and strengthen business continuity."
+          },
+          {
+            "id": 2,
+            "image": "/assets/img/icons/ochrona.svg",
+            "title": "Testing",
+            "desc": "Regular testing enhances the organization's resilience to downtimes and incidents."
+          }
+        ],
+        "FAQLeft": [
+          {
+            "id": 1,
+            "title": "What are cyclic recovery tests?",
+            "content":
+              "Cyclic recovery tests involve regular verification of data and system recovery processes to ensure backups are functional and recovery procedures are effective."
+          },
+          {
+            "id": 2,
+            "title": "What are the benefits of cyclic recovery tests?",
+            "content":
+              "Tests minimize downtime risks, enhance confidence in backups, allow early detection of recovery issues, and ensure regulatory compliance."
+          },
+          {
+            "id": 3,
+            "title": "How often should recovery tests be performed?",
+            "content":
+              "It is recommended to perform tests at least quarterly or as required by regulatory and operational needs to ensure procedures are up-to-date and effective."
+          },
+          {
+            "id": 4,
+            "title": "Are recovery tests required by security standards?",
+            "content":
+              "Yes, many standards, such as ISO/IEC 27001, recommend or require recovery tests to ensure the effectiveness of recovery plans and business continuity."
+          },
+          {
+            "id": 5,
+            "title": "Do recovery tests cover all organizational systems?",
+            "content":
+              "The scope of recovery tests can be tailored to the organization's needs but typically includes key systems and data that impact business continuity."
+          },
+          {
+            "id": 6,
+            "title": "Do recovery tests impact current system operations?",
+            "content":
+              "Tests are usually conducted in controlled conditions to minimize impact, such as during off-peak hours or in test environments."
+          }
+        ],
+        "FAQRight": [
+          {
+            "id": 7,
+            "title": "Do recovery tests help meet GDPR requirements?",
+            "content":
+              "Yes, recovery tests support GDPR compliance, which requires ensuring the integrity and availability of personal data, even in case of failure."
+          },
+          {
+            "id": 8,
+            "title": "Does the cyclic recovery testing service include documentation?",
+            "content":
+              "Yes, a report is prepared after each test, including an analysis of test results, identified issues, and recommendations for improvement."
+          },
+          {
+            "id": 9,
+            "title": "What happens if issues are identified during recovery tests?",
+            "content":
+              "If issues are found, an analysis is conducted, and corrective actions are implemented to ensure future recoveries proceed smoothly."
+          },
+          {
+            "id": 10,
+            "title": "What are the common issues found during recovery tests?",
+            "content":
+              "Common issues include incomplete backups, system compatibility problems, errors in recovery procedures, and lack of access to critical resources."
+          },
+          {
+            "id": 11,
+            "title": "Can recovery tests be customized to the organization’s needs?",
+            "content":
+              "Yes, the service can be tailored in terms of test scope, frequency, and key system specifics to meet the unique requirements of the organization."
+          },
+          {
+            "id": 12,
+            "title": "Does the cyclic recovery testing service include virtual environments?",
+            "content":
+              "Yes, tests can cover both physical and virtual environments to ensure full readiness of all resources for emergency recovery."
+          }
+        ],
+        "filter": "testy",
+        "filter2": "abonamentowe",
+        "seo": {
+          "title": "Cyclic recovery tests",
+          "description":
+            "Regular data recovery tests ensure backup systems are functioning correctly and can be relied upon in case of failure.",
+          "keywords": "data recovery tests, backup, disaster recovery"
+        }
+      }
 ]

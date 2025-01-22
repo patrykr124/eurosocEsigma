@@ -10,8 +10,10 @@ export const servicesData = [
     headerImg: "/assets/img/services/net.png",
     position: "center",
     size: 0.22,
+    parallaxH2:"Bezpieczeństwo IT",
+    parallaxP:"Segmentacja sieci pozwala na podział infrastruktury IT na mniejsze, odizolowane segmenty, zwiększając bezpieczeństwo i kontrolę nad danymi.",
     description:
-      "Segmentacja i konfiguracja sieci to kluczowy element nowoczesnej strategii bezpieczeństwa IT.\n\nDzięki odpowiedniemu podziałowi sieci na mniejsze, odseparowane strefy, możliwe jest zwiększenie kontroli nad ruchem sieciowym oraz ograniczenie potencjalnego zasięgu ataków.\n\nWdrożenie segmentacji sieci minimalizuje ryzyko nieautoryzowanego dostępu, usprawnia zarządzanie infrastrukturą oraz zwiększa efektywność w zakresie wykrywania i reagowania na zagrożenia.\n\nDodatkowo, dobrze skonfigurowana sieć ułatwia zarządzanie zasobami i zapewnia lepszą wydajność.",
+      "Segmentacja sieci dzieli infrastrukturę IT na mniejsze, odizolowane segmenty, co zwiększa bezpieczeństwo i kontrolę nad danymi.\n\nProces obejmuje analizę infrastruktury, projektowanie segmentów, implementację polityk oraz monitorowanie.\n\nDzięki temu minimalizowane jest ryzyko rozprzestrzeniania się zagrożeń i zwiększa się zgodność z regulacjami.",
     //korzysci i zagrozenia
     titleKrzysci: "Korzyści z zastosowania segmentacji i konfiguracji sieci:",
     titleZagrozenia: "Zagrożenia, gdy usługa nie jest zakupiona:",
@@ -222,8 +224,10 @@ export const servicesData = [
     headerImg: "/assets/img/services/auth.png",
     position: "bottom",
     size: 0.28,
+    parallaxH2:"Ochrona infrastruktury",
+    parallaxP:"Mechanizmy ochronne to zaawansowane rozwiązania zabezpieczające infrastrukturę IT przed zagrożeniami i minimalizujące ryzyko przestojów.",
     description:
-      "Mechanizmy silnego uwierzytelniania (ang. Multi-Factor Authentication, MFA) to zaawansowane rozwiązania, które znacznie zwiększają poziom bezpieczeństwa dostępu do zasobów IT.\n\nDzięki MFA użytkownicy muszą potwierdzić swoją tożsamość przy użyciu więcej niż jednego czynnika – na przykład hasła oraz dodatkowego kodu lub biometrii.\n\nWdrożenie mechanizmów silnego uwierzytelniania chroni firmę przed próbami nieautoryzowanego dostępu, atakami phishingowymi oraz kradzieżą tożsamości. MFA jest szczególnie polecane dla firm, które zarządzają wrażliwymi danymi, zapewniając im wysoki poziom ochrony.",
+      "Mechanizmy ochronne to cyfrowe rozwiązania, które chronią infrastrukturę IT, wykrywając i zapobiegając incydentom.\n\nObejmują ocenę ryzyka, dobór narzędzi, implementację oraz monitorowanie.\n\nDzięki nim firmy mogą zwiększyć bezpieczeństwo, zredukować ryzyko przestojów i utrzymać zgodność z przepisami.",
     titleKrzysci:
       "Korzyści z zastosowania mechanizmów silnego uwierzytelniania:",
     titleZagrozenia: "Zagrożenia, gdy usługa nie jest zakupiona:",
@@ -432,10 +436,12 @@ export const servicesData = [
     headerImg: "/assets/img/services/email.png",
     position: "center",
     size: 0.6,
+    parallaxH2:"Ochrona danych",
+    parallaxP:"Korporacyjna ochrona danych zapewnia kompleksowe zabezpieczenie wrażliwych informacji biznesowych przed utratą lub wyciekiem.",
     titleAboutService:
       "Dlaczego warto zakupić usługę korporacyjnej poczty e-mail z sandboxem?",
     description:
-      "Korporacyjna poczta e-mail z funkcją sandbox to rozwiązanie, które łączy zaawansowane narzędzia do zarządzania komunikacją e-mail z mechanizmami bezpieczeństwa, mającymi na celu ochronę przed zagrożeniami, takimi jak phishing, ransomware czy złośliwe załączniki.\n\nDzięki wbudowanej funkcji sandbox wszystkie podejrzane załączniki i linki są izolowane i analizowane w bezpiecznym środowisku przed otwarciem.\n\nTo znacznie redukuje ryzyko wycieku danych, infekcji systemów oraz umożliwia utrzymanie bezpieczeństwa sieci firmowej.",
+      "Korporacyjna ochrona danych to zaawansowane rozwiązania, które zabezpieczają wrażliwe informacje biznesowe.\n\nProces obejmuje analizę danych, wdrażanie polityk, zabezpieczenia techniczne i audyty.\n\nTo kluczowy sposób na ochronę przed stratami finansowymi i utrzymanie zgodności z regulacjami.",
     titleKrzysci:
       "Korzyści z zastosowania korporacyjnej poczty e-mail z sandboxem:",
     titleZagrozenia: "Zagrożenia, gdy usługa nie jest zakupiona:",
@@ -647,8 +653,10 @@ export const servicesData = [
     headerImg: "/assets/img/services/updates.png",
     position: "center",
     size: 0.28,
+    parallaxH2:"Automatyzacja",
+    parallaxP:"Automatyzacja procesów bezpieczeństwa to narzędzia, które zwiększają efektywność i skracają czas reakcji na zagrożenia.",
     description:
-      "Automatyzacja aktualizacji oprogramowania to kluczowe rozwiązanie pozwalające firmom utrzymać swoje systemy zawsze na bieżąco i bezpieczne.\n\nRegularne aktualizacje są niezbędne, by usuwać luki bezpieczeństwa i poprawiać wydajność oprogramowania, ale ich ręczne wdrażanie może być czasochłonne i podatne na błędy.\n\nAutomatyzacja aktualizacji zapewnia, że wszystkie aplikacje, systemy operacyjne i urządzenia są aktualizowane zgodnie z harmonogramem i bez przestojów. To z kolei minimalizuje ryzyko cyberataków i pomaga spełniać wymagania bezpieczeństwa.",
+      "Automatyzacja procesów bezpieczeństwa to technologie, które monitorują systemy 24/7, eliminując błędy ludzkie i przyspieszając reakcję na zagrożenia.\n\nProces obejmuje analizę, dobór narzędzi, konfigurację i automatyczne wdrożenie.\n\nDzięki temu organizacje mogą szybciej reagować, oszczędzać koszty i lepiej zarządzać czasem.",
     titleKrzysci:
       "Korzyści z zastosowania automatyzacji aktualizacji oprogramowania:",
     titleZagrozenia: "Zagrożenia, gdy usługa nie jest zakupiona:",
@@ -862,8 +870,10 @@ export const servicesData = [
     headerImg: "/assets/img/services/inventory.png",
     position: "center",
     size: 0.28,
+    parallaxH2:"inwentaryzacja IT, zarządzanie zasobami, analiza infrastruktury",
+    parallaxP:"Inwentaryzacja infrastruktury IT pozwala na dokładne zmapowanie zasobów firmy, zwiększając przejrzystość i kontrolę nad infrastrukturą.",
     description:
-      "Wdrożenie systemu inwentaryzacji sprzętu i oprogramowania pozwala firmie na automatyczne zarządzanie zasobami IT, zapewniając stałą kontrolę nad posiadanymi urządzeniami, licencjami i oprogramowaniem.\n\nTaki system nie tylko pomaga monitorować wykorzystanie zasobów, ale także minimalizuje ryzyko związane z nieaktualnym oprogramowaniem, niezgodnymi licencjami oraz zapewnia zgodność z wymogami regulacyjnymi.\n\nAutomatyczna inwentaryzacja pozwala na szybkie identyfikowanie i zarządzanie zasobami, co optymalizuje koszty i poprawia bezpieczeństwo organizacji.",
+      "Inwentaryzacja IT to proces mapowania urządzeń, systemów i oprogramowania w organizacji.\n\nDzięki regularnym skanowaniom, kategoryzacji i dokumentacji możliwa jest pełna kontrola nad infrastrukturą.\n\nUsługa poprawia bezpieczeństwo, zwiększa przejrzystość i oszczędza czas zespołu IT.",
     titleKrzysci:
       "Korzyści z wdrożenia systemu inwentaryzacji sprzętu i oprogramowania:",
     titleZagrozenia: "Zagrożenia, gdy system inwentaryzacji nie jest wdrożony:",
@@ -1081,8 +1091,10 @@ export const servicesData = [
     headerImg: "/assets/img/services/password.png",
     position: "center",
     size: 0.35,
+    parallaxH2:"Monitoring systemów",
+    parallaxP:"Centralne zarządzanie infrastrukturą IT pozwala na kontrolowanie i monitorowanie systemów z jednego miejsca, zwiększając efektywność i bezpieczeństwo.",
     description:
-      "Centralny system zarządzania hasłami to narzędzie, które pozwala na bezpieczne i efektywne zarządzanie danymi uwierzytelniającymi w firmie.\n\nDzięki temu rozwiązaniu wszystkie hasła są przechowywane w jednym, dobrze zabezpieczonym miejscu, co eliminuje potrzebę używania nieskutecznych\ni niebezpiecznych metod, takich jak zapisywanie haseł w dokumentach tekstowych.\n\nCentralny system zarządzania hasłami pozwala na automatyczne generowanie, przechowywanie i udostępnianie haseł tylko uprawnionym użytkownikom, minimalizując ryzyko wycieków i nieautoryzowanego dostępu.",
+      "Centralne zarządzanie to kompleksowe rozwiązanie, które umożliwia kontrolę całej infrastruktury IT z jednego miejsca.\n\nProces obejmuje integrację systemów, monitorowanie, automatyzację oraz zarządzanie dostępem.\n\nZapewnia lepszą efektywność, uproszczenie procesów i większe bezpieczeństwo organizacji.",
     titleKrzysci:
       "Korzyści z zastosowania centralnego systemu zarządzania hasłami:",
     titleZagrozenia: "Zagrożenia, gdy usługa nie jest zakupiona:",
@@ -1300,8 +1312,10 @@ export const servicesData = [
     headerImg: "/assets/img/services/bg.png",
     position: "bottom",
     size: 0.4,
+    parallaxH2:"Monitoring systemów",
+    parallaxP:"Ochrona infrastruktury IT zapewnia stałą ochronę systemów przed zagrożeniami, minimalizując ryzyko ataków i przestojów.",
     description:
-      "Data Loss Prevention (DLP) to zaawansowane rozwiązanie wdrożeniowe, które pomaga firmom zabezpieczyć ich wrażliwe dane przed przypadkowym lub celowym ujawnieniem. Wdrożenie DLP umożliwia śledzenie i kontrolowanie przepływu informacji w organizacji, zapewniając, że dane są chronione zarówno w ruchu, jak i w spoczynku.\n\nDzięki tej usłudze firmy mogą lepiej zabezpieczać się przed nieautoryzowanym dostępem, wyciekami danych i naruszeniami zgodności z regulacjami prawnymi. DLP daje pełną widoczność nad tym, jak dane są wykorzystywane, kto ma do nich dostęp i gdzie są przesyłane, co znacząco redukuje ryzyko wycieku.",
+      "Ochrona infrastruktury IT to system zabezpieczeń, który chroni firmę przed zagrożeniami cybernetycznymi.\n\nProces obejmuje identyfikację zagrożeń, implementację zabezpieczeń, monitorowanie oraz reakcję na incydenty.\n\nUsługa minimalizuje ryzyko strat i przestojów, zapewniając spokój ducha.",
     titleKrzysci:
       "Korzyści z zastosowania ochrony przed wyciekami danych (DLP):",
     titleZagrozenia: "Zagrożenia, gdy usługa nie jest zakupiona:",
@@ -1509,8 +1523,10 @@ export const servicesData = [
     headerImg: "/assets/img/services/bg.png",
     position: "bottom",
     size: 0.45,
+    parallaxH2:"Monitoring IT",
+    parallaxP:"Monitorowanie infrastruktury IT pozwala na stałą analizę działania systemów i szybką reakcję na potencjalne zagrożenia.",
     description:
-      "System SIEM (Security Information and Event Management) to zaawansowane narzędzie, które umożliwia ciągłe monitorowanie całej infrastruktury IT pod kątem potencjalnych zagrożeń.\n\nSIEM gromadzi i analizuje dane z różnych źródeł, takich jak systemy operacyjne, aplikacje, urządzenia sieciowe i bazy danych, co pozwala \nna szybkie wykrywanie anomalii i zagrożeń w czasie rzeczywistym.\n\nUsługa ta pozwala firmom na natychmiastową reakcję na incydenty, minimalizując ryzyko przerw operacyjnych i strat finansowych, a także umożliwia spełnianie wymogów dotyczących zgodności z regulacjami.",
+      "Monitorowanie infrastruktury IT to stała kontrola i analiza sieci oraz systemów w czasie rzeczywistym.\n\nDzięki integracji, powiadomieniom i szybkim reakcjom możliwe jest wczesne wykrywanie problemów i optymalizacja działania systemów.\n\nTo klucz do utrzymania stabilności IT.",
     titleKrzysci:
       "Korzyści z zastosowania monitorowania infrastruktury w trybie ciągłym (SIEM):",
     titleZagrozenia: "Zagrożenia, gdy usługa nie jest zakupiona:",
@@ -1722,8 +1738,10 @@ export const servicesData = [
     headerImg: "/assets/img/services/bg.png",
     position: "bottom",
     size: 0.35,
+    parallaxH2:"Ochrona urządzeń mobilnych",
+    parallaxP:"Ochrona urządzeń mobilnych zabezpiecza smartfony i tablety przed zagrożeniami, chroniąc wrażliwe dane firmowe.",
     description:
-      "Wdrożenie systemu zarządzania urządzeniami mobilnymi (MDM) to kluczowe rozwiązanie dla firm, które chcą zapewnić bezpieczny dostęp do danych i aplikacji z urządzeń mobilnych. MDM pozwala na kontrolę nad smartfonami, tabletami i innymi urządzeniami mobilnymi używanymi przez pracowników, umożliwiając zdalne zarządzanie, konfigurację, monitorowanie oraz ochronę danych firmowych na tych urządzeniach. To rozwiązanie minimalizuje ryzyko wycieku informacji i infekcji złośliwym oprogramowaniem, zwłaszcza przy pracy zdalnej i dostępie do zasobów firmowych spoza biura.",
+      "Ochrona urządzeń mobilnych to kompleksowe rozwiązanie, które zabezpiecza smartfony i tablety przed zagrożeniami.\n\nProces obejmuje identyfikację urządzeń, wdrożenie zabezpieczeń, monitorowanie oraz szkolenie pracowników.\n\nChroni dane firmowe i zwiększa świadomość użytkowników.",
     titleKrzysci: "Korzyści z zastosowania ochrony urządzeń mobilnych (MDM):",
     titleZagrozenia: "Zagrożenia, gdy usługa nie jest zakupiona:",
     //icon BLUE
@@ -1933,8 +1951,10 @@ export const servicesData = [
     headerImg: "/assets/img/services/bg.png",
     position: "bottom",
     size: 3.5,
+    parallaxH2:"Zarządzanie zagrożeniami",
+    parallaxP:"UTM to kompleksowe rozwiązanie chroniące sieć przed różnymi typami zagrożeń, zapewniające łatwość zarządzania i wysoki poziom bezpieczeństwa.",
     description:
-      "Wdrożenie systemu UTM (Unified Threat Management) to kompleksowe rozwiązanie zabezpieczające punkt styku firmy z Internetem. UTM łączy funkcje zapory sieciowej, systemu wykrywania i zapobiegania włamaniom, filtrowania treści, ochrony przed wirusami, a także monitorowania ruchu sieciowego.\n\nDzięki UTM firmy zyskują wszechstronną ochronę przed cyberzagrożeniami oraz kontrolę nad przepływem danych, co jest kluczowe dla zachowania integralności i bezpieczeństwa sieci firmowej.\n\nWdrożenie systemu UTM znacząco redukuje ryzyko nieautoryzowanego dostępu, ataków z zewnątrz oraz złośliwego ruchu sieciowego.",
+      "UTM to kompleksowe narzędzie, które łączy różne funkcje ochrony IT, takie jak firewall, filtrowanie treści i zarządzanie dostępem.\n\nZapewnia wszechstronną ochronę sieci, łatwość zarządzania i optymalizację kosztów.\n\nTo zaawansowany strażnik Twojej infrastruktury.",
     titleKrzysci:
       "Korzyści z wdrożenia ochrony punktu styku z siecią Internet (UTM):",
     titleZagrozenia: "Zagrożenia, gdy usługa nie jest zakupiona:",
@@ -2147,8 +2167,10 @@ export const servicesData = [
     headerImg: "/assets/img/services/bg.png",
     position: "bottom",
     size: 3.6,
+    parallaxH2:"Optymalizacja zasobów",
+    parallaxP:"Wirtualizacja umożliwia efektywne wykorzystanie zasobów IT poprzez tworzenie wirtualnych środowisk, zwiększając elastyczność i redukując koszty.",
     description:
-      "Wdrożenie wirtualizacji serwerów i klastra wysokiej dostępności (HA) to nowoczesne podejście do zarządzania zasobami IT, które zwiększa elastyczność, efektywność oraz odporność infrastruktury na awarie.\n\nDzięki wirtualizacji możliwe jest uruchamianie wielu serwerów w ramach jednego środowiska fizycznego, co optymalizuje wykorzystanie zasobów i obniża koszty operacyjne. Klaster wysokiej dostępności natomiast zapewnia nieprzerwane działanie usług nawet w przypadku awarii sprzętu, automatycznie przełączając obciążenia na inne serwery.\n\nTo rozwiązanie jest idealne dla organizacji, które wymagają maksymalnej niezawodności i elastyczności.",
+      "Wirtualizacja to proces tworzenia wirtualnych wersji zasobów IT na jednej platformie.\n\nPozwala na efektywne wykorzystanie zasobów, optymalizację kosztów i elastyczne zarządzanie środowiskiem IT.\n\nTo nowoczesne podejście, które zwiększa skalowalność i redukuje koszty operacyjne.",
     titleKrzysci:
       "Korzyści z wdrożenia wirtualizacji serwerów i klastra wysokiej dostępności:",
     titleZagrozenia: "Zagrożenia, gdy usługa nie jest zakupiona:",
@@ -2359,8 +2381,10 @@ export const servicesData = [
     headerImg: "/assets/img/services/bg.png",
     position: "bottom",
     size: 6,
+    parallaxH2:"Endpoint security",
+    parallaxP:"Ochrona urządzeń końcowych minimalizuje ryzyko ataków na komputery i inne urządzenia firmowe, zwiększając poziom bezpieczeństwa organizacji.",
     description:
-      "Wdrożenie systemów EDR (Endpoint Detection and Response) oraz XDR (Extended Detection and Response) jest kluczowe dla firm, które chcą skutecznie chronić swoje urządzenia końcowe przed zaawansowanymi zagrożeniami.\n\nEDR monitoruje aktywność na poziomie urządzeń końcowych i pozwala szybko wykrywać oraz reagować na incydenty, natomiast XDR rozszerza ochronę, integrując dane z innych systemów bezpieczeństwa, takich jak sieci i serwery, aby dostarczyć pełniejszy obraz zagrożeń.\n\nDzięki wdrożeniu EDR/XDR firmy zyskują kompleksową ochronę i minimalizują ryzyko przestojów oraz strat wynikających z cyberataków.",
+      "Ochrona urządzeń końcowych to zabezpieczenie komputerów i innych urządzeń używanych w firmie.\n\nProces obejmuje instalację zabezpieczeń, monitorowanie, aktualizacje oraz zarządzanie dostępem.\n\nChroni dane przed atakami i zapewnia zgodność z regulacjami.",
     titleKrzysci: "Korzyści z wdrożenia ochrony urządzeń końcowych (EDR/XDR):",
     titleZagrozenia: "Zagrożenia, gdy usługa nie jest zakupiona:",
     //icon BLUE
@@ -2570,8 +2594,10 @@ export const servicesData = [
     headerImg: "/assets/img/services/audit.png",
     position: "bottom",
     size: 3.5,
+    parallaxH2:"Bezpieczeństwo informacji",
+    parallaxP:"Kompleksowe opracowanie dokumentacji SZBI, obejmujące polityki, procedury i wytyczne zapewniające spójne zarządzanie bezpieczeństwem informacji.",
     description:
-      "Dokumentacja Systemu Zarządzania Bezpieczeństwem Informacji (SZBI) to kompleksowy zbiór procedur, polityk i wytycznych, które stanowią podstawę dla utrzymania bezpieczeństwa informacji w organizacji.\n\nPoprawnie opracowana dokumentacja SZBI nie tylko pozwala spełniać wymogi normy ISO 27001 oraz innych regulacji prawnych, ale również zapewnia organizacji uporządkowane podejście do zarządzania ryzykiem, ochrony danych oraz reagowania na incydenty bezpieczeństwa.\n\nUsługa opracowania dokumentacji SZBI pomaga firmom zbudować solidne fundamenty bezpieczeństwa informacji, a także przygotowuje je do certyfikacji i przyszłych audytów.",
+      "Opracowanie dokumentacji SZBI to tworzenie kluczowych dokumentów, procedur i polityk, które stanowią podstawę Systemu Zarządzania Bezpieczeństwem Informacji.\n\nProces obejmuje analizę potrzeb organizacji, opracowanie dokumentów i wdrożenie ich w firmie.\n\nDokumentacja zapewnia porządek, zgodność z regulacjami oraz jasne wytyczne dla pracowników.",
     titleKrzysci: "Korzyści z opracowania dokumentacji SZBI:",
     titleZagrozenia: "Zagrożenia, gdy usługa nie jest zakupiona:",
     //icon BLUE
@@ -2783,8 +2809,10 @@ export const servicesData = [
     headerImg: "/assets/img/services/bg.png",
     position: "bottom",
     size: 1,
+    parallaxH2:"Polityka bezpieczeństwa",
+    parallaxP:"Tworzymy politykę bezpieczeństwa dostosowaną do potrzeb Twojej firmy, zapewniającą spójność działań i ochronę przed zagrożeniami.",
     description:
-      "Polityka bezpieczeństwa to kluczowy dokument, który definiuje zasady i wytyczne dotyczące ochrony danych oraz infrastruktury informatycznej w organizacji. Opracowanie spójnej polityki bezpieczeństwa pozwala firmie jasno określić, jakie działania są podejmowane w celu zapewnienia bezpieczeństwa informacji oraz jak pracownicy powinni postępować, aby minimalizować ryzyko naruszeń.\n\nPoprawnie przygotowana polityka bezpieczeństwa wspiera zgodność z regulacjami prawnymi (np. RODO) i normami, takimi jak ISO 27001, a także buduje kulturę bezpieczeństwa w organizacji.\n\nDokument ten jest podstawą do zarządzania bezpieczeństwem informacji i ochroną przed zagrożeniami wewnętrznymi i zewnętrznymi.",
+      "Polityka Bezpieczeństwa to dokument określający zasady ochrony informacji w firmie.\n\nStworzenie jasnych reguł minimalizuje ryzyko chaosu, chroni dane i zwiększa zgodność z przepisami.\n\nProces obejmuje analizę ryzyk, tworzenie zasad oraz wdrożenie z odpowiednimi szkoleniami.",
     titleKrzysci: "Korzyści z opracowania polityki bezpieczeństwa:",
     titleZagrozenia: "Zagrożenia, gdy usługa nie jest zakupiona:",
     //icon BLUE
@@ -2999,8 +3027,10 @@ export const servicesData = [
     headerImg: "/assets/img/services/bg.png",
     position: "bottom",
     size: 1,
+    parallaxH2:"Polityka kopii zapasowych",
+    parallaxP:"Opracowanie Polityki Ciągłości Działania umożliwia Twojej firmie skuteczne reagowanie na sytuacje kryzysowe, minimalizując ryzyko przestojów i strat.",
     description:
-      "Polityka ciągłości działania to dokument, który definiuje zasady i procedury zapewniające organizacji zdolność do kontynuowania kluczowych operacji nawet w przypadku wystąpienia poważnych zakłóceń.\n\nOpracowanie tej polityki umożliwia firmie przygotowanie się na sytuacje awaryjne, takie jak awarie systemów, klęski żywiołowe czy cyberataki, minimalizując skutki takich zdarzeń dla operacyjności.\n\nPolityka ciągłości działania pomaga zachować stabilność i zabezpieczyć krytyczne procesy, co jest kluczowe dla ochrony zasobów oraz zaufania klientów i partnerów biznesowych. Dobrze przygotowany dokument wspiera zgodność z regulacjami, normami oraz wytycznymi, takimi jak ISO 22301.",
+      "Polityka Ciągłości Działania definiuje, jak firma powinna reagować w sytuacjach kryzysowych, aby zapewnić nieprzerwane funkcjonowanie kluczowych procesów.\n\nPlanowanie awaryjne, testowanie i doskonalenie to kroki, które zwiększają odporność firmy na kryzysy.",
     titleKrzysci: "Korzyści z opracowania polityki ciągłości działania:",
     titleZagrozenia:
       "Zagrożenia, gdy polityka ciągłości działania nie jest opracowana:",
@@ -3220,9 +3250,10 @@ export const servicesData = [
     headerImg: "/assets/img/services/bg.png",
     position: "bottom",
     size: 1.3,
+    parallaxH2:"Polityka kopii zapasowych",
+    parallaxP:"Tworzymy politykę kopii zapasowych, która określa zasady tworzenia i przechowywania backupów, chroniąc dane przed utratą.",
     description:
-      "Polityka kopii zapasowych to dokument, który precyzyjnie określa zasady tworzenia, przechowywania i zarządzania kopiami zapasowymi danych organizacji. Dzięki temu firma zyskuje pewność, że wszystkie kluczowe informacje są regularnie archiwizowane i możliwe do przywrócenia w przypadku awarii, cyberataku lub innego incydentu, który mógłby spowodować utratę danych. Poprawnie opracowana polityka kopii zapasowych minimalizuje ryzyko utraty danych, wspiera zgodność z przepisami prawnymi i normami oraz pomaga zarządzać zasobami do przechowywania danych, co jest kluczowe dla zachowania ciągłości działania organizacji.",
-    titleKrzysci: "Korzyści z opracowania polityki kopii zapasowych:",
+      "Polityka Kopii Zapasowych to dokument określający zasady tworzenia, przechowywania i odzyskiwania danych w przypadku ich utraty.\n\nDzięki temu firma może uniknąć strat danych i zapewnić ich szybkie odzyskanie w razie awarii lub ataku.",
     titleZagrozenia:
       "Zagrożenia, gdy polityka kopii zapasowych nie jest opracowana:",
     //icon BLUE
@@ -3437,8 +3468,10 @@ export const servicesData = [
     headerImg: "/assets/img/services/bg.png",
     position: "bottom",
     size: 1.1,
+    parallaxH2:"Audyt bezpieczeństwa",
+    parallaxP:"Przeprowadzamy audyty zgodności z NIS2, identyfikując luki w zabezpieczeniach i pomagając spełnić wymagania dyrektywy.",
     description:
-      "Audyt zgodności z dyrektywą NIS2 (Network and Information Security Directive 2) to kompleksowe badanie, które ocenia stopień spełnienia wymagań bezpieczeństwa określonych w unijnym prawodawstwie.\n\nDyrektywa NIS2 zobowiązuje organizacje do wdrożenia skutecznych środków ochrony sieci i systemów IT oraz zarządzania ryzykiem cybernetycznym. Audyt ten pozwala firmom zidentyfikować ewentualne braki w zabezpieczeniach, uzyskać pełny obraz obecnego stanu zabezpieczeń i wdrożyć niezbędne działania naprawcze, aby sprostać wymogom dyrektywy.\n\nUsługa ta jest kluczowa dla firm z sektora krytycznego i dostawców usług kluczowych, którzy muszą przestrzegać przepisów NIS2, aby uniknąć kar finansowych oraz zapewnić ciągłość działania.",
+      "Audyt zgodności z NIS2 sprawdza, czy firma spełnia wymagania Dyrektywy NIS2 dotyczącej bezpieczeństwa sieci i informacji.\n\nAnaliza aktualnego stanu, identyfikacja niezgodności i rekomendacje pomagają uniknąć kar oraz zwiększyć bezpieczeństwo.",
     titleKrzysci: "Korzyści z audytu zgodności z NIS2:",
     titleZagrozenia:
       "Zagrożenia, gdy audyt zgodności z NIS2 nie jest przeprowadzony:",
@@ -3652,8 +3685,10 @@ export const servicesData = [
     headerImg: "/assets/img/services/bg.png",
     position: "bottom",
     size: 1.1,
+    parallaxH2:"Zgodność z KRI",
+    parallaxP:"Przeprowadzamy audyt zgodności z KRI, oceniając, czy dane krytyczne są odpowiednio zabezpieczone zgodnie z regulacjami.",
     description:
-      "Audyt zgodności z Krajowymi Ramami Interoperacyjności (KRI) to kluczowe narzędzie umożliwiające instytucjom publicznym oraz podmiotom administracji samorządowej ocenę zgodności z wymogami KRI w zakresie bezpieczeństwa informacji. Przepisy KRI określają standardy i wymagania dotyczące ochrony danych, interoperacyjności systemów IT oraz zarządzania ryzykiem w sektorze publicznym.\n\nAudyt pozwala na identyfikację ewentualnych luk i obszarów wymagających poprawy, co wspiera realizację przepisów oraz pomaga uniknąć potencjalnych kar za niezgodność.\n\nDzięki audytowi organizacje uzyskują pełen obraz stanu zabezpieczeń oraz przygotowanie na ewentualne kontrole.",
+      "Audyt zgodności z KRI weryfikuje, czy firma odpowiednio zabezpiecza informacje krytyczne zgodnie z regulacjami.\n\nProces obejmuje ocenę polityk i procedur, identyfikację luk oraz rekomendacje, co pozwala na skuteczną ochronę kluczowych danych.",
     titleKrzysci: "Korzyści z audytu zgodności z KRI:",
     titleZagrozenia:
       "Zagrożenia, gdy audyt zgodności z KRI nie jest przeprowadzony:",
@@ -3867,8 +3902,10 @@ export const servicesData = [
     headerImg: "/assets/img/services/bg.png",
     position: "bottom",
     size: 1.1,
+    parallaxH2:"Infrastruktura krytyczna",
+    parallaxP:"Audyt zgodności z KSC umożliwia weryfikację ochrony infrastruktury krytycznej i zgodności z krajowymi przepisami.",
     description:
-      "Audyt zgodności z Krajowym Systemem Cyberbezpieczeństwa (KSC) to proces oceny, który pomaga organizacjom sprawdzić, czy spełniają wymagania polskich przepisów dotyczących cyberbezpieczeństwa.\n\nUstawa o KSC nakłada na instytucje i podmioty kluczowe dla infrastruktury krytycznej obowiązek wdrożenia odpowiednich zabezpieczeń oraz procedur zarządzania incydentami.\n\nAudyt ten pozwala zidentyfikować wszelkie luki w zabezpieczeniach, określić poziom przygotowania organizacji na cyberzagrożenia i wdrożyć działania naprawcze, które zwiększą bezpieczeństwo oraz zgodność z przepisami.\n\nDzięki audytowi organizacje mogą zabezpieczyć się przed potencjalnymi atakami i spełnić wymagania ustawy o KSC, co ma kluczowe znaczenie dla ochrony systemów krytycznych i danych.",
+      "Audyt zgodności z KSC sprawdza, czy firma spełnia wymogi Krajowego Systemu Cyberbezpieczeństwa.\n\nAnaliza polityk, weryfikacja zgodności i rekomendacje pozwalają chronić infrastrukturę krytyczną i budować zaufanie klientów.",
     titleKrzysci: "Korzyści z audytu zgodności z KSC:",
     titleZagrozenia:
       "Zagrożenia, gdy audyt zgodności z KSC nie jest przeprowadzony:",
@@ -4081,8 +4118,10 @@ export const servicesData = [
     headerImg: "/assets/img/services/bg.png",
     position: "bottom",
     size: 1.1,
+    parallaxH2:"Zarządzanie bezpieczeństwem informacji",
+    parallaxP:"Sprawdzamy system zarządzania bezpieczeństwem informacji (SZBI), identyfikując słabe punkty i wprowadzając rekomendacje naprawcze.",
     description:
-      "Audyt Systemu Zarządzania Bezpieczeństwem Informacji (SZBI) zgodnego z ISO/IEC 27001 to kluczowy proces, który pozwala organizacji ocenić, na ile jej system zarządzania bezpieczeństwem informacji spełnia wymagania międzynarodowej normy ISO/IEC 27001.\n\nAudyt pomaga zidentyfikować luki i słabości w zabezpieczeniach oraz wskazuje obszary wymagające poprawy. Dzięki audytowi organizacja zyskuje pewność, że jej procedury ochrony danych są skuteczne, a także uzyskuje pełną dokumentację niezbędną do ewentualnej certyfikacji.\n\nJest to szczególnie ważne dla firm, które chcą wzmocnić swoje standardy ochrony danych, zyskać zaufanie klientów i partnerów oraz spełnić wymagania prawne i regulacyjne.",
+      "Audyt SZBI ocenia skuteczność Systemu Zarządzania Bezpieczeństwem Informacji.\n\nProces obejmuje przegląd polityk, ocenę zgodności z normami i identyfikację niezgodności.\n\nTo kluczowy krok w zapewnieniu wysokiego poziomu ochrony danych w firmie.",
     titleKrzysci: "Korzyści z audytu SZBI (ISO/IEC 27001):",
     titleZagrozenia:
       "Zagrożenia, gdy audyt zgodności z KSC nie jest przeprowadzony:",
@@ -4298,8 +4337,10 @@ export const servicesData = [
     headerImg: "/assets/img/services/bg.png",
     position: "bottom",
     size: 1.1,
+    parallaxH2:"Standardy bezpieczeństwa",
+    parallaxP:"Oferujemy audyty zgodności z międzynarodowymi standardami ISO/IEC 27001 i 27002, zapewniając zgodność z normami bezpieczeństwa.",
     description:
-      "Audyt zgodności z normą ISO/IEC 22301 jest procesem oceny, który pozwala organizacji sprawdzić, na ile jej System Zarządzania Ciągłością Działania spełnia wymagania międzynarodowej normy.\n\nISO/IEC 22301 jest standardem, który pomaga firmom przygotować się na potencjalne zakłócenia operacyjne, takie jak awarie technologiczne, incydenty bezpieczeństwa czy klęski żywiołowe.\n\nPrzeprowadzony audyt identyfikuje mocne strony oraz obszary wymagające poprawy, co pozwala organizacji lepiej zarządzać ryzykiem i zwiększyć odporność na zakłócenia.\n\nDla firm dążących do minimalizacji ryzyka i wzmocnienia reputacji, audyt zgodności z ISO/IEC 22301 jest kluczowym krokiem przygotowującym do certyfikacji.",
+      "Audyt ISO/IEC sprawdza, czy firma spełnia międzynarodowe standardy bezpieczeństwa informacji, takie jak ISO 27001 i ISO 27002.\n\nOcena polityk i procedur, identyfikacja luk i rekomendacje pozwalają zapewnić zgodność z normami i ochronę danych.",
     titleKrzysci: "Korzyści z audytu zgodności z ISO/IEC 22301:",
     titleZagrozenia:
       "Zagrożenia, gdy audyt zgodności z ISO/IEC 22301 nie jest przeprowadzony:",
@@ -4515,8 +4556,10 @@ export const servicesData = [
     headerImg: "/assets/img/services/course.png",
     position: "top",
     size: 3.5,
+    parallaxH2:"Standardy bezpieczeństwa",
+    parallaxP:"Szkolenie z cyberbezpieczeństwa dla kadry administracyjnej zwiększa świadomość i kompetencje pracowników odpowiedzialnych za zarządzanie danymi i infrastrukturą IT. Oferujemy teorię, praktykę i ćwiczenia dostosowane do potrzeb Twojej organizacji.",
     description:
-      "Kadra administracyjna, która ma codzienny dostęp do wrażliwych danych oraz systemów informatycznych, jest jednym z najważniejszych elementów zapewniających bezpieczeństwo informacji w organizacji.\n\nSzkolenie z cyberbezpieczeństwa przygotowane specjalnie dla kadry administracyjnej zwiększa świadomość zagrożeń i dostarcza wiedzy na temat najlepszych praktyk w zakresie ochrony danych i reagowania na incydenty.\n\nProgram szkoleniowy obejmuje kluczowe zagadnienia, takie jak bezpieczne zarządzanie hasłami, rozpoznawanie zagrożeń (np. phishing), postępowanie z danymi oraz przestrzeganie polityk bezpieczeństwa IT.\n\nSzkolenie to jest niezbędne dla organizacji, które chcą minimalizować ryzyko wynikające z błędów ludzkich i chronić swoje zasoby informacyjne.",
+      "Szkolenie z cyberbezpieczeństwa dla kadry administracyjnej zwiększa świadomość i kompetencje pracowników odpowiedzialnych za zarządzanie danymi i infrastrukturą IT.\n\nProgram obejmuje teorię, praktyczne ćwiczenia i symulacje, które uczą, jak zapobiegać, rozpoznawać i reagować na zagrożenia.\n\nTo klucz do ochrony firmy przed atakami i zgodności z regulacjami.",
     titleKrzysci:
       "Korzyści ze szkolenia z cyberbezpieczeństwa dla kadry administracyjnej:",
     titleZagrozenia:
@@ -4738,8 +4781,10 @@ export const servicesData = [
     headerImg: "/assets/img/services/course.png",
     position: "top",
     size: 3.5,
+    parallaxH2:"Cyberbezpieczeństwo kadra IT",
+    parallaxP:"Zaawansowane szkolenie dla kadry informatycznej rozwija techniczne umiejętności w zakresie ochrony infrastruktury IT, zarządzania incydentami oraz wdrażania najlepszych praktyk.",
     description:
-      "Kadra informatyczna jest bezpośrednio odpowiedzialna za wdrażanie, utrzymanie oraz zabezpieczenie infrastruktury IT w organizacji.\n\nSzkolenie z cyberbezpieczeństwa dla działu IT zwiększa ich wiedzę na temat najnowszych zagrożeń, technik ochrony oraz praktyk stosowanych w reagowaniu na incydenty bezpieczeństwa.\n\nProgram szkolenia obejmuje zaawansowane zagadnienia, takie jak zarządzanie ryzykiem, monitorowanie sieci, zabezpieczanie punktów końcowych, analiza zagrożeń oraz wdrażanie rozwiązań zgodnych z najlepszymi praktykami bezpieczeństwa.\n\nSzkolenie to jest niezbędne dla organizacji, które chcą zapewnić wysoki poziom ochrony i przygotować kadrę na wyzwania związane z bezpieczeństwem IT.",
+      "Zaawansowane szkolenie dla kadry informatycznej rozwija techniczne umiejętności w zakresie ochrony infrastruktury IT.\n\nProgram obejmuje najnowsze narzędzia, techniki obrony i praktyczne ćwiczenia, które przygotowują specjalistów do skutecznego zarządzania incydentami bezpieczeństwa.\n\nSzkolenie zwiększa kompetencje zespołu IT i redukuje ryzyko ataków.",
     titleKrzysci:
       "Korzyści ze szkolenia z cyberbezpieczeństwa dla kadry informatycznej:",
     titleZagrozenia:
@@ -4961,8 +5006,10 @@ export const servicesData = [
     headerImg: "/assets/img/services/course.png",
     position: "top",
     size: 3.5,
+    parallaxH2:"Cyberbezpieczeństwo kadra zarządzająca",
+    parallaxP:"Program edukacyjny dla liderów organizacji, który pozwala zrozumieć zagrożenia cyberbezpieczeństwa, wdrażać strategie ochrony oraz efektywnie zarządzać ryzykiem.",
     description:
-      "Kadra zarządzająca odgrywa kluczową rolę w podejmowaniu strategicznych decyzji dotyczących bezpieczeństwa informacji oraz ochrony przed cyberzagrożeniami.\n\nSzkolenie z cyberbezpieczeństwa przygotowane specjalnie dla osób decyzyjnych dostarcza wiedzy na temat najważniejszych aspektów zarządzania ryzykiem, zgodności z regulacjami oraz praktyk w zakresie cyberodporności.\n\nSzkolenie to wyposaża kadrę zarządzającą w umiejętności identyfikacji zagrożeń, podejmowania decyzji inwestycyjnych oraz budowania kultury bezpieczeństwa w całej organizacji.\n\nJest to niezbędne, aby zapewnić organizacji ochronę przed potencjalnymi stratami finansowymi i wizerunkowymi.",
+      "Szkolenie dla kadry zarządzającej pomaga liderom organizacji zrozumieć zagrożenia cyberbezpieczeństwa i wdrażać najlepsze praktyki zarządzania ryzykiem.\n\nProgram koncentruje się na strategiach zarządzania kryzysowego i podejmowaniu decyzji, które zapewniają bezpieczeństwo całej firmy.\n\nTo szkolenie zwiększa odporność organizacji na zagrożenia.",
     titleKrzysci:
       "Korzyści ze szkolenia z cyberbezpieczeństwa dla kadry zarządzającej:",
     titleZagrozenia:
@@ -5183,8 +5230,10 @@ export const servicesData = [
     headerImg: "/assets/img/services/audit.png",
     position: "bottom",
     size: 0.6,
+    parallaxH2:"Wsparcie techniczne",
+    parallaxP:"II linia wsparcia technicznego zapewnia pomoc w rozwiązywaniu złożonych problemów IT, minimalizując przestoje i zwiększając efektywność działania firmy.",
     description:
-      "II linia wsparcia technicznego to specjalistyczna usługa zapewniająca organizacji szybkie i profesjonalne rozwiązywanie bardziej złożonych problemów technicznych.\n\nGdy podstawowe wsparcie IT nie jest w stanie rozwiązać danego zagadnienia, II linia wsparcia obejmuje zaawansowane analizy, diagnozowanie problemów oraz ich eskalację do specjalistów o wyższym poziomie wiedzy technicznej.\n\nDzięki tej usłudze organizacja może ograniczyć przestoje, zwiększyć efektywność operacyjną i zapewnić płynność działania swojej infrastruktury IT.\n\nII linia wsparcia jest niezbędna, gdy firma wymaga szybkiego dostępu do ekspertów, którzy potrafią skutecznie rozwiązywać problemy technologiczne na poziomie infrastruktury, aplikacji i bezpieczeństwa.",
+      "II linia wsparcia technicznego to specjalistyczna pomoc w rozwiązywaniu bardziej skomplikowanych problemów technicznych, które nie zostały rozwiązane na pierwszym poziomie wsparcia.\n\nEksperci analizują zgłoszenia, minimalizując przestoje i zapewniając ciągłość działania infrastruktury IT.\n\nTo kluczowy element w szybkim przywracaniu sprawności systemów.",
     titleKrzysci: "Korzyści z II linii wsparcia technicznego:",
     titleZagrozenia:
       "Zagrożenia, gdy II linia wsparcia technicznego nie jest dostępna:",
@@ -5401,8 +5450,10 @@ export const servicesData = [
     headerImg: "/assets/img/services/bg.png",
     position: "bottom",
     size: 1.3,
+    parallaxH2:"Archiwizacja danych",
+    parallaxP:"Automatyczne tworzenie codziennych kopii zapasowych logów systemowych i aplikacyjnych, zapewniające bezpieczeństwo i możliwość odzyskiwania kluczowych danych.",
     description:
-      "Logi systemowe zawierają kluczowe informacje o działaniu systemów, aplikacji oraz sieci, a także stanowią istotny element zarządzania bezpieczeństwem i zgodnością z regulacjami.\n\nRegularne tworzenie kopii zapasowych logów umożliwia organizacji zabezpieczenie tych danych, co pozwala na skuteczne śledzenie aktywności, analizę incydentów oraz audyty bezpieczeństwa.\n\nUsługa codziennych kopii zapasowych logów zapewnia, że wszystkie informacje rejestrowane przez systemy są regularnie archiwizowane i dostępne w przypadku awarii, naruszenia bezpieczeństwa lub potrzeby audytu.\n\nDzięki temu organizacja minimalizuje ryzyko utraty danych logów i zwiększa swoją zdolność do identyfikowania zagrożeń oraz wyciągania wniosków.",
+      "Codzienne kopie zapasowe logów to automatyczne tworzenie kopii wszystkich logów systemowych i aplikacyjnych.\n\nZapewniają bezpieczeństwo danych, łatwość ich odzyskiwania oraz pełną zgodność z przepisami.\n\nTo jak cyfrowy dziennik, który pozwala śledzić incydenty i analizować historię operacji w firmie.",
     titleKrzysci: "Korzyści z codziennych kopii zapasowych logów:",
     titleZagrozenia:
       "Zagrożenia, gdy codzienne kopie zapasowe logów nie są wykonywane:",
@@ -5619,8 +5670,10 @@ export const servicesData = [
     headerImg: "/assets/img/services/bg.png",
     position: "bottom",
     size: 1.1,
+    parallaxH2:"Disaster recovery",
+    parallaxP:"Regularne testy odzyskiwania danych pozwalają upewnić się, że systemy backupowe działają poprawnie i można na nich polegać w przypadku awarii.",
     description:
-      "Cykliczne testy odtworzeniowe pozwalają organizacji regularnie sprawdzać skuteczność procesów przywracania danych i systemów po awarii.\n\nTesty te są kluczowe dla upewnienia się, że kopie zapasowe oraz plany odzyskiwania danych działają prawidłowo i są gotowe na wypadek incydentu.\n\nPrzeprowadzanie testów w regularnych odstępach umożliwia szybkie zidentyfikowanie i wyeliminowanie ewentualnych problemów z odtwarzaniem danych, co zwiększa pewność, że w sytuacji awaryjnej organizacja będzie w stanie szybko wrócić do normalnego funkcjonowania.\n\nUsługa cyklicznych testów odtworzeniowych jest niezbędna dla firm, które chcą zminimalizować ryzyko przestojów i zapewnić ciągłość działania.",
+      "Cykliczne testy odtwarzania to regularne sprawdzanie, czy systemy backupowe działają poprawnie i czy dane można odzyskać w przypadku awarii.\n\nTesty zapewniają gotowość na sytuacje kryzysowe i pozwalają szybko przywrócić normalne działanie firmy.\n\nTo fundament odporności na awarie.",
     titleKrzysci: "Korzyści z cyklicznych testów odtworzeniowych:",
     titleZagrozenia:
       "Zagrożenia, gdy codzienne kopie zapasowe logów nie są wykonywane:",
@@ -5838,8 +5891,10 @@ export const servicesData = [
     headerImg: "/assets/img/services/bg.png",
     position: "bottom",
     size: 3.2,
+    parallaxH2:"Testy odzyskiwania danych",
+    parallaxP:"Security Operations Center (SOC) to centrum monitorowania i zarządzania bezpieczeństwem IT, zapewniające szybką reakcję na incydenty i zwiększenie bezpieczeństwa organizacji.",
     description:
-      "Monitoring infrastruktury w ramach Security Operations Center (SOC) to zaawansowana usługa zapewniająca stały nadzór nad bezpieczeństwem systemów informatycznych organizacji.\n\nDzięki SOC organizacja może wykrywać i reagować na potencjalne zagrożenia w czasie rzeczywistym, co pozwala na szybką identyfikację incydentów oraz minimalizację ich skutków. SOC nie tylko analizuje bieżące zdarzenia, ale także proaktywnie monitoruje ruch sieciowy, aktywności użytkowników oraz nieprawidłowości w systemach, aby zapobiegać zagrożeniom zanim spowodują szkody.\n\nUsługa ta jest kluczowa dla organizacji, które chcą zapewnić kompleksową ochronę swojej infrastruktury IT i zmniejszyć ryzyko przerw operacyjnych oraz naruszeń bezpieczeństwa.",
+      "SOC to centrum monitorowania i zarządzania bezpieczeństwem IT, które działa w czasie rzeczywistym.\n\nEksperci analizują zagrożenia, wykrywają incydenty i podejmują działania, aby chronić firmę przed atakami.\n\nSOC zwiększa bezpieczeństwo, minimalizuje ryzyko przestojów i zapewnia zgodność z przepisami.",
     titleKrzysci: "Korzyści z monitoringu infrastruktury (SOC):",
     titleZagrozenia:
       "Zagrożenia, gdy monitoring infrastruktury (SOC) nie jest stosowany:",
@@ -6051,8 +6106,10 @@ export const servicesData = [
     headerImg: "/assets/img/services/bg.png",
     position: "bottom",
     size: 0.8,
+    parallaxH2:"Monitoring bezpieczeństwa",
+    parallaxP:"Odmiejscowienie kopii zapasowych chroni dane przed katastrofami, przechowując je w bezpiecznych, oddzielnych lokalizacjach fizycznych.",
     description:
-      "Usługa odmiejscowienia kopii zapasowych to kluczowy element planu Disaster Recovery, który zapewnia bezpieczne przechowywanie danych poza główną lokalizacją firmy.\n\nPrzenoszenie kopii zapasowych do zewnętrznych lokalizacji (off-site) chroni przed ich utratą w wyniku poważnych incydentów, takich jak pożary, powodzie, ataki ransomware czy inne awarie lokalne. Dzięki odmiejscowieniu kopii zapasowych organizacja może szybko odzyskać dane i wznowić działalność, nawet w przypadku kryzysu, który uszkodził lub zniszczył główne systemy.\n\nJest to niezbędne rozwiązanie dla firm, które chcą zapewnić sobie pełne bezpieczeństwo danych oraz minimalizację ryzyka przestojów.",
+      "Odmiejscowione kopie zapasowe chronią dane, przechowując je w fizycznie oddzielonej lokalizacji.\n\nTo kluczowy element strategii na wypadek katastrof, takich jak pożary czy powodzie.\n\nUsługa zapewnia ciągłość działania firmy i bezpieczeństwo krytycznych informacji, niezależnie od sytuacji w głównej siedzibie.",
     titleKrzysci:
       "Korzyści z odmiejscowienia kopii zapasowych (Disaster Recovery):",
     titleZagrozenia:

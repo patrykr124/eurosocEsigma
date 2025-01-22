@@ -78,7 +78,7 @@ function NavbarBlue() {
                     <div className="flex w-full justify-between items-center z-10">
                         <div className="logo">
                             <Link href='/dashboard/blue'><Image src={Logo} alt='logo' width={120} height={120} /></Link>
-                        </div>
+                        </div >
                         <LocaleSwitcher />
                         <Switch />
                         <div className="input_box flex -mr-2">

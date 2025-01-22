@@ -240,7 +240,7 @@ export const itemsMenu_EN = [
         featured: [
             {
                 id: 1,
-                name: "Network Segmentation and Configuration",
+                name: "Network segmentation",
                 url: "/dashboard/blue/services/segmentacja",
                 img: "/assets/img/hacker.jpg",
             },
@@ -427,7 +427,7 @@ export const itemMenuUslugiUtrzymaniowe_EN = [
     },
     {
         id: 3,
-        name: "Periodic Restoration Testing",
+        name: "Cyclic playback tests",
         url: "/dashboard/blue/services/cykliczne_testy_odtworzeniowe",
         img: "/assets/img/employer.png",
     },

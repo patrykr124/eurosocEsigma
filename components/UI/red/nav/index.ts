@@ -13,7 +13,7 @@ export const itemsMenu = [
             {
                 id: 1,
                 name: "Testy penetracyjne ",
-                url: "/dashboard/red/services/testy",
+                url: "/dashboard/red/services/Testy",
                 img: "/assets/img/hacker.jpg",
             },
             {

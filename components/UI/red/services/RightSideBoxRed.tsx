@@ -28,14 +28,14 @@ function RightSideBoxRed({activeFilters}: Props) {
     console.log(serviceDataLocale);
 
     return (
-        <div className="flex flex-wrap lg:gap-6 gap-2 ">
+        <div className="grid sm:grid-cols-3 gap-4 w-full">
             {servicesFilterData.length === 0 &&
                 <div className="w-full h-full flex justify-center items-center"><p>Brak usługi</p></div>}
             {servicesFilterData.map((item) => (
                 <motion.div key={item.id} initial={{opacity: 0, scale: 0.98}} animate={{opacity: 1, scale: 1}}
                             transition={{duration: 0.5}}>
                     <Link
-                        className='group relative shadow-light text-black flex w-[190px] lg:w-[280px] lg:h-[400px] rounded-xl overflow-hidden'
+                        className='group relative shadow-light text-black flex  rounded-xl overflow-hidden'
                         href={item.url}>
                         <div className="w-full relative bg-gray-3  flex flex-col ">
                             <div className="top ">

@@ -19,7 +19,7 @@ function NavbarItems({ isOpen, ishandleOpen, setIsHandleOpen }: NavbarItemsProps
     const itemsMenuLocal = locale === "pl" ? itemsMenu : itemsMenu_EN
 
     return (
-        <ul className='flex flex-row gap-8'>
+        <ul className='flex flex-row gap-10'>
             {itemsMenuLocal.map(item => {
                 return (
                     <li key={item.id}>
