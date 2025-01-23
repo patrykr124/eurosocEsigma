@@ -10,7 +10,7 @@ interface Props {
 
 function SwitchAbonament({setActiveFilters}: Props) {
     const t = useTranslations("homeServices");
-    const BUTTON_CLASSES = "h5-link flex items-center gap-2 px-3 md:pl-3 md:pr-3.5 py-2 md:py-1.5 transition-colors justify-center w-64 relative z-10"
+    const BUTTON_CLASSES = "h5-link flex items-center gap-2 px-3 md:pl-3 md:pr-3.5 py-2 md:py-1.5 transition-colors justify-center md:w-64 w-36  relative z-10"
     const [switchTabs, setSwitchTabs] = useState(t('switchTitle1'))
 
     function handleSwitch(tab: string) {
@@ -23,28 +23,28 @@ function SwitchAbonament({setActiveFilters}: Props) {
 
     const pathName = usePathname() || "";
 
-    const BG_COLOR = pathName && pathName.includes("/dashboard/blue") ? (switchTabs === t('switchTitle1') ? 'bg-gray-1' : 'bg-blue-1') : pathName && pathName.includes("/dashboard/red") ? (switchTabs === t('switchTitle1') ? 'bg-gray-1' : 'bg-red-1') : ''
+    const BG_COLOR = pathName && pathName.includes("/dashboard/blue") ? (switchTabs === t('switchTitle1') ? 'bg-black-1' : 'bg-blue-1') : pathName && pathName.includes("/dashboard/red") ? (switchTabs === t('switchTitle1') ? 'bg-black-1' : 'bg-red-1') : ''
 
     const HANDLE_JEDNORAZOWE_CSS = switchTabs === t('switchTitle1') ? ' text-white' : 'text-black'
     const HANDLE_ABONAMENTOWE_CSS = switchTabs === t('switchTitle2') ? ' text-white ' : 'text-black'
 
     return (
-        <div className="w-full hidden lg:flex flex-col lg:flex-row justify-between">
+        <div className="w-full items-center flex flex-col lg:flex-row justify-between">
             <div className="">
                 <h2 className="h2-medium text-center lg:text-left">{t("title2")}</h2>
             </div>
 
-            <div className=" relative h-fit flex w-fit  rounded-full  ">
+            <div className=" relative gap-8 md:gap-0 h-fit flex w-fit  rounded-full  ">
                 <button onClick={() => handleSwitch(t('switchTitle1'))}
                         className={`${BUTTON_CLASSES}  ${HANDLE_JEDNORAZOWE_CSS} uppercase`}>{t('switchTitle1')}
                 </button>
                 <button onClick={() => handleSwitch(t('switchTitle2'))}
                         className={`${BUTTON_CLASSES}   ${HANDLE_ABONAMENTOWE_CSS} uppercase`}>{t('switchTitle2')}
                 </button>
-                <div
-                    className={`absolute inset-0 flex ${switchTabs === t('switchTitle1') ? "justify-start" : "justify-end"}`}>
+                <div 
+                    className={`absolute inset-0  flex ${switchTabs === t('switchTitle1') ? "justify-start" : "justify-end "} `}>
                     <motion.span layout transition={{type: "spring", damping: 15, stiffness: 250}}
-                                 className={`h-full w-1/2 rounded-2xl ${BG_COLOR}`}/>
+                                 className={`h-full w-1/2   rounded-2xl ${BG_COLOR}`}/>
                 </div>
             </div>
         </div>

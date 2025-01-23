@@ -26,7 +26,7 @@ export default function AboutServices({desc, titleAboutService, urlImage, size, 
             <motion.div variants={sectionAnimation} initial="hidden" animate="visible" whileInView="visible"
                         viewport={{once: true, amount: 0.5}} className="wrapper">
                 <div className="flex lg:flex-row flex-col ">
-                    <div className="left  lg:order-1 flex-1 flex flex-col ">
+                    <div className="left justify-center lg:order-1 flex-1 flex flex-col ">
                         <h2 className={classH2}>{t("title")}</h2>
                         <h2 className='h2-medium-42 pb-2'>{titleAboutService}</h2>
                         <p>{desc}</p>

@@ -13,11 +13,6 @@ import FAQTemplateRed from "@/components/UI/red/services/serviceSite/FAQ/FAQTemp
 import {useLocale, useTranslations} from "use-intl";
 import {servicesDataRed_EN} from "@/constants/servicesRed_EN";
 
-// export async function generateStaticParams() {
-//     return servicesData.map((service) => ({
-//         serviceId: service.id,
-//     }))
-// }
 
 interface ServicePageProps {
     params: {

@@ -1,15 +1,15 @@
 export const servicesData = [
     {
-        id: "testy",
+        id: "Testy",
         title: "Testy penetracyjne ",
         title2: "",
         titleAboutService: "Dlaczego warto przeprowadzać testy penetracyjne?",
-        url: "/dashboard/red/services/testy",
+        url: "/dashboard/red/services/Testy",
         urlImage: "/assets/img/red/parciple/key.png",
         headerImg: "/assets/img/red/services/pene.png",
         position: "top",
         size: 0.40,
-        description: "Testy penetracyjne to skuteczna metoda oceny bezpieczeństwa infrastruktury IT poprzez symulację rzeczywistych ataków.\n\nNasze testy identyfikują luki w systemach, aplikacjach oraz sieciach, pomagając zminimalizować ryzyko naruszeń danych i cyberataków.\n\nDzięki profesjonalnemu podejściu nasi eksperci dostarczają szczegółowe raporty z zaleceniami, które wspierają zabezpieczanie systemów przed potencjalnymi zagrożeniami.\n\nRegularne przeprowadzanie testów penetracyjnych pozwala na utrzymanie wysokiego poziomu bezpieczeństwa i zapewnia zgodność z regulacjami prawnymi oraz standardami branżowymi.",
+        description: "Testy penetracyjne to kontrolowane próby włamania do systemu informatycznego, które pomagają sprawdzić, czy zabezpieczenia są wystarczająco solidne.\n\nProces obejmuje rekonesans, symulację ataku i raportowanie wyników, co pozwala wykryć słabe punkty i zwiększyć bezpieczeństwo IT.",
         //korzysci i zagrozenia
         titleKrzysci: "Korzyści z testów penetracyjnych:",
         titleZagrozenia: "Zagrożenia wynikające z braku testów penetracyjnych:",
@@ -211,6 +211,12 @@ export const servicesData = [
         ],
         filter: 'testy',
         filter2:'jednorazowe',
+        seo: {
+            title: "Segmentacja sieci",
+            description:
+              "Testy penetracyjne to kontrolowane próby włamania do systemu IT, pozwalające zidentyfikować słabe punkty i zwiększyć bezpieczeństwo.",
+            keywords: "testy penetracyjne, zabezpieczenia IT, analiza podatności",
+          },
 
 
     },
@@ -224,7 +230,7 @@ export const servicesData = [
         headerImg: "/assets/img/red/services/socjot.png",
         position: "center",
         size: 3.45,
-        description: "Testy socjotechniczne to forma oceny, która symuluje ataki ukierunkowane na czynnik ludzki w celu identyfikacji luk w świadomości bezpieczeństwa pracowników.\n\nNasze testy polegają na wykorzystaniu technik manipulacji i inżynierii społecznej, takich jak phishing, pretekstowanie czy baiting, aby ocenić reakcje personelu na potencjalne zagrożenia.\n\nDzięki testom socjotechnicznym organizacja może skutecznie zwiększyć świadomość bezpieczeństwa wśród pracowników, wdrożyć odpowiednie szkolenia i ograniczyć ryzyko wynikające z najsłabszego ogniwa – człowieka.\n\nTesty te pozwalają nie tylko wykrywać problemy, ale również budować kulturę bezpieczeństwa w organizacji.",
+        description: "Testy socjotechniczne symulują próby manipulacji pracownikami, aby sprawdzić, jak reagują na potencjalne zagrożenia, takie jak phishing.\n\nDzięki temu podnoszona jest świadomość bezpieczeństwa i redukowane ryzyko wycieku danych.",
         titleKrzysci: "Korzyści z testów socjotechnicznych:",
         titleZagrozenia: "Zagrożenia wynikające z braku testów socjotechnicznych:",
         //icon BLUE
@@ -425,6 +431,12 @@ export const servicesData = [
         ],
         filter: 'testy',
         filter2:'jednorazowe',
+        seo: {
+            title: "Testy socjotechniczne",
+            description:
+              "Testy socjotechniczne sprawdzają podatność pracowników na manipulacje, takie jak phishing, zwiększając świadomość zagrożeń.",
+            keywords: "testy socjotechniczne, manipulacja pracowników, symulacje phishingu",
+          },
     },
     {
         id: "testybezpieczenstwafizycznego",
@@ -436,7 +448,7 @@ export const servicesData = [
         position: "center",
         size: 1.1,
         titleAboutService: "Dlaczego warto przeprowadzać testy bezpieczeństwa fizycznego?",
-        description: "Testy bezpieczeństwa fizycznego oceniają skuteczność zabezpieczeń chroniących przed nieautoryzowanym dostępem do infrastruktury organizacji.\n\nNasze testy obejmują symulacje włamań, ocenę procedur dostępu, przegląd systemów monitoringu oraz analizę luk w ochronie fizycznej. \n\nDzięki testom bezpieczeństwa fizycznego organizacja może zidentyfikować słabe punkty w systemach ochrony, poprawić procedury i zapewnić bezpieczeństwo swoich zasobów.\n\nRegularne testy pozwalają minimalizować ryzyko związane z zagrożeniami fizycznymi, takimi jak włamania, sabotaż czy kradzież danych.",
+        description: "Testy bezpieczeństwa fizycznego sprawdzają zabezpieczenia w świecie rzeczywistym, od zamków po systemy alarmowe.\n\nProces obejmuje rekonesans, symulację naruszeń i raportowanie, co pozwala upewnić się, że fizyczna infrastruktura firmy jest dobrze chroniona.",
         titleKrzysci: "Korzyści z testów bezpieczeństwa fizycznego:",
         titleZagrozenia: "Zagrożenia wynikające z braku testów bezpieczeństwa fizycznego:",
         //icon BLUE
@@ -637,6 +649,12 @@ export const servicesData = [
         ],
         filter: 'testy',
         filter2:'jednorazowe',
+        seo: {
+            title: "Testy socjotechniczne",
+            description:
+              "Testy bezpieczeństwa fizycznego pozwalają ocenić skuteczność zabezpieczeń budynków i systemów alarmowych, zapewniając ochronę przed intruzami.",
+            keywords: "testy bezpieczeństwa fizycznego, ochrona infrastruktury, analiza zabezpieczeń",
+          },
 
     },
     {
@@ -649,7 +667,7 @@ export const servicesData = [
         headerImg: "/assets/img/red/services/ddos.png",
         position: "bottom",
         size: 1,
-        description: "Testy odporności na ataki DDoS pozwalają ocenić zdolność infrastruktury IT do radzenia sobie z intensywnym, celowym ruchem sieciowym mającym na celu zakłócenie działania usług.\n\nNasze testy symulują różne typy ataków DDoS, aby zidentyfikować słabe punkty systemów, poprawić ich wydajność oraz zwiększyć bezpieczeństwo sieci.\n\nDzięki testom organizacje mogą przygotować skuteczne strategie obrony, zminimalizować ryzyko przestojów i chronić swoją reputację.\n\nRegularne testowanie odporności na ataki DDoS jest kluczowe, aby sprostać rosnącym zagrożeniom w świecie cyfrowym.",
+        description: "Testy odporności na ataki DDoS pokazują, jak systemy IT radzą sobie z przeciążeniem spowodowanym nagłym wzrostem ruchu.\n\nSymulacja pozwala ocenić, czy infrastruktura utrzyma ciągłość działania w sytuacjach kryzysowych.",
         titleKrzysci: "Korzyści z testów odporności na ataki DDoS:",
         titleZagrozenia: "Zagrożenia wynikające z braku testów odporności na DDoS:",
         //icon BLUE
@@ -850,6 +868,12 @@ export const servicesData = [
         ],
         filter: 'testy',
         filter2:'jednorazowe',
+        seo: {
+            title: "Testy odporności na ataki DDoS",
+            description:
+              "Symulacje ataków DDoS oceniają zdolność systemów IT do radzenia sobie z nagłymi wzrostami ruchu sieciowego, zapewniając ciągłość działania.",
+            keywords: "testy DDoS, ochrona przed przeciążeniem, odporność systemu",
+          },
     },
     {
         id: "skanypodatnosci",
@@ -861,7 +885,7 @@ export const servicesData = [
         headerImg: "/assets/img/red/services/podatnosc.png",
         position: "center",
         size: 1,
-        description: "Skany podatności to automatyczne testy, które identyfikują słabe punkty w systemach IT, aplikacjach i sieciach. \n\nNasze usługi obejmują regularne skanowanie infrastruktury w celu wykrycia potencjalnych zagrożeń bezpieczeństwa, takich jak przestarzałe oprogramowanie, błędy konfiguracyjne czy podatności zero-day.\n\nDzięki skanom podatności organizacje mogą szybko reagować na zagrożenia, wdrażać łatki i minimalizować ryzyko ataków.\n\nRegularne skanowanie to kluczowy element zarządzania bezpieczeństwem IT, który pomaga utrzymać wysoką odporność systemów na cyberzagrożenia.",
+        description: "Skanowanie podatności to proces identyfikacji słabych punktów w systemach IT, które mogą zostać wykorzystane przez cyberprzestępców.\n\nAutomatyczne skanowanie pozwala szybko wykryć zagrożenia i skutecznie nimi zarządzać.",
         titleKrzysci: "Korzyści z regularnych skanów podatności:",
         titleZagrozenia: "Zagrożenia wynikające z braku skanów podatności:",
         //icon BLUE
@@ -1063,6 +1087,12 @@ export const servicesData = [
         ],
         filter:'monitoringinfrastruktury',
         filter2:'jednorazowe',
+        seo: {
+            title: "Skanowanie podatności",
+            description:
+              "Skanowanie podatności identyfikuje słabe punkty w systemach IT, pozwalając na ich szybkie usunięcie i zwiększenie bezpieczeństwa.",
+            keywords: "skanowanie podatności, analiza ryzyk IT, wykrywanie luk",
+          },
     },
     {
         id: "szkoleniezcyberbezpieczenstwa",
@@ -1074,7 +1104,7 @@ export const servicesData = [
         headerImg: "/assets/img/red/services/podatnosc.png",
         position: "top",
         size: 0.60,
-        description: "Szkolenia z cyberbezpieczeństwa to kluczowy element budowania świadomości w organizacji i ochrony przed cyberzagrożeniami. \n\nNasze szkolenia obejmują praktyczne ćwiczenia, realne scenariusze zagrożeń oraz omówienie najnowszych technik ataków i metod obrony.\n\nDzięki naszym szkoleniom pracownicy uczą się rozpoznawać zagrożenia, takie jak phishing, ataki socjotechniczne czy złośliwe oprogramowanie, oraz odpowiednio na nie reagować.\n\nInwestycja w szkolenie z cyberbezpieczeństwa minimalizuje ryzyko incydentów, zwiększa odporność firmy na ataki i buduje kulturę bezpieczeństwa w organizacji.",
+        description: "Szkolenie z cyberbezpieczeństwa to proces edukacji pracowników, który pomaga im rozpoznawać zagrożenia w sieci i chronić firmę przed atakami.\n\nProgram obejmuje analizę potrzeb, teoretyczne szkolenie, praktyczne ćwiczenia oraz ocenę z rekomendacjami.\n\nEfektem jest zwiększenie świadomości, redukcja ryzyka ataków i lepsze przygotowanie organizacji.",
         titleKrzysci: "Korzyści z udziału w szkoleniach z cyberbezpieczeństwa:",
         titleZagrozenia: "Zagrożenia wynikające z braku szkoleń:",
         iconsTop: [
@@ -1248,10 +1278,16 @@ export const servicesData = [
         ],
         filter:'szkolenia',
         filter2:'jednorazowe',
+        seo: {
+            title: "Szkolenie z cyberbezpieczeństwa",
+            description:
+              "Szkolenie z cyberbezpieczeństwa zwiększa świadomość pracowników w rozpoznawaniu zagrożeń i ochronie firmy przed atakami. Uczymy, jak efektywnie reagować na incydenty oraz zapobiegać zagrożeniom.",
+            keywords: "szkolenie z cyberbezpieczeństwa, ochrona danych, bezpieczeństwo IT",
+          },
     },
     {
         id: "dlakadryinformatycznej",
-        title: "Szkolenie dla kadry informatycznej",
+        title: "Usługi dla kadry informatycznej",
         title2: "",
         titleAboutService: "Dlaczego warto szkolić kadrę informatyczną?",
         url: "/dashboard/blue/services/dlakadryinformatycznej",
@@ -1259,7 +1295,7 @@ export const servicesData = [
         headerImg: "/assets/img/red/services/podatnosc.png",
         position: "center",
         size: 3.4,
-        description: "Szkolenia dla kadry informatycznej koncentrują się na zaawansowanych zagadnieniach związanych z cyberbezpieczeństwem, zarządzaniem infrastrukturą IT oraz najnowszymi technologiami.\n\nNasze programy szkoleniowe obejmują praktyczne warsztaty, które pozwalają zespołom IT doskonalić umiejętności w zakresie wykrywania zagrożeń, reagowania na incydenty i zarządzania systemami bezpieczeństwa.\n\nDzięki tym szkoleniom organizacje mogą zwiększyć skuteczność swojego zespołu IT, zmniejszyć ryzyko cyberataków oraz wprowadzić najlepsze praktyki zarządzania IT.\n\nSzkolenie dla kadry informatycznej to inwestycja, która przynosi realne korzyści w postaci lepszej ochrony, wydajności i zgodności z regulacjami.",
+        description: "Usługi dla kadry informatycznej to wsparcie techniczne i szkoleniowe dla zespołów IT, które umożliwia skuteczne zarządzanie bezpieczeństwem.\n\nProgram obejmuje ocenę potrzeb, techniczne wsparcie, szkolenia oraz proaktywne doradztwo.\n\nPozwala to podnieść kompetencje zespołu, zwiększyć szybkość reakcji na incydenty oraz zoptymalizować bezpieczeństwo.",
         titleKrzysci: "Korzyści ze szkolenia dla kadry informatycznej:",
         titleZagrozenia: "Zagrożenia wynikające z braku szkoleń:",
         //icon BLUE
@@ -1438,6 +1474,12 @@ export const servicesData = [
         ],
         filter:'szkolenia',
         filter2:'jednorazowe',
+        seo: {
+            title: "Usługi dla kadry informatycznej",
+            description:
+              "Oferujemy wsparcie techniczne i szkoleniowe dla zespołów IT, pomagając im zarządzać bezpieczeństwem oraz skutecznie reagować na zagrożenia.",
+            keywords: "szkolenia IT, wsparcie techniczne, zarządzanie bezpieczeństwem",
+          },
     },
     {
         id: "wsparcie_w_obsludze_incydentu",
@@ -1449,7 +1491,7 @@ export const servicesData = [
         headerImg: "/assets/img/red/services/podatnosc.png",
         position: "center",
         size: 0.65,
-        description: "Nasza usługa wsparcia w obsłudze incydentu zapewnia natychmiastową pomoc w sytuacji kryzysowej związanej z cyberbezpieczeństwem.\n\nNasi eksperci pomogą w szybkim wykryciu i neutralizacji zagrożenia, ograniczeniu jego skutków oraz przywróceniu normalnego funkcjonowania systemów IT.\n\nWsparcie obejmuje analizę incydentu, wdrożenie działań naprawczych oraz doradztwo dotyczące zapobiegania podobnym sytuacjom w przyszłości.\n\nDzięki naszej pomocy organizacje mogą skutecznie zarządzać incydentami, minimalizując straty finansowe, operacyjne i reputacyjne.",
+        description: "Wsparcie w obsłudze incydentu to kompleksowa pomoc w zarządzaniu sytuacjami kryzysowymi w obszarze IT.\n\nObejmuje identyfikację, analizę i neutralizację zagrożeń, aby zminimalizować skutki cyberataków.\n\nNasi specjaliści pracują w oparciu o sprawdzone procedury i narzędzia, zapewniając szybkie przywrócenie sprawności systemów.\n\nUsługa pozwala firmom zachować ciągłość działania i chronić swoją reputację.",
         titleKrzysci: "Korzyści ze wsparcia w obsłudze incydentu:",
         titleZagrozenia: "Zagrożenia wynikające z braku profesjonalnego wsparcia:",
         // Icons BLUE
@@ -1624,6 +1666,12 @@ export const servicesData = [
         ],
         filter:'obslugaincydentow',
         filter2:'abonamentowe',
+        seo: {
+            title: "Wsparcie w obsłudze incydentu",
+            description:
+              "Skanowanie podatności to proces wykrywania luk w systemach IT, które mogą zostać wykorzystane przez cyberprzestępców. Umożliwia szybką identyfikację zagrożeń i skuteczne zarządzanie ryzykiem.",
+            keywords: "skanowanie podatności, wykrywanie luk IT, audyt bezpieczeństwa",
+          },
     },
     {
         id: "III_linia_wsparcia_technicznego",
@@ -1635,7 +1683,7 @@ export const servicesData = [
         headerImg: "/assets/img/red/services/podatnosc.png",
         position: "center",
         size: 0.65,
-        description: "Nasza usługa III linii wsparcia technicznego zapewnia kompleksową pomoc w rozwiązywaniu zaawansowanych problemów technicznych.\n\nNasi specjaliści posiadają wiedzę ekspercką, dzięki czemu mogą szybko diagnozować problemy, opracowywać rozwiązania i minimalizować przestoje w funkcjonowaniu systemów IT.\n\nWsparcie obejmuje analizę zgłoszeń, implementację poprawek, doradztwo techniczne oraz współpracę z dostawcami oprogramowania i sprzętu w celu rozwiązania złożonych incydentów.\n\nIII linia wsparcia technicznego to gwarancja, że nawet najbardziej wymagające problemy zostaną szybko i skutecznie rozwiązane.",
+        description: "III linia wsparcia technicznego to zaawansowana pomoc dla najtrudniejszych problemów technicznych, z którymi nie poradziły sobie wcześniejsze poziomy wsparcia.\n\nZespół ekspertów analizuje i rozwiązuje najbardziej skomplikowane przypadki, minimalizując przestoje i ryzyko eskalacji problemów.\n\nDzięki temu organizacje mogą szybko przywrócić sprawność systemów i zoptymalizować działanie infrastruktury IT.",
         titleKrzysci: "Korzyści z III linii wsparcia technicznego:",
         titleZagrozenia: "Zagrożenia wynikające z braku odpowiedniego wsparcia:",
         // Icons BLUE
@@ -1809,10 +1857,16 @@ export const servicesData = [
         ],
         filter:'obslugaincydentow',
         filter2:'abonamentowe',
+        seo: {
+            title: "III linia wsparcia technicznego",
+            description:
+              "III linia wsparcia technicznego to ekspercka pomoc w najbardziej złożonych problemach IT, które wymagają dogłębnej analizy i skutecznych rozwiązań.",
+            keywords: "wsparcie techniczne, rozwiązywanie problemów IT, zaawansowana pomoc techniczna",
+          },
     },
     {
         id: "cykliczne_testy_socjotechniczne",
-        title: "Cykliczne testy socjotechniczne ",
+        title: "Cykliczne testy socjotechniczne",
         title2: "",
         titleAboutService: "Dlaczego warto zakupić usługę wdrożenia systemu inwentaryzacji sprzętu i oprogramowania?",
         url: "/dashboard/blue/services/cykliczne_testy_socjotechniczne",
@@ -2021,7 +2075,13 @@ export const servicesData = [
             },
         ],
         filter:'testy',
-        filter2: 'abonamentowe'
+        filter2: 'abonamentowe',
+        seo: {
+            title: "Cykliczne testy socjotechniczne",
+            description:
+              "Regularne testy socjotechniczne pozwalają ocenić czujność pracowników i zwiększyć świadomość zagrożeń, takich jak phishing i manipulacje.",
+            keywords: "testy socjotechniczne, symulacje manipulacji, świadomość bezpieczeństwa",
+          },
     },
 
 ]

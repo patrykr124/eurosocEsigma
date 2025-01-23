@@ -29,7 +29,7 @@
       "p": "We Create Secure Digital Solutions",
       "h1": "Your Cybersecurity Based on",
       "words": ["implementations", "trainings", "audits", "security"],
-      "buttonMain": "Secure Yourself",
+      "buttonMain": "CALL US",
       "buttonInfo": "Learn More"
     }
   },
@@ -45,7 +45,7 @@
     "checkIcon1": "Innovative cybersecurity solutions for modern threats",
     "checkIcon2": "Expert teams dedicated to your security",
     "checkIcon3": "Strong partnership for unparalleled cyber defense",
-    "button": "Secure Yourself"
+    "button": "CALL US"
   },
   "tabs": {
     "tabsSwitches": {
@@ -119,7 +119,7 @@
   },
   "servicesPage": {
     "title": "ABOUT SERVICES",
-    "button": "PROTECT YOURSELF",
+    "button": "CALL US",
     "switchTabBlue": "BENEFITS ",
     "switchTabRed": "DANGER",
     "h2": "Is this something for you?",

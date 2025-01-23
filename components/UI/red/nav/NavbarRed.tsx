@@ -58,7 +58,7 @@ function NavbarRed() {
             <nav className='wrapper'>
                 <div className="lg:flex hidden justify-between items-center">
                     <div className="logo">
-                        <Link href='/dashboard/red'><Image src={Logo} alt='logo' width={160} height={160}/></Link>
+                        <Link href='/dashboard/red'><Image src={Logo} alt='logo' width={180} height={180}/></Link>
 
                     </div>
                     <div className="items">
@@ -78,9 +78,11 @@ function NavbarRed() {
                 <div className="flex lg:hidden">
                     <div className="flex w-full  justify-between items-center z-10">
                         <div className="logo">
-                            <Link href='/dashboard/blue'><Image src={Logo} alt='logo' width={150} height={150}/></Link>
+                            <Link href='/dashboard/blue'><Image src={Logo} alt='logo' width={120} height={120}/></Link>
                         </div>
-                        <div className="input_box flex">
+                        <LocaleSwitcher />
+                        <Switch />
+                        <div className="input_box flex -mr-2">
                             <div className="bar" onClick={openMobileMenu}>
                                 <span className={`top ${openMobile ? "rotate-45 !top-2" : ""}`}></span>
                                 <span
@@ -92,7 +94,7 @@ function NavbarRed() {
                     </div>
                     <div
                         className={`bg-black-1 fixed overflow-y-auto left-0 top-16 w-screen h-screen ${openMobile ? '-translate-y-0 opacity-100' : '-translate-y-full opacity-0'} transition-opacity duration-500`}>
-                        <div className="wrapper flex flex-col gap-6 my-10">
+                        <div className="wrapper flex flex-col gap-2 my-10">
                             {servicesItemUslugiLocale.map(item => {
                                 return (
                                     <li key={item.id}>
@@ -115,11 +117,11 @@ function NavbarRed() {
                                                         </h2>
                                                         <div className="flex flex-col gap-4">
                                                             {servicesItemUslugi && servicesItemUslugi.featured && servicesItemUslugi.featured.map((item) => {
-                                                                const isActive = pathname && pathname.includes(item.url)
+                                                                const isActive = pathname?.replace("/pl", "") === item.url
                                                                 return (
                                                                     <Link onClick={() => setIsHandleOpen(false)}
                                                                           href={item.url}
-                                                                          className={`${isActive ? " text-grey-400 text-[12px]" : "linkSmall"} 
+                                                                          className={`${isActive ? " text-red-1 text-[12px]" : "linkSmall"} 
                                                                             relative flex mainLinkRed`} key={item.id}>
                                                                         {item.name}
                                                                     </Link>
@@ -131,11 +133,11 @@ function NavbarRed() {
                                                         <h2 className="p-bold-18 text-white">Usługi szkoleniowe
                                                         </h2>
                                                         {itemsMenuUslugiSzkoleniowe.map((item) => {
-                                                            const isActive = pathname === item.url
+                                                            const isActive = pathname?.replace("/pl", "") === item.url
                                                             return (
                                                                 <Link onClick={() => setIsHandleOpen(false)}
                                                                       href={item.url}
-                                                                      className={`${isActive ? " text-grey-400 text-[12px]" : "linkSmall"} 
+                                                                      className={`${isActive ? " text-red-1 text-[12px]" : "linkSmall"} 
                                                                             relative flex mainLinkRed`} key={item.id}>
                                                                     {item.name}
                                                                 </Link>
@@ -146,11 +148,11 @@ function NavbarRed() {
                                                     <div className="3 flex flex-col gap-4 justify-center ">
                                                         <h2 className="p-bold-18 text-white">Obsługa incydentów </h2>
                                                         {itemsMenuObslugaIncydentow.map((item) => {
-                                                            const isActive = pathname === item.url
+                                                            const isActive = pathname?.replace("/pl", "") === item.url
                                                             return (
                                                                 <Link onClick={() => setIsHandleOpen(false)}
                                                                       href={item.url}
-                                                                      className={`${isActive ? " text-grey-400 text-[12px]" : "linkSmall"} 
+                                                                      className={`${isActive ? " text-red-1 text-[12px]" : "linkSmall"} 
                                 relative flex mainLinkRed`} key={item.id}>
                                                                     {item.name}
                                                                 </Link>
@@ -162,11 +164,11 @@ function NavbarRed() {
                                                         <h2 className="p-bold-18 text-white">Usługi
                                                             utrzymaniowe </h2>
                                                         {itemMenuUslugiUtrzymaniowe.map((item) => {
-                                                            const isActive = pathname === item.url
+                                                            const isActive = pathname?.replace("/pl", "") === item.url
                                                             return (
                                                                 <Link onClick={() => setIsHandleOpen(false)}
                                                                       href={item.url}
-                                                                      className={`${isActive ? " text-grey-400 text-[12px]" : "linkSmall"} 
+                                                                      className={`${isActive ? " text-red-1 text-[12px]" : "linkSmall"} 
                                 relative flex mainLinkRed`} key={item.id}>
 
                                                                     {item.name}

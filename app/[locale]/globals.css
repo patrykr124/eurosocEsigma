@@ -108,7 +108,7 @@ body {
     }
 
     .h5-link {
-        @apply font-normal text-[24px] leading-[36px];
+        @apply font-normal md:text-[24px] text-xs md:leading-[36px];
     }
 
     .p-medium-28 {

@@ -39,7 +39,7 @@ function Why({titleKorzysci, titleZagrozenia, iconsBlue, iconsRed}: Props) {
             <div className="wrapper flex flex-col gap-12 ">
 
                 <div className="flex lg:flex-row flex-col justify-between lg:items-center lg:gap-20">
-                    <div className="lg:min-h-[180px] min-h-[220px]">
+                    <div className="lg:min-h-[180px] min-h-[180px]">
                         <h2 className={`${switchTabs === "korzysci" ? "titleFrame" : "titleFrame-red"}`}>{switchTabs === "korzysci" ? t("switchTabBlue") : t("switchTabRed")}</h2>
                         <h2 className="h2-medium-42">{`${switchTabs === "korzysci" ? titleKorzysci : titleZagrozenia}`}</h2>
                     </div>
