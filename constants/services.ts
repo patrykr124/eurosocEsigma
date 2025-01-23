@@ -441,7 +441,7 @@ export const servicesData = [
     titleAboutService:
       "Dlaczego warto zakupić usługę korporacyjnej poczty e-mail z sandboxem?",
     description:
-      "Korporacyjna ochrona danych to zaawansowane rozwiązania, które zabezpieczają wrażliwe informacje biznesowe.\n\nProces obejmuje analizę danych, wdrażanie polityk, zabezpieczenia techniczne i audyty.\n\nTo kluczowy sposób na ochronę przed stratami finansowymi i utrzymanie zgodności z regulacjami.",
+      "Korporacyjna poczta e-mail z funkcją sandbox to zaawansowane rozwiązanie chroniące przed phishingiem, ransomware i złośliwymi załącznikami.\n\nPodejrzane elementy są izolowane i analizowane w bezpiecznym środowisku przed otwarciem, co minimalizuje ryzyko wycieku danych i infekcji systemów, zapewniając wysokie bezpieczeństwo sieci firmowej oraz skuteczne zarządzanie komunikacją.",
     titleKrzysci:
       "Korzyści z zastosowania korporacyjnej poczty e-mail z sandboxem:",
     titleZagrozenia: "Zagrożenia, gdy usługa nie jest zakupiona:",
@@ -1315,7 +1315,7 @@ export const servicesData = [
     parallaxH2:"Monitoring systemów",
     parallaxP:"Ochrona infrastruktury IT zapewnia stałą ochronę systemów przed zagrożeniami, minimalizując ryzyko ataków i przestojów.",
     description:
-      "Ochrona infrastruktury IT to system zabezpieczeń, który chroni firmę przed zagrożeniami cybernetycznymi.\n\nProces obejmuje identyfikację zagrożeń, implementację zabezpieczeń, monitorowanie oraz reakcję na incydenty.\n\nUsługa minimalizuje ryzyko strat i przestojów, zapewniając spokój ducha.",
+      "Data Loss Prevention (DLP) to rozwiązanie chroniące wrażliwe dane przed przypadkowym lub celowym ujawnieniem.\n\nPozwala na monitorowanie i kontrolę przepływu informacji w organizacji, zapewniając ochronę danych w ruchu i spoczynku.\n\nDLP zwiększa bezpieczeństwo, zapobiega wyciekom oraz wspiera zgodność z regulacjami, dając pełną widoczność nad dostępem i wykorzystaniem danych, co minimalizuje ryzyko naruszeń.",
     titleKrzysci:
       "Korzyści z zastosowania ochrony przed wyciekami danych (DLP):",
     titleZagrozenia: "Zagrożenia, gdy usługa nie jest zakupiona:",
@@ -1526,7 +1526,7 @@ export const servicesData = [
     parallaxH2:"Monitoring IT",
     parallaxP:"Monitorowanie infrastruktury IT pozwala na stałą analizę działania systemów i szybką reakcję na potencjalne zagrożenia.",
     description:
-      "Monitorowanie infrastruktury IT to stała kontrola i analiza sieci oraz systemów w czasie rzeczywistym.\n\nDzięki integracji, powiadomieniom i szybkim reakcjom możliwe jest wczesne wykrywanie problemów i optymalizacja działania systemów.\n\nTo klucz do utrzymania stabilności IT.",
+      "System SIEM (Security Information and Event Management) monitoruje infrastrukturę IT, analizując dane z systemów, aplikacji i urządzeń sieciowych.\n\nPozwala szybko wykrywać zagrożenia w czasie rzeczywistym, wspiera natychmiastową reakcję na incydenty, minimalizuje ryzyko strat i przerw operacyjnych oraz pomaga spełniać wymagania regulacyjne.",
     titleKrzysci:
       "Korzyści z zastosowania monitorowania infrastruktury w trybie ciągłym (SIEM):",
     titleZagrozenia: "Zagrożenia, gdy usługa nie jest zakupiona:",
@@ -2384,7 +2384,7 @@ export const servicesData = [
     parallaxH2:"Endpoint security",
     parallaxP:"Ochrona urządzeń końcowych minimalizuje ryzyko ataków na komputery i inne urządzenia firmowe, zwiększając poziom bezpieczeństwa organizacji.",
     description:
-      "Ochrona urządzeń końcowych to zabezpieczenie komputerów i innych urządzeń używanych w firmie.\n\nProces obejmuje instalację zabezpieczeń, monitorowanie, aktualizacje oraz zarządzanie dostępem.\n\nChroni dane przed atakami i zapewnia zgodność z regulacjami.",
+      "Systemy EDR i XDR chronią urządzenia końcowe przed zaawansowanymi zagrożeniami.\n\nEDR monitoruje aktywność na urządzeniach i umożliwia szybkie reakcje na incydenty, a XDR integruje dane z systemów, takich jak sieci i serwery, dostarczając pełniejszy obraz zagrożeń.\n\nDzięki nim firmy zyskują kompleksową ochronę, minimalizując ryzyko cyberataków, przestojów i strat.",
     titleKrzysci: "Korzyści z wdrożenia ochrony urządzeń końcowych (EDR/XDR):",
     titleZagrozenia: "Zagrożenia, gdy usługa nie jest zakupiona:",
     //icon BLUE
@@ -2597,7 +2597,7 @@ export const servicesData = [
     parallaxH2:"Bezpieczeństwo informacji",
     parallaxP:"Kompleksowe opracowanie dokumentacji SZBI, obejmujące polityki, procedury i wytyczne zapewniające spójne zarządzanie bezpieczeństwem informacji.",
     description:
-      "Opracowanie dokumentacji SZBI to tworzenie kluczowych dokumentów, procedur i polityk, które stanowią podstawę Systemu Zarządzania Bezpieczeństwem Informacji.\n\nProces obejmuje analizę potrzeb organizacji, opracowanie dokumentów i wdrożenie ich w firmie.\n\nDokumentacja zapewnia porządek, zgodność z regulacjami oraz jasne wytyczne dla pracowników.",
+      "Opracowanie dokumentacji SZBI to tworzenie kluczowych dokumentów, procedur i polityk, które stanowią podstawę Systemu Zarządzania Bezpieczeństwem Informacji.\n\nProces obejmuje analizę potrzeb organizacji, opracowanie dokumentów i wdrożenie ich w firmie zgodnie z wymogami normy ISO 27001 oraz innymi regulacjami prawnymi.\n\nDokumentacja zapewnia porządek, zgodność z regulacjami oraz jasne wytyczne dla pracowników.",
     titleKrzysci: "Korzyści z opracowania dokumentacji SZBI:",
     titleZagrozenia: "Zagrożenia, gdy usługa nie jest zakupiona:",
     //icon BLUE
@@ -4121,7 +4121,7 @@ export const servicesData = [
     parallaxH2:"Zarządzanie bezpieczeństwem informacji",
     parallaxP:"Sprawdzamy system zarządzania bezpieczeństwem informacji (SZBI), identyfikując słabe punkty i wprowadzając rekomendacje naprawcze.",
     description:
-      "Audyt SZBI ocenia skuteczność Systemu Zarządzania Bezpieczeństwem Informacji.\n\nProces obejmuje przegląd polityk, ocenę zgodności z normami i identyfikację niezgodności.\n\nTo kluczowy krok w zapewnieniu wysokiego poziomu ochrony danych w firmie.",
+      "Audyt SZBI ocenia skuteczność Systemu Zarządzania Bezpieczeństwem Informacji.\n\nProces obejmuje przegląd polityk, ocenę zgodności z normami zgodne z ISO/IEC 27001 i identyfikację niezgodności.\n\nTo kluczowy krok w zapewnieniu wysokiego poziomu ochrony danych w firmie.",
     titleKrzysci: "Korzyści z audytu SZBI (ISO/IEC 27001):",
     titleZagrozenia:
       "Zagrożenia, gdy audyt zgodności z KSC nie jest przeprowadzony:",
@@ -4340,7 +4340,7 @@ export const servicesData = [
     parallaxH2:"Standardy bezpieczeństwa",
     parallaxP:"Oferujemy audyty zgodności z międzynarodowymi standardami ISO/IEC 27001 i 27002, zapewniając zgodność z normami bezpieczeństwa.",
     description:
-      "Audyt ISO/IEC sprawdza, czy firma spełnia międzynarodowe standardy bezpieczeństwa informacji, takie jak ISO 27001 i ISO 27002.\n\nOcena polityk i procedur, identyfikacja luk i rekomendacje pozwalają zapewnić zgodność z normami i ochronę danych.",
+      "Audyt ISO/IEC sprawdza, czy firma spełnia międzynarodowe standardy bezpieczeństwa informacji, takie jak ISO/IEC 22301.\n\nOcena polityk i procedur, identyfikacja luk i rekomendacje pozwalają zapewnić zgodność z normami i ochronę danych.",
     titleKrzysci: "Korzyści z audytu zgodności z ISO/IEC 22301:",
     titleZagrozenia:
       "Zagrożenia, gdy audyt zgodności z ISO/IEC 22301 nie jest przeprowadzony:",
@@ -4772,7 +4772,7 @@ export const servicesData = [
   },
   {
     id: "szkolenie_z_cyberbezpieczenstwa_dla_kadry_informatycznej",
-    title: "Szkolenie z cyberbezpieczeństwa dla kadry informatycznej",
+    title: "Szkolenie dla Kadry Informatycznej",
     title2: "",
     titleAboutService:
       "Dlaczego warto zakupić usługę szkolenia z cyberbezpieczeństwa dla kadry informatycznej?",
@@ -4784,7 +4784,7 @@ export const servicesData = [
     parallaxH2:"Cyberbezpieczeństwo kadra IT",
     parallaxP:"Zaawansowane szkolenie dla kadry informatycznej rozwija techniczne umiejętności w zakresie ochrony infrastruktury IT, zarządzania incydentami oraz wdrażania najlepszych praktyk.",
     description:
-      "Zaawansowane szkolenie dla kadry informatycznej rozwija techniczne umiejętności w zakresie ochrony infrastruktury IT.\n\nProgram obejmuje najnowsze narzędzia, techniki obrony i praktyczne ćwiczenia, które przygotowują specjalistów do skutecznego zarządzania incydentami bezpieczeństwa.\n\nSzkolenie zwiększa kompetencje zespołu IT i redukuje ryzyko ataków.",
+      "Szkolenia IT koncentrują się na cyberbezpieczeństwie, zarządzaniu infrastrukturą i najnowszych technologiach. Obejmują warsztaty praktyczne, rozwijające umiejętności w wykrywaniu zagrożeń, reagowaniu na incydenty i zarządzaniu bezpieczeństwem. Dzięki nim zespoły IT zwiększają skuteczność, zmniejszają ryzyko cyberataków i wprowadzają najlepsze praktyki, co przekłada się na lepszą ochronę, wydajność i zgodność z regulacjami.",
     titleKrzysci:
       "Korzyści ze szkolenia z cyberbezpieczeństwa dla kadry informatycznej:",
     titleZagrozenia:

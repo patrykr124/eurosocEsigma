@@ -419,7 +419,7 @@ export const servicesData_EN = [
         parallaxH2:"Data protection",
         parallaxP:"Corporate data protection provides comprehensive security for sensitive business information against loss or leakage.",
         titleAboutService: "Why should you purchase the corporate email service with sandbox?",
-        description: "Corporate data protection is a sophisticated solution that safeguards sensitive business information.\n\nThe process includes data analysis, policy implementation, technical safeguards and audits.\n\nThis is a key way to protect against financial loss and maintain regulatory compliance.",
+        description: "Corporate sandbox email is an advanced solution to protect against phishing, ransomware and malicious attachments. Suspicious items are isolated and analysed in a secure environment before being opened, minimising the risk of data leakage and system infection, ensuring high security of the corporate network and effective communication management.",
         titleKrzysci: "Benefits of corporate email with sandbox:",
         titleZagrozenia: "Risks when the service is not purchased:",
         iconsTop: [
@@ -1034,7 +1034,7 @@ export const servicesData_EN = [
         size: 0.35,
         parallaxH2:"Monitoring of systems",
         parallaxP:"Central IT infrastructure management allows systems to be controlled and monitored from a single location, increasing efficiency and security.",
-        description: "Central management is a comprehensive solution that enables control of the entire IT infrastructure from a single location.\n\nThe process includes systems integration, monitoring, automation and access management.",
+        description: "Central management is a comprehensive solution that enables control of the entire IT infrastructure from a single location.\n\nThe process includes systems integration, monitoring, automation and access management.\n\nIt provides improved efficiency, simplified processes and greater security for the organisation.",
         titleKrzysci: "Benefits of a central password management system:",
         titleZagrozenia: "Risks if the service is not utilized:",
         iconsTop: [
@@ -1240,7 +1240,7 @@ export const servicesData_EN = [
         size: 0.4,
         parallaxH2:"Monitoring of systems",
         parallaxP:"IT infrastructure protection ensures that systems are constantly protected from threats, minimising the risk of attacks and downtime.",
-        description: "IT infrastructure protection is a security system that protects a company from cyber threats.\n\nThe process includes threat identification, security implementation, monitoring and incident response.\n\nThe service minimises the risk of loss and downtime, providing peace of mind.",
+        description: "Data Loss Prevention (DLP) is a solution that protects sensitive data from accidental or intentional disclosure.\n\nIt allows you to monitor and control the flow of information within your organisation, ensuring data is protected in motion and at rest.\n\nDLP enhances security, prevents leaks and supports regulatory compliance by giving full visibility over data access and usage, minimising the risk of breaches.",
         titleKrzysci: "Benefits of Data Loss Prevention (DLP):",
         titleZagrozenia: "Risks if the service is not utilized:",
         iconsTop: [
@@ -1446,7 +1446,7 @@ export const servicesData_EN = [
         "size": 0.45,
         parallaxH2:"IT monitoring",
         parallaxP:"Monitoring of the IT infrastructure allows continuous analysis of the performance of systems and a rapid response to potential threats.",
-        "description": "IT infrastructure monitoring is the constant control and analysis of networks and systems in real time.\n\nWith integration, notifications and rapid responses, it is possible to detect problems early and optimise system performance.",
+        "description": "Security Information and Event Management (SIEM) monitors IT infrastructure by analysing data from systems, applications and network devices.\n\nIt quickly detects threats in real time, supports immediate incident response, minimises the risk of loss and operational interruption and helps meet regulatory requirements.",
         "titleKrzysci": "Benefits of continuous infrastructure monitoring (SIEM):",
         "titleZagrozenia": "Risks if the service is not utilized:",
         "iconsTop": [
@@ -2216,7 +2216,7 @@ export const servicesData_EN = [
         "size": 6,
         parallaxH2:"Endpoint security",
         parallaxP:"End-device protection minimises the risk of attacks on computers and other corporate devices, increasing the security level of the organisation.",
-        "description": "Endpoint device protection is the safeguarding of computers and other devices used in the company.\n\nThe process includes security installation, monitoring, updates and access management.",
+        "description": "EDR and XDR systems protect end devices from advanced threats.\n\nEDR monitors activity on devices and enables rapid incident response, while XDR integrates data from systems such as networks and servers, providing a more complete picture of threats.\n\nThese provide companies with comprehensive protection, minimising the risk of cyber attacks, downtime and loss.",
         "titleKrzysci": "Benefits of implementing Endpoint Protection (EDR/XDR):",
         "titleZagrozenia": "Risks if the service is not purchased:",
         "iconsTop": [
@@ -2410,7 +2410,7 @@ export const servicesData_EN = [
         size: 3.5,
         parallaxH2:"Information security",
         parallaxP:"Comprehensive development of ISMS documentation, including policies, procedures and guidelines to ensure consistent information security management.",
-        description: `Developing an ISMS documentation is the creation of key documents, procedures and policies that form the basis of an Information Security Management System.\n\nThe process involves analysing the needs of the organisation, developing the documents and implementing them in the company.\n\nThe documentation ensures order, compliance with regulations and clear guidance for employees.`,
+        description: `The development of ISMS documentation is the creation of key documents, procedures and policies that form the basis of an Information Security Management System.\n\nThe process involves analysing the needs of the organisation, developing the documents and implementing them in the company in accordance with the requirements of ISO 27001 and other legal regulations.\n\nDocumentation ensures order, compliance with regulations and clear guidance for employees.`,
         titleKrzysci: "Benefits of developing ISMS documentation:",
         titleZagrozenia: "Risks when the service is not purchased:",
         iconsTop: [
@@ -3568,7 +3568,7 @@ export const servicesData_EN = [
         "size": 1.1,
         parallaxH2:"Critical infrastructure",
         parallaxP:"The KSC compliance audit enables verification of critical infrastructure protection and compliance with national regulations.",
-        "description": "An ISMS audit assesses the effectiveness of the Information Security Management System.\n\nThe process includes reviewing policies, assessing compliance with standards and identifying non-compliance.\n\nThis is a key step in ensuring a high level of data protection within a company.",
+        "description": "The development of ISMS documentation is the creation of key documents, procedures and policies that form the basis of an Information Security Management System.\n\nThe process involves analysing the needs of the organisation, developing the documents and implementing them in the company in accordance with the requirements of ISO 27001 and other legal regulations.\n\nDocumentation ensures order, compliance with regulations and clear guidance for employees.",
         "titleKrzysci": "Benefits of ISO/IEC 22301 compliance audit:",
         "titleZagrozenia": "Risks when ISO/IEC 22301 compliance audit is not conducted:",
         "iconsTop": [
@@ -3946,7 +3946,7 @@ export const servicesData_EN = [
     },
     {
         id: "szkolenie_z_cyberbezpieczenstwa_dla_kadry_informatycznej",
-        "title": "Cyber security training for IT staff",
+        "title": "Training for IT Personnel",
         "title2": "",
         "titleAboutService": "Why is it worth purchasing the cybersecurity training for IT staff?",
         url: "/dashboard/blue/services/szkolenie_z_cyberbezpieczenstwa_dla_kadry_informatycznej",
@@ -3956,7 +3956,7 @@ export const servicesData_EN = [
         "size": 3.5,
         parallaxH2:"Cyber security IT staff",
         parallaxP:"Advanced training for IT staff develops technical skills in IT infrastructure protection, incident management and best practice implementation.",
-        "description": "IT staff are directly responsible for implementing, maintaining, and securing an organization's IT infrastructure.\n\nCybersecurity training for IT departments enhances their knowledge of the latest threats, protection techniques, and best practices in incident response.\n\nThe training program covers advanced topics such as risk management, network monitoring, endpoint security, threat analysis, and implementing solutions aligned with best security practices.\n\nThis training is essential for organizations that want to ensure a high level of protection and prepare their staff for IT security challenges.",
+        "description": "IT training courses focus on cyber security, infrastructure management and the latest technologies.\n\nThey include hands-on workshops that develop skills in threat detection, incident response and security management.\n\nThey help IT teams increase efficiency, reduce the risk of cyber attacks and introduce best practices, resulting in better protection, efficiency and regulatory compliance.",
         "titleKrzysci": "Benefits of cybersecurity training for IT staff:",
         "titleZagrozenia": "Risks if cybersecurity training is not conducted:",
         "iconsTop": [
