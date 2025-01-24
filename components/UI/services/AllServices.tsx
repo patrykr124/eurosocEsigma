@@ -4,10 +4,8 @@ import LeftSideBox from "@/components/UI/services/LeftSideBox";
 import RightSideBox from "@/components/UI/services/RightSideBox";
 import SwitchAbonament from "@/components/UI/SwitchAbonament";
 import { useState } from 'react';
-import { useTranslations } from "use-intl";
 
 export default function AllServices() {
-    const t = useTranslations();
 
     const [activeFilters, setActiveFilters] = useState<string[]>([])
 
