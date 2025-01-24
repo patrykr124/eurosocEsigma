@@ -33,7 +33,7 @@ export default function DlaczegoRed() {
                                     <CheckCheckIcon size={28} color='red'/> <p className='font-bold'>{t("checkIcon3")}</p>
                                 </div>
                             </div>
-                            <EncryptButtonRed onClick="" textData={t("button")}  className="bg-red-1 hover:bg-red-1-hover w-fit"/>
+                            <EncryptButtonRed onClick="" textData={t("button")}  className="bg-red-1 hover:bg-red-1-hover"/>
                         </div>
                     </div>
                     <div className="hidden lg:flex w-full md:w-1/2   justify-center p-2">

@@ -30,7 +30,7 @@ function SwitchAbonament({setActiveFilters}: Props) {
 
     return (
         <div className="w-full items-center flex flex-col lg:flex-row justify-between">
-            <div className="">
+            <div className="mb-6">
                 <h2 className="h2-medium text-center lg:text-left">{t("title2")}</h2>
             </div>
 
@@ -44,7 +44,7 @@ function SwitchAbonament({setActiveFilters}: Props) {
                 <div 
                     className={`absolute inset-0  flex ${switchTabs === t('switchTitle1') ? "justify-start" : "justify-end "} `}>
                     <motion.span layout transition={{type: "spring", damping: 15, stiffness: 250}}
-                                 className={`h-full w-1/2   rounded-2xl ${BG_COLOR}`}/>
+                                 className={`h-full w-1/2   rounded-lg ${BG_COLOR}`}/>
                 </div>
             </div>
         </div>

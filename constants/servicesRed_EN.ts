@@ -9,6 +9,9 @@ export const servicesDataRed_EN = [
         headerImg: "/assets/img/red/services/pene.png",
         position: "top",
         size: 0.40,
+        parallaxH2: "IT security",
+    parallaxP:
+      "Penetration tests are controlled attempts to break into an IT system to identify vulnerabilities and improve security.",
         description: "Penetration tests are an effective method of assessing IT infrastructure security by simulating real-world attacks.\n\nOur tests identify vulnerabilities in systems, applications, and networks, helping to minimize the risk of data breaches and cyberattacks.\n\nThanks to a professional approach, our experts deliver detailed reports with recommendations to support securing systems against potential threats.\n\nRegular penetration testing helps maintain a high level of security and ensures compliance with legal regulations and industry standards.",
         titleKrzysci: "Benefits of Penetration Tests:",
         titleZagrozenia: "Risks of Not Conducting Penetration Tests:",
@@ -184,6 +187,13 @@ export const servicesDataRed_EN = [
         ],
         filter: "testy",
         filter2: "one-time",
+        seo: {
+            title: "Network Segmentation",
+            description:
+              "Penetration testing is a controlled attempt to breach an IT system, allowing the identification of vulnerabilities and enhancing security.",
+            keywords: "penetration testing, IT security, vulnerability analysis",
+          },
+          
     },
     {
         id: "socjotechniczne",
@@ -195,6 +205,9 @@ export const servicesDataRed_EN = [
         headerImg: "/assets/img/red/services/socjot.png",
         position: "center",
         size: 3.45,
+        parallaxH2: "Zabezpieczenia IT",
+        parallaxP:
+      "Social engineering tests test employees' vulnerability to manipulation, such as phishing, increasing awareness of the risks.",
         description: "Social engineering tests are a form of evaluation that simulates attacks targeting the human factor to identify gaps in employee security awareness.\n\nOur tests use manipulation and social engineering techniques, such as phishing, pretexting, or baiting, to assess staff reactions to potential threats.\n\nThanks to social engineering tests, an organization can effectively increase employee security awareness, implement appropriate training, and reduce risks associated with the weakest link – humans.\n\nThese tests not only detect problems but also help build a culture of security within the organization.",
         titleKrzysci: "Benefits of Social Engineering Tests:",
         titleZagrozenia: "Risks of Not Conducting Social Engineering Tests:",
@@ -368,6 +381,14 @@ export const servicesDataRed_EN = [
         ],
         filter: "testy",
         filter2: "one-time",
+        seo: {
+            title: "Social Engineering Tests",
+            description:
+              "Social engineering tests assess employees' susceptibility to manipulation, such as phishing, increasing awareness of threats.",
+            keywords:
+              "social engineering tests, employee manipulation, phishing simulations",
+          },
+          
     },
     {
         id: "testybezpieczenstwafizycznego",
@@ -378,6 +399,8 @@ export const servicesDataRed_EN = [
         headerImg: "/assets/img/red/services/bez.png",
         position: "center",
         size: 1.1,
+        parallaxH2:"Physical security tests",
+        parallaxP:"Physical security tests assess the effectiveness of building security and alarm systems, providing protection against intruders.",
         titleAboutService: "Why is it worth conducting physical security tests?",
         description: "Physical security tests evaluate the effectiveness of safeguards against unauthorized access to an organization's infrastructure.\n\nOur tests include break-in simulations, access procedure evaluations, monitoring system reviews, and analysis of gaps in physical security.\n\nThanks to physical security tests, an organization can identify weaknesses in protection systems, improve procedures, and ensure the safety of its resources.\n\nRegular tests help minimize risks associated with physical threats such as break-ins, sabotage, or data theft.",
         titleKrzysci: "Benefits of Physical Security Tests:",
@@ -552,6 +575,14 @@ export const servicesDataRed_EN = [
         ],
         filter: "testy",
         filter2: "one-time",
+        seo: {
+            title: "Physical Security Testing",
+            description:
+              "Physical security tests evaluate the effectiveness of building protections and alarm systems, ensuring defense against intruders.",
+            keywords:
+              "physical security testing, infrastructure protection, security analysis",
+          },
+          
     },
     {
         id: "testyodpornoscinaatakiDDoS",
@@ -563,6 +594,8 @@ export const servicesDataRed_EN = [
         headerImg: "/assets/img/red/services/ddos.png",
         position: "bottom",
         size: 1,
+        parallaxH2:"Overload protection",
+        parallaxP:"Simulations of DDoS attacks assess the ability of IT systems to cope with sudden spikes in network traffic, ensuring business continuity.",
         description: "DDoS resilience tests assess the ability of IT infrastructure to handle intense, targeted network traffic aimed at disrupting services.\n\nOur tests simulate various types of DDoS attacks to identify system weaknesses, improve performance, and enhance network security.\n\nWith these tests, organizations can prepare effective defense strategies, minimize downtime risks, and protect their reputation.\n\nRegular DDoS resilience testing is crucial to address the growing threats in the digital world.",
         titleKrzysci: "Benefits of DDoS Attack Resilience Tests:",
         titleZagrozenia: "Risks of Not Conducting DDoS Resilience Tests:",
@@ -736,6 +769,13 @@ export const servicesDataRed_EN = [
         ],
         filter: "testy",
         filter2: "one-time",
+        seo: {
+            title: "DDoS Attack Resilience Testing",
+            description:
+              "DDoS attack simulations assess IT systems' ability to handle sudden surges in network traffic, ensuring operational continuity.",
+            keywords: "DDoS testing, overload protection, system resilience",
+          },
+          
     },
     {
         id: "skanypodatnosci",
@@ -747,6 +787,8 @@ export const servicesDataRed_EN = [
         headerImg: "/assets/img/red/services/podatnosc.png",
         position: "center",
         size: 1,
+        parallaxH2:"Analysis of IT risks",
+    parallaxP:"Vulnerability scanning identifies weaknesses in IT systems, allowing them to be quickly remedied and security to be enhanced.",
         description: "Vulnerability scans are automated tests that identify weaknesses in IT systems, applications, and networks.\n\nOur services include regular infrastructure scanning to detect potential security threats, such as outdated software, configuration errors, or zero-day vulnerabilities.\n\nWith vulnerability scans, organizations can quickly respond to threats, apply patches, and minimize attack risks.\n\nRegular scanning is a key element of IT security management that helps maintain high system resilience against cyber threats.",
         titleKrzysci: "Benefits of Regular Vulnerability Scans:",
         titleZagrozenia: "Risks of Not Conducting Vulnerability Scans:",
@@ -920,6 +962,13 @@ export const servicesDataRed_EN = [
         ],
         filter: "monitoringinfrastruktury",
         filter2: "one-time",
+        seo: {
+            title: "Vulnerability Scanning",
+            description:
+              "Vulnerability scanning identifies weaknesses in IT systems, enabling quick remediation and enhanced security.",
+            keywords: "vulnerability scanning, IT risk analysis, flaw detection",
+          },
+          
     },
     {
         id: "szkoleniezcyberbezpieczenstwa",
@@ -931,6 +980,8 @@ export const servicesDataRed_EN = [
         headerImg: "/assets/img/red/services/podatnosc.png",
         position: "top",
         size: 0.60,
+        parallaxH2:"IT security",
+        parallaxP:"Cyber security training increases employee awareness in recognising threats and protecting the company from attacks. We teach how to effectively respond to incidents and prevent threats.",
         description: "Cybersecurity training is a key element in building organizational awareness and protection against cyber threats.\n\nOur training includes practical exercises, real-world threat scenarios, and an overview of the latest attack techniques and defense methods.\n\nThrough our training, employees learn to identify threats such as phishing, social engineering attacks, and malware, and respond to them appropriately.\n\nInvesting in cybersecurity training minimizes the risk of incidents, enhances the company's resilience to attacks, and fosters a culture of security within the organization.",
         titleKrzysci: "Benefits of participating in cybersecurity training:",
         titleZagrozenia: "Risks of not conducting training:",
@@ -1104,6 +1155,14 @@ export const servicesDataRed_EN = [
         ],
         filter: "szkolenia",
         filter2: "one-time",
+        seo: {
+            title: "Cybersecurity Training",
+            description:
+              "Cybersecurity training enhances employees' awareness of threat recognition and protecting the company from attacks. We teach effective incident response and threat prevention.",
+            keywords:
+              "cybersecurity training, data protection, IT security",
+          },
+          
     },
     {
         id: "dlakadryinformatycznej",
@@ -1115,6 +1174,8 @@ export const servicesDataRed_EN = [
         headerImg: "/assets/img/red/services/podatnosc.png",
         position: "center",
         size: 3.4,
+        parallaxH2:"Technical support",
+        parallaxP:"We offer technical and training support to IT teams, helping them to manage security and respond effectively to threats.",
         description: "Training for IT staff focuses on advanced topics related to cybersecurity, IT infrastructure management, and the latest technologies.\n\nOur training programs include practical workshops that enable IT teams to enhance their skills in threat detection, incident response, and security system management.\n\nThrough this training, organizations can improve the effectiveness of their IT teams, reduce the risk of cyberattacks, and implement best practices in IT management.\n\nTraining for IT staff is an investment that brings tangible benefits in the form of better protection, efficiency, and regulatory compliance.",
         titleKrzysci: "Benefits of training for IT staff:",
         titleZagrozenia: "Risks of not conducting training:",
@@ -1288,6 +1349,14 @@ export const servicesDataRed_EN = [
         ],
         filter: "szkolenia",
         filter2: "one-time",
+        seo: {
+            title: "Services for IT Staff",
+            description:
+              "We provide technical and training support for IT teams, helping them manage security and effectively respond to threats.",
+            keywords:
+              "IT training, technical support, security management",
+          },
+          
     },
     {
         id: "wsparcie_w_obsludze_incydentu",
@@ -1299,6 +1368,8 @@ export const servicesDataRed_EN = [
         headerImg: "/assets/img/red/services/podatnosc.png",
         position: "center",
         size: 0.65,
+        parallaxH2:"Incident management",
+        parallaxP:"We provide comprehensive support in handling cyber security incidents. We respond quickly and effectively, minimising the impact of attacks on IT infrastructure.",
         description: "Our incident response support service provides immediate assistance in crisis situations related to cybersecurity.\n\nOur experts help quickly detect and neutralize threats, minimize their impact, and restore normal functioning of IT systems.\n\nThe support includes incident analysis, implementation of corrective actions, and advice on preventing similar situations in the future.\n\nWith our help, organizations can effectively manage incidents, minimizing financial, operational, and reputational losses.",
         titleKrzysci: "Benefits of incident response support:",
         titleZagrozenia: "Risks of lacking professional support:",
@@ -1472,6 +1543,14 @@ export const servicesDataRed_EN = [
         ],
         filter: "obslugaincydentow",
         filter2: "subscription",
+        seo: {
+            title: "Incident Handling Support",
+            description:
+              "Vulnerability scanning is the process of identifying weaknesses in IT systems that could be exploited by cybercriminals. It enables rapid threat identification and effective risk management.",
+            keywords:
+              "vulnerability scanning, IT flaw detection, security audit",
+          },
+          
     },
     {
         id: "III_linia_wsparcia_technicznego",
@@ -1483,6 +1562,8 @@ export const servicesDataRed_EN = [
         headerImg: "/assets/img/red/services/podatnosc.png",
         position: "center",
         size: 0.65,
+        parallaxH2:"Technical support",
+        parallaxP:"The 3rd line of technical support is expert help with the most complex IT problems that require in-depth analysis and effective solutions.",
         description: "Our third-line technical support service provides comprehensive assistance in resolving advanced technical issues.\n\nOur specialists possess expert knowledge, enabling them to quickly diagnose problems, develop solutions, and minimize IT system downtime.\n\nSupport includes ticket analysis, implementation of fixes, technical advice, and collaboration with software and hardware vendors to resolve complex incidents.\n\nThird-line technical support ensures that even the most demanding problems are quickly and effectively resolved.",
         titleKrzysci: "Benefits of third-line technical support:",
         titleZagrozenia: "Risks of lacking adequate support:",
@@ -1657,6 +1738,14 @@ export const servicesDataRed_EN = [
         ],
         filter: "obslugaincydentow",
         filter2: "subscription",
+        seo: {
+            title: "Tier 3 Technical Support",
+            description:
+              "Tier 3 technical support provides expert assistance for the most complex IT issues, requiring in-depth analysis and effective solutions.",
+            keywords:
+              "technical support, IT problem solving, advanced technical assistance",
+          },
+          
     },
     {
         id: "cykliczne_testy_socjotechniczne",
@@ -1668,6 +1757,8 @@ export const servicesDataRed_EN = [
         headerImg: "/assets/img/red/services/podatnosc.png",
         position: "center",
         size: 1.1,
+        parallaxH2:"Safety awareness",
+        parallaxP:"Regular socio-technical tests help to assess the vigilance of employees and increase awareness of threats such as phishing and manipulation.",
         description: "Periodic social engineering tests are designed to assess and improve employee awareness of potential social engineering threats, such as phishing, baiting, and pretexting.\n\nThese tests help organizations identify vulnerabilities in human behavior, enabling tailored training programs and reinforcing security measures.\n\nBy regularly conducting these tests, organizations can foster a culture of cybersecurity, mitigate risks associated with human error, and build a more resilient workforce against manipulative cyber threats.",
         titleKrzysci: "Benefits of periodic social engineering tests:",
         titleZagrozenia: "Risks of not conducting social engineering tests:",
@@ -1844,5 +1935,13 @@ export const servicesDataRed_EN = [
         ],
         filter: "testy",
         filter2: "subscription",
+        seo: {
+            title: "Recurring Social Engineering Tests",
+            description:
+              "Regular social engineering tests evaluate employee alertness and increase awareness of threats like phishing and manipulation.",
+            keywords:
+              "social engineering tests, manipulation simulations, security awareness",
+          },
+          
     }
 ]

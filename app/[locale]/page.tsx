@@ -1,5 +1,6 @@
 'use client'
 
+import EncryptedText from "@/components/EncryptText";
 import LocaleSwitcher from "@/components/UI/LocaleSwitch/LocaleSwitcher";
 import { Link } from "@/navigation";
 import { motion } from 'framer-motion';
@@ -53,17 +54,17 @@ export default function Home() {
                         <motion.div variants={vsgVariants} initial="hidden" animate={hover2 ? 'visible' : 'hidden'}
                             transition={{
                                 duration: 0.5, ease: "easeInOut", delay: 0.12
-                            }} className="max-w-xl border-gray-2  border-[1px] p-8 rounded-lg z-50 flex flex-col gap-4">
+                            }} className="max-w-xl border-gray-2 md:h-[400px] justify-center  border-[1px] p-8 rounded-lg z-50 flex flex-col gap-4">
                             <p
-                                className={`blue ${pClass}`}>{t("blue.title")}
+                                className={`blue break-words  ${pClass}`}><EncryptedText trigger={hover2} text={t("blue.title")} />
                             </p>
-                            <ul className="list-disc pl-10 list-outside space-y-2">
+                            <ul className="list-disc pl-10 list-outside space-y-2 break-words">
                                 {points.map((point: string, index: number) => (
-                                    <li key={index} className={`${pClass}`}>{point}</li>
+                                    <li key={index} className={`${pClass} `}> <EncryptedText text={point} trigger={hover2} /></li>
                                 ))}
                             </ul>
                             <p
-                                className={`blue ${pClass}`}>{t("blue.summary")}
+                                className={`blue break-words ${pClass}`}>  <EncryptedText text={t("blue.summary")} trigger={hover2} />
                             </p>
                         </motion.div>
                     </div>
@@ -74,17 +75,17 @@ export default function Home() {
                             transition={{
                                 duration: 0.5, ease: "easeInOut", delay: 0.12
                             }}
-                            className="max-w-xl border-gray-2  border-[1px] p-8 rounded-lg z-50 flex flex-col gap-4">
+                            className="max-w-xl border-gray-2 md:h-[400px] justify-center  border-[1px] p-8 rounded-lg z-50 flex flex-col gap-4">
                             <p
-                                className={`blue ${pClass}`}>{t("red.title")}
+                                className={`blue ${pClass} break-words`}><EncryptedText trigger={hover} text={t("red.title")} />
                             </p>
-                            <ul className="list-disc pl-10 list-outside space-y-2">
+                            <ul className="list-disc pl-10 list-outside space-y-2 break-words">
                                 {pointsRed.map((point: string, index: number) => (
-                                    <li key={index} className={`${pClass}`}>{point}</li>
+                                    <li key={index} className={`${pClass}`}><EncryptedText text={point} trigger={hover} /></li>
                                 ))}
                             </ul>
                             <p
-                                className={`blue ${pClass}`}>{t("red.summary")}
+                                className={`blue break-words ${pClass}`}> <EncryptedText text={t("red.summary")} trigger={hover} />
                             </p>
                         </motion.div>
 

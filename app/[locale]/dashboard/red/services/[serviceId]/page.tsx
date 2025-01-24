@@ -44,16 +44,16 @@ function Page({params}: ServicePageProps) {
                            urlImage={serviceFetchData.urlImage}
                            size={serviceFetchData.size}
                            classH2={"titleFrame-red"}
-                           BUTTON={<EncryptButtonRed onClick="" textData={t ("button")}
-                                                     className="bg-red-1 hover:bg-red-1-hover w-fit my-8"/>}/>
+                           BUTTON={<EncryptButtonRed onClick="" textData={t("button")}
+                                                     className="bg-red-1 hover:bg-red-1-hover my-8"/>}/>
             <Why
                 iconsBlue={serviceFetchData.iconsTop}
                 iconsRed={serviceFetchData.iconsRed}
                 titleKorzysci={serviceFetchData?.titleKrzysci}
                 titleZagrozenia={serviceFetchData?.titleZagrozenia}/>
 
-            <ParallaxInfo classH2={"titleFrame-red"} BUTTON={<EncryptButtonRed onClick="" textData={t ("button")}
-                                                                               className="bg-red-1 hover:bg-red-1-hover w-fit my-4"/>}/>
+            <ParallaxInfo h2={serviceFetchData?.parallaxH2} p={serviceFetchData?.parallaxP} classH2={"titleFrame-red"} BUTTON={<EncryptButtonRed onClick="" textData={t ("button")}
+                                                                               className="bg-red-1 hover:bg-red-1-hover  my-4"/>}/>
             <DoZapamietaniaRed doZapamietaniaTop={serviceFetchData.doZapamietaniaTop}
                                doZapamietaniaBottom={serviceFetchData.doZapamietaniaBottom}/>
             <FAQTemplateRed FAQLeft={serviceFetchData.FAQLeft} FAQRight={serviceFetchData.FAQRight}/>

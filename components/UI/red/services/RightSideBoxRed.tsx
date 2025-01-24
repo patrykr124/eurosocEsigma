@@ -6,6 +6,7 @@ import {motion} from "framer-motion";
 import {useLocale} from "use-intl";
 import {servicesDataRed_EN} from "@/constants/servicesRed_EN";
 import {Link} from "@/navigation";
+import { useTranslations } from "next-intl";
 
 interface Props {
     activeFilters: string[]
@@ -13,7 +14,7 @@ interface Props {
 
 function RightSideBoxRed({activeFilters}: Props) {
     const locale = useLocale();
-
+    const t = useTranslations("services")
     function truncetData(word: string, maxWord: number) {
         if (!word) return;
         if (word.length > maxWord) {
@@ -44,12 +45,12 @@ function RightSideBoxRed({activeFilters}: Props) {
                                     <h2 className='text-white lg:p-regular-24 p-regular-18 text-center '>{item.title}</h2>
                                 </div>
                             </div>
-                            <div className="bottom h-full   flex flex-col justify-between lg:py-6 py-3 px-3 lg:px-6 ">
+                            <div className="bottom h-[160px] md:h-[220px]   flex flex-col justify-between lg:py-6 py-3 px-3 lg:px-6 ">
                                 <div className="flex flex-col gap-2">
                                     <p className='p-medium-14 mb-2'>{truncetData(item.description, 160)}</p>
                                 </div>
-                                <EncryptButtonRed onClick="" textData="Zabezpiecz się"
-                                                  className="bg-red-1 hover:red-1-hover w-fit"/>
+                                <EncryptButtonRed onClick="" textData={t("encrypt2")}
+                                                  className="bg-red-1 hover:red-1-hover "/>
                             </div>
                         </div>
 

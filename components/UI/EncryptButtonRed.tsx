@@ -57,11 +57,7 @@ const EncryptButtonRed = ({textData, icon, className, onClick}: EncryptButtonPro
         setText(TARGET_TEXT);
     };
 
-    function handleClick() {
-        if (onClick) {
-            route.push(onClick);
-        }
-    }
+ 
 
     return (
         <motion.button
@@ -73,9 +69,10 @@ const EncryptButtonRed = ({textData, icon, className, onClick}: EncryptButtonPro
             }}
             onMouseEnter={scramble}
             onMouseLeave={stopScramble}
-            className={`group relative overflow-hidden rounded-lg tracking-wide px-4 h-fit py-2 font-medium uppercase text-white transition-colors duration-500 ${className}`}
-            onClick={handleClick}
-        ><Link href="/dashboard/red/services">
+            className={`group relative flex justify-center items-center flex-col overflow-hidden w-[230px] rounded-lg tracking-wide px-4 h-fit py-2 font-medium uppercase text-gray-3 transition-colors duration-500 ${className}`}
+          
+        >
+           <Link href={`${onClick}`} >
             <div className="relative z-10 flex items-center gap-2">
 
                 <span>{text}</span>

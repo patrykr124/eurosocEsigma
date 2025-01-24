@@ -37,10 +37,10 @@ const locale = useLocale();
                                 </motion.h1>
                             </div>
                         </div>
-                        <div className="overflow-hidden py-2">
+                        <div className="overflow-y-hidden py-2 px-1">
                             <motion.div variants={headerAnimationButton} initial="hidden" animate="visible"
-                                        className="space-x-5 text-end">
-                                <EncryptButtonRedContant onClick="" textData={t("buttonMain")}
+                                        className="space-x-5 text-end flex">
+                                <EncryptButtonRed onClick="" textData={t("buttonMain")}
                                                   className="bg-red-1 hover:red-1-hover"/>
                                 <Link className="button-white" href="#">{t("buttonInfo")}</Link>
                             </motion.div>
