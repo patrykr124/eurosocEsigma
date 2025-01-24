@@ -1,14 +1,14 @@
 'use client'
-import {Swiper, SwiperSlide} from 'swiper/react';
+import { SWIPER_DATA_BLUE, SWIPER_DATA_BLUE_EN } from "@/constants/SwiperData";
+import { ArrowLeft, ArrowRight } from "lucide-react";
+import Image from 'next/image';
+import { useEffect, useState } from "react";
+import { Autoplay, EffectCoverflow, Navigation, Pagination } from "swiper";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import Image from 'next/image';
-import {Autoplay, EffectCoverflow, Navigation, Pagination} from "swiper";
-import {SWIPER_DATA_BLUE, SWIPER_DATA_BLUE_EN} from "@/constants/SwiperData";
-import {ArrowLeft, ArrowRight} from "lucide-react";
-import {useEffect, useState} from "react";
-import {useLocale} from "use-intl";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { useLocale } from "use-intl";
 
 
 export default function SwiperSlider() {
@@ -64,7 +64,6 @@ export default function SwiperSlider() {
                 grabCursor={true}
                 loop={true}
                 modules={[Pagination, Navigation, EffectCoverflow, Autoplay]}
-                // autoplay={{delay: 2800, disableOnInteraction: false}}
                 spaceBetween={0}
                 slidesPerView={1.1}
                 onSlideChange={(swiper) => {
@@ -83,7 +82,7 @@ export default function SwiperSlider() {
                     },
 
                 }}
-                pagination={{el: ".swiper-pigination", clickable: true}}
+                pagination={{ el: ".swiper-pigination", clickable: true }}
                 navigation={{
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev',
@@ -104,7 +103,7 @@ export default function SwiperSlider() {
                     <SwiperSlide key={item.id}>
                         <div
                             className="w-full overflow-hidden h-[400px] rounded-xl relative flex justify-center items-center bg-black ">
-                            <Image className=' rounded-xl w-[500px] object-cover' src={item.img} alt='services' fill/>
+                            <Image className=' rounded-xl w-[500px] object-cover' src={item.img} alt='services' fill />
                             <div className="absolute max-w-[80%]">
                                 <div className="overflow-hidden flex ">
                                     <h4 className={`${activeIndex === item.id ? 'opacity-1 text' : 'opacity-0 '} transition-all duration-700 swiperHeaderText p-medium-32 text-center  text-white z-20`}>{texts[item.id]}</h4>
@@ -116,10 +115,10 @@ export default function SwiperSlider() {
 
                 <div className="slider-controler flex justify-center items-center">
                     <div className="swiper-button-prev slider-arrow">
-                        <ArrowLeft className="arrow"/>
+                        <ArrowLeft className="arrow" />
                     </div>
                     <div className="swiper-button-next slider-arrow">
-                        <ArrowRight className="arrow"/>
+                        <ArrowRight className="arrow" />
                     </div>
                     <div className="swiper-pigination gap-2 flex justify-center items-center mt-4"></div>
                 </div>

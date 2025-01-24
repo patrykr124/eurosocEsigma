@@ -8,8 +8,6 @@ import Dlaczego from "@/components/UI/blue/section/Onas/Dlaczego";
 import Opinie from "@/components/UI/blue/section/opinie/Opinie";
 import MorgueeText from "@/components/UI/blue/section/prologue/MorgueeText";
 import Services from "@/components/UI/blue/section/service/Services";
-import React from "react";
-import {usePathname} from "next/navigation";
 
 
 function Blue() {
@@ -17,15 +15,15 @@ function Blue() {
 
 
         <div>
-            <Header/>
-            <MorgueeText/>
-            <Services/>
-            <Dlaczego/>
-            <Tabs/>
-            <Map/>
-            <Opinie/>
-            <Certificate/>
-            <FAQBlueHome/>
+            <Header />
+            <MorgueeText />
+            <Services />
+            <Dlaczego />
+            <Tabs />
+            <Map />
+            <Opinie />
+            <Certificate />
+            <FAQBlueHome />
         </div>
 
 

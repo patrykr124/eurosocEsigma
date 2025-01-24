@@ -26,13 +26,13 @@ function OpinieRed() {
     infinite: true,
     speed: 500,
     slidesToScroll: 1,
-    slidesToShow: 2,
+    slidesToShow: 1,
     arrows: false,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
           dots: true
@@ -41,8 +41,8 @@ function OpinieRed() {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
+          slidesToShow: 1,
+          slidesToScroll: 1
         }
       },
       {

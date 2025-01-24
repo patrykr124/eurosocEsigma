@@ -10,8 +10,8 @@ import EncryptButtonRedContant from "@/components/UI/EncryptButtonRedContant";
 function HeaderRed() {
 const t = useTranslations("dashboard.header");
 const locale = useLocale();
-    const words = ["wdrożeniach", "szkoleniach", "audytach", "bezpieczeństwie"];
-    const words_EN = ["training", "education", "audit", "security"];
+    const words = ["wdrożeniach", "szkoleniach", "audytach",];
+    const words_EN = ["training", "education", "audit", ];
     const wordsLocale = locale === "pl" ? words : words_EN;
 
     return (

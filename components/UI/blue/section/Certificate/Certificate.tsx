@@ -1,8 +1,7 @@
 'use client'
-import Image from 'next/image'
-import React from 'react'
+import Image from 'next/image';
 import Slider from "react-slick";
-import {useTranslations} from "use-intl";
+import { useTranslations } from "use-intl";
 
 
 function Certificate() {
@@ -22,9 +21,10 @@ function Certificate() {
             {
                 breakpoint: 760,
                 settings: {
-                    slidesToShow:3,
+                    slidesToShow: 3,
                     slidesToScroll: 1,
-                }}
+                }
+            }
         ]
 
     };
@@ -36,49 +36,47 @@ function Certificate() {
             <div className="wrapper flex flex-col gap-12">
                 <div className="text flex flex-col  justify-center items-center">
                     <h2 className='h2-medium-42'>{t("title2")}</h2>
-                    <p className='max-w-2xl text-center'>{t("p1")}</p>
                 </div>
                 <div className=" slider-container relative  md:gap-12 justify-center">
                     <div className="absolute top-0 right-0  w-12 h-full z-10 bg-gradient-to-r from-transparent to-gray-2"></div>
                     <div className="absolute top-0 left-0  w-12 h-full z-10 bg-gradient-to-l from-transparent to-gray-2"></div>
                     <Slider
-                        {...settings}
-                    >
+                        {...settings}>
                         <div className={CSS_SLIDER}>
-                            <Image src='/assets/img/certyfikaty/gray/1.png' alt='certificate' width={190} height={190}/>
+                            <Image src='/assets/img/certyfikaty/gray/1.png' alt='certificate' width={190} height={190} />
                         </div>
                         <div className={CSS_SLIDER}>
-                            <Image src='/assets/img/certyfikaty/gray/2.png' alt='certificate' width={190} height={190}/>
+                            <Image src='/assets/img/certyfikaty/gray/2.png' alt='certificate' width={190} height={190} />
                         </div>
                         <div className={CSS_SLIDER}>
-                            <Image src='/assets/img/certyfikaty/gray/3.png' alt='certificate' width={190} height={190}/>
+                            <Image src='/assets/img/certyfikaty/gray/3.png' alt='certificate' width={190} height={190} />
                         </div>
 
                         <div className={CSS_SLIDER}>
-                            <Image src='/assets/img/certyfikaty/gray/4.png' alt='certificate' width={150} height={150}/>
+                            <Image src='/assets/img/certyfikaty/gray/4.png' alt='certificate' width={150} height={150} />
                         </div>
                         <div className={CSS_SLIDER}>
-                            <Image src='/assets/img/certyfikaty/gray/5.png' alt='certificate' width={150} height={150}/>
+                            <Image src='/assets/img/certyfikaty/gray/5.png' alt='certificate' width={150} height={150} />
                         </div>
                         <div className={CSS_SLIDER}>
-                            <Image src='/assets/img/certyfikaty/gray/6.png' alt='certificate' width={150} height={150}/>
+                            <Image src='/assets/img/certyfikaty/gray/6.png' alt='certificate' width={150} height={150} />
                         </div>
                         <div className={CSS_SLIDER}>
-                            <Image src='/assets/img/certyfikaty/gray/7.png' alt='certificate' width={190} height={190}/>
+                            <Image src='/assets/img/certyfikaty/gray/7.png' alt='certificate' width={190} height={190} />
                         </div>
                         <div className={CSS_SLIDER}>
-                            <Image src='/assets/img/certyfikaty/gray/8.png' alt='certificate' width={150} height={150}/>
+                            <Image src='/assets/img/certyfikaty/gray/8.png' alt='certificate' width={150} height={150} />
                         </div>
                         <div className={CSS_SLIDER}>
-                            <Image src='/assets/img/certyfikaty/gray/9.png' alt='certificate' width={150} height={150}/>
+                            <Image src='/assets/img/certyfikaty/gray/9.png' alt='certificate' width={150} height={150} />
                         </div>
                         <div className={CSS_SLIDER}>
                             <Image src='/assets/img/certyfikaty/gray/10.png' alt='certificate' width={150}
-                                   height={150}/>
+                                height={150} />
                         </div>
                         <div className={CSS_SLIDER}>
                             <Image src='/assets/img/certyfikaty/gray/11.png' alt='certificate' width={150}
-                                   height={150}/>
+                                height={150} />
                         </div>
                     </Slider>
                 </div>

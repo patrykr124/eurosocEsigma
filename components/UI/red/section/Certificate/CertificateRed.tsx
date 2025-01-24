@@ -31,7 +31,6 @@ function CertificateRed() {
             <div className="wrapper flex flex-col gap-12">
                 <div className="text flex flex-col  justify-center items-center">
                     <h2 className='h2-medium-42'>{t("title2")}</h2>
-                    <p className='max-w-2xl text-center'>{t("p1")}</p>
                 </div>
                 <div className=" slider-container  md:gap-12 justify-center">
 

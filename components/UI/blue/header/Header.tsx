@@ -11,7 +11,7 @@ function Header() {
     const locale = useLocale();
 
 
-    const words = locale === "pl" ? ["wdrożeniach", "szkoleniach", "audytach", "bezpieczeństwie"] : ["training", "security", "academic", "security"];
+    const words = locale === "pl" ? ["wdrożeniach", "szkoleniach", "audytach",] : ["training", "security", "academic"];
 
 
     return (

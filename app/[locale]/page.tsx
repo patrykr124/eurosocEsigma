@@ -54,7 +54,7 @@ export default function Home() {
                         <motion.div variants={vsgVariants} initial="hidden" animate={hover2 ? 'visible' : 'hidden'}
                             transition={{
                                 duration: 0.5, ease: "easeInOut", delay: 0.12
-                            }} className="max-w-xl border-gray-2 md:h-[400px] justify-center  border-[1px] p-8 rounded-lg z-50 flex flex-col gap-4">
+                            }} className="xl:max-w-xl md:max-w-md border-gray-2 md:h-[400px] justify-center  border-[1px] p-8 rounded-lg z-50 flex flex-col gap-4">
                             <p
                                 className={`blue break-words  ${pClass}`}><EncryptedText trigger={hover2} text={t("blue.title")} />
                             </p>
@@ -75,7 +75,7 @@ export default function Home() {
                             transition={{
                                 duration: 0.5, ease: "easeInOut", delay: 0.12
                             }}
-                            className="max-w-xl border-gray-2 md:h-[400px] justify-center  border-[1px] p-8 rounded-lg z-50 flex flex-col gap-4">
+                            className="xl:max-w-xl md:max-w-md border-gray-2 md:h-[400px] justify-center  border-[1px] p-8 rounded-lg z-50 flex flex-col gap-4">
                             <p
                                 className={`blue ${pClass} break-words`}><EncryptedText trigger={hover} text={t("red.title")} />
                             </p>
@@ -108,8 +108,8 @@ export default function Home() {
                     <Image className="absolute left-0 top-0 p-8" width="300" height="300"
                         src="/assets/img/logo-blue.svg"
                         alt="logo" />
-                    <h1 className="p-medium-20 text-white absolute lg:right-0 top-20 lg:top-0 p-8 max-w-sm lg:max-w-max">{t("wybor")}</h1>
-                    <div className="z-50 absolute bottom-0 right-0 p-8">
+                    {/* <h1 className="p-medium-20 text-white absolute lg:right-0 top-20 lg:top-0 p-8 max-w-sm lg:max-w-max">{t("wybor")}</h1> */}
+                    <div className="z-50 absolute top-0 right-0 p-8">
                         <LocaleSwitcher />
                     </div>
                 </div>
@@ -121,7 +121,7 @@ export default function Home() {
                         <Image className=" left-0 top-0" width="150" height="150"
                             src="/assets/img/logo-blue.svg"
                             alt="logo" />
-                        <h1 className="p-medium-16 text-white  lg:right-0 top-20 lg:top-0">{t("wybor")}</h1>
+                        {/* <h1 className="p-medium-16 text-white  lg:right-0 top-20 lg:top-0">{t("wybor")}</h1> */}
                     </div>
                     <div className="flex flex-col gap-12 justify-center items-center h-[75vh]">
                         <Link href="/dashboard/blue" className="top relative w-full ">
