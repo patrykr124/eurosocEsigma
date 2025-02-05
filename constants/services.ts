@@ -3,15 +3,15 @@ export const servicesData = [
     id: "segmentacja",
     title: "Segmentacja sieci",
     title2: "",
-    titleAboutService:
-      "Dlaczego warto zakupić usługę Segmentacja sieci?",
+    titleAboutService: "Dlaczego warto zakupić usługę Segmentacja sieci?",
     url: "/dashboard/blue/services/segmentacja",
     urlImage: "/assets/img/net.png",
     headerImg: "/assets/img/services/net.png",
     position: "center",
     size: 0.22,
-    parallaxH2:"Bezpieczeństwo IT",
-    parallaxP:"Segmentacja sieci pozwala na podział infrastruktury IT na mniejsze, odizolowane segmenty, zwiększając bezpieczeństwo i kontrolę nad danymi.",
+    parallaxH2: "Bezpieczeństwo IT",
+    parallaxP:
+      "Segmentacja sieci pozwala na podział infrastruktury IT na mniejsze, odizolowane segmenty, zwiększając bezpieczeństwo i kontrolę nad danymi.",
     description:
       "Segmentacja sieci dzieli infrastrukturę IT na mniejsze, odizolowane segmenty, co zwiększa bezpieczeństwo i kontrolę nad danymi.\n\nProces obejmuje analizę infrastruktury, projektowanie segmentów, implementację polityk oraz monitorowanie.\n\nDzięki temu minimalizowane jest ryzyko rozprzestrzeniania się zagrożeń i zwiększa się zgodność z regulacjami.",
     //korzysci i zagrozenia
@@ -69,7 +69,7 @@ export const servicesData = [
       {
         id: 2,
         image: "/assets/img/icons/kara.svg",
-        title: "kary",
+        title: "Kary",
         desc: "Wysokie kary finansowe za naruszenia przepisów dotyczących ochrony danych.",
       },
       {
@@ -81,7 +81,7 @@ export const servicesData = [
       {
         id: 4,
         image: "/assets/img/icons/przestoje.png",
-        title: "przestoje",
+        title: "Przestoje",
         desc: "Możliwość wystąpienia przestojów operacyjnych w przypadku ataku.",
       },
       {
@@ -101,7 +101,7 @@ export const servicesData = [
       {
         id: 1,
         image: "/assets/img/icons/zapobieganie.svg",
-        title: "kluczowy",
+        title: "Kluczowy",
         desc: "DLP to kluczowy element ochrony danych w nowoczesnej firmie.",
       },
       {
@@ -146,7 +146,7 @@ export const servicesData = [
       },
       {
         id: 4,
-        title: "JCzy DLP wpływa na codzienną pracę moich pracowników?",
+        title: "Czy DLP wpływa na codzienną pracę moich pracowników?",
         content:
           "DLP działa w tle i monitoruje przepływ danych, nie zakłócając pracy. Jednak może blokować nieautoryzowane działania lub dostarczać ostrzeżenia o potencjalnych zagrożeniach, jeśli dojdzie do prób przesyłu poufnych informacji.",
       },
@@ -224,10 +224,11 @@ export const servicesData = [
     headerImg: "/assets/img/services/auth.png",
     position: "bottom",
     size: 0.28,
-    parallaxH2:"Ochrona infrastruktury",
-    parallaxP:"Mechanizmy ochronne to zaawansowane rozwiązania zabezpieczające infrastrukturę IT przed zagrożeniami i minimalizujące ryzyko przestojów.",
+    parallaxH2: "Wieloskładnikowe uwierzytelnienie MFA",
+    parallaxP:
+      "Mechanizmy silnego uwierzytelnienia zwiększają bezpieczeństwo dostępu do systemów dzięki wykorzystaniu metod takich jak MFA, biometria, tokeny sprzętowe i certyfikaty cyfrowe",
     description:
-      "Mechanizmy ochronne to cyfrowe rozwiązania, które chronią infrastrukturę IT, wykrywając i zapobiegając incydentom.\n\nObejmują ocenę ryzyka, dobór narzędzi, implementację oraz monitorowanie.\n\nDzięki nim firmy mogą zwiększyć bezpieczeństwo, zredukować ryzyko przestojów i utrzymać zgodność z przepisami.",
+      "Mechanizmy silnego uwierzytelnienia zapewniają najwyższy poziom ochrony dostępu do systemów IT.\n\nDzięki wykorzystaniu wieloskładnikowego uwierzytelnienia (MFA), biometrii, tokenów sprzętowych i certyfikatów cyfrowych, minimalizują ryzyko nieautoryzowanego dostępu.\n\nRozwiązania te zwiększają bezpieczeństwo, chronią dane i spełniają wymogi regulacyjne, takie jak NIS2 czy RODO.\nTo skuteczna ochrona Twojej infrastruktury przed zagrożeniami",
     titleKrzysci:
       "Korzyści z zastosowania mechanizmów silnego uwierzytelniania:",
     titleZagrozenia: "Zagrożenia, gdy usługa nie jest zakupiona:",
@@ -354,7 +355,7 @@ export const servicesData = [
       },
       {
         id: 3,
-        title: "JCzy MFA może być stosowane na urządzeniach mobilnych?",
+        title: "Czy MFA może być stosowane na urządzeniach mobilnych?",
         content:
           "Tak, MFA jest w pełni kompatybilne z urządzeniami mobilnymi, co pozwala na wygodne korzystanie z aplikacji uwierzytelniających oraz dodatkowych metod, takich jak kody SMS.",
       },
@@ -436,8 +437,9 @@ export const servicesData = [
     headerImg: "/assets/img/services/email.png",
     position: "center",
     size: 0.6,
-    parallaxH2:"Ochrona danych",
-    parallaxP:"Korporacyjna ochrona danych zapewnia kompleksowe zabezpieczenie wrażliwych informacji biznesowych przed utratą lub wyciekiem.",
+    parallaxH2: "Bezpieczny mail",
+    parallaxP:
+      "Korporacyjna poczta e-mail z funkcją sandbox chroni przed phishingiem, ransomware i złośliwymi załącznikami, minimalizując ryzyko wycieku danych.",
     titleAboutService:
       "Dlaczego warto zakupić usługę korporacyjnej poczty e-mail z sandboxem?",
     description:
@@ -653,8 +655,9 @@ export const servicesData = [
     headerImg: "/assets/img/services/updates.png",
     position: "center",
     size: 0.28,
-    parallaxH2:"Automatyzacja",
-    parallaxP:"Automatyzacja procesów bezpieczeństwa to narzędzia, które zwiększają efektywność i skracają czas reakcji na zagrożenia.",
+    parallaxH2: "Monitoring 24/7",
+    parallaxP:
+      "Automatyzacja procesów bezpieczeństwa to narzędzia, które zwiększają efektywność i skracają czas reakcji na zagrożenia.",
     description:
       "Automatyzacja procesów bezpieczeństwa to technologie, które monitorują systemy 24/7, eliminując błędy ludzkie i przyspieszając reakcję na zagrożenia.\n\nProces obejmuje analizę, dobór narzędzi, konfigurację i automatyczne wdrożenie.\n\nDzięki temu organizacje mogą szybciej reagować, oszczędzać koszty i lepiej zarządzać czasem.",
     titleKrzysci:
@@ -870,8 +873,10 @@ export const servicesData = [
     headerImg: "/assets/img/services/inventory.png",
     position: "center",
     size: 0.28,
-    parallaxH2:"inwentaryzacja IT, zarządzanie zasobami, analiza infrastruktury",
-    parallaxP:"Inwentaryzacja infrastruktury IT pozwala na dokładne zmapowanie zasobów firmy, zwiększając przejrzystość i kontrolę nad infrastrukturą.",
+    parallaxH2:
+      "inwentaryzacja IT, zarządzanie zasobami, analiza infrastruktury",
+    parallaxP:
+      "Inwentaryzacja infrastruktury IT pozwala na dokładne zmapowanie zasobów firmy, zwiększając przejrzystość i kontrolę nad infrastrukturą.",
     description:
       "Inwentaryzacja IT to proces mapowania urządzeń, systemów i oprogramowania w organizacji.\n\nDzięki regularnym skanowaniom, kategoryzacji i dokumentacji możliwa jest pełna kontrola nad infrastrukturą.\n\nUsługa poprawia bezpieczeństwo, zwiększa przejrzystość i oszczędza czas zespołu IT.",
     titleKrzysci:
@@ -895,7 +900,7 @@ export const servicesData = [
       {
         id: 3,
         image: "/assets/img/icons/ochrona.svg",
-        title: "wykrywanie",
+        title: "Wykrywanie",
         desc: "Szybkie wykrywanie przestarzałego lub niezgodnego oprogramowania.",
       },
       {
@@ -918,7 +923,6 @@ export const servicesData = [
         desc: "Poprawa bezpieczeństwa poprzez stałe monitorowanie i aktualizacje.",
       },
     ],
-
     //red
     iconsRed: [
       {
@@ -1081,18 +1085,19 @@ export const servicesData = [
     },
   },
   {
-    id: "centralny",
-    title: "Centralne Zarządzanie Infrastruktura IT",
+    id: "centralny_system_zarzadzania_haslami",
+    title: "Centralny System Zarządzania Hasłami",
     title2: "",
     titleAboutService:
       "Dlaczego warto zakupić usługę centralnego systemu zarządzania hasłami?",
-    url: "/dashboard/blue/services/centralny",
+    url: "/dashboard/blue/services/centralny_system_zarzadzania_haslami",
     urlImage: "/assets/img/key.png",
     headerImg: "/assets/img/services/password.png",
     position: "center",
     size: 0.35,
-    parallaxH2:"Monitoring systemów",
-    parallaxP:"Centralne zarządzanie infrastrukturą IT pozwala na kontrolowanie i monitorowanie systemów z jednego miejsca, zwiększając efektywność i bezpieczeństwo.",
+    parallaxH2: "Zarządzanie hasłami",
+    parallaxP:
+      "Centralne zarządzanie infrastrukturą IT pozwala na kontrolowanie i monitorowanie systemów z jednego miejsca, zwiększając efektywność i bezpieczeństwo.",
     description:
       "Centralne zarządzanie to kompleksowe rozwiązanie, które umożliwia kontrolę całej infrastruktury IT z jednego miejsca.\n\nProces obejmuje integrację systemów, monitorowanie, automatyzację oraz zarządzanie dostępem.\n\nZapewnia lepszą efektywność, uproszczenie procesów i większe bezpieczeństwo organizacji.",
     titleKrzysci:
@@ -1129,7 +1134,7 @@ export const servicesData = [
       {
         id: 5,
         image: "/assets/img/icons/zaufanie.svg",
-        title: "kontrola",
+        title: "Kontrola",
         desc: "Pełna kontrola nad dostępem do krytycznych zasobów i danych.",
       },
       {
@@ -1139,7 +1144,6 @@ export const servicesData = [
         desc: "Poprawa zgodności z regulacjami prawnymi dotyczącymi zarządzania danymi uwierzytelniającymi.",
       },
     ],
-
     //red
     iconsRed: [
       {
@@ -1312,8 +1316,9 @@ export const servicesData = [
     headerImg: "/assets/img/services/bg.png",
     position: "bottom",
     size: 0.4,
-    parallaxH2:"Monitoring systemów",
-    parallaxP:"Ochrona infrastruktury IT zapewnia stałą ochronę systemów przed zagrożeniami, minimalizując ryzyko ataków i przestojów.",
+    parallaxH2: "Rozwiązania DLP",
+    parallaxP:
+      "Ochrona Infrastruktury IT to kompleksowe rozwiązania, które chronią systemy, sieci i dane firmowe przed zagrożeniami. Zapewniamy bezpieczeństwo poprzez zaawansowane technologie i monitoring.",
     description:
       "Data Loss Prevention (DLP) to rozwiązanie chroniące wrażliwe dane przed przypadkowym lub celowym ujawnieniem.\n\nPozwala na monitorowanie i kontrolę przepływu informacji w organizacji, zapewniając ochronę danych w ruchu i spoczynku.\n\nDLP zwiększa bezpieczeństwo, zapobiega wyciekom oraz wspiera zgodność z regulacjami, dając pełną widoczność nad dostępem i wykorzystaniem danych, co minimalizuje ryzyko naruszeń.",
     titleKrzysci:
@@ -1513,18 +1518,19 @@ export const servicesData = [
     },
   },
   {
-    id: "monitorowanie",
+    id: "monitorowanie_infrastruktury_it",
     title: "Monitorowanie Infrastruktury IT",
     title2: "",
     titleAboutService:
       "Dlaczego warto zakupić usługę monitorowania infrastruktury w trybie ciągłym (SIEM)?",
-    url: "/dashboard/blue/services/monitorowanie",
+    url: "/dashboard/blue/services/monitorowanie_infrastruktury_it",
     urlImage: "/assets/img/SIEM.png",
     headerImg: "/assets/img/services/bg.png",
     position: "bottom",
     size: 0.45,
-    parallaxH2:"Monitoring IT",
-    parallaxP:"Monitorowanie infrastruktury IT pozwala na stałą analizę działania systemów i szybką reakcję na potencjalne zagrożenia.",
+    parallaxH2: "Monitoring IT",
+    parallaxP:
+      "Monitorowanie infrastruktury IT pozwala na stałą analizę działania systemów i szybką reakcję na potencjalne zagrożenia.",
     description:
       "System SIEM (Security Information and Event Management) monitoruje infrastrukturę IT, analizując dane z systemów, aplikacji i urządzeń sieciowych.\n\nPozwala szybko wykrywać zagrożenia w czasie rzeczywistym, wspiera natychmiastową reakcję na incydenty, minimalizuje ryzyko strat i przerw operacyjnych oraz pomaga spełniać wymagania regulacyjne.",
     titleKrzysci:
@@ -1738,8 +1744,9 @@ export const servicesData = [
     headerImg: "/assets/img/services/bg.png",
     position: "bottom",
     size: 0.35,
-    parallaxH2:"Ochrona urządzeń mobilnych",
-    parallaxP:"Ochrona urządzeń mobilnych zabezpiecza smartfony i tablety przed zagrożeniami, chroniąc wrażliwe dane firmowe.",
+    parallaxH2: "Bezpieczeństwo mobilne",
+    parallaxP:
+      "Ochrona urządzeń mobilnych zabezpiecza smartfony i tablety przed zagrożeniami, chroniąc wrażliwe dane firmowe.",
     description:
       "Ochrona urządzeń mobilnych to kompleksowe rozwiązanie, które zabezpiecza smartfony i tablety przed zagrożeniami.\n\nProces obejmuje identyfikację urządzeń, wdrożenie zabezpieczeń, monitorowanie oraz szkolenie pracowników.\n\nChroni dane firmowe i zwiększa świadomość użytkowników.",
     titleKrzysci: "Korzyści z zastosowania ochrony urządzeń mobilnych (MDM):",
@@ -1951,8 +1958,9 @@ export const servicesData = [
     headerImg: "/assets/img/services/bg.png",
     position: "bottom",
     size: 3.5,
-    parallaxH2:"Zarządzanie zagrożeniami",
-    parallaxP:"UTM to kompleksowe rozwiązanie chroniące sieć przed różnymi typami zagrożeń, zapewniające łatwość zarządzania i wysoki poziom bezpieczeństwa.",
+    parallaxH2: "Zarządzanie zagrożeniami",
+    parallaxP:
+      "UTM to kompleksowe rozwiązanie chroniące sieć przed różnymi typami zagrożeń, zapewniające łatwość zarządzania i wysoki poziom bezpieczeństwa.",
     description:
       "UTM to kompleksowe narzędzie, które łączy różne funkcje ochrony IT, takie jak firewall, filtrowanie treści i zarządzanie dostępem.\n\nZapewnia wszechstronną ochronę sieci, łatwość zarządzania i optymalizację kosztów.\n\nTo zaawansowany strażnik Twojej infrastruktury.",
     titleKrzysci:
@@ -2167,8 +2175,9 @@ export const servicesData = [
     headerImg: "/assets/img/services/bg.png",
     position: "bottom",
     size: 3.6,
-    parallaxH2:"Optymalizacja zasobów",
-    parallaxP:"Wirtualizacja umożliwia efektywne wykorzystanie zasobów IT poprzez tworzenie wirtualnych środowisk, zwiększając elastyczność i redukując koszty.",
+    parallaxH2: "Optymalizacja zasobów",
+    parallaxP:
+      "Wirtualizacja umożliwia efektywne wykorzystanie zasobów IT poprzez tworzenie wirtualnych środowisk, zwiększając elastyczność i redukując koszty.",
     description:
       "Wirtualizacja to proces tworzenia wirtualnych wersji zasobów IT na jednej platformie.\n\nPozwala na efektywne wykorzystanie zasobów, optymalizację kosztów i elastyczne zarządzanie środowiskiem IT.\n\nTo nowoczesne podejście, które zwiększa skalowalność i redukuje koszty operacyjne.",
     titleKrzysci:
@@ -2381,8 +2390,9 @@ export const servicesData = [
     headerImg: "/assets/img/services/bg.png",
     position: "bottom",
     size: 6,
-    parallaxH2:"Endpoint security",
-    parallaxP:"Ochrona urządzeń końcowych minimalizuje ryzyko ataków na komputery i inne urządzenia firmowe, zwiększając poziom bezpieczeństwa organizacji.",
+    parallaxH2: "Endpoint security",
+    parallaxP:
+      "Ochrona urządzeń końcowych minimalizuje ryzyko ataków na komputery i inne urządzenia firmowe, zwiększając poziom bezpieczeństwa organizacji.",
     description:
       "Systemy EDR i XDR chronią urządzenia końcowe przed zaawansowanymi zagrożeniami.\n\nEDR monitoruje aktywność na urządzeniach i umożliwia szybkie reakcje na incydenty, a XDR integruje dane z systemów, takich jak sieci i serwery, dostarczając pełniejszy obraz zagrożeń.\n\nDzięki nim firmy zyskują kompleksową ochronę, minimalizując ryzyko cyberataków, przestojów i strat.",
     titleKrzysci: "Korzyści z wdrożenia ochrony urządzeń końcowych (EDR/XDR):",
@@ -2594,8 +2604,9 @@ export const servicesData = [
     headerImg: "/assets/img/services/audit.png",
     position: "bottom",
     size: 3.5,
-    parallaxH2:"Bezpieczeństwo informacji",
-    parallaxP:"Kompleksowe opracowanie dokumentacji SZBI, obejmujące polityki, procedury i wytyczne zapewniające spójne zarządzanie bezpieczeństwem informacji.",
+    parallaxH2: "Bezpieczeństwo informacji",
+    parallaxP:
+      "Kompleksowe opracowanie dokumentacji SZBI, obejmujące polityki, procedury i wytyczne zapewniające spójne zarządzanie bezpieczeństwem informacji.",
     description:
       "Opracowanie dokumentacji SZBI to tworzenie kluczowych dokumentów, procedur i polityk, które stanowią podstawę Systemu Zarządzania Bezpieczeństwem Informacji.\n\nProces obejmuje analizę potrzeb organizacji, opracowanie dokumentów i wdrożenie ich w firmie zgodnie z wymogami normy ISO 27001 oraz innymi regulacjami prawnymi.\n\nDokumentacja zapewnia porządek, zgodność z regulacjami oraz jasne wytyczne dla pracowników.",
     titleKrzysci: "Korzyści z opracowania dokumentacji SZBI:",
@@ -2809,8 +2820,9 @@ export const servicesData = [
     headerImg: "/assets/img/services/bg.png",
     position: "bottom",
     size: 1,
-    parallaxH2:"Polityka bezpieczeństwa",
-    parallaxP:"Tworzymy politykę bezpieczeństwa dostosowaną do potrzeb Twojej firmy, zapewniającą spójność działań i ochronę przed zagrożeniami.",
+    parallaxH2: "Polityka bezpieczeństwa",
+    parallaxP:
+      "Tworzymy politykę bezpieczeństwa dostosowaną do potrzeb Twojej firmy, zapewniającą spójność działań i ochronę przed zagrożeniami.",
     description:
       "Polityka Bezpieczeństwa to dokument określający zasady ochrony informacji w firmie.\n\nStworzenie jasnych reguł minimalizuje ryzyko chaosu, chroni dane i zwiększa zgodność z przepisami.\n\nProces obejmuje analizę ryzyk, tworzenie zasad oraz wdrożenie z odpowiednimi szkoleniami.",
     titleKrzysci: "Korzyści z opracowania polityki bezpieczeństwa:",
@@ -3027,8 +3039,9 @@ export const servicesData = [
     headerImg: "/assets/img/services/bg.png",
     position: "bottom",
     size: 1,
-    parallaxH2:"Polityka kopii zapasowych",
-    parallaxP:"Opracowanie Polityki Ciągłości Działania umożliwia Twojej firmie skuteczne reagowanie na sytuacje kryzysowe, minimalizując ryzyko przestojów i strat.",
+    parallaxH2: "Zarządzanie kryzysowe",
+    parallaxP:
+      "Opracowanie Polityki Ciągłości Działania umożliwia Twojej firmie skuteczne reagowanie na sytuacje kryzysowe, minimalizując ryzyko przestojów i strat.",
     description:
       "Polityka Ciągłości Działania definiuje, jak firma powinna reagować w sytuacjach kryzysowych, aby zapewnić nieprzerwane funkcjonowanie kluczowych procesów.\n\nPlanowanie awaryjne, testowanie i doskonalenie to kroki, które zwiększają odporność firmy na kryzysy.",
     titleKrzysci: "Korzyści z opracowania polityki ciągłości działania:",
@@ -3250,10 +3263,12 @@ export const servicesData = [
     headerImg: "/assets/img/services/bg.png",
     position: "bottom",
     size: 1.3,
-    parallaxH2:"Polityka kopii zapasowych",
-    parallaxP:"Tworzymy politykę kopii zapasowych, która określa zasady tworzenia i przechowywania backupów, chroniąc dane przed utratą.",
+    parallaxH2: "Polityka kopii zapasowych",
+    parallaxP:
+      "Tworzymy politykę kopii zapasowych, która określa zasady tworzenia i przechowywania backupów, chroniąc dane przed utratą.",
     description:
       "Polityka Kopii Zapasowych to dokument określający zasady tworzenia, przechowywania i odzyskiwania danych w przypadku ich utraty.\n\nDzięki temu firma może uniknąć strat danych i zapewnić ich szybkie odzyskanie w razie awarii lub ataku.",
+    titleKrzysci: "Korzyści z opracowania polityki ciągłości działania:",
     titleZagrozenia:
       "Zagrożenia, gdy polityka kopii zapasowych nie jest opracowana:",
     //icon BLUE
@@ -3461,15 +3476,15 @@ export const servicesData = [
     id: "audyt_zgodnosci_z_NIS2",
     title: "Audyt zgodności z NIS2",
     title2: "",
-    titleAboutService:
-      "Dlaczego warto zakupić usługę audytu zgodności z NIS2?",
+    titleAboutService: "Dlaczego warto zakupić usługę audytu zgodności z NIS2?",
     url: "/dashboard/blue/services/audyt_zgodnosci_z_NIS2",
     urlImage: "/assets/img/audyt.svg",
     headerImg: "/assets/img/services/bg.png",
     position: "bottom",
     size: 1.1,
-    parallaxH2:"Audyt bezpieczeństwa",
-    parallaxP:"Przeprowadzamy audyty zgodności z NIS2, identyfikując luki w zabezpieczeniach i pomagając spełnić wymagania dyrektywy.",
+    parallaxH2: "Audyt bezpieczeństwa",
+    parallaxP:
+      "Przeprowadzamy audyty zgodności z NIS2, identyfikując luki w zabezpieczeniach i pomagając spełnić wymagania dyrektywy.",
     description:
       "Audyt zgodności z NIS2 sprawdza, czy firma spełnia wymagania Dyrektywy NIS2 dotyczącej bezpieczeństwa sieci i informacji.\n\nAnaliza aktualnego stanu, identyfikacja niezgodności i rekomendacje pomagają uniknąć kar oraz zwiększyć bezpieczeństwo.",
     titleKrzysci: "Korzyści z audytu zgodności z NIS2:",
@@ -3678,15 +3693,15 @@ export const servicesData = [
     id: "audyt_zgodnosci_z_KRI",
     title: "Audyt zgodności z KRI",
     title2: "",
-    titleAboutService:
-      "Dlaczego warto zakupić usługę audytu zgodności z KRI?",
+    titleAboutService: "Dlaczego warto zakupić usługę audytu zgodności z KRI?",
     url: "/dashboard/blue/services/audyt_zgodnosci_z_KRI",
     urlImage: "/assets/img/audyt.svg",
     headerImg: "/assets/img/services/bg.png",
     position: "bottom",
     size: 1.1,
-    parallaxH2:"Zgodność z KRI",
-    parallaxP:"Przeprowadzamy audyt zgodności z KRI, oceniając, czy dane krytyczne są odpowiednio zabezpieczone zgodnie z regulacjami.",
+    parallaxH2: "Zgodność z KRI",
+    parallaxP:
+      "Przeprowadzamy audyt zgodności z KRI, oceniając, czy dane krytyczne są odpowiednio zabezpieczone zgodnie z regulacjami.",
     description:
       "Audyt zgodności z KRI weryfikuje, czy firma odpowiednio zabezpiecza informacje krytyczne zgodnie z regulacjami.\n\nProces obejmuje ocenę polityk i procedur, identyfikację luk oraz rekomendacje, co pozwala na skuteczną ochronę kluczowych danych.",
     titleKrzysci: "Korzyści z audytu zgodności z KRI:",
@@ -3895,15 +3910,15 @@ export const servicesData = [
     id: "audyt_zgodnosci_z_KSC",
     title: "Audyt zgodności z KSC",
     title2: "",
-    titleAboutService:
-      "Dlaczego warto zakupić usługę audytu zgodności z KSC?",
+    titleAboutService: "Dlaczego warto zakupić usługę audytu zgodności z KSC?",
     url: "/dashboard/blue/services/audyt_zgodnosci_z_KSC",
     urlImage: "/assets/img/audyt.svg",
     headerImg: "/assets/img/services/bg.png",
     position: "bottom",
     size: 1.1,
-    parallaxH2:"Infrastruktura krytyczna",
-    parallaxP:"Audyt zgodności z KSC umożliwia weryfikację ochrony infrastruktury krytycznej i zgodności z krajowymi przepisami.",
+    parallaxH2: "Infrastruktura krytyczna",
+    parallaxP:
+      "Audyt zgodności z KSC umożliwia weryfikację ochrony infrastruktury krytycznej i zgodności z krajowymi przepisami.",
     description:
       "Audyt zgodności z KSC sprawdza, czy firma spełnia wymogi Krajowego Systemu Cyberbezpieczeństwa.\n\nAnaliza polityk, weryfikacja zgodności i rekomendacje pozwalają chronić infrastrukturę krytyczną i budować zaufanie klientów.",
     titleKrzysci: "Korzyści z audytu zgodności z KSC:",
@@ -3950,7 +3965,7 @@ export const servicesData = [
       },
     ],
     //red
-    iconsRedTop: [
+    iconsRed: [
       {
         id: 1,
         image: "/assets/img/icons/utrata.svg",
@@ -4118,8 +4133,9 @@ export const servicesData = [
     headerImg: "/assets/img/services/bg.png",
     position: "bottom",
     size: 1.1,
-    parallaxH2:"Zarządzanie bezpieczeństwem informacji",
-    parallaxP:"Sprawdzamy system zarządzania bezpieczeństwem informacji (SZBI), identyfikując słabe punkty i wprowadzając rekomendacje naprawcze.",
+    parallaxH2: "Zarządzanie bezpieczeństwem informacji",
+    parallaxP:
+      "Sprawdzamy system zarządzania bezpieczeństwem informacji (SZBI), identyfikując słabe punkty i wprowadzając rekomendacje naprawcze.",
     description:
       "Audyt SZBI ocenia skuteczność Systemu Zarządzania Bezpieczeństwem Informacji.\n\nProces obejmuje przegląd polityk, ocenę zgodności z normami zgodne z ISO/IEC 27001 i identyfikację niezgodności.\n\nTo kluczowy krok w zapewnieniu wysokiego poziomu ochrony danych w firmie.",
     titleKrzysci: "Korzyści z audytu SZBI (ISO/IEC 27001):",
@@ -4167,7 +4183,7 @@ export const servicesData = [
       },
     ],
     //red
-    iconsRedTop: [
+    iconsRed: [
       {
         id: 1,
         image: "/assets/img/icons/utrata.svg",
@@ -4337,8 +4353,9 @@ export const servicesData = [
     headerImg: "/assets/img/services/bg.png",
     position: "bottom",
     size: 1.1,
-    parallaxH2:"Standardy bezpieczeństwa",
-    parallaxP:"Oferujemy audyty zgodności z międzynarodowymi standardami ISO/IEC 27001 i 27002, zapewniając zgodność z normami bezpieczeństwa.",
+    parallaxH2: "Standardy bezpieczeństwa",
+    parallaxP:
+      "Oferujemy audyty zgodności z międzynarodowymi standardami ISO/IEC 27001 i 27002, zapewniając zgodność z normami bezpieczeństwa.",
     description:
       "Audyt ISO/IEC sprawdza, czy firma spełnia międzynarodowe standardy bezpieczeństwa informacji, takie jak ISO/IEC 22301.\n\nOcena polityk i procedur, identyfikacja luk i rekomendacje pozwalają zapewnić zgodność z normami i ochronę danych.",
     titleKrzysci: "Korzyści z audytu zgodności z ISO/IEC 22301:",
@@ -4556,8 +4573,9 @@ export const servicesData = [
     headerImg: "/assets/img/services/course.png",
     position: "top",
     size: 3.5,
-    parallaxH2:"Standardy bezpieczeństwa",
-    parallaxP:"Szkolenie z cyberbezpieczeństwa dla kadry administracyjnej zwiększa świadomość i kompetencje pracowników odpowiedzialnych za zarządzanie danymi i infrastrukturą IT. Oferujemy teorię, praktykę i ćwiczenia dostosowane do potrzeb Twojej organizacji.",
+    parallaxH2: "Standardy bezpieczeństwa",
+    parallaxP:
+      "Szkolenie z cyberbezpieczeństwa dla kadry administracyjnej zwiększa świadomość i kompetencje pracowników odpowiedzialnych za zarządzanie danymi i infrastrukturą IT. Oferujemy teorię, praktykę i ćwiczenia dostosowane do potrzeb Twojej organizacji.",
     description:
       "Szkolenie z cyberbezpieczeństwa dla kadry administracyjnej zwiększa świadomość i kompetencje pracowników odpowiedzialnych za zarządzanie danymi i infrastrukturą IT.\n\nProgram obejmuje teorię, praktyczne ćwiczenia i symulacje, które uczą, jak zapobiegać, rozpoznawać i reagować na zagrożenia.\n\nTo klucz do ochrony firmy przed atakami i zgodności z regulacjami.",
     titleKrzysci:
@@ -4781,8 +4799,9 @@ export const servicesData = [
     headerImg: "/assets/img/services/course.png",
     position: "top",
     size: 3.5,
-    parallaxH2:"Cyberbezpieczeństwo kadra IT",
-    parallaxP:"Zaawansowane szkolenie dla kadry informatycznej rozwija techniczne umiejętności w zakresie ochrony infrastruktury IT, zarządzania incydentami oraz wdrażania najlepszych praktyk.",
+    parallaxH2: "Cyberbezpieczeństwo kadra IT",
+    parallaxP:
+      "Zaawansowane szkolenie dla kadry informatycznej rozwija techniczne umiejętności w zakresie ochrony infrastruktury IT, zarządzania incydentami oraz wdrażania najlepszych praktyk.",
     description:
       "Szkolenia IT koncentrują się na cyberbezpieczeństwie, zarządzaniu infrastrukturą i najnowszych technologiach. Obejmują warsztaty praktyczne, rozwijające umiejętności w wykrywaniu zagrożeń, reagowaniu na incydenty i zarządzaniu bezpieczeństwem. Dzięki nim zespoły IT zwiększają skuteczność, zmniejszają ryzyko cyberataków i wprowadzają najlepsze praktyki, co przekłada się na lepszą ochronę, wydajność i zgodność z regulacjami.",
     titleKrzysci:
@@ -5006,8 +5025,9 @@ export const servicesData = [
     headerImg: "/assets/img/services/course.png",
     position: "top",
     size: 3.5,
-    parallaxH2:"Cyberbezpieczeństwo kadra zarządzająca",
-    parallaxP:"Program edukacyjny dla liderów organizacji, który pozwala zrozumieć zagrożenia cyberbezpieczeństwa, wdrażać strategie ochrony oraz efektywnie zarządzać ryzykiem.",
+    parallaxH2: "Cyberbezpieczeństwo kadra zarządzająca",
+    parallaxP:
+      "Program edukacyjny dla liderów organizacji, który pozwala zrozumieć zagrożenia cyberbezpieczeństwa, wdrażać strategie ochrony oraz efektywnie zarządzać ryzykiem.",
     description:
       "Szkolenie dla kadry zarządzającej pomaga liderom organizacji zrozumieć zagrożenia cyberbezpieczeństwa i wdrażać najlepsze praktyki zarządzania ryzykiem.\n\nProgram koncentruje się na strategiach zarządzania kryzysowego i podejmowaniu decyzji, które zapewniają bezpieczeństwo całej firmy.\n\nTo szkolenie zwiększa odporność organizacji na zagrożenia.",
     titleKrzysci:
@@ -5230,8 +5250,9 @@ export const servicesData = [
     headerImg: "/assets/img/services/audit.png",
     position: "bottom",
     size: 0.6,
-    parallaxH2:"Wsparcie techniczne",
-    parallaxP:"II linia wsparcia technicznego zapewnia pomoc w rozwiązywaniu złożonych problemów IT, minimalizując przestoje i zwiększając efektywność działania firmy.",
+    parallaxH2: "Wsparcie techniczne",
+    parallaxP:
+      "II linia wsparcia technicznego zapewnia pomoc w rozwiązywaniu złożonych problemów IT, minimalizując przestoje i zwiększając efektywność działania firmy.",
     description:
       "II linia wsparcia technicznego to specjalistyczna pomoc w rozwiązywaniu bardziej skomplikowanych problemów technicznych, które nie zostały rozwiązane na pierwszym poziomie wsparcia.\n\nEksperci analizują zgłoszenia, minimalizując przestoje i zapewniając ciągłość działania infrastruktury IT.\n\nTo kluczowy element w szybkim przywracaniu sprawności systemów.",
     titleKrzysci: "Korzyści z II linii wsparcia technicznego:",
@@ -5341,7 +5362,7 @@ export const servicesData = [
       {
         id: 2,
         image: "/assets/img/icons/ochrona.svg",
-        title: "kluczowe",
+        title: "Kluczowe",
         desc: "Jest kluczowa dla organizacji, które wymagają szybkiej reakcji na poziomie technicznym.",
       },
     ],
@@ -5450,8 +5471,9 @@ export const servicesData = [
     headerImg: "/assets/img/services/bg.png",
     position: "bottom",
     size: 1.3,
-    parallaxH2:"Archiwizacja danych",
-    parallaxP:"Automatyczne tworzenie codziennych kopii zapasowych logów systemowych i aplikacyjnych, zapewniające bezpieczeństwo i możliwość odzyskiwania kluczowych danych.",
+    parallaxH2: "Archiwizacja danych",
+    parallaxP:
+      "Automatyczne tworzenie codziennych kopii zapasowych logów systemowych i aplikacyjnych, zapewniające bezpieczeństwo i możliwość odzyskiwania kluczowych danych.",
     description:
       "Codzienne kopie zapasowe logów to automatyczne tworzenie kopii wszystkich logów systemowych i aplikacyjnych.\n\nZapewniają bezpieczeństwo danych, łatwość ich odzyskiwania oraz pełną zgodność z przepisami.\n\nTo jak cyfrowy dziennik, który pozwala śledzić incydenty i analizować historię operacji w firmie.",
     titleKrzysci: "Korzyści z codziennych kopii zapasowych logów:",
@@ -5670,8 +5692,9 @@ export const servicesData = [
     headerImg: "/assets/img/services/bg.png",
     position: "bottom",
     size: 1.1,
-    parallaxH2:"Disaster recovery",
-    parallaxP:"Regularne testy odzyskiwania danych pozwalają upewnić się, że systemy backupowe działają poprawnie i można na nich polegać w przypadku awarii.",
+    parallaxH2: "Disaster recovery",
+    parallaxP:
+      "Regularne testy odzyskiwania danych pozwalają upewnić się, że systemy backupowe działają poprawnie i można na nich polegać w przypadku awarii.",
     description:
       "Cykliczne testy odtwarzania to regularne sprawdzanie, czy systemy backupowe działają poprawnie i czy dane można odzyskać w przypadku awarii.\n\nTesty zapewniają gotowość na sytuacje kryzysowe i pozwalają szybko przywrócić normalne działanie firmy.\n\nTo fundament odporności na awarie.",
     titleKrzysci: "Korzyści z cyklicznych testów odtworzeniowych:",
@@ -5891,8 +5914,9 @@ export const servicesData = [
     headerImg: "/assets/img/services/bg.png",
     position: "bottom",
     size: 3.2,
-    parallaxH2:"Testy odzyskiwania danych",
-    parallaxP:"Security Operations Center (SOC) to centrum monitorowania i zarządzania bezpieczeństwem IT, zapewniające szybką reakcję na incydenty i zwiększenie bezpieczeństwa organizacji.",
+    parallaxH2: "Testy odzyskiwania danych",
+    parallaxP:
+      "Security Operations Center (SOC) to centrum monitorowania i zarządzania bezpieczeństwem IT, zapewniające szybką reakcję na incydenty i zwiększenie bezpieczeństwa organizacji.",
     description:
       "SOC to centrum monitorowania i zarządzania bezpieczeństwem IT, które działa w czasie rzeczywistym.\n\nEksperci analizują zagrożenia, wykrywają incydenty i podejmują działania, aby chronić firmę przed atakami.\n\nSOC zwiększa bezpieczeństwo, minimalizuje ryzyko przestojów i zapewnia zgodność z przepisami.",
     titleKrzysci: "Korzyści z monitoringu infrastruktury (SOC):",
@@ -6106,8 +6130,9 @@ export const servicesData = [
     headerImg: "/assets/img/services/bg.png",
     position: "bottom",
     size: 0.8,
-    parallaxH2:"Monitoring bezpieczeństwa",
-    parallaxP:"Odmiejscowienie kopii zapasowych chroni dane przed katastrofami, przechowując je w bezpiecznych, oddzielnych lokalizacjach fizycznych.",
+    parallaxH2: "Monitoring bezpieczeństwa",
+    parallaxP:
+      "Odmiejscowienie kopii zapasowych chroni dane przed katastrofami, przechowując je w bezpiecznych, oddzielnych lokalizacjach fizycznych.",
     description:
       "Odmiejscowione kopie zapasowe chronią dane, przechowując je w fizycznie oddzielonej lokalizacji.\n\nTo kluczowy element strategii na wypadek katastrof, takich jak pożary czy powodzie.\n\nUsługa zapewnia ciągłość działania firmy i bezpieczeństwo krytycznych informacji, niezależnie od sytuacji w głównej siedzibie.",
     titleKrzysci:

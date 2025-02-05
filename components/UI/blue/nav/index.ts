@@ -42,8 +42,8 @@ export const itemsMenu = [
             },
             {
                 id: 6,
-                name: "Centralne Zarządzanie Infrastruktura IT",
-                url: "/dashboard/blue/services/centralny",
+                name: " Centralny System Zarządzania Hasłami",
+                url: "/dashboard/blue/services/centralny_system_zarzadzania_haslami",
                 img: "/assets/img/korzysci.jpg",
             },
             {
@@ -55,7 +55,7 @@ export const itemsMenu = [
             {
                 id: 8,
                 name: "Monitorowanie Infrastruktury IT",
-                url: "/dashboard/blue/services/monitorowanie",
+                url: "/dashboard/blue/services/monitorowanie_infrastruktury_it",
                 img: "/assets/img/korzysci.jpg",
             },
             {

@@ -50,7 +50,7 @@ export default function NavOpen({ ishandleOpen, setIsHandleOpen }: NavOpenProps)
                         <h2 className="p-bold-24 text-white">{t("title1")}</h2>
                         <div className="flex flex-col gap-4">
                             {servicesItem && servicesItem.featured && servicesItem.featured.map((item) => {
-                                const isActive = pathname && pathname.includes(item.url);
+                                const isActive = pathname?.replace("/pl", "") === item.url
                                 return (
                                     <Link onClick={() => setIsHandleOpen(false)}
                                         href={item.url}
