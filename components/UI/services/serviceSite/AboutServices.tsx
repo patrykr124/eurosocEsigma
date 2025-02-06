@@ -9,12 +9,13 @@ interface props {
     desc: React.ReactNode,
     titleAboutService: string,
     urlImage: string | undefined,
+    title2?: string | undefined,
     size: number,
     classH2: string,
     BUTTON: React.ReactNode,
 }
 
-export default function AboutServices({desc, titleAboutService, urlImage, size, classH2, BUTTON}: props) {
+export default function AboutServices({desc,title2, titleAboutService, urlImage, size, classH2, BUTTON}: props) {
     const t = useTranslations('servicesPage');
     return (
         <section className='common-padding' style={{
@@ -27,7 +28,7 @@ export default function AboutServices({desc, titleAboutService, urlImage, size, 
                         viewport={{once: true, amount: 0.5}} className="wrapper">
                 <div className="flex lg:flex-row flex-col ">
                     <div className="left justify-center lg:order-1 flex-1 flex flex-col ">
-                        <h2 className={classH2}>{t("title")}</h2>
+                        <h2 className={classH2}>{title2}</h2>
                         <h2 className='h2-medium-42 pb-2'>{titleAboutService}</h2>
                         <p>{desc}</p>
                         {BUTTON}

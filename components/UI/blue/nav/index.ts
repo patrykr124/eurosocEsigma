@@ -72,8 +72,8 @@ export const itemsMenu = [
             },
             {
                 id: 11,
-                name: "Wirtualizacja",
-                url: "/dashboard/blue/services/wirtualizacja",
+                name: "Wirtualizacja Serwerów",
+                url: "/dashboard/blue/services/wirtualizacja_serwerow",
                 img: "/assets/img/korzysci.jpg",
             },
             {
@@ -301,7 +301,7 @@ export const itemsMenu_EN = [
             {
                 id: 11,
                 name: "Server Virtualization and High Availability Clusters",
-                url: "/dashboard/blue/services/wirtualizacja",
+                url: "/dashboard/blue/services/wirtualizacja_serwerow",
                 img: "/assets/img/korzysci.jpg",
             },
             {

@@ -2,14 +2,14 @@ export const servicesData = [
   {
     id: "Testy",
     title: "Testy penetracyjne ",
-    title2: "",
+    title2: "Zabezpieczenia IT",
     titleAboutService: "Dlaczego warto przeprowadzać testy penetracyjne?",
     url: "/dashboard/red/services/Testy",
     urlImage: "/assets/img/red/parciple/key.png",
     headerImg: "/assets/img/red/services/pene.png",
     position: "top",
     size: 0.4,
-    parallaxH2: "Zabezpieczenia IT",
+    parallaxH2: "Zwiększenie bezpieczeństwa IT",
     parallaxP:
       "Testy penetracyjne to kontrolowane próby włamania do systemu IT, pozwalające zidentyfikować słabe punkty i zwiększyć bezpieczeństwo.",
     description:
@@ -215,14 +215,14 @@ export const servicesData = [
   {
     id: "socjotechniczne",
     title: "Testy socjotechniczne ",
-    title2: "",
+    title2: "Manipulacja pracowników",
     titleAboutService: "Dlaczego warto przeprowadzać testy socjotechniczne?",
     url: "/dashboard/red/services/socjotechniczne",
     urlImage: "/assets/img/red/parciple/testy.svg",
     headerImg: "/assets/img/red/services/socjot.png",
     position: "center",
     size: 3.45,
-    parallaxH2: "Phishing simulations",
+    parallaxH2: "Symulacje phishingu",
     parallaxP:
       "Testy socjotechniczne sprawdzają podatność pracowników na manipulacje, takie jak phishing, zwiększając świadomość zagrożeń.",
     description:
@@ -428,13 +428,13 @@ export const servicesData = [
   {
     id: "testybezpieczenstwafizycznego",
     title: "Testy bezpieczeństwa fizycznego",
-    title2: "",
+    title2: "Ochrona infrastruktury",
     url: "/dashboard/red/services/testybezpieczenstwafizycznego",
     urlImage: "/assets/img/red/parciple/safe.png",
     headerImg: "/assets/img/red/services/bez.png",
     position: "center",
     size: 1.1,
-    parallaxH2:"Testy bezpieczeństwa fizycznego",
+    parallaxH2:"Analiza zabezpieczeń",
     parallaxP:"Testy bezpieczeństwa fizycznego pozwalają ocenić skuteczność zabezpieczeń budynków i systemów alarmowych, zapewniając ochronę przed intruzami.",
     titleAboutService:
       "Dlaczego warto przeprowadzać testy bezpieczeństwa fizycznego?",
@@ -642,7 +642,7 @@ export const servicesData = [
   {
     id: "testyodpornoscinaatakiDDoS",
     title: "Testy odporności na ataki DDoS",
-    title2: "",
+    title2: "Odporność systemu",
     titleAboutService:
       "Dlaczego warto przeprowadzać testy odporności na ataki DDoS?",
     url: "/dashboard/blue/services/testyodpornoscinaatakiDDoS",
@@ -855,7 +855,7 @@ export const servicesData = [
   {
     id: "skanypodatnosci",
     title: "Skany podatnosci",
-    title2: "",
+    title2: "Wykrywanie luk IT",
     titleAboutService: "Dlaczego warto wykonywać regularne skany podatności?",
     url: "/dashboard/blue/services/skanypodatnosci",
     urlImage: "/assets/img/red/parciple/test.svg",
@@ -1066,7 +1066,7 @@ export const servicesData = [
   {
     id: "szkoleniezcyberbezpieczenstwa",
     title: "Szkolenie z cyberbezpieczeństwa",
-    title2: "",
+    title2: "Ochrona danych",
     titleAboutService:
       "Dlaczego warto zainwestować w szkolenia z cyberbezpieczeństwa?",
     url: "/dashboard/red/services/szkolenie",
@@ -1271,11 +1271,11 @@ export const servicesData = [
     },
   },
   {
-    id: "dlakadryinformatycznej",
-    title: "Usługi dla kadry informatycznej",
-    title2: "",
+    id: "szkolenie_dla_kadry_informatycznej",
+    title: "Szkolenie dla kadry informatycznej",
+    title2: "Szkolenia IT",
     titleAboutService: "Dlaczego warto szkolić kadrę informatyczną?",
-    url: "/dashboard/blue/services/dlakadryinformatycznej",
+    url: "/dashboard/blue/services/szkolenie_dla_kadry_informatycznej",
     urlImage: "/assets/img/red/parciple/SZBI.svg",
     headerImg: "/assets/img/red/services/podatnosc.png",
     position: "center",
@@ -1484,7 +1484,7 @@ export const servicesData = [
   {
     id: "wsparcie_w_obsludze_incydentu",
     title: "Wsparcie w obsłudze incydentu",
-    title2: "",
+    title2: "Obsługa incydentów",
     titleAboutService:
       "Dlaczego warto skorzystać ze wsparcia w obsłudze incydentu?",
     url: "/dashboard/red/services/wsparcie_w_obsludze_incydentu",
@@ -1692,7 +1692,7 @@ export const servicesData = [
   {
     id: "III_linia_wsparcia_technicznego",
     title: "III linia wsparcia technicznego",
-    title2: "",
+    title2: "Zaawansowana pomoc techniczna",
     titleAboutService:
       "Dlaczego warto skorzystać z III linii wsparcia technicznego?",
     url: "/dashboard/blue/services/III_linia_wsparcia_technicznego",
@@ -1700,7 +1700,7 @@ export const servicesData = [
     headerImg: "/assets/img/red/services/podatnosc.png",
     position: "center",
     size: 0.65,
-    parallaxH2:"Wsparcie techniczne",
+    parallaxH2:"Rozwiązywanie problemów IT ",
     parallaxP:"III linia wsparcia technicznego to ekspercka pomoc w najbardziej złożonych problemach IT, które wymagają dogłębnej analizy i skutecznych rozwiązań.",
     description:
       "III linia wsparcia technicznego to zaawansowana pomoc dla najtrudniejszych problemów technicznych, z którymi nie poradziły sobie wcześniejsze poziomy wsparcia.\n\nZespół ekspertów analizuje i rozwiązuje najbardziej skomplikowane przypadki, minimalizując przestoje i ryzyko eskalacji problemów.\n\nDzięki temu organizacje mogą szybko przywrócić sprawność systemów i zoptymalizować działanie infrastruktury IT.",
@@ -1898,8 +1898,8 @@ export const servicesData = [
   },
   {
     id: "cykliczne_testy_socjotechniczne",
-    title: "Cykliczne testy socjotechniczne",
-    title2: "",
+    title: "System inwentaryzacji sprzętu i oprogramowania",
+    title2: "Zarządzanie sprzętem",
     titleAboutService:
       "Dlaczego warto zakupić usługę wdrożenia systemu inwentaryzacji sprzętu i oprogramowania?",
     url: "/dashboard/blue/services/cykliczne_testy_socjotechniczne",
@@ -1907,8 +1907,8 @@ export const servicesData = [
     headerImg: "/assets/img/red/services/podatnosc.png",
     position: "center",
     size: 1.1,
-    parallaxH2:"Świadomość bezpieczeństwa",
-    parallaxP:"Regularne testy socjotechniczne pozwalają ocenić czujność pracowników i zwiększyć świadomość zagrożeń, takich jak phishing i manipulacje.",
+    parallaxH2:"Monitoring oprogramowania",
+    parallaxP:"System inwentaryzacji sprzętu i oprogramowania pozwala na pełną kontrolę nad zasobami IT. Umożliwia monitorowanie, audyt oraz zarządzanie licencjami i konfiguracją systemów.",
     description:
       "Wdrożenie systemu inwentaryzacji sprzętu i oprogramowania pozwala firmie na automatyczne zarządzanie zasobami IT, zapewniając stałą kontrolę nad posiadanymi urządzeniami, licencjami i oprogramowaniem.\n\nTaki system nie tylko pomaga monitorować wykorzystanie zasobów, ale także minimalizuje ryzyko związane z nieaktualnym oprogramowaniem, niezgodnymi licencjami oraz zapewnia zgodność z wymogami regulacyjnymi.\n\nAutomatyczna inwentaryzacja pozwala na szybkie identyfikowanie i zarządzanie zasobami, co optymalizuje koszty i poprawia bezpieczeństwo organizacji.",
     titleKrzysci:

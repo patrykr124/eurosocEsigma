@@ -43,11 +43,10 @@ function Page({ params }: ServicePageProps) {
     return (
         <div>
             <Header title={serviceFetchData.title}
-                title2={serviceFetchData.title2}
                 headerImg={serviceFetchData.headerImg}
                 position={serviceFetchData.position}
             />
-            <AboutServices titleAboutService={serviceFetchData.titleAboutService}
+            <AboutServices title2={serviceFetchData.title2} titleAboutService={serviceFetchData.titleAboutService}
                 desc={<span style={{ whiteSpace: 'pre-wrap' }}>{serviceFetchData.description}</span>}
                 urlImage={serviceFetchData.urlImage}
                 size={serviceFetchData.size}

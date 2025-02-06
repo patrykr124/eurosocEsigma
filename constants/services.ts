@@ -2,7 +2,7 @@ export const servicesData = [
   {
     id: "segmentacja",
     title: "Segmentacja sieci",
-    title2: "",
+    title2: "Zarządzanie dostępem",
     titleAboutService: "Dlaczego warto zakupić usługę Segmentacja sieci?",
     url: "/dashboard/blue/services/segmentacja",
     urlImage: "/assets/img/net.png",
@@ -216,7 +216,7 @@ export const servicesData = [
   {
     id: "mechanizmy",
     title: "Mechanizmy Ochronne",
-    title2: "",
+    title2: "Silne uwierzytelnienie",
     titleAboutService:
       "Dlaczego warto zakupić usługę wdrożenia mechanizmów silnego uwierzytelniania?",
     url: "/dashboard/blue/services/mechanizmy",
@@ -431,7 +431,7 @@ export const servicesData = [
   {
     id: "korporacyjna",
     title: "Korporacyjna Ochrona Danych",
-    title2: "",
+    title2: "Ochrona danych e-mail",
     url: "/dashboard/blue/services/korporacyjna",
     urlImage: "/assets/img/poster.png",
     headerImg: "/assets/img/services/email.png",
@@ -647,7 +647,7 @@ export const servicesData = [
   {
     id: "automatyzacja",
     title: "Automatyzacja Procesów Bezpieczeństwa",
-    title2: "",
+    title2: "Automatyzacja bezpieczeństwa",
     titleAboutService:
       "Dlaczego warto zakupić usługę automatyzacji aktualizacji oprogramowania?",
     url: "/dashboard/blue/services/automatyzacja",
@@ -865,7 +865,7 @@ export const servicesData = [
   {
     id: "inwentaryzacja",
     title: "Inwentaryzacja Infrastruktury IT",
-    title2: "",
+    title2: "Analiza infrastruktury IT",
     titleAboutService:
       "Dlaczego warto zakupić usługę wdrożenia systemu inwentaryzacji sprzętu i oprogramowania?",
     url: "/dashboard/blue/services/inwentaryzacja",
@@ -1087,7 +1087,7 @@ export const servicesData = [
   {
     id: "centralny_system_zarzadzania_haslami",
     title: "Centralny System Zarządzania Hasłami",
-    title2: "",
+    title2: "Centralne zarządzanie instrukturą IT",
     titleAboutService:
       "Dlaczego warto zakupić usługę centralnego systemu zarządzania hasłami?",
     url: "/dashboard/blue/services/centralny_system_zarzadzania_haslami",
@@ -1308,7 +1308,7 @@ export const servicesData = [
   {
     id: "ochrona",
     title: "Ochrona Infrastruktury IT",
-    title2: "",
+    title2: "Bezpieczeństwo infrastruktury IT",
     titleAboutService:
       "Dlaczego warto zakupić usługę ochrony przed wyciekami danych (DLP)?",
     url: "/dashboard/blue/services/ochrona",
@@ -1520,7 +1520,7 @@ export const servicesData = [
   {
     id: "monitorowanie_infrastruktury_it",
     title: "Monitorowanie Infrastruktury IT",
-    title2: "",
+    title2: "Monitoring w trybie ciągłym SIEM",
     titleAboutService:
       "Dlaczego warto zakupić usługę monitorowania infrastruktury w trybie ciągłym (SIEM)?",
     url: "/dashboard/blue/services/monitorowanie_infrastruktury_it",
@@ -1736,7 +1736,7 @@ export const servicesData = [
   {
     id: "mobilnych",
     title: "Ochrona Urządzeń Mobilnych",
-    title2: "",
+    title2: "Bezpieczeństwo smartfonów i tabletów",
     titleAboutService:
       "Dlaczego warto zakupić usługę ochrony urządzeń mobilnych (MDM)?",
     url: "/dashboard/blue/services/mobilnych",
@@ -1950,7 +1950,7 @@ export const servicesData = [
   {
     id: "(UTM)",
     title: "UTM (Unified Threat Management)",
-    title2: "",
+    title2: "Kompleksowa ochrona sieci",
     titleAboutService:
       "Dlaczego warto zakupić usługę wdrożenia ochrony punktu styku z siecią Internet (UTM)?",
     url: "/dashboard/blue/services/(UTM)",
@@ -2165,12 +2165,12 @@ export const servicesData = [
     },
   },
   {
-    id: "wirtualizacja",
-    title: "Wirtualizacja",
-    title2: "",
+    id: "wirtualizacja_serwerow",
+    title: "Wirtualizacja Serwerów",
+    title2: "Wirtualizacja zasobów IT",
     titleAboutService:
       "Dlaczego warto zakupić usługę wdrożenia wirtualizacji serwerów i klastra wysokiej dostępności?",
-    url: "/dashboard/blue/services/wirtualizacja",
+    url: "/dashboard/blue/services/wirtualizacja_serwerow",
     urlImage: "/assets/img/server.svg",
     headerImg: "/assets/img/services/bg.png",
     position: "bottom",
@@ -2382,7 +2382,7 @@ export const servicesData = [
   {
     id: "ochronaurzadzenkoncowych",
     title: "Ochrona urządzeń końcowych",
-    title2: "",
+    title2: "EDR/XDR",
     titleAboutService:
       "Dlaczego warto zakupić usługę wdrożenia ochrony urządzeń końcowych (EDR/XDR)?",
     url: "/dashboard/blue/services/ochronaurzadzenkoncowych",
@@ -2596,7 +2596,7 @@ export const servicesData = [
   {
     id: "SZBI",
     title: "Opracowanie dokumentacji SZBI",
-    title2: "",
+    title2: "Dokumentacja SZBI",
     titleAboutService:
       "Dlaczego warto zakupić usługę opracowania dokumentacji SZBI?",
     url: "/dashboard/blue/services/SZBI",
@@ -2812,7 +2812,7 @@ export const servicesData = [
   {
     id: "opracowanie-polityki-bezpieczenstwa",
     title: "Opracowanie polityki bezpieczeństwa",
-    title2: "",
+    title2: "Procedury IT",
     titleAboutService:
       "Dlaczego warto zakupić usługę opracowania polityki bezpieczeństwa?",
     url: "/dashboard/blue/services/opracowanie-polityki-bezpieczenstwa",
@@ -3031,7 +3031,7 @@ export const servicesData = [
   {
     id: "opracowanie_polityki_ciaglosci_dzialania",
     title: "Opracowanie polityki ciągłości działania",
-    title2: "",
+    title2: "Planowanie awaryjne",
     titleAboutService:
       "Dlaczego warto zakupić usługę opracowania polityki ciągłości działania?",
     url: "/dashboard/blue/services/opracowanie_polityki_ciaglosci_dzialania",
@@ -3255,7 +3255,7 @@ export const servicesData = [
   {
     id: "opracowanie_polityki_kopii_zapasowych",
     title: "Opracowanie polityki kopii zapasowych",
-    title2: "",
+    title2: "Ochrona danych",
     titleAboutService:
       "Dlaczego warto zakupić usługę opracowania polityki kopii zapasowych?",
     url: "/dashboard/blue/services/opracowanie_polityki_kopii_zapasowych",
@@ -3263,7 +3263,7 @@ export const servicesData = [
     headerImg: "/assets/img/services/bg.png",
     position: "bottom",
     size: 1.3,
-    parallaxH2: "Polityka kopii zapasowych",
+    parallaxH2: "Backup",
     parallaxP:
       "Tworzymy politykę kopii zapasowych, która określa zasady tworzenia i przechowywania backupów, chroniąc dane przed utratą.",
     description:
@@ -3475,7 +3475,7 @@ export const servicesData = [
   {
     id: "audyt_zgodnosci_z_NIS2",
     title: "Audyt zgodności z NIS2",
-    title2: "",
+    title2: "Dyrektywa NIS2",
     titleAboutService: "Dlaczego warto zakupić usługę audytu zgodności z NIS2?",
     url: "/dashboard/blue/services/audyt_zgodnosci_z_NIS2",
     urlImage: "/assets/img/audyt.svg",
@@ -3692,7 +3692,7 @@ export const servicesData = [
   {
     id: "audyt_zgodnosci_z_KRI",
     title: "Audyt zgodności z KRI",
-    title2: "",
+    title2: "Ochrona kluczowych danych",
     titleAboutService: "Dlaczego warto zakupić usługę audytu zgodności z KRI?",
     url: "/dashboard/blue/services/audyt_zgodnosci_z_KRI",
     urlImage: "/assets/img/audyt.svg",
@@ -3909,7 +3909,7 @@ export const servicesData = [
   {
     id: "audyt_zgodnosci_z_KSC",
     title: "Audyt zgodności z KSC",
-    title2: "",
+    title2: "Zgodność z KSC",
     titleAboutService: "Dlaczego warto zakupić usługę audytu zgodności z KSC?",
     url: "/dashboard/blue/services/audyt_zgodnosci_z_KSC",
     urlImage: "/assets/img/audyt.svg",
@@ -4125,7 +4125,7 @@ export const servicesData = [
   {
     id: "audyt_SZBI",
     title: "Audyt SZBI",
-    title2: "",
+    title2: "Normy bezpieczeństwa",
     titleAboutService:
       "Dlaczego warto zakupić usługę audytu SZBI (ISO/IEC 27001)?",
     url: "/dashboard/blue/services/audyt_SZBI",
@@ -4345,7 +4345,7 @@ export const servicesData = [
   {
     id: "audyt_isoiec",
     title: "Audyt ISO/IEC",
-    title2: "",
+    title2: "Zgodność z ISO/IEC",
     titleAboutService:
       "Dlaczego warto zakupić usługę audytu zgodności z ISO/IEC 22301?",
     url: "/dashboard/blue/services/audyt_isoiec",
@@ -4565,7 +4565,7 @@ export const servicesData = [
   {
     id: "szkolenie_z_cyberbezpieczenstwa_dla_kadry_administracyjnej",
     title: "Szkolenie z cyberbezpieczeństwa dla kadry administracyjnej",
-    title2: "",
+    title2: "Cyberbezpieczeństwo kadra administracyjna",
     titleAboutService:
       "Dlaczego warto zakupić usługę szkolenia z cyberbezpieczeństwa dla kadry administracyjnej?",
     url: "/dashboard/blue/services/szkolenie_z_cyberbezpieczenstwa_dla_kadry_administracyjnej",
@@ -4573,7 +4573,7 @@ export const servicesData = [
     headerImg: "/assets/img/services/course.png",
     position: "top",
     size: 3.5,
-    parallaxH2: "Standardy bezpieczeństwa",
+    parallaxH2: "Ochrona IT",
     parallaxP:
       "Szkolenie z cyberbezpieczeństwa dla kadry administracyjnej zwiększa świadomość i kompetencje pracowników odpowiedzialnych za zarządzanie danymi i infrastrukturą IT. Oferujemy teorię, praktykę i ćwiczenia dostosowane do potrzeb Twojej organizacji.",
     description:
@@ -4791,7 +4791,7 @@ export const servicesData = [
   {
     id: "szkolenie_z_cyberbezpieczenstwa_dla_kadry_informatycznej",
     title: "Szkolenie dla Kadry Informatycznej",
-    title2: "",
+    title2: "Cyberbezpieczeństwo kadra IT",
     titleAboutService:
       "Dlaczego warto zakupić usługę szkolenia z cyberbezpieczeństwa dla kadry informatycznej?",
     url: "/dashboard/blue/services/szkolenie_z_cyberbezpieczenstwa_dla_kadry_informatycznej",
@@ -4799,7 +4799,7 @@ export const servicesData = [
     headerImg: "/assets/img/services/course.png",
     position: "top",
     size: 3.5,
-    parallaxH2: "Cyberbezpieczeństwo kadra IT",
+    parallaxH2: "Ochrona infrastruktury",
     parallaxP:
       "Zaawansowane szkolenie dla kadry informatycznej rozwija techniczne umiejętności w zakresie ochrony infrastruktury IT, zarządzania incydentami oraz wdrażania najlepszych praktyk.",
     description:
@@ -5017,7 +5017,7 @@ export const servicesData = [
   {
     id: "szkolenie_z_cyberbezpieczenstwa_dla_kadry_zarzadzajacej",
     title: "Szkolenie z cyberbezpieczeństwa dla kadry zarządzającej",
-    title2: "",
+    title2: "Cyberbezpieczeństwo kadra zarządzająca",
     titleAboutService:
       "Dlaczego warto zakupić usługę szkolenia z cyberbezpieczeństwa dla kadry zarządzającej?",
     url: "/dashboard/blue/services/szkolenie_z_cyberbezpieczenstwa_dla_kadry_zarzadzajacej",
@@ -5025,7 +5025,7 @@ export const servicesData = [
     headerImg: "/assets/img/services/course.png",
     position: "top",
     size: 3.5,
-    parallaxH2: "Cyberbezpieczeństwo kadra zarządzająca",
+    parallaxH2: "Strategia ochrony",
     parallaxP:
       "Program edukacyjny dla liderów organizacji, który pozwala zrozumieć zagrożenia cyberbezpieczeństwa, wdrażać strategie ochrony oraz efektywnie zarządzać ryzykiem.",
     description:
@@ -5242,7 +5242,7 @@ export const servicesData = [
   {
     id: "II_linia_wsparcia_technicznego",
     title: "II linia wsparcia technicznego",
-    title2: "",
+    title2: "Zaawansowane rozwiązywanie problemów",
     titleAboutService:
       "Dlaczego warto zakupić usługę II linii wsparcia technicznego?",
     url: "/dashboard/blue/services/II_linia_wsparcia_technicznego",
@@ -5463,7 +5463,7 @@ export const servicesData = [
   {
     id: "codzienne_kopie_zapasowe_logow",
     title: "Codzienne kopie zapasowe logów",
-    title2: "",
+    title2: "Backup logów",
     titleAboutService:
       "Dlaczego warto zakupić usługę codziennych kopii zapasowych logów?",
     url: "/dashboard/blue/services/codzienne_kopie_zapasowe_logow",
@@ -5684,7 +5684,7 @@ export const servicesData = [
   {
     id: "cykliczne_testy_odtworzeniowe",
     title: "Cykliczne testy odtwarzania",
-    title2: "",
+    title2: "Testy odzyskiwania danych",
     titleAboutService:
       "Dlaczego warto zakupić usługę cyklicznych testów odtworzeniowych?",
     url: "/dashboard/blue/services/cykliczne_testy_odtworzeniowe",
@@ -5906,7 +5906,7 @@ export const servicesData = [
   {
     id: "security_operations_center",
     title: "Security Operations Center (SOC)",
-    title2: "",
+    title2: "SOC",
     titleAboutService:
       "Dlaczego warto zakupić usługę monitoringu infrastruktury (SOC)?",
     url: "/dashboard/blue/services/security_operations_center",
@@ -5914,7 +5914,7 @@ export const servicesData = [
     headerImg: "/assets/img/services/bg.png",
     position: "bottom",
     size: 3.2,
-    parallaxH2: "Testy odzyskiwania danych",
+    parallaxH2: "Monitoring bezpieczeństwa",
     parallaxP:
       "Security Operations Center (SOC) to centrum monitorowania i zarządzania bezpieczeństwem IT, zapewniające szybką reakcję na incydenty i zwiększenie bezpieczeństwa organizacji.",
     description:
@@ -6122,7 +6122,7 @@ export const servicesData = [
   {
     id: "odmiejscowienie_kopii_zapasowych_(disaster_recovery)",
     title: "Odmiejscowienie kopii zapasowych (Disaster Recovery)",
-    title2: "",
+    title2: "Disaster recovery",
     titleAboutService:
       "Dlaczego warto zakupić usługę odmiejscowienia kopii zapasowych (Disaster Recovery)?",
     url: "/dashboard/blue/services/odmiejscowienie_kopii_zapasowych_(disaster_recovery)",
@@ -6130,7 +6130,7 @@ export const servicesData = [
     headerImg: "/assets/img/services/bg.png",
     position: "bottom",
     size: 0.8,
-    parallaxH2: "Monitoring bezpieczeństwa",
+    parallaxH2: "Odmiejscowione backupy",
     parallaxP:
       "Odmiejscowienie kopii zapasowych chroni dane przed katastrofami, przechowując je w bezpiecznych, oddzielnych lokalizacjach fizycznych.",
     description:

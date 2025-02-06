@@ -74,7 +74,7 @@ export const itemsMenuUslugiSzkoleniowe = [
     {
         id: 2,
         name: "Szkolenie dla kadry informatycznej",
-        url: "/dashboard/red/services/dlakadryinformatycznej",
+        url: "/dashboard/red/services/szkolenie_dla_kadry_informatycznej",
         img: "/assets/img/hacker.jpg",
     },
 
