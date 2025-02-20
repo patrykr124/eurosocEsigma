@@ -2,13 +2,14 @@ import FAQ from '@/components/UI/FAQ'
 import React from 'react'
 import {ContentFAQData, ContentFAQData_EN} from "@/components/UI/blue/section/FAQ/Content";
 import {useLocale, useTranslations} from "use-intl";
-
+import {motion} from "framer-motion";
 export default function FAQBlueHome() {
     const t = useTranslations('FAQ');
     const locale = useLocale();
     const FAQData = locale === "pl" ? ContentFAQData : ContentFAQData_EN
     return (
-        <div style={{
+        <motion.div initial={{ opacity: 0, }} whileInView={{ opacity: 1, }}
+        viewport={{ amount: 0.8, once: true }} transition={{ duration: 0.5, ease: "easeOut" }} style={{
             backgroundImage: `url("/assets/img/background.png")`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
@@ -21,6 +22,6 @@ export default function FAQBlueHome() {
                 </div>
                 <FAQ FAQRight={FAQData.ContentRight} FAQLeft={FAQData.ContentLeft} />
             </div>
-        </div>
+        </motion.div>
     )
 }

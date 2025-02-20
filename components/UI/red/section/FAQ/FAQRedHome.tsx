@@ -2,7 +2,7 @@ import FAQ from '@/components/UI/FAQ'
 import React from 'react'
 import {ContentFAQData, ContentFAQData_EN} from "@/components/UI/red/section/FAQ/Content";
 import {useLocale, useTranslations} from "use-intl";
-
+import {motion} from "framer-motion";
 export default function FAQRedHome() {
     const locale = useLocale();
     const t = useTranslations('FAQ')
@@ -10,7 +10,8 @@ export default function FAQRedHome() {
     const ContentFAQDataLocal = locale === "pl" ? ContentFAQData : ContentFAQData_EN
 
     return (
-        <div style={{
+        <motion.div initial={{ opacity: 0, }} whileInView={{ opacity: 1, }}
+        viewport={{ amount: 1, once: true }} transition={{ duration: 0.5, ease: "easeOut" }} style={{
             backgroundImage: `url("/assets/img/background.png")`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
@@ -25,6 +26,6 @@ export default function FAQRedHome() {
                 </div>
                 <FAQ FAQRight={ContentFAQDataLocal.ContentRight} FAQLeft={ContentFAQDataLocal.ContentLeft} />
             </div>
-        </div>
+        </motion.div>
     )
 }

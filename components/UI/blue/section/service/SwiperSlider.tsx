@@ -1,6 +1,6 @@
 'use client'
 import { SWIPER_DATA_BLUE, SWIPER_DATA_BLUE_EN } from "@/constants/SwiperData";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowLeft, ArrowRight, Loader } from "lucide-react";
 import Image from 'next/image';
 import { useEffect, useState } from "react";
 import { Autoplay, EffectCoverflow, Navigation, Pagination } from "swiper";
@@ -12,11 +12,17 @@ import { useLocale } from "use-intl";
 
 
 export default function SwiperSlider() {
+    const [mountend, setMounted] = useState(false)
     const locale = useLocale();
     const [activeIndex, setActiveIndex] = useState<number>(0);
     const [texts, setTexts] = useState<string[]>(SWIPER_DATA_BLUE.map((item) => item.title))
 
     const LocalSliderDate = locale === 'pl' ? SWIPER_DATA_BLUE : SWIPER_DATA_BLUE_EN
+
+    useEffect(() => {
+        setMounted(true)
+    }, [])
+
 
 
     const scrambleText = (text: string): string => {
@@ -59,7 +65,7 @@ export default function SwiperSlider() {
 
     return (
         <div>
-            <Swiper
+            {mountend ? <Swiper
                 effect={'coverflow'}
                 grabCursor={true}
                 loop={true}
@@ -122,7 +128,9 @@ export default function SwiperSlider() {
                     </div>
                     <div className="swiper-pigination gap-2 flex justify-center items-center mt-4"></div>
                 </div>
-            </Swiper>
+            </Swiper> : <div className="flex items-center justify-center">
+                <Loader size={40} className='animate-spin' color='blue' />
+            </div>}
         </div>
     )
 }
