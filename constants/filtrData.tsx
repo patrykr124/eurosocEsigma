@@ -25,7 +25,7 @@ export const filtrData = [
     },
     {
         id:'audyty',
-        title:'audyty'
+        title:'Audyty'
     },
     {
         id:'testy',

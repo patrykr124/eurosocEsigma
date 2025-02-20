@@ -29,7 +29,7 @@ function LocaleSwitcherSelect({children,defaultValue} : Props) {
 
     return (
         <label className={`${isPending && 'opacity-0'} transition-opacity duration-300`}>
-            <select className="rounded-xl w-[52px] px-1.5 bg-black text-white  h-7" defaultValue={defaultValue} disabled={isPending} onChange={onSelectedChange}>{children}</select>
+            <select className="rounded-xl w-[55px] px-1.5 bg-black text-white  h-7" defaultValue={defaultValue} disabled={isPending} onChange={onSelectedChange}>{children}</select>
         </label>
     );
 }

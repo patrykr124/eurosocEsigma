@@ -38,7 +38,7 @@ function Tabs() {
 
                             <Image
                                 src={image}
-                                layout="fill"
+                                
                                 className={`h-full w-full rounded-2xl object-contain`}
                                 alt="linear board demo"
                             />

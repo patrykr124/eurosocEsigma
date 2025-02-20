@@ -61,14 +61,17 @@ function NavbarBlue() {
             <nav className='wrapper relative '>
                 <div className="lg:flex hidden justify-between items-center">
                     <div className="logo">
-                        <Link href='/dashboard/blue'><Image src={Logo} objectFit='contain' alt='logo' width={180} height={180} /></Link>
+                        <Link href='/dashboard/blue'><Image src={Logo} priority alt='logo' width={180} height={180} /></Link>
                     </div>
-                    <div className="items">
-                        <NavbarItems isOpen={isOpen} ishandleOpen={ishandleOpen} setIsHandleOpen={setIsHandleOpen} />
-                    </div>
-                    <div className="flex justify-center items-center gap-2">
-                        <LocaleSwitcher />
-                        <Switch />
+                    <div className="flex items-center justify-center gap-8 ">
+                        <div className="items">
+                            <NavbarItems isOpen={isOpen} ishandleOpen={ishandleOpen} setIsHandleOpen={setIsHandleOpen} />
+                        </div>
+                        <div className="flex justify-center items-center gap-8">
+
+                            <LocaleSwitcher />
+                            <Switch />
+                        </div>
                     </div>
                 </div>
 
@@ -79,17 +82,19 @@ function NavbarBlue() {
                         <div className="logo">
                             <Link href='/dashboard/blue'><Image src={Logo} alt='logo' width={120} height={120} /></Link>
                         </div >
-                        <LocaleSwitcher />
-                        <Switch />
-                        <div className="input_box flex -mr-2">
-                            <div className="bar flex  " onClick={openMobileMenu}>
-                                <span className={`top ${openMobile ? "rotate-45 !top-2" : ""}`}></span>
-                                <span
-                                    className={`middle ${openMobile ? "translate-x-[-20px] opacity-0" : ""}`}
-                                ></span>
-                                <span className={`bottom ${openMobile ? "rotate-[-45deg] !top-2" : ""}`}></span>
-                            </div>
+                        <div className="flex items-center justify-center gap-8">
+                            <LocaleSwitcher />
+                            <Switch />
+                            <div className="input_box flex -mr-2">
+                                <div className="bar flex  " onClick={openMobileMenu}>
+                                    <span className={`top ${openMobile ? "rotate-45 !top-2" : ""}`}></span>
+                                    <span
+                                        className={`middle ${openMobile ? "translate-x-[-20px] opacity-0" : ""}`}
+                                    ></span>
+                                    <span className={`bottom ${openMobile ? "rotate-[-45deg] !top-2" : ""}`}></span>
+                                </div>
 
+                            </div>
                         </div>
                     </div>
                     <div

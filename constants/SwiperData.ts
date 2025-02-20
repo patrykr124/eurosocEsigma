@@ -25,7 +25,7 @@ export const SWIPER_DATA_BLUE:S[] = [
     {
         id:4,
         img:'/assets/img/kopia.png',
-        title:'odmiejscowienie kopi zapasowych'
+        title:'Odmiejscowienie kopii zapasowych'
     },
 
 ]

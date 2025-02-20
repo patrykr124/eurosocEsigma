@@ -47,7 +47,7 @@ function RightSideBox({ activeFilters }: Props) {
                                 <div className="flex flex-col gap-2">
                                     <p className='p-medium-14 mb-2'>{truncetData(item.description, 160)}</p>
                                 </div>
-                                <EncryptButton onClick="" textData={t("encrypt2")}
+                                <EncryptButton onClick={item.url} textData={t("encrypt2")}
                                     className="bg-blue-1 hover:blue-1-hover" />
                             </div>
                         </div>
